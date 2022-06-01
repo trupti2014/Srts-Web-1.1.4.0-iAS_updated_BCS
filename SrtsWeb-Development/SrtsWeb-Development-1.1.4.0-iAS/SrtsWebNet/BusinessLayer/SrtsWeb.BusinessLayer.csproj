@@ -1,0 +1,434 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{BB494908-6AFD-4E53-8C26-5A96F16A86F1}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SrtsWeb.BusinessLayer</RootNamespace>
+    <AssemblyName>SrtsWeb.BusinessLayer</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Srtsweb DEV|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>
+    </DocumentationFile>
+    <Prefer32Bit>false</Prefer32Bit>
+    <CodeAnalysisRuleSet>..\rsDeadCodeFinder.ruleset</CodeAnalysisRuleSet>
+    <RunCodeAnalysis>false</RunCodeAnalysis>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Srtsweb PRODTEST|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Srtstraining DEV|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\Srtstraining Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>..\rsDeadCodeFinder.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Srtstraining PRODTEST|AnyCPU' ">
+    <OutputPath>bin\Srtstraining Release\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Srtsweb PRODUCTION|AnyCPU'">
+    <OutputPath>bin\Srtsweb PRODUCTION\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Srtstraining PRODUCTION|AnyCPU'">
+    <OutputPath>bin\Srtstraining PRODUCTION\</OutputPath>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AjaxControlToolkit, Version=4.1.7.1005, Culture=neutral, PublicKeyToken=28f01b0e84b6d53e, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\ThirdPartyDLL\AjaxControlToolkit.dll</HintPath>
+    </Reference>
+    <Reference Include="BarcodeLib, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\ThirdPartyDLL\BarcodeLib.dll</HintPath>
+    </Reference>
+    <Reference Include="CSSFriendly">
+      <HintPath>..\ThirdPartyDLL\CSSFriendly.dll</HintPath>
+    </Reference>
+    <Reference Include="Elmah">
+      <HintPath>..\ThirdPartyDLL\Elmah.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Abstract\IBmtService.cs" />
+    <Compile Include="Abstract\IDemographicXMLHelper.cs" />
+    <Compile Include="Abstract\IGenBarCodes.cs" />
+    <Compile Include="Abstract\ILookupService.cs" />
+    <Compile Include="Abstract\IMailService.cs" />
+    <Compile Include="Abstract\IMembershipService.cs" />
+    <Compile Include="Abstract\IMessageService.cs" />
+    <Compile Include="Abstract\IUSPSService.cs" />
+    <Compile Include="Concrete\BmtService.cs" />
+    <Compile Include="Concrete\CustomEventLogger.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Concrete\CustomEventTracer.cs" />
+    <Compile Include="Concrete\CustomLogger.cs" />
+    <Compile Include="Concrete\CustomRedirect.cs" />
+    <Compile Include="Concrete\DemographicXMLHelper.cs" />
+    <Compile Include="Concrete\DmdcService.cs" />
+    <Compile Include="Concrete\GenerateBarCodes.cs" />
+    <Compile Include="Abstract\IExcelExporter.cs" />
+    <Compile Include="Abstract\IDmdcService.cs" />
+    <Compile Include="Abstract\ICustomEventLogger.cs" />
+    <Compile Include="Concrete\MailService.cs" />
+    <Compile Include="Concrete\MasterService.cs" />
+    <Compile Include="Concrete\MembershipService.cs" />
+    <Compile Include="Concrete\MessageService.cs" />
+    <Compile Include="Concrete\MethodTracer.cs" />
+    <Compile Include="Concrete\Misc.cs" />
+    <Compile Include="Concrete\OrdersService.cs" />
+    <Compile Include="Concrete\PatientsService.cs" />
+    <Compile Include="Concrete\SessionEnforcementService.cs" />
+    <Compile Include="Concrete\SessionService.cs" />
+    <Compile Include="Concrete\SharedAddressService.cs" />
+    <Compile Include="Concrete\UserNotificationService.cs" />
+    <Compile Include="Concrete\USPSService.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="Concrete\LookupService.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Service References\BmtSrDev\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\DmdcMock\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\mil.osd.dmdc.sadr\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\ExtendersHelpers\SrtsWeb.ExtendersHelpersEnums.csproj">
+      <Project>{a7bd6a82-456a-4844-bc89-54b3aca02eaa}</Project>
+      <Name>SrtsWeb.ExtendersHelpersEnums</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DataLayer\SrtsWeb.DataLayer.csproj">
+      <Project>{7A783EDF-1894-4D39-9895-AD647B1F2E9C}</Project>
+      <Name>SrtsWeb.DataLayer</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Entities\SrtsWeb.Entities.csproj">
+      <Project>{3869C230-7A89-4A14-9298-769767554752}</Project>
+      <Name>SrtsWeb.Entities</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="Properties\DataSources\SrtsWeb.DataLayer.Repositories.OrderRepository.datasource" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Service References\BmtSrDev\BmtWs.wsdl" />
+    <None Include="Service References\BmtSrDev\BmtWs.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\BmtSrDev\BmtWs1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\BmtSrDev\BmtWs2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\BmtSrDev\SrtsWeb.BusinessLayer.BmtSrDev.BmtResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\DmdcMock\DmdcMockWs.wsdl" />
+    <None Include="Service References\DmdcMock\DmdcMockWs.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\DmdcMock\DmdcMockWs1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\DmdcMock\DmdcMockWs2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\DmdcMock\SrtsWeb.BusinessLayer.DmdcMock.DmdcPersonWs.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Web References\mil.osd.dmdc.pkict\BarCode39ResponseType.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\mil.osd.dmdc.pkict\customerRuleResponseType.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\mil.osd.dmdc.pkict\DependentResponseType.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\mil.osd.dmdc.pkict\DoDEdiResponseType.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\mil.osd.dmdc.pkict\ExtsResponseType.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\mil.osd.dmdc.pkict\FASCResponseType.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\mil.osd.dmdc.pkict\ICC_IDResponseType.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\mil.osd.dmdc.pkict\PersonResponseType.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\mil.osd.dmdc.pkict\PKI05ResponseType.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\mil.osd.dmdc.pkict\PKIResponseType.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\mil.osd.dmdc.pkict\PN_IDResponseType.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\mil.osd.dmdc.pkict\RecordGeneratorService.wsdl" />
+    <None Include="Web References\mil.osd.dmdc.pkict\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+    </None>
+    <None Include="Web References\mil.osd.dmdc.pkict\SecondaryPersonResponseType.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\mil.osd.dmdc.pkict\WkEmaResponseType.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\mil.osd.dmdc.pkidm\BarCode39ResponseType.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\mil.osd.dmdc.pkidm\customerRuleResponseType.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\mil.osd.dmdc.pkidm\DependentResponseType.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\mil.osd.dmdc.pkidm\DoDEdiResponseType.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\mil.osd.dmdc.pkidm\ExtsResponseType.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\mil.osd.dmdc.pkidm\FASCResponseType.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\mil.osd.dmdc.pkidm\ICC_IDResponseType.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\mil.osd.dmdc.pkidm\PersonResponseType.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\mil.osd.dmdc.pkidm\PKI05ResponseType.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\mil.osd.dmdc.pkidm\PKIResponseType.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\mil.osd.dmdc.pkidm\PN_IDResponseType.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\mil.osd.dmdc.pkidm\RecordGeneratorService.wsdl" />
+    <None Include="Web References\mil.osd.dmdc.pkidm\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+    </None>
+    <None Include="Web References\mil.osd.dmdc.pkidm\SecondaryPersonResponseType.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\mil.osd.dmdc.pkidm\WkEmaResponseType.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\mil.osd.dmdc.sadr\BarCode39ResponseType1.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\mil.osd.dmdc.sadr\customerRuleResponseType1.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\mil.osd.dmdc.sadr\DependentResponseType1.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\mil.osd.dmdc.sadr\DoDEdiResponseType1.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\mil.osd.dmdc.sadr\ExtsResponseType1.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\mil.osd.dmdc.sadr\FASCResponseType1.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\mil.osd.dmdc.sadr\ICC_IDResponseType1.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\mil.osd.dmdc.sadr\PersonResponseType1.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\mil.osd.dmdc.sadr\PKI05ResponseType1.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\mil.osd.dmdc.sadr\PKIResponseType1.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\mil.osd.dmdc.sadr\PN_IDResponseType1.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\mil.osd.dmdc.sadr\RecordGeneratorService.wsdl" />
+    <None Include="Web References\mil.osd.dmdc.sadr\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\mil.osd.dmdc.sadr\SecondaryPersonResponseType1.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\mil.osd.dmdc.sadr\WkEmaResponseType1.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="stdole">
+      <Guid>{00020430-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferences Include="Web References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferenceUrl Include="https://pkict.dmdc.osd.mil/appj/rbs/RecordGeneratorWebService%3fwsdl">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\mil.osd.dmdc.pkict\</RelPath>
+      <UpdateFromURL>https://pkict.dmdc.osd.mil/appj/rbs/RecordGeneratorWebService%3fwsdl</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>BusinessLayer_mil_osd_dmdc_pkict_RecordGeneratorWebService</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="https://pkidm.dmdc.osd.mil/appj/rbs/RecordGeneratorWebService%3fwsdl">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\mil.osd.dmdc.pkidm\</RelPath>
+      <UpdateFromURL>https://pkidm.dmdc.osd.mil/appj/rbs/RecordGeneratorWebService%3fwsdl</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>BusinessLayer_mil_osd_dmdc_pkidm_RecordGeneratorWebService</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="https://sadr.dmdc.osd.mil/appj/rbs/RecordGeneratorWebService%3fwsdl">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\mil.osd.dmdc.sadr\</RelPath>
+      <UpdateFromURL>https://sadr.dmdc.osd.mil/appj/rbs/RecordGeneratorWebService%3fwsdl</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>BusinessLayer_mil_osd_dmdc_sadr_RecordGeneratorWebService</CachedSettingsPropName>
+    </WebReferenceUrl>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadataStorage Include="Service References\BmtSrDev\" />
+    <WCFMetadataStorage Include="Service References\DmdcMock\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\BmtSrDev\BmtWs.disco" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\BmtSrDev\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\BmtSrDev\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\BmtSrDev\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\DmdcMock\DmdcMockWs.disco" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\DmdcMock\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\DmdcMock\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\DmdcMock\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

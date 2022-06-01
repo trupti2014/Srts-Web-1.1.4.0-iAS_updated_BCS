@@ -1,0 +1,75 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="JSpecsMaster.Master.cs" Inherits="SrtsWeb.JSpecs.JSpecsMaster" %>
+
+<!DOCTYPE html>
+<%@ Register Assembly="AjaxControlToolkit" Namespace="AjaxControlToolkit" TagPrefix="asp" %>
+
+<html lang="en">
+<head runat="server">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>JSPECS</title>
+<style type="text/css">
+.Background {
+    background-color: black;
+    filter: alpha(opacity=4);
+    opacity: .4;
+}
+</style>
+
+    <%--Add bundling and Minifying--%>
+    <link rel="stylesheet" type="text/css" href="Styles/Main.min.css">
+    <link rel="" type="text/javascript" href="~/Scripts/Global/jquery-1.11.1.min.js"/>    
+    <asp:ContentPlaceHolder ID="contentHeader" runat="server"></asp:ContentPlaceHolder>
+</head>
+
+<body>
+    <form runat="server">
+        <header class="l-header">
+            <nav class="navigation">
+                <div id="navigation" runat="server" class="navigation__menu__toggle">
+                    <input id="checkBox" type="checkbox" runat="server"/>
+
+                    <span class="hamburger__patty"></span>
+                    <span class="hamburger__patty"></span>
+                    <span class="hamburger__patty"></span>
+                    <span class="hamburger__patty__text">MENU</span>
+
+                    <ul class="navigation__menu">
+                    
+                        <a id="closeMenu" class="navigation__menu__item" runat="server" >Close</a>
+                        <a id="srtsLink" class="navigation__menu__item" runat="server" href="~/WebForms/Account/Login.aspx?ReturnUrl=%2fWebForms%2fDefault.aspx"><b>Back to SRTS</b></a>
+                        <a id="ordersLink" class="navigation__menu__item" runat="server" ClientIdMode="Static"  href="~/WebForms/JSpecs/Forms/JSpecsOrders.aspx" style="width:170px!important;"><b>Your Orders/Reorder</b></a>
+                        <a id="newOrderLink" class="navigation__menu__item" runat="server" ClientIdMode="Static"  href="~/WebForms/JSpecs/Forms/JSpecsNewOrder.aspx"><b>New Order</b></a>
+                        <a id="faqsLink" class="navigation__menu__item" runat="server" href="~/WebForms/JSpecs/Forms/JSpecsFAQ.aspx"><b>FAQs</b></a>
+                    </ul>
+                </div>
+                <a class="navigation__title" runat="server">JSPECS</a>
+                <a id="logout_button" runat="server" class="navigation__logout" href="~/WebForms/JSpecs/Forms/JSpecsLogin.aspx">Log Out</a>
+            </nav>
+        </header>
+
+        <%-- A ContentPlaceHolder control defines a relative region for content in a master page, and renders all text,
+             markup, and server controls from a related Content control found in a content page.
+             Learn more at https://docs.microsoft.com/en-us/dotnet/api/system.web.ui.webcontrols.contentplaceholder?view=netframework-4.7.2 --%>
+        <main runat="server" class="l-content" id="content">
+
+            <div class="loader__background" id="loader" style="display: none;">
+                <div class="loader">
+                    <div class="loader__spinners-container">
+                        <div class="loader__spinner"></div>
+                        <div class="loader__spinner"></div>
+                        <div class="loader__spinner"></div>
+                    </div>
+                    <p>Processing...</p>
+                </div>
+            </div>
+
+            <asp:ContentPlaceHolder ID="MainContent" runat="server">
+                <%--This is where data is loaded for all the pages--%>
+            </asp:ContentPlaceHolder>
+        </main>
+    </form>
+       
+</body>
+</html>

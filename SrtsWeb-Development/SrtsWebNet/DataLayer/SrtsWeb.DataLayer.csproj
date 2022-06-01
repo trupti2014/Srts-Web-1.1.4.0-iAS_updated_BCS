@@ -1,0 +1,188 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{7A783EDF-1894-4D39-9895-AD647B1F2E9C}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SrtsWeb.DataLayer</RootNamespace>
+    <AssemblyName>SrtsWeb.DataLayer</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Srtsweb DEV|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>
+    </DocumentationFile>
+    <Prefer32Bit>false</Prefer32Bit>
+    <CodeAnalysisRuleSet>..\rsDeadCodeFinder.ruleset</CodeAnalysisRuleSet>
+    <RunCodeAnalysis>false</RunCodeAnalysis>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Srtsweb PRODTEST|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Srtstraining DEV|AnyCPU' ">
+    <OutputPath>bin\Srtstraining Debug\</OutputPath>
+    <DebugType>full</DebugType>
+    <DebugSymbols>true</DebugSymbols>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Srtstraining PRODTEST|AnyCPU' ">
+    <OutputPath>bin\Srtstraining Release\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Srtsweb PRODUCTION|AnyCPU'">
+    <OutputPath>bin\Srtsweb PRODUCTION\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Srtstraining PRODUCTION|AnyCPU'">
+    <OutputPath>bin\Srtstraining PRODUCTION\</OutputPath>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DataToObjectLib, Version=1.0.0.3, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\ThirdPartyDLL\DataToObjectLib.dll</HintPath>
+    </Reference>
+    <Reference Include="Elmah, Version=1.2.14706.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\ThirdPartyDLL\Elmah.dll</HintPath>
+    </Reference>
+    <Reference Include="SrtsDataBaseAccess, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\ThirdPartyDLL\SrtsDataBaseAccess.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Interfaces\IOrderTrackingRepository.cs" />
+    <Compile Include="Interfaces\IUserGuidesRepository.cs" />
+    <Compile Include="Interfaces\IFrameFamilyRepository.cs" />
+    <Compile Include="Interfaces\IFrameImageRepository.cs" />
+    <Compile Include="Interfaces\ILabParametersRepository.cs" />
+    <Compile Include="Interfaces\IFabricationParametersRepository.cs" />
+    <Compile Include="Interfaces\IIndividualPrescriptionRepository.cs" />
+    <Compile Include="Interfaces\IMembershipRepository.cs" />
+    <Compile Include="Interfaces\IProfileRepository.cs" />
+    <Compile Include="Interfaces\IRulesOfBehaviorRepository.cs" />
+    <Compile Include="Interfaces\ILabMailToPatientRepository.cs" />
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="Repositories\OrderTrackingRepository.cs" />
+    <Compile Include="Repositories\UserAccountAdminRepository.cs" />
+    <Compile Include="Repositories\EmailMessageRepository.cs" />
+    <Compile Include="Repositories\AddressRepository.cs" />
+    <Compile Include="Repositories\AdminToolsRepository.cs" />
+    <Compile Include="Repositories\AuthorizationRepository.cs" />
+    <Compile Include="Repositories\CheckOrderStatusRepository.cs" />
+    <Compile Include="Repositories\CMSRepository.cs" />
+    <Compile Include="Repositories\DocumentManagerRepository.cs" />
+    <Compile Include="Repositories\ExcelRepository.cs" />
+    <Compile Include="Interfaces\IOrderManagementRepository.cs" />
+    <Compile Include="Interfaces\IOrderRepository.cs" />
+    <Compile Include="Interfaces\IReleaseNotesRepository.cs" />
+    <Compile Include="Repositories\UserGuidesRepository.cs" />
+    <Compile Include="Repositories\FrameFamilyRepository.cs" />
+    <Compile Include="Repositories\FrameImageRepository.cs" />
+    <Compile Include="Repositories\LabParametersRepository.cs" />
+    <Compile Include="Repositories\FabricationParametersRepository .cs" />
+    <Compile Include="Repositories\FrameItemsDefaultsRepository.cs" />
+    <Compile Include="Repositories\IdentificationNumbersRepository.cs" />
+    <Compile Include="Interfaces\ILmsFileGeneratorRepository.cs" />
+    <Compile Include="Repositories\IndividualPrescriptionRepository.cs" />
+    <Compile Include="Repositories\LmsFileGeneratorRepository.cs" />
+    <Compile Include="Repositories\MembershipRepository.cs" />
+    <Compile Include="Repositories\EMailAddressRepository.cs" />
+    <Compile Include="Repositories\FrameItemsRepository.cs" />
+    <Compile Include="Repositories\FrameRepository.cs" />
+    <Compile Include="Interfaces\IAddressRepository.cs" />
+    <Compile Include="Interfaces\IAuthorizationRepository.cs" />
+    <Compile Include="Interfaces\ICMSRepository.cs" />
+    <Compile Include="Interfaces\IEMailAddressRepository.cs" />
+    <Compile Include="Interfaces\IFrameItemsRepository.cs" />
+    <Compile Include="Interfaces\IFrameRepository.cs" />
+    <Compile Include="Interfaces\IIdentificationNumbersRepository.cs" />
+    <Compile Include="Interfaces\IIndividualRepository.cs" />
+    <Compile Include="Interfaces\IIndividualTypeRepository.cs" />
+    <Compile Include="Interfaces\ILookupRepository.cs" />
+    <Compile Include="Repositories\IndividualRepository.cs" />
+    <Compile Include="Repositories\IndividualTypeRepository.cs" />
+    <Compile Include="Interfaces\IOrderStateRepository.cs" />
+    <Compile Include="Interfaces\IPhoneRepository.cs" />
+    <Compile Include="Interfaces\ISecurityRepository.cs" />
+    <Compile Include="Interfaces\ISiteCodeRepository.cs" />
+    <Compile Include="Interfaces\ITheaterCodeRepository.cs" />
+    <Compile Include="Repositories\LookupRepository.cs" />
+    <Compile Include="Repositories\OrderManagementRepository.cs" />
+    <Compile Include="Repositories\OrderRepository.cs" />
+    <Compile Include="Repositories\OrderStateRepository.cs" />
+    <Compile Include="Repositories\PhoneRepository.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Repositories\ProfileRepository.cs" />
+    <Compile Include="Repositories\RulesOfBehaviorRepository.cs" />
+    <Compile Include="Repositories\ReleaseNotesRepository.cs" />
+    <Compile Include="Repositories\ReOrderReasonRepository.cs" />
+    <Compile Include="Repositories\ReportsManagerRepository.cs" />
+    <Compile Include="Repositories\SharedOperations.cs" />
+    <Compile Include="Repositories\SiteCodeRepository.cs" />
+    <Compile Include="Repositories\SitePreferencesRepository.cs" />
+    <Compile Include="Repositories\TheaterCodeRepository.cs" />
+    <Compile Include="Repositories\UserAdminRepository.cs" />
+    <Compile Include="RepositoryBase\RepositoryBase.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\ExtendersHelpers\SrtsWeb.ExtendersHelpersEnums.csproj">
+      <Project>{a7bd6a82-456a-4844-bc89-54b3aca02eaa}</Project>
+      <Name>SrtsWeb.ExtendersHelpersEnums</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Entities\SrtsWeb.Entities.csproj">
+      <Project>{3869C230-7A89-4A14-9298-769767554752}</Project>
+      <Name>SrtsWeb.Entities</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="StoredProcedures\StoredProcedures.sql" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

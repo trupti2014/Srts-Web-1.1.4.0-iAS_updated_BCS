@@ -1,0 +1,8 @@
+﻿namespace SrtsWeb.BusinessLayer.Enumerators
+{
+    public enum StatusType { CREATED, RESUBMITTED, REJECTED, REDIRECTED, CANCELLED, DISPENSED, RECEIVED, LAB_DISPENSED, LAB_RECEIVED, RECLAIMED, NONE, VIEW };
+
+    public enum SiteType { CLINIC, LABORATORY, HUMANITARIAN, ADMINSTRATIVE, OTHER };
+
+    public enum QuickSearchType { DODID, ORDERNUMBER, SSN };
+}

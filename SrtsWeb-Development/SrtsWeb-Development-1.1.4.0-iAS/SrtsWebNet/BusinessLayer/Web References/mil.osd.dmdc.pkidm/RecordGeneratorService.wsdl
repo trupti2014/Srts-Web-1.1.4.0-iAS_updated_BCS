@@ -1,0 +1,549 @@
+<?xml version="1.0" encoding="utf-8"?>
+<definitions xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tns="http://adr.dmdc.osd.mil/RecordGeneratorService" xmlns:ns2="http://adr.dmdc.osd.mil/RecordGeneratorService/types" name="RecordGeneratorService" targetNamespace="http://adr.dmdc.osd.mil/RecordGeneratorService" xmlns="http://schemas.xmlsoap.org/wsdl/">
+  <types>
+    <xsd:schema xmlns="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://adr.dmdc.osd.mil/RecordGeneratorService/types" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:soap11-enc="http://schemas.xmlsoap.org/soap/encoding/" targetNamespace="http://adr.dmdc.osd.mil/RecordGeneratorService/types">
+      <xsd:complexType name="CustomerType">
+        <xsd:sequence>
+          <xsd:element minOccurs="1" maxOccurs="1" name="id" type="xsd:int" />
+          <xsd:element minOccurs="1" maxOccurs="1" name="schema" type="xsd:string" />
+          <xsd:element minOccurs="1" maxOccurs="1" name="version" type="xsd:string" />
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="customerRuleRequestType">
+        <xsd:sequence>
+          <xsd:element minOccurs="1" maxOccurs="1" name="rule" type="xsd:anyType" />
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="customerRuleResponseType">
+        <xsd:sequence>
+          <xsd:element name="isValidRule" type="xsd:boolean" />
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="PersonIdentifierType">
+        <xsd:sequence>
+          <xsd:element minOccurs="1" maxOccurs="1" name="PN_ID" type="xsd:string" />
+          <xsd:element minOccurs="1" maxOccurs="1" name="PN_ID_TYP_CD" type="xsd:string" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="PN_LST_NM" type="xsd:string" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="PN_1ST_NM" type="xsd:string" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="PN_BRTH_DT" type="xsd:string" />
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="PersonIdentifierRequestType">
+        <xsd:sequence>
+          <xsd:element minOccurs="1" maxOccurs="1" name="customer" type="tns:CustomerType" />
+          <xsd:element minOccurs="1" maxOccurs="1" name="person" type="tns:PersonIdentifierType" />
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="PersonResponseType">
+        <xsd:sequence>
+          <xsd:element maxOccurs="1" name="found" type="xsd:boolean" />
+          <xsd:element maxOccurs="1" name="matchReasonCode" type="xsd:string" />
+          <xsd:element minOccurs="1" maxOccurs="1" name="customer" type="tns:CustomerType" />
+          <xsd:element minOccurs="1" maxOccurs="1" name="person" type="tns:PersonIdentifierType" />
+          <xsd:element name="ResponseData" type="xsd:anyType" />
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="SecondaryPersonIdentifierType">
+        <xsd:sequence>
+          <xsd:element minOccurs="1" maxOccurs="1" name="SEC_PN_ID" type="xsd:string" />
+          <xsd:element minOccurs="1" maxOccurs="1" name="SEC_PN_ID_TYP_CD" type="xsd:string" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="PN_LST_NM" type="xsd:string" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="PN_1ST_NM" type="xsd:string" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="PN_BRTH_DT" type="xsd:string" />
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="SecondaryPersonIdentifierRequestType">
+        <xsd:sequence>
+          <xsd:element minOccurs="1" maxOccurs="1" name="customer" type="tns:CustomerType" />
+          <xsd:element minOccurs="1" maxOccurs="1" name="person" type="tns:SecondaryPersonIdentifierType" />
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="SecondaryPersonResponseType">
+        <xsd:sequence>
+          <xsd:element maxOccurs="1" name="found" type="xsd:boolean" />
+          <xsd:element maxOccurs="1" name="matchReasonCode" type="xsd:string" />
+          <xsd:element minOccurs="1" maxOccurs="1" name="customer" type="tns:CustomerType" />
+          <xsd:element minOccurs="1" maxOccurs="1" name="person" type="tns:SecondaryPersonIdentifierType" />
+          <xsd:element name="ResponseData" type="xsd:anyType" />
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="dependentType">
+        <xsd:sequence>
+          <xsd:element minOccurs="0" maxOccurs="1" name="PN_1ST_NM" type="xsd:string" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="PN_BRTH_DT" type="xsd:string" />
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="DependentIdentifierType">
+        <xsd:sequence>
+          <xsd:element minOccurs="1" maxOccurs="1" name="customer" type="tns:CustomerType" />
+          <xsd:element minOccurs="1" maxOccurs="1" name="sponsor" type="tns:PersonIdentifierType" />
+          <xsd:element minOccurs="1" maxOccurs="1" name="dependent" type="tns:dependentType" />
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="DependentResponseType">
+        <xsd:sequence>
+          <xsd:element maxOccurs="1" name="found" type="xsd:boolean" />
+          <xsd:element maxOccurs="1" name="matchReasonCode" type="xsd:string" />
+          <xsd:element minOccurs="1" maxOccurs="1" name="customer" type="tns:CustomerType" />
+          <xsd:element minOccurs="1" maxOccurs="1" name="sponsor" type="tns:PersonIdentifierType" />
+          <xsd:element minOccurs="1" maxOccurs="1" name="dependent" type="tns:dependentType" />
+          <xsd:element name="ResponseData" type="xsd:anyType" />
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="EDIIdentifierType">
+        <xsd:sequence>
+          <xsd:element minOccurs="1" maxOccurs="1" name="customer" type="tns:CustomerType" />
+          <xsd:element minOccurs="1" maxOccurs="1" name="DOD_EDI_PN_ID" type="xsd:string" />
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="DoDEdiResponseType">
+        <xsd:sequence>
+          <xsd:element maxOccurs="1" name="found" type="xsd:boolean" />
+          <xsd:element minOccurs="1" maxOccurs="1" name="customer" type="tns:CustomerType" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="DOD_EDI_PN_ID" type="xsd:string" />
+          <xsd:element name="ResponseData" type="xsd:anyType" />
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="PN_IDIdentifierType">
+        <xsd:sequence>
+          <xsd:element minOccurs="1" maxOccurs="1" name="customer" type="tns:CustomerType" />
+          <xsd:element minOccurs="1" maxOccurs="1" name="PN_ID" type="xsd:string" />
+          <xsd:element minOccurs="1" maxOccurs="1" name="PN_ID_TYP_CD" type="xsd:string" />
+          <xsd:element minOccurs="1" maxOccurs="1" name="ORG_ID" type="xsd:string" />
+          <xsd:element minOccurs="1" maxOccurs="1" name="ORG_ASC_CAT_CD" type="xsd:string" />
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="PN_IDResponseType">
+        <xsd:sequence>
+          <xsd:element maxOccurs="1" name="found" type="xsd:boolean" />
+          <xsd:element maxOccurs="1" name="matchReasonCode" type="xsd:string" />
+          <xsd:element minOccurs="1" maxOccurs="1" name="customer" type="tns:CustomerType" />
+          <xsd:element minOccurs="1" name="PN_ID" type="xsd:string" />
+          <xsd:element minOccurs="1" name="PN_ID_TYP_CD" type="xsd:string" />
+          <xsd:element minOccurs="1" name="ORG_ID" type="xsd:string" />
+          <xsd:element minOccurs="1" name="ORG_ASC_CAT_CD" type="xsd:string" />
+          <xsd:element name="ResponseData" type="xsd:anyType" />
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="ICC_IDIdentifierType">
+        <xsd:sequence>
+          <xsd:element minOccurs="1" maxOccurs="1" name="customer" type="tns:CustomerType" />
+          <xsd:element minOccurs="1" maxOccurs="1" name="DOD_EDI_PN_ID" type="xsd:string" />
+          <xsd:element minOccurs="1" maxOccurs="1" name="ICC_ID" type="xsd:string" />
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="ICC_IDResponseType">
+        <xsd:sequence>
+          <xsd:element maxOccurs="1" name="found" type="xsd:boolean" />
+          <xsd:element maxOccurs="1" name="matchReasonCode" type="xsd:string" />
+          <xsd:element minOccurs="1" maxOccurs="1" name="customer" type="tns:CustomerType" />
+          <xsd:element minOccurs="1" name="DOD_EDI_PN_ID" type="xsd:string" />
+          <xsd:element minOccurs="1" name="ICC_ID" type="xsd:string" />
+          <xsd:element name="ResponseData" type="xsd:anyType" />
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="BarCode39IdentifierType">
+        <xsd:sequence>
+          <xsd:element minOccurs="1" maxOccurs="1" name="customer" type="tns:CustomerType" />
+          <xsd:element minOccurs="1" maxOccurs="1" name="CRD_SCRTY_CD" type="xsd:string" />
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="BarCode39ResponseType">
+        <xsd:sequence>
+          <xsd:element maxOccurs="1" name="found" type="xsd:boolean" />
+          <xsd:element maxOccurs="1" name="matchReasonCode" type="xsd:string" />
+          <xsd:element minOccurs="1" maxOccurs="1" name="customer" type="tns:CustomerType" />
+          <xsd:element minOccurs="1" maxOccurs="1" name="CRD_SCRTY_CD" type="xsd:string" />
+          <xsd:element name="ResponseData" type="xsd:anyType" />
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="PKIIdentifierType">
+        <xsd:sequence>
+          <xsd:element minOccurs="1" maxOccurs="1" name="customer" type="tns:CustomerType" />
+          <xsd:element minOccurs="1" maxOccurs="1" name="PKIC_AUTH_NM" type="xsd:string" />
+          <xsd:element minOccurs="1" maxOccurs="1" name="PKIC_SER_ID" type="xsd:string" />
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="PKIResponseType">
+        <xsd:sequence>
+          <xsd:element maxOccurs="1" name="found" type="xsd:boolean" />
+          <xsd:element maxOccurs="1" name="matchReasonCode" type="xsd:string" />
+          <xsd:element minOccurs="1" maxOccurs="1" name="customer" type="tns:CustomerType" />
+          <xsd:element minOccurs="1" name="PKIC_AUTH_NM" type="xsd:string" />
+          <xsd:element minOccurs="1" name="PKIC_SER_ID" type="xsd:string" />
+          <xsd:element name="ResponseData" type="xsd:anyType" />
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="FASCIdentifierType">
+        <xsd:sequence>
+          <xsd:element minOccurs="1" maxOccurs="1" name="customer" type="tns:CustomerType" />
+          <xsd:element minOccurs="1" maxOccurs="1" name="FASC_CRDL_NUM_ID" type="xsd:string" />
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="FASCResponseType">
+        <xsd:sequence>
+          <xsd:element maxOccurs="1" name="found" type="xsd:boolean" />
+          <xsd:element maxOccurs="1" name="matchReasonCode" type="xsd:string" />
+          <xsd:element minOccurs="1" maxOccurs="1" name="customer" type="tns:CustomerType" />
+          <xsd:element minOccurs="1" name="FASC_CRDL_NUM_ID" type="xsd:string" />
+          <xsd:element name="ResponseData" type="xsd:anyType" />
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="PKI05IdentifierType">
+        <xsd:sequence>
+          <xsd:element minOccurs="1" maxOccurs="1" name="customer" type="tns:CustomerType" />
+          <xsd:element minOccurs="1" maxOccurs="1" name="PKIC_AUTH_NM" type="xsd:string" />
+          <xsd:element minOccurs="1" maxOccurs="1" name="PKIC_SER_ID" type="xsd:string" />
+          <xsd:element minOccurs="1" maxOccurs="1" name="PKIC_TYP_CD" type="xsd:string" />
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="PKI05ResponseType">
+        <xsd:sequence>
+          <xsd:element maxOccurs="1" name="found" type="xsd:boolean" />
+          <xsd:element maxOccurs="1" name="matchReasonCode" type="xsd:string" />
+          <xsd:element minOccurs="1" maxOccurs="1" name="customer" type="tns:CustomerType" />
+          <xsd:element minOccurs="1" maxOccurs="1" name="PKIC_AUTH_NM" type="xsd:string" />
+          <xsd:element minOccurs="1" maxOccurs="1" name="PKIC_SER_ID" type="xsd:string" />
+          <xsd:element minOccurs="1" maxOccurs="1" name="PKIC_TYP_CD" type="xsd:string" />
+          <xsd:element name="ResponseData" type="xsd:anyType" />
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="ExtsIdentifierType">
+        <xsd:sequence>
+          <xsd:element minOccurs="1" maxOccurs="1" name="customer" type="tns:CustomerType" />
+          <xsd:element minOccurs="1" maxOccurs="1" name="SYS_PN_ID" type="xsd:string" />
+          <xsd:element minOccurs="1" maxOccurs="1" name="SYS_PN_ID_TYP_CD" type="xsd:string" />
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="ExtsResponseType">
+        <xsd:sequence>
+          <xsd:element maxOccurs="1" name="found" type="xsd:boolean" />
+          <xsd:element minOccurs="1" maxOccurs="1" name="customer" type="tns:CustomerType" />
+          <xsd:element minOccurs="1" maxOccurs="1" name="SYS_PN_ID" type="xsd:string" />
+          <xsd:element minOccurs="1" maxOccurs="1" name="SYS_PN_ID_TYP_CD" type="xsd:string" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="SYS_PN_XR_ID" type="xsd:string" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="DOD_EDI_PN_ID" type="xsd:string" />
+          <xsd:element name="ResponseData" type="xsd:anyType" />
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="WkEmaIdentifierType">
+        <xsd:sequence>
+          <xsd:element minOccurs="1" maxOccurs="1" name="customer" type="tns:CustomerType" />
+          <xsd:element minOccurs="1" maxOccurs="1" name="EMA_TX" type="xsd:string" />
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="WkEmaResponseType">
+        <xsd:sequence>
+          <xsd:element maxOccurs="1" name="found" type="xsd:boolean" />
+          <xsd:element minOccurs="1" maxOccurs="1" name="customer" type="tns:CustomerType" />
+          <xsd:element minOccurs="1" maxOccurs="1" name="EMA_TX" type="xsd:string" />
+          <xsd:element name="ResponseData" type="xsd:anyType" />
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:element name="validationRequest" type="tns:customerRuleRequestType" />
+      <xsd:element name="validationResponse" type="tns:customerRuleResponseType" />
+      <xsd:element name="DepSearchRequest" type="tns:PersonIdentifierRequestType" />
+      <xsd:element name="DepSearchResponse" type="tns:PersonResponseType" />
+      <xsd:element name="DoDEdiRequest" type="tns:EDIIdentifierType" />
+      <xsd:element name="DoDEdiResponse" type="tns:DoDEdiResponseType" />
+      <xsd:element name="PersonIdentifierRequest" type="tns:PersonIdentifierRequestType" />
+      <xsd:element name="PersonResponse" type="tns:PersonResponseType" />
+      <xsd:element name="SecondaryPersonIdentifierRequest" type="tns:SecondaryPersonIdentifierRequestType" />
+      <xsd:element name="SecondaryPersonResponse" type="tns:SecondaryPersonResponseType" />
+      <xsd:element name="DependentIdentifierRequest" type="tns:DependentIdentifierType" />
+      <xsd:element name="DependentResponse" type="tns:DependentResponseType" />
+      <xsd:element name="PN_IDRequest" type="tns:PN_IDIdentifierType" />
+      <xsd:element name="PN_IDResponse" type="tns:PN_IDResponseType" />
+      <xsd:element name="ICC_IDRequest" type="tns:ICC_IDIdentifierType" />
+      <xsd:element name="ICC_IDResponse" type="tns:ICC_IDResponseType" />
+      <xsd:element name="BarCode39Request" type="tns:BarCode39IdentifierType" />
+      <xsd:element name="BarCode39Response" type="tns:BarCode39ResponseType" />
+      <xsd:element name="PKIRequest" type="tns:PKIIdentifierType" />
+      <xsd:element name="PKIResponse" type="tns:PKIResponseType" />
+      <xsd:element name="FASCRequest" type="tns:FASCIdentifierType" />
+      <xsd:element name="FASCResponse" type="tns:FASCResponseType" />
+      <xsd:element name="PKI_TIDS05Request" type="tns:PKI05IdentifierType" />
+      <xsd:element name="PKI05Response" type="tns:PKI05ResponseType" />
+      <xsd:element name="ExtsRequest" type="tns:ExtsIdentifierType" />
+      <xsd:element name="ExtsResponse" type="tns:ExtsResponseType" />
+      <xsd:element name="WkEmaRequest" type="tns:WkEmaIdentifierType" />
+      <xsd:element name="WkEmaResponse" type="tns:WkEmaResponseType" />
+    </xsd:schema>
+  </types>
+  <message name="ruleValidation_Request">
+    <part name="request" element="ns2:validationRequest" />
+  </message>
+  <message name="ruleValidation_Response">
+    <part name="response" element="ns2:validationResponse" />
+  </message>
+  <message name="DepSearch_Request">
+    <part name="request" element="ns2:DepSearchRequest" />
+  </message>
+  <message name="DepSearch_Response">
+    <part name="response" element="ns2:DepSearchResponse" />
+  </message>
+  <message name="DoDEdi_Request">
+    <part name="request" element="ns2:DoDEdiRequest" />
+  </message>
+  <message name="DoDEdi_Response">
+    <part name="response" element="ns2:DoDEdiResponse" />
+  </message>
+  <message name="PersonId_Request">
+    <part name="request" element="ns2:PersonIdentifierRequest" />
+  </message>
+  <message name="PersonId_Response">
+    <part name="response" element="ns2:PersonResponse" />
+  </message>
+  <message name="SecondaryPersonId_Request">
+    <part name="request" element="ns2:SecondaryPersonIdentifierRequest" />
+  </message>
+  <message name="SecondaryPersonId_Response">
+    <part name="response" element="ns2:SecondaryPersonResponse" />
+  </message>
+  <message name="DependentId_Request">
+    <part name="request" element="ns2:DependentIdentifierRequest" />
+  </message>
+  <message name="DependentId_Response">
+    <part name="response" element="ns2:DependentResponse" />
+  </message>
+  <message name="PN_ID_Request">
+    <part name="request" element="ns2:PN_IDRequest" />
+  </message>
+  <message name="PN_ID_Response">
+    <part name="response" element="ns2:PN_IDResponse" />
+  </message>
+  <message name="ICC_ID_Request">
+    <part name="request" element="ns2:ICC_IDRequest" />
+  </message>
+  <message name="ICC_ID_Response">
+    <part name="response" element="ns2:ICC_IDResponse" />
+  </message>
+  <message name="BarCode39_Request">
+    <part name="request" element="ns2:BarCode39Request" />
+  </message>
+  <message name="BarCode39_Response">
+    <part name="response" element="ns2:BarCode39Response" />
+  </message>
+  <message name="PKI_Request">
+    <part name="request" element="ns2:PKIRequest" />
+  </message>
+  <message name="PKI_Response">
+    <part name="response" element="ns2:PKIResponse" />
+  </message>
+  <message name="FASC_Request">
+    <part name="request" element="ns2:FASCRequest" />
+  </message>
+  <message name="FASC_Response">
+    <part name="response" element="ns2:FASCResponse" />
+  </message>
+  <message name="PKI_TIDS05_Request">
+    <part name="request" element="ns2:PKI_TIDS05Request" />
+  </message>
+  <message name="PKI_TIDS05_Response">
+    <part name="response" element="ns2:PKI05Response" />
+  </message>
+  <message name="Exts_Request">
+    <part name="request" element="ns2:ExtsRequest" />
+  </message>
+  <message name="Exts_Response">
+    <part name="response" element="ns2:ExtsResponse" />
+  </message>
+  <message name="Wk_Ema_Request">
+    <part name="request" element="ns2:WkEmaRequest" />
+  </message>
+  <message name="Wk_Ema_Response">
+    <part name="response" element="ns2:WkEmaResponse" />
+  </message>
+  <portType name="RecordGeneratorWebServiceInterface">
+    <operation name="validateRule">
+      <input message="tns:ruleValidation_Request" />
+      <output message="tns:ruleValidation_Response" />
+    </operation>
+    <operation name="getDepRecord">
+      <input message="tns:DepSearch_Request" />
+      <output message="tns:DepSearch_Response" />
+    </operation>
+    <operation name="findByDoDEdi">
+      <input message="tns:DoDEdi_Request" />
+      <output message="tns:DoDEdi_Response" />
+    </operation>
+    <operation name="findByPersonId">
+      <input message="tns:PersonId_Request" />
+      <output message="tns:PersonId_Response" />
+    </operation>
+    <operation name="findBySecPnId">
+      <input message="tns:SecondaryPersonId_Request" />
+      <output message="tns:SecondaryPersonId_Response" />
+    </operation>
+    <operation name="findByDependentId">
+      <input message="tns:DependentId_Request" />
+      <output message="tns:DependentId_Response" />
+    </operation>
+    <operation name="findByPN_ID">
+      <input message="tns:PN_ID_Request" />
+      <output message="tns:PN_ID_Response" />
+    </operation>
+    <operation name="findByICC_ID">
+      <input message="tns:ICC_ID_Request" />
+      <output message="tns:ICC_ID_Response" />
+    </operation>
+    <operation name="findByBarCode39">
+      <input message="tns:BarCode39_Request" />
+      <output message="tns:BarCode39_Response" />
+    </operation>
+    <operation name="findByPKI">
+      <input message="tns:PKI_Request" />
+      <output message="tns:PKI_Response" />
+    </operation>
+    <operation name="findByFASC">
+      <input message="tns:FASC_Request" />
+      <output message="tns:FASC_Response" />
+    </operation>
+    <operation name="findByPKI_TIDS05">
+      <input message="tns:PKI_TIDS05_Request" />
+      <output message="tns:PKI_TIDS05_Response" />
+    </operation>
+    <operation name="findByExistExternalId">
+      <input message="tns:Exts_Request" />
+      <output message="tns:Exts_Response" />
+    </operation>
+    <operation name="findByEMATX">
+      <input message="tns:Wk_Ema_Request" />
+      <output message="tns:Wk_Ema_Response" />
+    </operation>
+  </portType>
+  <binding name="RecordGeneratorWebServiceSoapHttp" type="tns:RecordGeneratorWebServiceInterface">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <operation name="validateRule">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" parts="request" />
+      </input>
+      <output>
+        <soap:body use="literal" parts="response" />
+      </output>
+    </operation>
+    <operation name="getDepRecord">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" parts="request" />
+      </input>
+      <output>
+        <soap:body use="literal" parts="response" />
+      </output>
+    </operation>
+    <operation name="findByDoDEdi">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" parts="request" />
+      </input>
+      <output>
+        <soap:body use="literal" parts="response" />
+      </output>
+    </operation>
+    <operation name="findByPersonId">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" parts="request" />
+      </input>
+      <output>
+        <soap:body use="literal" parts="response" />
+      </output>
+    </operation>
+    <operation name="findByDependentId">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" parts="request" />
+      </input>
+      <output>
+        <soap:body use="literal" parts="response" />
+      </output>
+    </operation>
+    <operation name="findByPN_ID">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" parts="request" />
+      </input>
+      <output>
+        <soap:body use="literal" parts="response" />
+      </output>
+    </operation>
+    <operation name="findByICC_ID">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" parts="request" />
+      </input>
+      <output>
+        <soap:body use="literal" parts="response" />
+      </output>
+    </operation>
+    <operation name="findByBarCode39">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" parts="request" />
+      </input>
+      <output>
+        <soap:body use="literal" parts="response" />
+      </output>
+    </operation>
+    <operation name="findByPKI">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" parts="request" />
+      </input>
+      <output>
+        <soap:body use="literal" parts="response" />
+      </output>
+    </operation>
+    <operation name="findByFASC">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" parts="request" />
+      </input>
+      <output>
+        <soap:body use="literal" parts="response" />
+      </output>
+    </operation>
+    <operation name="findByPKI_TIDS05">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" parts="request" />
+      </input>
+      <output>
+        <soap:body use="literal" parts="response" />
+      </output>
+    </operation>
+    <operation name="findByExistExternalId">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" parts="request" />
+      </input>
+      <output>
+        <soap:body use="literal" parts="response" />
+      </output>
+    </operation>
+    <operation name="findBySecPnId">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" parts="request" />
+      </input>
+      <output>
+        <soap:body use="literal" parts="response" />
+      </output>
+    </operation>
+    <operation name="findByEMATX">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" parts="request" />
+      </input>
+      <output>
+        <soap:body use="literal" parts="response" />
+      </output>
+    </operation>
+  </binding>
+  <service name="RecordGeneratorWebService">
+    <port name="RecordGeneratorWebServicePort" binding="tns:RecordGeneratorWebServiceSoapHttp">
+      <soap:address location="https://pkidm.dmdc.osd.mil:443/appj/rbs/RecordGeneratorWebService" />
+    </port>
+  </service>
+</definitions>

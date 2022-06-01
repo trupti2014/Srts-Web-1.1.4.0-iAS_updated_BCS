@@ -1,0 +1,142 @@
+﻿@import '../../Base/Variables.scss';
+
+.confirm-order {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.confirm-order__form {
+    display: block;
+}
+
+.confirm-order__form__row {
+    display: block;
+    margin-bottom: 20px;
+    text-align: center;
+
+    &:nth-of-type(1) {
+        margin-top: 20px;
+    }
+
+    label {
+        display: inline-block;
+        width: 300px;
+        margin-right: 50px;
+        text-align: right;
+        font-size: 1.9rem;
+        font-weight: bold;
+    }
+}
+
+.confirm-order__form__row__cell {
+    display: inline-block;
+    text-align: left;
+    width: 500px;
+
+    input {
+        display: inline-block;
+        margin-right: 15px;
+        cursor: default;
+    }
+
+    p {
+        display: inline-block;
+    }
+
+    a {
+        display: inline-block;
+        text-decoration: underline;
+        color: $color-gray-dark;
+        cursor: pointer;
+    }
+
+    img {
+        vertical-align: middle;
+        width: 200px;
+        height: 50px;
+    }
+}
+
+.confirm-order__agreement {
+    position: relative;
+    display: table;
+    max-width: 600px;
+    margin: 30px auto 20px auto;
+
+    div {
+        vertical-align: top;
+        display: table-cell;
+        padding-right: 20px;
+
+        span {
+            position: absolute;
+            left: -100px;
+
+            &::before {
+                content: '*';
+                color: $color-secondary-dark-red;
+            }
+        }
+    }
+
+    input[type="checkbox"] {
+        display: block;
+        width: 25px;
+        height: 25px;
+        border: 1px solid black;
+    }
+
+    p {
+        display: table-cell;
+        vertical-align: top;
+        color: $color-gray;
+        font-weight: bold;
+    }
+}
+
+.confirm-order-edit {
+    margin-left: 15px;
+    color: $blue;
+}
+
+@media (max-width: 950px) {
+    .confirm-order {
+        margin: unset;
+    }
+
+    .confirm-order__form {
+        width: 300px;
+        margin: 0 auto;
+    }
+    .confirm-order__form__row {
+
+        label {
+            display: block;
+            width: 300px;
+            text-align: left;
+            font-size: 1.2rem;
+        }
+    }
+
+    .confirm-order__form__row__cell {
+        display: block;
+        width: 300px;
+
+        &:nth-of-type(1) {
+            text-align: center;
+        }
+    }
+
+    .confirm-order__agreement {
+        width: 300px;
+
+        div {
+            padding-right: 5px;
+
+            span {
+                left: 0;
+                top: -20px;
+            }
+        }
+    }
+}

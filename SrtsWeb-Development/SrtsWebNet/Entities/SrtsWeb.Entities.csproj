@@ -1,0 +1,170 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{3869C230-7A89-4A14-9298-769767554752}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SrtsWeb.Entities</RootNamespace>
+    <AssemblyName>SrtsWeb.Entities</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Srtsweb DEV|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>
+    </DocumentationFile>
+    <Prefer32Bit>false</Prefer32Bit>
+    <CodeAnalysisRuleSet>..\rsDeadCodeFinder.ruleset</CodeAnalysisRuleSet>
+    <RunCodeAnalysis>false</RunCodeAnalysis>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Srtsweb PRODTEST|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Srtstraining DEV|AnyCPU' ">
+    <OutputPath>bin\Srtstraining Debug\</OutputPath>
+    <DebugType>full</DebugType>
+    <DebugSymbols>true</DebugSymbols>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Srtstraining PRODTEST|AnyCPU' ">
+    <OutputPath>bin\Srtstraining Release\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Srtsweb PRODUCTION|AnyCPU'">
+    <OutputPath>bin\Srtsweb PRODUCTION\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Srtstraining PRODUCTION|AnyCPU'">
+    <OutputPath>bin\Srtstraining PRODUCTION\</OutputPath>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DataToObjectLib, Version=1.0.0.3, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\ThirdPartyDLL\DataToObjectLib.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AddressEntity.cs" />
+    <Compile Include="BmtEntity.cs" />
+    <Compile Include="BOSEntity.cs" />
+    <Compile Include="BulkOrderEntity.cs" />
+    <Compile Include="CACInfo.cs" />
+    <Compile Include="CheckOrderStatusEntity.cs" />
+    <Compile Include="ClinicDispenseRptEntity.cs" />
+    <Compile Include="ClinicOrdersRptEntity.cs" />
+    <Compile Include="CMSEntity.cs" />
+    <Compile Include="DD771Entity.cs" />
+    <Compile Include="DmdcIdentifiers.cs" />
+    <Compile Include="DmdcPerson.cs" />
+    <Compile Include="DmdcPersonnel.cs" />
+    <Compile Include="DmdcPerson_Flat.cs" />
+    <Compile Include="FrameImageEntity.cs" />
+    <Compile Include="FrameFamilyEntity.cs" />
+    <Compile Include="FrameImageImageAngleEntity.cs" />
+    <Compile Include="LabParameterEntity.cs" />
+    <Compile Include="FrameItemDefaultEntity.cs" />
+    <Compile Include="FrameRxRestrictionsEntity.cs" />
+    <Compile Include="JSpecsOrderDisplayEntity.cs" />
+    <Compile Include="JSpecsOrder.cs" />
+    <Compile Include="JSpecsOrderDetailsDisplayEntity.cs" />
+    <Compile Include="JSpecsSession.cs" />
+    <Compile Include="KeyValueEntity.cs" />
+    <Compile Include="ManageOrderEntity.cs" />
+    <Compile Include="OrderManagementEntity.cs" />
+    <Compile Include="FabricationParameterEntity.cs" />
+    <Compile Include="OrderTrackingEntity.cs" />
+    <Compile Include="PasswordHistory.cs" />
+    <Compile Include="ProfileSiteEntity.cs" />
+    <Compile Include="RuleOfBehavior.cs" />
+    <Compile Include="ReleaseNote.cs" />
+    <Compile Include="LmsFileEntity.cs" />
+    <Compile Include="OrderPriorityEntity.cs" />
+    <Compile Include="RankEntity.cs" />
+    <Compile Include="ReOrderEntity.cs" />
+    <Compile Include="ReprintEntity.cs" />
+    <Compile Include="SiteAdministratorEntity.cs" />
+    <Compile Include="UserAccountEntity.cs" />
+    <Compile Include="SitePrefFrameItemEntity.cs" />
+    <Compile Include="SitePrefGeneralEntity.cs" />
+    <Compile Include="SitePrefClinicGroupsEntity.cs" />
+    <Compile Include="SitePrefLabJustifications.cs" />
+    <Compile Include="EmailMessageEntity.cs" />
+    <Compile Include="SitePrefLabMTPEntity.cs" />
+    <Compile Include="ReleaseManagementUserGuideEntity.cs" />
+    <Compile Include="SitePrefRoutingOrdersEntity.cs" />
+    <Compile Include="SitePrefRxEntity.cs" />
+    <Compile Include="SitePrefOrderEntity.cs" />
+    <Compile Include="SitePrefOrderPriorityPreferencesEntity.cs" />
+    <Compile Include="StateEntity.cs" />
+    <Compile Include="StatusEntity.cs" />
+    <Compile Include="UnitEntity.cs" />
+    <Compile Include="SiteAddressEntity.cs" />
+    <Compile Include="OrderDisplayStatusEntity.cs" />
+    <Compile Include="Order711Entity.cs" />
+    <Compile Include="UserProfile.cs" />
+    <Compile Include="WoundedWarriorRptEntity.cs" />
+    <Compile Include="ClinicSummaryEntity.cs" />
+    <Compile Include="CostItemEntity.cs" />
+    <Compile Include="CustomErrorEntity.cs" />
+    <Compile Include="EMailAddressEntity.cs" />
+    <Compile Include="ExamEntity.cs" />
+    <Compile Include="FrameEntity.cs" />
+    <Compile Include="FrameItemEntity.cs" />
+    <Compile Include="GEyesSession.cs" />
+    <Compile Include="IdentificationNumbersEntity.cs" />
+    <Compile Include="IndividualEntity.cs" />
+    <Compile Include="LookupTableEntity.cs" />
+    <Compile Include="OrderDisplayEntity.cs" />
+    <Compile Include="OrderEntity.cs" />
+    <Compile Include="OrderFrameEntity.cs" />
+    <Compile Include="OrderStateEntity.cs" />
+    <Compile Include="OrderTransferEntity.cs" />
+    <Compile Include="PatientEntity.cs" />
+    <Compile Include="PhoneNumberEntity.cs" />
+    <Compile Include="PrescriptionEntity.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="PupillaryDistanceEntity.cs" />
+    <Compile Include="SiteCodeEntity.cs" />
+    <Compile Include="SRTSSession.cs" />
+    <Compile Include="SystemCommentsEntity.cs" />
+    <Compile Include="PersonnelEntity.cs" />
+    <Compile Include="TheaterLocationCodeEntity.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="IndividualTypeEntity.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

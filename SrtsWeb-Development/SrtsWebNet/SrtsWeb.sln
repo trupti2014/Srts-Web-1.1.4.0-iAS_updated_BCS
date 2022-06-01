@@ -1,0 +1,35 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.572
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SrtsWeb", "SrtsWeb.csproj", "{8C86BB47-4699-4430-A1F2-DA017FAC1B2B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8C86BB47-4699-4430-A1F2-DA017FAC1B2B}.Debug|Any CPU.ActiveCfg = Srtstraining PRODUCTION|Any CPU
+		{8C86BB47-4699-4430-A1F2-DA017FAC1B2B}.Debug|Any CPU.Build.0 = Srtstraining PRODUCTION|Any CPU
+		{8C86BB47-4699-4430-A1F2-DA017FAC1B2B}.Release|Any CPU.ActiveCfg = Srtstraining PRODUCTION|Any CPU
+		{8C86BB47-4699-4430-A1F2-DA017FAC1B2B}.Release|Any CPU.Build.0 = Srtstraining PRODUCTION|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {9C691D43-DF05-464F-AC58-F9BD78D97499}
+	EndGlobalSection
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 1
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = http://tilsadbvbm094.medb.ds.osd.mil:8080/tfs/tfs_sdd_collection
+		SccProjectUniqueName0 = SrtsWeb.csproj
+		SccProjectName0 = .
+		SccAuxPath0 = http://tilsadbvbm094.medb.ds.osd.mil:8080/tfs/tfs_sdd_collection
+		SccLocalPath0 = .
+		SccProvider0 = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+	EndGlobalSection
+EndGlobal

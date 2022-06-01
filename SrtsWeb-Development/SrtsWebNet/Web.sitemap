@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<!-- Note:  If node titles change, please edit ShowMenuTab() method in the srtsMaster.Master.cs file to reflect the change.-->
+
+<siteMap xmlns="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0">
+  <siteMapNode title="My SRTSweb" description="My SRTSweb Dashboard" resourceKey="1" roles="ClinicTech,ClinicClerk,HumanTech,LabTech,LabClerk,MgmtEnterprise" url="WebForms/Default.aspx">
+
+    <siteMapNode title="My SRTSweb" description="My SRTSweb" roles="ClinicTech,ClinicClerk,HumanTech,LabTech,LabClerk,MgmtEnterprise" url="WebForms/Default.aspx/home">
+      <siteMapNode title="My Message Center" description="Manage my messages" roles="ClinicTech,ClinicClerk,HumanTech,LabTech,LabClerk,MgmtEnterprise" url="WebForms/SrtsMessageCenter/MessageCenter.aspx" />
+      <!--<siteMapNode title="Report Manager" description="Manage Reports" roles="ClinicAdmin,ClinicTech,ClinicProvider,HumanTech,LabMail,LabTech,LabClerk,LabAdmin,MgmtEnterprise,MgmtAdmin,MgmtDataMgmt" url="WebForms/Admin/SrtsReportsManager.aspx" />-->
+      <siteMapNode title="Release Notes" description="Display of all release notes" roles="ClinicAdmin,ClinicTech,ClinicProvider,HumanTech,LabMail,LabTech,LabClerk,LabAdmin,MgmtEnterprise,MgmtAdmin,MgmtDataMgmt" url="WebForms/Public/ReleaseNotes.aspx" />
+    </siteMapNode>  
+ 
+    <siteMapNode visibility="rolebased" title="Reports" description="Manage Report and Label Printing" resourceKey="6" roles="ClinicAdmin,ClinicTech,ClinicProvider,HumanTech,LabMail,LabTech,LabClerk,LabAdmin,MgmtEnterprise,MgmtAdmin,MgmtDataMgmt">
+      <siteMapNode title="Manage Reports" description="Print Reports" roles="ClinicAdmin,ClinicTech,ClinicProvider,HumanTech,LabMail,LabTech,LabClerk,LabAdmin,MgmtEnterprise,MgmtAdmin,MgmtDataMgmt" url="WebForms/Admin/SrtsReportsManager.aspx?id=1" />
+      <siteMapNode title="Manage Labels" description="Print Shipping Labels" roles="ClinicAdmin,ClinicTech,ClinicProvider,HumanTech,LabMail,LabTech,LabClerk,LabAdmin,MgmtEnterprise,MgmtAdmin,MgmtDataMgmt" url="WebForms/Admin/SrtsReportsManager.aspx?id=2" />
+    </siteMapNode>   
+    
+    <siteMapNode visibility="rolebased" title="Patients" description="Manage Patients" resourceKey="2" roles="HumanTech,ClinicProvider,ClinicTech,ClinicClerk,LabClerk,LabTech">
+      <siteMapNode title="Patient Search"  description="Search for Patient" resourceKey="search" roles="HumanTech,ClinicProvider,ClinicTech,ClinicClerk,LabClerk,LabTech" url="WebForms/SrtsWebClinic/Patients/ManagePatients.aspx/search" />
+      <siteMapNode title="Patient Add" description="Add New Patient" resourceKey="add" roles="HumanTech,ClinicTech,ClinicClerk,LabClerk" url="WebForms/SrtsPerson/AddPerson.aspx" />
+      <!--<siteMapNode title="Patient Add" description="Add New Patient" resourceKey="add" roles="HumanTech,ClinicTech,ClinicClerk,LabClerk" url="WebForms/SrtsWebClinic/Patients/ManagePatients.aspx/add" />-->
+      <siteMapNode title="BMT Upload" description="Upload data from csv file" roles="ClinicTech,ClinicClerk" url="WebForms/SrtsWebClinic/Patients/BmtUpload.aspx" />
+    </siteMapNode>
+
+    <siteMapNode visibility="rolebased" title="Manage Orders" description="Manage Clinic Orders" roles="HumanTech,ClinicTech,ClinicClerk,ClinicProivider">
+      <siteMapNode title="Clinic Order Management" description="Manage Check-In/Dispense/Problem/Overdue Orders" roles="HumanTech,ClinicTech,ClinicClerk" url="WebForms/SrtsWebClinic/Orders/ManageOrders.aspx#checkin" />
+    </siteMapNode>
+
+    <siteMapNode visibility="rolebased" title="Lab Orders" description="Manage Lab Orders" roles="LabClerk,LabTech,LabMail">
+      <siteMapNode title="Lab Order Lookup" description="View Order Detail" roles="LabClerk, LabTech" url="WebForms/SrtsWebLab/LabOrderLookup.aspx" />
+      <siteMapNode title="Lab Order Management" description="Check-In or Dispense Lab Orders" roles="LabClerk" url="WebForms/SrtsWebLab/ManageOrdersLab.aspx#checkin" />
+    </siteMapNode>
+    
+    <siteMapNode visibility="rolebased" title="Administration" description="Administrative Actions" resourceKey="4" roles="MgmtEnterprise,MgmtAdmin,MgmtDataMgmt,LabAdmin,HumanAdmin,ClinicAdmin,TrainingAdmin">
+      <siteMapNode title="Facilities Manager" description="Manage Clinics and Lab Facilities" roles="MgmtEnterprise,MgmtAdmin,MgmtDataMgmt,ClinicAdmin,TrainingAdmin" url="WebForms/Admin/SiteCodeManagement.aspx" />
+      <siteMapNode title="Site Preferences" description="Manage Clinic Defaults" roles="ClinicAdmin,LabAdmin,MgmtEnterprise" url="WebForms/Admin/SitePreferences.aspx" />
+      <siteMapNode title="User Manager" description="Administrative Actions Manage All User Accounts" roles="MgmtEnterprise,MgmtAdmin,LabAdmin,HumanAdmin,ClinicAdmin,TrainingAdmin" url="WebForms/Admin/SrtsUserManager.aspx" />
+      <siteMapNode title="Account Administration" description="Administrative Actions Manage All User Accounts" roles="MgmtEnterprise,MgmtAdmin,LabAdmin,HumanAdmin,ClinicAdmin,TrainingAdmin" url="WebForms/Admin/SrtsAccountManager.aspx" />
+      <siteMapNode title="Create New User" description="New User Creation Wizard" roles="MgmtEnterprise,MgmtAdmin,LabAdmin,HumanAdmin,ClinicAdmin,TrainingAdmin" url="WebForms/Admin/UserManagement.aspx" />
+      <siteMapNode title="CMS Manager" description="Administrative Actions Manage Site Content" roles="MgmtEnterprise,ClinicAdmin,LabAdmin,HumanAdmin,MgmtAdmin,TrainingAdmin" url="WebForms/Admin/SrtsCMSManager.aspx" />
+      <siteMapNode title="Individual Search" description="" roles="MgmtEnterprise,LabAdmin,HumanAdmin,ClinicAdmin,TrainingAdmin" url="WebForms/SrtsWebClinic/Individuals/IndividualSearch.aspx" />
+      <siteMapNode title="Add Individual" description="Manage Individual" roles="MgmtEnterprise,LabAdmin,HumanAdmin,ClinicAdmin,TrainingAdmin" url="WebForms/SrtsPerson/AddPerson.aspx/add" />
+      <!--<siteMapNode title="Add Individual" description="Manage Individual" roles="MgmtEnterprise,LabAdmin,HumanAdmin,ClinicAdmin,TrainingAdmin" url="WebForms/SrtsWebClinic/Individuals/IndividualManagementAdd.aspx" />-->
+      <siteMapNode title="Frame Management" description="Manage/Add Frames" roles="MgmtDataMgmt,MgmtEnterprise" url="WebForms/Admin/FrameManagement.aspx" />
+      <siteMapNode title="Data Management (Lookup Types)" description="Manage Lookup Types" roles="MgmtDataMgmt,MgmtEnterprise" url="WebForms/Admin/ManageLookUpTypes.aspx" />
+      <siteMapNode title="Admin Tool Kit" description="SRTS team management tools" roles="MgmtEnterprise" url="WebForms/Admin/SrtsAdminTools.aspx" />
+      <siteMapNode title="DMDC Getter" description="Look up people in DMDC by SSN or DOD ID" roles="MgmtEnterprise" url="WebForms/Admin/DmdcGetter.aspx" />
+      <siteMapNode title="LMS File Generator" description="Create LMS File Output" roles="MgmtEnterprise" url="WebForms/Admin/LmsFileGenerator.aspx" />
+      <siteMapNode title="Error Log" description="View SRTSweb Error Logs" roles="MgmtEnterprise" url="/elmah.axd" />
+    </siteMapNode>
+
+    <siteMapNode visibility="rolebased" title="Management" description="Management Enterprise Actions" resourceKey="5" roles="MgmtEnterprise">
+      <siteMapNode title="Event Log Tracing" description="Manage Event Log Tracing" roles="MgmtEnterprise" url="WebForms/Admin/ManageEventLogTracing.aspx" />
+      <siteMapNode title="Site Administrators" description="Lookup Site Administrators" roles="MgmtEnterprise" url="WebForms/Admin/SiteAdministrators.aspx" />
+      <siteMapNode title="Release Management" description="Manage Release" roles="MgmtEnterprise" url="WebForms/Admin/ReleaseManagement.aspx" />
+
+      <siteMapNode title="Manage Frames" description="Manage Frames" roles="MgmtEnterprise" url="WebForms/Admin/ManageFrames.aspx" />
+      <!--<siteMapNode title="Release Management" description="Manage Release Items" roles="MgmtEnterprise" url="WebForms/Admin/ReleaseManagement.aspx" />-->
+      <!--<siteMapNode title="Event Log Tracing" description="Manage Event Log Tracing" roles="MgmtEnterprise" url="WebForms/Admin/ManageEventLogTracing.aspx" />-->
+    </siteMapNode>
+
+  </siteMapNode>
+</siteMap>

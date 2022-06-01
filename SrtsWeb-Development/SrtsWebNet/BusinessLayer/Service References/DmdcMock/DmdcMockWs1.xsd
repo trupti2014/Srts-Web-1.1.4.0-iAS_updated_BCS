@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/SrtsWebServices.Entities.DMDC" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/SrtsWebServices.Entities.DMDC" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:complexType name="DmdcPersonWs">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Email" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="EnterpriseUserName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="MailingAddress1" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="MailingAddress2" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="MailingCity" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="MailingCountry" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="MailingState" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="MailingZip" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="MailingZipExtension" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="PhoneNumber" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="PnCadencyName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="PnDateOfBirth" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="PnDeathCalendarDate" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="PnFirstName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="PnLastName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="PnMiddleName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="_DmdcIdentifier" nillable="true" type="tns:ArrayOfDmdcIdentifiersWs" />
+      <xs:element minOccurs="0" name="_DmdcPersonnel" nillable="true" type="tns:DmdcPersonnelWs" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="DmdcPersonWs" nillable="true" type="tns:DmdcPersonWs" />
+  <xs:complexType name="ArrayOfDmdcIdentifiersWs">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="DmdcIdentifiersWs" nillable="true" type="tns:DmdcIdentifiersWs" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfDmdcIdentifiersWs" nillable="true" type="tns:ArrayOfDmdcIdentifiersWs" />
+  <xs:complexType name="DmdcIdentifiersWs">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="MatchReasonCode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="PnId" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="PnIdType" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="DmdcIdentifiersWs" nillable="true" type="tns:DmdcIdentifiersWs" />
+  <xs:complexType name="DmdcPersonnelWs">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="AttachedUnitIdCode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="OrganizationCode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="PayGrade" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="PayPlanCode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="PnCategoryCode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="PnEntitlementTypeCode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="PnProjectedEndDate" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="Rank" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ServiceCode" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="DmdcPersonnelWs" nillable="true" type="tns:DmdcPersonnelWs" />
+</xs:schema>

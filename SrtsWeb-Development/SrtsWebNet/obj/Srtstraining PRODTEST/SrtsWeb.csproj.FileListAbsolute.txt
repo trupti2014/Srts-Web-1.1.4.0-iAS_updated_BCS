@@ -1,0 +1,2 @@
+C:\Users\fpate\Downloads\SrtsWeb-Development-1.1.4.0-iAS\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\obj\Srtstraining PRODTEST\SrtsWeb.csprojAssemblyReference.cache
+C:\Users\fpate\Downloads\SrtsWeb-Development-1.1.4.0-iAS\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\obj\Srtstraining PRODTEST\SrtsWeb.csproj.CoreCompileInputs.cache

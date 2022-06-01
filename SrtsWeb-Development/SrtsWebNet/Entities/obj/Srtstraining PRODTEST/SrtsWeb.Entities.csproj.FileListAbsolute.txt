@@ -1,0 +1,6 @@
+C:\Users\fpate\Downloads\SrtsWeb-Development-1.1.4.0-iAS\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\Entities\bin\Srtstraining Release\SrtsWeb.Entities.dll
+C:\Users\fpate\Downloads\SrtsWeb-Development-1.1.4.0-iAS\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\Entities\bin\Srtstraining Release\DataToObjectLib.dll
+C:\Users\fpate\Downloads\SrtsWeb-Development-1.1.4.0-iAS\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\Entities\obj\Srtstraining PRODTEST\SrtsWeb.Entities.csprojAssemblyReference.cache
+C:\Users\fpate\Downloads\SrtsWeb-Development-1.1.4.0-iAS\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\Entities\obj\Srtstraining PRODTEST\SrtsWeb.Entities.csproj.CoreCompileInputs.cache
+C:\Users\fpate\Downloads\SrtsWeb-Development-1.1.4.0-iAS\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\Entities\obj\Srtstraining PRODTEST\SrtsWeb.Entities.csproj.CopyComplete
+C:\Users\fpate\Downloads\SrtsWeb-Development-1.1.4.0-iAS\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\Entities\obj\Srtstraining PRODTEST\SrtsWeb.Entities.dll

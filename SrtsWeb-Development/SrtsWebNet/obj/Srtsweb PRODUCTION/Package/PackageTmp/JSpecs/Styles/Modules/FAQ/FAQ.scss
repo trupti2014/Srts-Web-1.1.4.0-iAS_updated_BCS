@@ -1,0 +1,90 @@
+﻿@import '../../Base/Variables.scss';
+@import '../../Base/Mixins.scss';
+
+.FAQs {
+    @include flexbox();
+    @include flex-direction(column);
+    width: 100%;
+}
+
+.FAQ {
+    margin: 5px 0;
+}
+
+.FAQ__input {
+    position: absolute;
+    left: -9999px;
+
+    overflow: hidden;
+}
+
+.FAQ__question:before {
+    content: 'Q: ';
+}
+
+.FAQ__question {
+    position: relative;
+    display: block;
+    padding: 10px 50px 10px 15px;
+    border: 1px solid $color-primary-darker;
+    
+    font-weight: bold;
+    
+    cursor: pointer;
+}
+
+.FAQ__svg-container {
+    position: absolute;
+    right: 0;
+    top: 0;
+
+    height: 100%;
+    margin: auto;
+
+    text-align: center;
+
+    svg {
+        width: 30px;
+        height: 100%;
+
+        path {
+            fill: $color-primary-darker;
+        }
+    }
+}
+
+.FAQ__answer-box {
+    padding: 0px 50px 0px 15px;
+}
+
+.FAQ__answer:before {
+    content: "A: ";
+}
+
+.FAQ__answer {
+    font-size: 0;
+}
+
+.FAQ__input:checked ~ {
+
+    .FAQ__question {
+        color: $color-white;
+        background: $color-primary-darker;
+
+        .FAQ__svg-container {
+            transform: rotate(180deg);
+
+            svg path {
+                fill: $color-white;
+            }
+        }
+    }
+
+    .FAQ__answer-box {
+
+        .FAQ__answer {
+            font-size: 1rem;
+            font-weight: bold;
+        }
+    }
+}

@@ -1,0 +1,187 @@
+﻿@import '../../Base/Variables.scss';
+
+$profile__module__width: 400px;
+$profile__module__height: 400px;
+$profile__module__marginH: 10px;
+$profile__width: ($profile__module__width + ($profile__module__marginH * 2) + 2) * 3;
+
+.profile {
+    position: relative;
+    display: table;
+    max-width: $profile__width;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.profile__required-text {
+    position: absolute;
+    bottom: 30px;
+    margin: 0;
+    font-weight: bold;
+
+    &::before {
+        content: '*';
+        color: $color-secondary-darkest-red;
+    }
+}
+
+.profile__module {
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+    max-width: $profile__module__width;
+    height: $profile__module__height;
+    text-align: center;
+
+    &:nth-of-type(2) {
+        margin: 0 $profile__module__marginH;
+    }
+}
+
+.profile__module__heading__container {
+    font-size: .7rem;
+}
+
+.profile__module__heading { // This is very specific to allowing the title text to be centered, and the number to be to the left.
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 5px;
+}
+
+.profile__module__heading__number {
+    position: absolute;
+    right: 100%;
+    top: -2px;
+    margin-right: 10px;
+    display: inline-block;
+    padding: 8px;
+    border-radius: 50%;
+    border: 1px solid $color-primary-darker;
+    text-align: center;
+    font-weight: bold;
+    font-size: .7rem;
+}
+
+.profile__module__content {
+    box-sizing: border-box;
+    height: 345px;
+    padding: 20px;
+    border: 1px solid $color-gray-light;
+    text-align: left;
+}
+
+.profile__module__content__info {
+    font-weight: bold;
+}
+
+.profile__button {
+    position: absolute;
+    bottom: 45px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.profile__nav {
+    margin-top: 25px;
+    text-align: right;
+
+    & a:nth-child(1), & a:nth-child(3) {
+        display: none;
+    }
+
+    a {
+        display: inline-block;
+    }
+}
+
+.profile__nav__state {
+    display: inline-block;
+}
+
+.profile__nav__state__circle {
+    display: none;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    border: 1px solid black;
+
+    &.active {
+        background: black;
+    }
+}
+
+@media (max-width: #{$profile__width + 90}) { // 45 * 2 from content margin
+    .profile__required-text {
+        top: -20px;
+    }
+
+    .profile__module {
+        border: 1px solid $color-gray-light;
+
+        &:nth-of-type(2), &:nth-of-type(3) {
+            display: none;
+        }
+
+        &:nth-of-type(2) {
+            margin: 0;
+        }
+    }
+
+    .profile__module__content {
+        border: unset;
+    }
+
+    .profile__nav {
+        table-layout: fixed;
+        display: table;
+        border-collapse: collapse;
+        width: 100%;
+        max-width: 400px;
+        text-align: center;
+
+        & a:nth-child(1), & a:nth-child(3) {
+            display: table-cell;
+        }
+
+        & a:nth-child(1) {
+            float: left;
+        }
+
+        & a:nth-child(3) {
+            float: right;
+        }
+
+        & a:nth-child(4) {
+            display: none;
+        }
+
+        a {
+            display: table-cell;
+        }
+    }
+
+    .profile__nav__state {
+        display: table-cell;
+        vertical-align: middle;
+    }
+
+    .profile__nav__state__circle {
+        display: inline-block;
+        width: 10px;
+        height: 10px;
+        margin: 0 10px;
+        border-radius: 50%;
+        border: 1px solid black;
+
+        &.active {
+            background: black;
+        }
+    }
+}
+
+@media (max-width: 405px) {
+    .profile__nav__state__circle {
+        margin: 0 4px;
+    }
+}

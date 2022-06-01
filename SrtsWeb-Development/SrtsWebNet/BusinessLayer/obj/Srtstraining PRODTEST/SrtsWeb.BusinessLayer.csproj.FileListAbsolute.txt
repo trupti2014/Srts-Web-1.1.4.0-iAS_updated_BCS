@@ -1,0 +1,6 @@
+C:\Users\fpate\Downloads\SrtsWeb-Development-1.1.4.0-iAS\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\BusinessLayer\obj\Srtstraining PRODTEST\SrtsWeb.BusinessLayer.csprojAssemblyReference.cache
+C:\Users\fpate\Downloads\SrtsWeb-Development-1.1.4.0-iAS\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\BusinessLayer\obj\Srtstraining PRODTEST\SrtsWeb.BusinessLayer.csproj.ResolveComReference.cache
+C:\Users\fpate\Downloads\SrtsWeb-Development-1.1.4.0-iAS\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\BusinessLayer\obj\Srtstraining PRODTEST\SrtsWeb.BusinessLayer.Properties.Resources.resources
+C:\Users\fpate\Downloads\SrtsWeb-Development-1.1.4.0-iAS\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\BusinessLayer\obj\Srtstraining PRODTEST\SrtsWeb.BusinessLayer.csproj.GenerateResource.cache
+C:\Users\fpate\Downloads\SrtsWeb-Development-1.1.4.0-iAS\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\BusinessLayer\obj\Srtstraining PRODTEST\SrtsWeb.BusinessLayer.csproj.CoreCompileInputs.cache
+C:\Users\fpate\Downloads\SrtsWeb-Development-1.1.4.0-iAS\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\BusinessLayer\obj\Srtstraining PRODTEST\SrtsWeb.BusinessLayer.dll

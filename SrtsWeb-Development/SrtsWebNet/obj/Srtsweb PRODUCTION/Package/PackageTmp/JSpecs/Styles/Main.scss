@@ -1,0 +1,51 @@
+﻿// Libraries and helpers
+// Visual studio needs to install compileSass extension to compile sass files to min.css
+// ---------
+
+
+// Variables
+// ---------
+@import 'Base/Variables.scss';
+@import 'Base/Mixins.scss';
+
+// Reset and base files
+// --------------------
+@import 'Base/Normalize.css';
+@import 'Base/Base.min.css';
+
+// Layouts
+// -------
+@import 'Layouts/Layouts.min.css';
+
+// Modules
+// ----------
+@import 'Modules/Navigation/Navigation.min.css';
+@import 'Modules/Loader/Loader.min.css';
+@import 'Modules/Login/Login.min.css';
+@import 'Modules/Title/Title.min.css';
+@import 'Modules/Orders/Orders.min.css';
+@import 'Modules/ConfirmOrder/ConfirmOrder.min.css';
+@import 'Modules/FAQ/FAQ.min.css';
+@import 'Modules/Profile/Profile.min.css';
+@import 'Modules/Modal/Modal.min.css';
+@import 'Modules/Elements/Elements.min.css';
+
+// Other modules as necessary
+
+// State
+// ------
+@import 'State/State.min.css';
+
+// Utilities
+// ----------
+
+
+// Shame
+// -----
+@import 'Theme/Shame.min.css';
+
+// CSS Styles for Master page components
+// -------------------------------------
+#srtsLink {
+    width: auto;
+}

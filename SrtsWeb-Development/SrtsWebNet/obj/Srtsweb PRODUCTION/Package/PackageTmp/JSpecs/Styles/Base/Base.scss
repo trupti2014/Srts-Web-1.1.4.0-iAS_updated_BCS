@@ -1,0 +1,46 @@
+﻿@import 'Variables.scss';
+
+html {
+    height: 100%;
+    color: $color-primary-darker;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+// Text, p, a, h1, h2, h3, h4, h5
+a {
+    color: $color-white;
+    text-decoration: none;
+}
+
+// Select, and input
+select, input {
+    padding: 5px 0px 5px 10px;
+    border-radius: 3px;
+    border: 1px solid $color-primary-darker;
+    color: $color-gray;
+}
+
+// Tables
+table {
+    border-collapse: collapse;
+}
+
+table, td, th {
+    border: 1px solid $color-gray-light;
+}
+
+td {
+    color: gray;
+    text-align: center;
+}
+
+@media (max-width: 500px) {
+
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    h2 {
+        font-size: 1.2rem;
+    }
+}

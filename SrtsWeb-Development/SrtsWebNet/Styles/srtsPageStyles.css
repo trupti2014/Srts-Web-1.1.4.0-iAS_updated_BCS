@@ -1,0 +1,654 @@
+﻿/*#region Alerts */
+
+#srtsAlerts
+{
+	/*position:absolute;*/
+	margin:2px 0px 0px 0px;
+	min-height:25px;
+	width:1189px;
+	text-align:center;
+	border-bottom:1px solid #C6E7FF;
+}
+#srtsAlerts .noalert
+{
+	  background-color:#E2F2FE;
+	  color:#004994;
+}
+
+/*#endregion Alerts*/
+
+/*#region Breadcrumbs */
+
+#divBreadCrumbs, #divBreadCrumbsBottom {
+    padding: 0px;
+    width: 1150px;
+    background-color: #ffffff;
+    height: 60px;
+    text-align: left;
+    margin: 0px auto;
+    color: #782E1E;
+}
+
+    #divBreadCrumbs a, #divBreadCrumbsBottom a {
+        color: #782E1E;
+        text-decoration: none;
+}
+
+#divBreadCrumbsBottom {
+    margin-bottom: 20px;
+}
+
+    #divBreadCrumbs .divBreadCrumbscenter, #divBreadCrumbsBottom .divBreadCrumbscenter {
+        background-image: url('../Styles/images/img_Breadcrumbs_bk.png');
+        background-repeat: repeat-x;
+        background-position: 0px 0px;
+        width: auto;
+        height: 60px;
+        padding: 0px 0px 0px 0px;
+}
+
+/*#endregion*/
+
+/*#region Main Menu */
+
+#divMainMenu {
+    z-index: 999 !important;
+    margin: 0px 0px 0px 25px;
+    padding: 0px 0px 0px 0px;
+    width: 1100px;
+    overflow: visible;
+    float: left;
+}
+
+    #divMainMenu .home {
+        position: absolute;
+        background-image: url("../Styles/images/img_tab_MySrtsWeb.png");
+        background-repeat: no-repeat;
+        background-position: -1px 0px;
+        height: 24px;
+        width: 50px;
+        margin-top: 0px;
+        padding: 16px 0px 0px 0px;
+        z-index: 999 !important;
+}
+
+.MasterMenu
+{
+	margin-top:0px;
+	overflow:visible;
+	display:inline;
+	background-color:transparent;
+	text-align:left;
+	height:25px;
+}
+
+.MasterMenu ul
+{
+	padding:0;
+	margin:0;
+    z-index: 9998 !important;
+}
+
+.MasterMenu li /* all list items */
+{
+	width: 200px;
+	background: transparent;
+	line-height:40px;
+	padding:0;
+	margin:0;
+}
+
+.MasterMenu a, /* all anchors and spans (nodes with no link) */
+.MasterMenu span
+{
+	color: #2E72AA;
+	margin:0px;
+	background-image:url("../Styles/images/img_tab_notSelected.png");
+	background-repeat:no-repeat;
+	background-position:0px 0px;
+	text-align:center;
+	width:202px;
+	/*padding:0px 0px 40px 0px; /* IE8 and below * ! important do not remove */
+    outline-width: 0px;
+}
+
+.MasterMenu li:hover a, /* hovered text */
+.MasterMenu li:hover span
+{
+		background-image:url("../Styles/images/img_tab_Selected.png");
+		background-position:-1px 0px;
+		font-size:1.1em;
+		color: #782E1E !important;
+			outline-width: 0px;
+}
+
+.MasterMenu li.AspNet-Menu-Hover a,
+.MasterMenu li.AspNet-Menu-Hover span,
+.MasterMenu li:hover li:hover a,
+.MasterMenu li:hover li:hover span,
+.MasterMenu li.AspNet-Menu-Hover li.AspNet-Menu-Hover a,
+.MasterMenu li.AspNet-Menu-Hover li.AspNet-Menu-Hover span,
+.MasterMenu li:hover li:hover li:hover a,
+.MasterMenu li:hover li:hover li:hover span,
+.MasterMenu li.AspNet-Menu-Hover li.AspNet-Menu-Hover li.AspNet-Menu-Hover a,
+.MasterMenu li.AspNet-Menu-Hover li.AspNet-Menu-Hover li.AspNet-Menu-Hover span
+{
+	color: #782E1E !important;
+	background-image:url("../Styles/images/img_note22.png") !important;
+	background-repeat:no-repeat;
+	background-position:3px 3px;
+	outline-width: 0px;
+}
+
+.MasterMenu .AspNet-Menu-Selected /* this tier is selected */
+{
+		background-image:url("../Styles/images/img_tab_Selected.png");
+		color: #782E1E !important;
+		background-position:-1px 0px;
+			outline-width: 0px;
+}
+
+.MasterMenu .AspNet-Menu-ChildSelected /* a tier below this one is selected */
+{
+		background-image:url("../Styles/images/img_tab_Selected.png");
+		color: #782E1E !important;
+		background-position:-1px 0px;
+			outline-width: 0px;
+}
+
+.MasterMenu .AspNet-Menu-ParentSelected /* a tier above this one is selected */
+{
+}
+.MasterMenu li.AspNet-Menu-Leaf a, /* leaves */
+.MasterMenu li.AspNet-Menu-Leaf span
+{
+	position:relative;
+	float:left;
+	height:30px;
+	clear:both;
+	z-index:200;
+	background-image: none !important;
+	background-color:#ffffff;
+	text-align:left !important;
+	color:#004994 !important;
+	line-height:26px;
+	width:170px;
+	padding:5px 5px 5px 23px;
+	margin-left:2px;
+	font-weight:normal !important;
+	font-variant:normal;
+	font-size:1em;
+	border-bottom:1px solid #E7CFAD;
+	border-left:solid 1px #C5A051;
+	border-right:solid 1px #C5A051;
+}
+
+.MasterMenu ul.AspNet-Menu ul  /* Tier 2  drop down menu*/
+{
+	display:none;
+	background-color:transparent;
+	padding:0px 0px 29px 0px;
+	margin:-1px 0px 5px 0px;
+	text-align:left;
+	width:202px;
+	background-image:url("../Styles/images/img_tabback_beige_btm.png");
+	background-position:2px bottom;
+	background-repeat:no-repeat;
+ }
+
+ .MasterMenu ul.AspNet-Menu ul li /* Tier 2  drop down menu list items*/
+{
+		background-image:none !important;
+}
+
+#divMainMenuRptViewer {
+    position: absolute;
+    z-index: 220 !important;
+    margin: -10px 0px 0px 40px;
+    height: 100px;
+    padding: 0px 0px 0px 0px;
+    width: 1100px;
+    overflow: visible;
+}
+
+    #divMainMenuRptViewer .home {
+        position: absolute;
+        background-image: url("../Styles/images/img_tab_MySrtsWeb.png");
+        background-repeat: no-repeat;
+        background-position: -1px 0px;
+        height: 24px;
+        width: 50px;
+        margin-top: 0px;
+        padding: 16px 0px 0px 0px;
+    z-index: 9999;
+}
+
+.MasterMenuRptViewer {
+    margin-top: 0px;
+    overflow: visible;
+    display: inline;
+    background-color: transparent;
+    text-align: left;
+    height: 15px;
+}
+
+    .MasterMenuRptViewer ul {
+        padding: 0;
+        margin: 0;
+        z-index: 222 !important;
+}
+
+    .MasterMenuRptViewer li /* all list items */ {
+	width: 200px;
+	background: transparent;
+        line-height: 0px;
+        padding: 0;
+        margin: 0;
+}
+
+.MasterMenuRptViewer a, /* all anchors and spans (nodes with no link) */
+    .MasterMenuRptViewer span {
+	color: #2E72AA;
+        margin: 0px;
+        background-image: url("../Styles/images/img_tab_notSelectedmini.png");
+        background-repeat: no-repeat;
+        background-position: 0px 0px;
+        text-align: center;
+        width: 202px;
+        padding: 20px 0px 40px 0px; /* IE8 and below * ! important do not remove */
+    outline-width: 0px;
+}
+
+.MasterMenuRptViewer li:hover a, /* hovered text */
+    .MasterMenuRptViewer li:hover span {
+        background-image: url("../Styles/images/img_tab_Selected.png");
+        background-position: -1px 0px;
+        font-size: 1.1em;
+		color: #782E1E !important;
+			outline-width: 0px;
+}
+
+.MasterMenuRptViewer li.AspNet-Menu-Hover a,
+.MasterMenuRptViewer li.AspNet-Menu-Hover span,
+.MasterMenuRptViewer li:hover li:hover a,
+.MasterMenuRptViewer li:hover li:hover span,
+.MasterMenuRptViewer li.AspNet-Menu-Hover li.AspNet-Menu-Hover a,
+.MasterMenuRptViewer li.AspNet-Menu-Hover li.AspNet-Menu-Hover span,
+.MasterMenuRptViewer li:hover li:hover li:hover a,
+.MasterMenuRptViewer li:hover li:hover li:hover span,
+.MasterMenuRptViewer li.AspNet-Menu-Hover li.AspNet-Menu-Hover li.AspNet-Menu-Hover a,
+    .MasterMenuRptViewer li.AspNet-Menu-Hover li.AspNet-Menu-Hover li.AspNet-Menu-Hover span {
+	color: #782E1E !important;
+        background-image: url("../Styles/images/img_note22.png") !important;
+        background-repeat: no-repeat;
+        background-position: 3px 3px;
+	outline-width: 0px;
+}
+
+    .MasterMenuRptViewer .AspNet-Menu-Selected /* this tier is selected */ {
+        background-image: url("../Styles/images/img_tab_Selected.png");
+		color: #782E1E !important;
+        background-position: -1px 0px;
+			outline-width: 0px;
+}
+
+    .MasterMenuRptViewer .AspNet-Menu-ChildSelected /* a tier below this one is selected */ {
+        background-image: url("../Styles/images/img_tab_Selected.png");
+		color: #782E1E !important;
+        background-position: -1px 0px;
+			outline-width: 0px;
+}
+
+    .MasterMenuRptViewer .AspNet-Menu-ParentSelected /* a tier above this one is selected */ {
+}
+
+.MasterMenuRptViewer li.AspNet-Menu-Leaf a, /* leaves */
+    .MasterMenuRptViewer li.AspNet-Menu-Leaf span {
+        position: relative;
+        float: left;
+        height: 30px;
+        clear: both;
+        z-index: 200;
+	background-image: none !important;
+        background-color: #ffffff;
+        text-align: left !important;
+        color: #004994 !important;
+        line-height: 26px;
+        width: 170px;
+        padding: 5px 5px 5px 23px;
+        margin-left: 2px;
+        font-weight: normal !important;
+        font-variant: normal;
+        font-size: 1em;
+        border-bottom: 1px solid #E7CFAD;
+        border-left: solid 1px #C5A051;
+        border-right: solid 1px #C5A051;
+}
+
+    .MasterMenuRptViewer ul.AspNet-Menu ul /* Tier 2  drop down menu*/ {
+        display: none;
+        background-color: transparent;
+        padding: 0px 0px 29px 0px;
+        margin: -1px 0px 5px 0px;
+        text-align: left;
+        width: 202px;
+        background-image: url("../Styles/images/img_tabback_beige_btm.png");
+        background-position: 2px bottom;
+        background-repeat: no-repeat;
+ }
+
+        .MasterMenuRptViewer ul.AspNet-Menu ul li /* Tier 2  drop down menu list items*/ {
+            background-image: none !important;
+}
+
+/*#endregion*/
+
+/*#region ContainerBeige */
+
+/*#divContainerBeige, #divContainerBeige2, #divContainerBeige3, #divContainerBeige4 {
+    float: left;
+    width: 100%;
+    clear: both;
+	/*border-top:1px solid #E7CFAD;
+    padding: 15px 0px;
+}*/
+
+    /*#divContainerBeige h1, #divContainerBeige2 h1, #divContainerBeige3 h1, #divContainerBeige4 h1 {
+        padding: 10px;
+        font-size: 1.1em;
+}*/
+
+    /*#divContainerBeige .containertop, #divContainerBeige .containertop, #divContainerBeige2 .containertop, #divContainerBeige3 .containertop, #divContainerBeige4 .containertop {
+        height: 20px;
+        width: 100%;
+        background-image: url("../Styles/images/img_box_tcenter.png");
+        background-repeat: repeat-x;
+        background-position: 0px 0px;
+}*/
+
+    /*#divContainerBeige .containertop_right, #divContainerBeige2 .containertop_right, #divContainerBeige3 .containertop_right, #divContainerBeige4 .containertop_right {
+        float: right;
+        height: 20px;
+        width: 23px;
+        background-image: url("../Styles/images/img_box_tright.png");
+        background-repeat: no-repeat;
+        background-position: 0px 0px;
+}*/
+
+    /*#divContainerBeige .containertop_left, #divContainerBeige2 .containertop_left, #divContainerBeige3 .containertop_left, #divContainerBeige4 .containertop_left {
+        float: left;
+        height: 20px;
+        width: 23px;
+        background-image: url("../Styles/images/img_box_tleft.png");
+        background-repeat: no-repeat;
+        background-position: 0px 0px;
+}*/
+
+    /*#divContainerBeige .container_inner, #divContainerBeige2 .container_inner, #divContainerBeige3 .container_inner, #divContainerBeige4 .container_inner {
+        margin: 0px 0px 0px 0px;
+        padding: 10px 0px;
+        border-left: 1px solid #C6A252;
+        border-right: 1px solid #C6A252;
+        min-height: 27px;
+        background-color: transparent;
+        height: auto;
+}*/
+
+    /*#divContainerBeige .subheader, #divContainerBeige2 .subheader, #divContainerBeige3 .subheader, #divContainerBeige4 .subheader {
+        position: absolute;
+        font-size: 1.2em;
+        color: #004994;
+        padding: 0px 0px 5px 10px;
+        margin: -25px 0px 0px 0px;
+}*/
+
+    /*#divContainerBeige .containerbottom, #divContainerBeige2 .containerbottom, #divContainerBeige3 .containerbottom, #divContainerBeige4 .containerbottom {
+        height: 20px;
+        width: 100%;
+        background-image: url("../Styles/images/img_box_bcenter.png");
+        background-repeat: repeat-x;
+        background-position: left bottom;
+}*/
+
+    /*#divContainerBeige .containerbottom_right, #divContainerBeige2 .containerbottom_right, #divContainerBeige3 .containerbottom_right, #divContainerBeige4 .containerbottom_right {
+        float: right;
+        height: 20px;
+        width: 23px;
+        margin: 1px 0px 0px 0px;
+        background-image: url("../Styles/images/img_box_bright.png");
+        background-repeat: no-repeat;
+        background-position: 0px bottom;
+}*/
+
+    /*#divContainerBeige .containerbottom_left, #divContainerBeige2 .containerbottom_left, #divContainerBeige3 .containerbottom_left, #divContainerBeige4 .containerbottom_left {
+        float: left;
+        height: 20px;
+        width: 23px;
+        background-image: url("../Styles/images/img_box_bleft.png");
+        background-repeat: no-repeat;
+        background-position: left bottom;
+}*/
+
+.container_title {
+    margin: -30px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
+}
+
+.container_image, .container_imageCustom {
+    position: absolute;
+    z-index: 300;
+    margin: -20px 0px 0px 0px;
+    padding: 0px;
+}
+
+.container_imageCustom {
+    position: absolute;
+    z-index: 300;
+    margin: 0px;
+    padding: 0px;
+}
+
+container_title_custom {
+    margin: -70px 0px 0px 75px;
+}
+/*#endregion*/
+
+/*#region General Tags */
+
+p {
+    font-family: Arial !important;
+    font-size: .9em;
+    letter-spacing: normal;
+    line-height: 20px;
+    text-align: left;
+    margin: 5px 0px 10px 0px;
+    padding: 3px;
+    text-indent: 30px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-size: 1.5em;
+	color: #004994;
+	font-variant: small-caps;
+	text-transform: none;
+	font-weight: 100;
+	margin-bottom: 3px;
+}
+
+h1 {
+	font-size: 1.1em;
+	padding: 3px 20px;
+	margin-bottom: 10px;
+    font-variant: normal;
+    color: #004994;
+    height: 25px;
+}
+
+h2 {
+	font-size: 1.2em;
+	font-weight: normal;
+	padding-bottom: 5px;
+	margin-bottom: 10px;
+    color: #782E1E;
+    font-variant: normal;
+}
+
+h3 {
+    font-size: 20px;
+	padding: 3px 20px;
+	margin-bottom: 10px;
+    color: #004994;
+    text-align: left;
+    height: 25px;
+}
+
+h4 {
+	font-size: 1.1em;
+}
+
+h5, h6 {
+	font-size: 1em;
+}
+
+/*ul{margin:0px;padding:10px;}
+
+ul li
+{
+	font-size:.90em;
+	list-style-position:outside;
+	list-style-type:none;
+	margin: 0px 0px 0px 10px;
+	padding:3px;
+	width: auto;
+}*/
+
+img {
+    border: none;
+}
+
+.padding {
+    padding: 20px 20px;
+    text-align: left;
+}
+.padding_3_left {
+    padding: 3px 3px;
+    text-align: left;
+}
+.padding_5_left {
+    padding: 5px 5px;
+    text-align: left;
+}
+
+.padding_10_left {
+    padding: 10px 10px;
+    text-align: left;
+}
+
+.containerLeft {
+    float: left;
+    width: 47%;
+    padding: 20px 0px 20px 20px;
+    text-align: left;
+}
+
+.containerRight {
+    float: right;
+    width: 47%;
+    padding: 20px 20px 20px 0px;
+    text-align: left;
+}
+
+.padding_header {
+    margin-top: 55px;
+    padding: 0px 20px;
+    text-align: left;
+}
+
+.padding_header_dashboard {
+    margin: 30px 0px -40px 0px;
+    padding: 0px 20px;
+    text-align: left;
+}
+
+.padding_left {
+    padding-left: 20px;
+    margin-left: 20px;
+    text-align: left;
+}
+
+.clear_left {
+    clear: left;
+}
+
+.align_center {
+    text-align: center;
+}
+
+.align_right {
+    text-align: right;
+}
+
+a:link, a:visited, .lnk {
+	color: #782E1E;
+	text-decoration: underline;
+}
+
+    a:hover, .lnk:hover {
+	color: #004994;
+	text-decoration: underline;
+        cursor: pointer;
+}
+
+    a:active, .lnk:active {
+	color: #004994;
+}
+
+.color_white {
+    color: #ffffff;
+}
+
+#divPersonalInfo {
+    background-image: url("../Styles/images/img_woman_bk.png");
+    background-position: 810px 40px;
+    background-repeat: no-repeat;
+}
+
+/*#endregion*/
+
+/*#region Security Agreement */
+
+#SecurityMessage_MainContent {
+    padding: 0px 30px;
+}
+
+.pnlSecurityMessage {
+    margin: 0px 0px 40px 0px;
+    padding: 10px;
+}
+
+.securityAgree {
+    background-image: url('../Styles/images/img_mouse.png');
+    background-repeat: no-repeat;
+    background-position: 0px 0px;
+    padding: 8px 0px 0px 35px;
+    color: #7B2C18;
+    margin: 20px auto 0px auto;
+    width: 400px;
+    font-size: 1em;
+    height: 35px;
+}
+
+/*#endregion*/
+
+.divWarnings {
+    margin: auto;
+    max-width: 60%;
+    background-color: #aaaaaa;
+    border: 3px solid #EFD3A5;
+    padding-top: 15px;
+}
+
+.divWarnings p {
+    color: #000000;
+    font-weight: bold;
+}

@@ -1,0 +1,11 @@
+C:\Users\fpate\Downloads\SrtsWeb-Development-1.1.4.0-iAS\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\DataLayer\bin\Srtstraining Release\SrtsWeb.DataLayer.dll
+C:\Users\fpate\Downloads\SrtsWeb-Development-1.1.4.0-iAS\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\DataLayer\bin\Srtstraining Release\DataToObjectLib.dll
+C:\Users\fpate\Downloads\SrtsWeb-Development-1.1.4.0-iAS\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\DataLayer\bin\Srtstraining Release\Elmah.dll
+C:\Users\fpate\Downloads\SrtsWeb-Development-1.1.4.0-iAS\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\DataLayer\bin\Srtstraining Release\SrtsDataBaseAccess.dll
+C:\Users\fpate\Downloads\SrtsWeb-Development-1.1.4.0-iAS\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\DataLayer\bin\Srtstraining Release\SrtsWeb.Entities.dll
+C:\Users\fpate\Downloads\SrtsWeb-Development-1.1.4.0-iAS\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\DataLayer\bin\Srtstraining Release\SrtsWeb.ExtendersHelpersEnums.dll
+C:\Users\fpate\Downloads\SrtsWeb-Development-1.1.4.0-iAS\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\DataLayer\bin\Srtstraining Release\SrtsWeb.ExtendersHelpersEnums.pdb
+C:\Users\fpate\Downloads\SrtsWeb-Development-1.1.4.0-iAS\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\DataLayer\obj\Srtstraining PRODTEST\SrtsWeb.DataLayer.csprojAssemblyReference.cache
+C:\Users\fpate\Downloads\SrtsWeb-Development-1.1.4.0-iAS\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\DataLayer\obj\Srtstraining PRODTEST\SrtsWeb.DataLayer.csproj.CoreCompileInputs.cache
+C:\Users\fpate\Downloads\SrtsWeb-Development-1.1.4.0-iAS\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\DataLayer\obj\Srtstraining PRODTEST\SrtsWeb.DataLayer.csproj.CopyComplete
+C:\Users\fpate\Downloads\SrtsWeb-Development-1.1.4.0-iAS\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\DataLayer\obj\Srtstraining PRODTEST\SrtsWeb.DataLayer.dll

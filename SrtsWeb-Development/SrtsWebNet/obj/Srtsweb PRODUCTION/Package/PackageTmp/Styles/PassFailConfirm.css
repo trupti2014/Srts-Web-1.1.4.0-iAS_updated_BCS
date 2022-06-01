@@ -1,0 +1,69 @@
+﻿/*
+    Color Codes
+
+*/
+.body
+{
+}
+
+.redBorder
+{
+    border: 2px solid #f00;
+}
+
+#errorMessage, #divExamError, #divOrderError, #divSubmitError
+{
+    width: auto;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    background-color: #c44b4b;
+    color: #fff;
+}
+
+.successMessage
+{
+    background-image: url('../Styles/images/img_CheckRound.png');
+    background-repeat: no-repeat;
+    height: 22px;
+    width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    font: bold 1em arial, verdana;
+    text-align: left;
+    padding: 5px 0px 0px 40px;
+    background-color: #087D31;
+    color: #fff;
+    border: 1px solid #087D31;
+    border-radius: 5px;
+}
+
+.failMessage
+{
+    background-image: url('../Styles/images/img_Xround.png');
+    background-repeat: no-repeat;
+    background-position: 10px 2px;
+    font: bold 1em arial, verdana;
+    text-align: left;
+    padding: 5px 0px 0px 40px;
+    min-height: 22px;
+    overflow-y: visible;
+    width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 5px 0px 0px 40px;
+    background-color: #f72e21;
+    color: #fff;
+    border: 1px solid #f72e21;
+    border-radius: 5px;
+}
+
+.validatorSummary
+{
+    width: 400px;
+    background-color: whitesmoke;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px 30px;
+    border: 1px solid red;
+}

@@ -1,0 +1,16 @@
+C:\DEV2\SRTS\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\Entities\bin\Srtstraining Debug\SrtsWeb.Entities.dll
+C:\DEV2\SRTS\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\Entities\bin\Srtstraining Debug\SrtsWeb.Entities.pdb
+C:\DEV2\SRTS\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\Entities\bin\Srtstraining Debug\DataToObjectLib.dll
+C:\DEV2\SRTS\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\Entities\obj\Srtstraining DEV\SrtsWeb.Entities.csprojAssemblyReference.cache
+C:\DEV2\SRTS\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\Entities\obj\Srtstraining DEV\SrtsWeb.Entities.csproj.CoreCompileInputs.cache
+C:\DEV2\SRTS\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\Entities\obj\Srtstraining DEV\SrtsWeb.Entities.csproj.CopyComplete
+C:\DEV2\SRTS\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\Entities\obj\Srtstraining DEV\SrtsWeb.Entities.dll
+C:\DEV2\SRTS\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\Entities\obj\Srtstraining DEV\SrtsWeb.Entities.pdb
+C:\SRTS_New\SrtsWeb-Development-1.1.4.0-iAS (1)\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\Entities\bin\Srtstraining Debug\SrtsWeb.Entities.dll
+C:\SRTS_New\SrtsWeb-Development-1.1.4.0-iAS (1)\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\Entities\bin\Srtstraining Debug\SrtsWeb.Entities.pdb
+C:\SRTS_New\SrtsWeb-Development-1.1.4.0-iAS (1)\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\Entities\bin\Srtstraining Debug\DataToObjectLib.dll
+C:\SRTS_New\SrtsWeb-Development-1.1.4.0-iAS (1)\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\Entities\obj\Srtstraining DEV\SrtsWeb.Entities.csproj.CoreCompileInputs.cache
+C:\SRTS_New\SrtsWeb-Development-1.1.4.0-iAS (1)\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\Entities\obj\Srtstraining DEV\SrtsWeb.Entities.csproj.CopyComplete
+C:\SRTS_New\SrtsWeb-Development-1.1.4.0-iAS (1)\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\Entities\obj\Srtstraining DEV\SrtsWeb.Entities.dll
+C:\SRTS_New\SrtsWeb-Development-1.1.4.0-iAS (1)\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\Entities\obj\Srtstraining DEV\SrtsWeb.Entities.pdb
+C:\SRTS_New\SrtsWeb-Development-1.1.4.0-iAS (1)\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\Entities\obj\Srtstraining DEV\SrtsWeb.Entities.csprojAssemblyReference.cache

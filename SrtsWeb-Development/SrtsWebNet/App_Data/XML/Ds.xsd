@@ -1,0 +1,36 @@
+<?xml version="1.0" standalone="yes"?>
+<xs:schema id="dsNew" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+  <xs:element name="dsNew" msdata:IsDataSet="true" msdata:UseCurrentLocale="true">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Table1">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="OrderNumber" type="xs:string" minOccurs="0" />
+              <xs:element name="ClinicSiteCode" type="xs:string" minOccurs="0" />
+              <xs:element name="LabSiteCode" type="xs:string" minOccurs="0" />
+              <xs:element name="DateCreated" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="DateReceivedByLab" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="DateProductionCompleted" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="ModifiedBy" type="xs:string" minOccurs="0" />
+              <xs:element name="FrameCode" type="xs:string" minOccurs="0" />
+              <xs:element name="LensType" type="xs:string" minOccurs="0" />
+              <xs:element name="LensMaterial" type="xs:string" minOccurs="0" />
+              <xs:element name="ShipToPatient" type="xs:boolean" minOccurs="0" />
+              <xs:element name="ShipAddress1" type="xs:string" minOccurs="0" />
+              <xs:element name="ShipAddress2" type="xs:string" minOccurs="0" />
+              <xs:element name="ShipCity" type="xs:string" minOccurs="0" />
+              <xs:element name="ShipState" type="xs:string" minOccurs="0" />
+              <xs:element name="ShipZipCode" type="xs:string" minOccurs="0" />
+              <xs:element name="LastName" type="xs:string" minOccurs="0" />
+              <xs:element name="MiddleName" type="xs:string" minOccurs="0" />
+              <xs:element name="FirstName" type="xs:string" minOccurs="0" />
+              <xs:element name="OHComment" type="xs:string" minOccurs="0" />
+              <xs:element name="CheckedIn" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

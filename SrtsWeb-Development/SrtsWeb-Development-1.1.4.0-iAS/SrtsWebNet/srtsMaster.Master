@@ -1,0 +1,388 @@
+﻿<%@ Master Language="C#" AutoEventWireup="True" CodeBehind="srtsMaster.Master.cs" Inherits="SrtsWeb.srtsMaster" %>
+
+<!DOCTYPE html>
+<%@ Register Assembly="AjaxControlToolkit" Namespace="AjaxControlToolkit" TagPrefix="asp" %>
+<html lang="en">
+<head id="Head1" runat="server">
+    <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE9" />
+    <title>DoD Spectacle Request Transmission System</title>
+    <link href="Styles/jquery-ui.min.css" rel="stylesheet" />
+    <link href="Styles/srtsBaseStyles.css" rel="Stylesheet" />
+    <link href="Styles/jqGrid/ui.jqgrid.css" rel="stylesheet" type="text/css" media="screen" />
+    <link href="Styles/w3.css" rel="Stylesheet" type="text/css" />
+    <asp:ContentPlaceHolder ID="HeadContent" runat="server">
+    </asp:ContentPlaceHolder>
+    <script type="text/javascript">
+        function setAlert() {
+            var div = document.getElementById('srtsAlerts');
+            div.style.backgroundColor = '#E4F000';
+            div.style.color = '#000000';
+            div.style.fontWeight = "bold";
+        }
+        function setNoAlert() {
+            var div = document.getElementById('srtsAlerts');
+            div.style.backgroundColor = '#E2F2FE';
+            div.style.color = '#004994';
+            div.style.fontWeight = "normal";
+        }
+        function displaySrtsMessage(title, message, type) {
+            var messageText = document.getElementById('srtsMessageText');
+            var messageTitle = document.getElementById('srtsMessageTitle');
+            var srtsMessage = document.getElementById('srtsMessage');
+            var messageType = type;
+            if (message != "") {
+                messageText.innerHTML = message;
+                messageTitle.innerHTML = title;
+                $("#srtsMessage").fadeIn(500);
+                if (messageType == "error") {
+                    messageTitle.className = "error";
+                }
+                if (messageType == "success") {
+                    messageTitle.className = "success";
+                    $("#srtsMessage").delay(3000).fadeOut(3000);
+                }
+            }
+        }
+    </script>
+    <style>
+        .srtsMessage {
+            position: absolute;
+            top: 10px;
+            left: 250px;
+            height: auto;
+            min-height: 120px;
+            min-width: 400px;
+            padding: 0px;
+            background: transparent;
+            border-radius: 4px;
+        }
+
+        .shadow {
+            -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.12);
+            -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.12);
+            box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.12);
+        }
+
+        .srtsMessage .header_info {
+            font-size: 15px;
+            color: #004994;
+            padding: 5px 10px;
+            background-color: transparent;
+        }
+
+        .srtsMessage .content {
+            background-color: #fff;
+            padding: 10px 10px;
+            text-align: left;
+        }
+
+        .srtsMessage .title {
+            width: 95%;
+            padding: 10px 10px;
+            text-align: center;
+            font-size: 17px!important;
+            color: #006600;
+        }
+
+        .srtsMessage .message {
+            margin: 5px;
+            padding: 5px 10px;
+            text-align: center;
+            font-size: 13px!important;
+            color: #000;
+        }
+
+        .srtsMessage .w3-closebtn {
+            margin-top: -3px;
+        }
+
+        .success {
+            width: 95%;
+            padding: 0px 5px;
+            margin-left: 20px;
+            text-align: left;
+            font-size: 20px!important;
+            color: #2A7713;
+        }
+
+        .error {
+            width: 95%;
+            padding: 0px 5px;
+            margin-left: 20px;
+            text-align: left;
+            font-size: 20px!important;
+            color: #cc0000;
+        }
+    </style>
+</head>
+<body>
+    <script type="text/javascript">
+      var TimeOut = Number('<%=this.TimeOut%>');
+    </script>
+
+    <%--SRTSweb Modal Message --%>
+    <div id="srtsMessage" class="w3-modal" style="z-index: 30000">
+        <div class="w3-modal-content">
+            <div class="w3-container">
+                <div class="srtsMessage">
+                    <div class="BeigeBoxContainer shadow" style="">
+                        <div style="background-color: #fff">
+                            <div class="BeigeBoxHeader" style="padding: 12px 10px 5px 15px">
+
+                                <div id="srtsMessageheader" class="header_info">
+                                    <span onclick="document.getElementById('srtsMessage').style.display='none'"
+                                        class="w3-closebtn">&times;</span>
+                                    SRTSweb Message
+                                </div>
+
+                            </div>
+                            <div class="BeigeBoxContent" style="min-height: 120px;">
+                                <div class="content">
+                                    <div class="w3-row">
+                                        <div id="srtsMessageTitle" runat="server" class="success">Success!</div>
+                                    </div>
+                                    <div class="w3-row">
+                                        <div id="srtsMessageText" runat="server" class="message"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <form id="form1" runat="server" enctype="multipart/form-data">
+        <asp:HiddenField ID="hdfMaster" runat="server" />
+        <ajaxToolkit:ToolkitScriptManager ID="ToolkitManager1" runat="server" EnableScriptLocalization="true" EnableScriptGlobalization="true" LoadScriptsBeforeUI="true" EnablePageMethods="true">
+            <Scripts>
+                <asp:ScriptReference Path="~/Scripts/Global/jquery-1.11.1.min.js" />
+                <asp:ScriptReference Path="~/Scripts/Global/jquery-ui.min.js" />
+                <asp:ScriptReference Path="~/Scripts/Global/JSON2.min.js" />
+                <asp:ScriptReference Path="~/Scripts/Global/IdleTimeout.js" />
+                <asp:ScriptReference Path="~/Scripts/Global/ButtonOps.js" />
+                <asp:ScriptReference Path="~/Scripts/Global/GlobalVal.js" />
+                <asp:ScriptReference Path="~/Scripts/Global/GlobalShared.js" />
+            </Scripts>
+        </ajaxToolkit:ToolkitScriptManager>
+        <asp:SiteMapDataSource ID="SiteMapDataSource1" runat="server" ShowStartingNode="false" StartingNodeOffset="0" SiteMapProvider="XmlSiteMapProvider" />
+        <asp:SiteMapDataSource ID="SiteMapDataSourceHeader" runat="server" ShowStartingNode="false" StartingNodeOffset="1" SiteMapProvider="XmlSiteMapProvider" />
+        <div>
+            <div id="wrapper" runat="server" style="">
+                <div style="width: 400px; max-width: 400px; float: right; margin-bottom: 5px;">
+                    <srts:QuickSearch ID="quickSearch" runat="server"></srts:QuickSearch>
+                </div>
+                <div id="MainPageContent" style="">
+                    <div id="divMasterHeader" style="">
+                        <div id="mainheader" runat="server" class="w3-row" style="padding: 0px">
+                            <div id="fouoBanner">
+                                <span>This page contains dynamic content - Highest Possible Classification is UNCLASSIFIED/FOR OFFICIAL USE ONLY</span>
+                            </div>
+                            <div class="innerheader" style="background: url('/Styles/images/img_SrtsWeb_LogoHeader_bk.png') repeat-x -20px -64px">
+                                <div class="w3-half" style="padding: 0px">
+                                    <a id="lnkHome" href="~/WebForms/Default.aspx" runat="server" title="SRTSweb Home">
+                                        <div class="left" style="background: url('/Styles/images/img_SrtsWeb_SlideShow_img3.png') no-repeat -30px -64px"></div>
+                                    </a>
+                                </div>
+                                <div class="w3-half" style="padding: 0px">
+                                    <div class="right" style="background: url('/Styles/images/img_SrtsWeb_Logo_Contactus_DHA.png') no-repeat 35px -64px"></div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div id="divMasterHeaderAccount" style="background-color: #006699; height: 23px; color: #FFFFFF; margin-top: -3px; border-bottom: 1px solid #ecd9c6">
+                            <p id="litTitleLeft_Top" runat="server" style="text-align: center; padding: 0px; margin: 0px; text-indent: 0px;"></p>
+                            <div id="divMasterHeaderLeft" style="float: left; position: relative; top: -19px;">
+                                <p style="">
+                                    <asp:LoginName ID="LoginName1" runat="server" FormatString="Current User:&nbsp;&nbsp;{0}" CssClass="noColor" />
+                                </p>
+                            </div>
+                            <div id="divMasterHeaderRight" style="position: relative; top: -19px;">
+                                <p style="text-align: right; padding-right: 30px;">
+                                    <asp:LoginStatus ID="lsSrtsLoginStatus" runat="server" LogoutText="Logout"  Font-Underline="true" ForeColor="White"
+                                        OnLoggedOut="lsSrtsLoginStatus_LoggedOut" OnLoggingOut="lsSrtsLoginStatus_LoggingOut" />
+                                </p>
+                            </div>
+                        </div>
+                        <div id="divMasterHeaderAlerts">
+                            <asp:Panel ID="pnlAlerts" runat="server">
+                                <div id="srtsAlerts" runat="server">
+                                    <asp:Literal ID="litAlert" runat="server">No Alerts at This Time!</asp:Literal>
+                                </div>
+                            </asp:Panel>
+                            <asp:CollapsiblePanelExtender ID="extAlerts" runat="server" TargetControlID="pnlAlerts" Collapsed="true" CollapsedSize="0">
+                            </asp:CollapsiblePanelExtender>
+                        </div>
+                    </div>
+                    <%--<asp:Panel ID="pnlBreadCrumbsTop" runat="server">
+                <br />
+                <div id="divBreadCrumbs" runat="server">
+                    <div class="divBreadCrumbsright"></div>
+                    <asp:LinkButton ID="lnkHome" runat="server" PostBackUrl="~/Account/Login.aspx" CausesValidation="false">
+                <div class="divBreadCrumbsleft"></div>
+                    </asp:LinkButton>
+                    <div>
+                        <%--<asp:SiteMapPath ID="SiteMapPath2"
+                            runat="server"
+                            ParentLevelsDisplayed="2"
+                            NodeStyle-CssClass="divBreadCrumbsseparator"
+                            NodeStyle-Height="60px"
+                            RootNodeStyle-CssClass="divBreadCrumbsseparator"
+                            PathSeparatorStyle-CssClass="hidden"
+                            RootNodeStyle-Width="90px"
+                            Font-Size=".8em"
+                            RenderCurrentNodeAsLink="true" />
+                    </div>
+                </div>
+            </asp:Panel>--%>
+
+                    <div id="MainPageContentInner" style="">
+                        <%--                    <div style="position: relative; right: 0; text-align: right; margin-right: 30px">
+                        <asp:Literal ID="litMasterMessage" runat="server" Text=""></asp:Literal>
+                    </div>--%>
+                        <asp:ContentPlaceHolder ID="MainContent_Public" runat="server"></asp:ContentPlaceHolder>
+                        <%--<asp:UpdatePanel ID="uplAppType" runat="server" UpdateMode="Conditional">
+                        <ContentTemplate>
+                            <asp:Panel ID="appType" runat="server">
+                                <div style="margin-top: 20px">
+                                    <asp:Image ID="imgAppTitle" runat="server" Visible="false" />
+                                </div>
+                            </asp:Panel>
+                        </ContentTemplate>
+                        </asp:UpdatePanel>--%>
+                        <asp:Panel ID="pnlContentAuthenticated" runat="server">
+                            <asp:Panel ID="pnlMainMenu" runat="server">
+                                <div id="divMainMenu" runat="server">
+                                    <%--<div class="home"></div>--%>
+                                    <asp:UpdatePanel ID="uplMainMenu" runat="server" UpdateMode="Conditional">
+                                        <ContentTemplate>
+                                            <asp:Menu ID="mainMenu"
+                                                runat="server"
+                                                DataSourceID="SiteMapDataSource1"
+                                                CssSelectorClass="MasterMenu"
+                                                Orientation="Horizontal"
+                                                OnMenuItemDataBound="mainMenu_MenuItemDataBound"
+                                                MaximumDynamicDisplayLevels="1">
+                                            </asp:Menu>
+                                        </ContentTemplate>
+                                    </asp:UpdatePanel>
+                                </div>
+                            </asp:Panel>
+                            <div id="divMainContent" runat="server" visible="false">
+                                <asp:Panel ID="pnlMainContent" runat="server" CssClass="" Visible="false">
+                                    <%--<div class="box_full_top">
+                                    <div class="box_sub_menu" style="background: none;">
+                                        <asp:ContentPlaceHolder ID="contentSubMenu" runat="server"></asp:ContentPlaceHolder>
+                                        <asp:ContentPlaceHolder ID="contentSubMenuLab" runat="server"></asp:ContentPlaceHolder>
+                                    </div>
+                                    </div>--%>
+                                    <div class="BeigeBoxContainer" style="min-width: 1100px; max-width: 1100px;">
+                                        <div class="BeigeBoxHeader" style="min-height: 45px; max-height: 45px;">
+                                            <asp:UpdatePanel ID="uplContentTitle" runat="server" UpdateMode="Conditional">
+                                                <ContentTemplate>
+                                                    <div class="contentTitle">
+                                                        <div class="contentTitleright">
+                                                            <asp:ContentPlaceHolder ID="ContentTop_Title_Right" runat="server" />
+                                                        </div>
+                                                        <div class="contentTitleleft">
+                                                            <h2>
+                                                                <asp:Literal ID="litContentTop_Title" runat="server" /></h2>
+                                                        </div>
+                                                    </div>
+                                                </ContentTemplate>
+                                            </asp:UpdatePanel>
+                                        </div>
+                                        <div class="BeigeBoxContent">
+                                            <asp:ContentPlaceHolder ID="MainContent" runat="server"></asp:ContentPlaceHolder>
+                                        </div>
+                                        <div class="BeigeBoxFooter" style="clear: both;"></div>
+                                    </div>
+                                </asp:Panel>
+                            </div>
+                        </asp:Panel>
+                    </div>
+                </div>
+                <div id="footer" runat="server">
+                    <div class="right">
+                    </div>
+                    <div class="left">
+                        <p class="copyright">
+                            Copyright &copy 2014 SRTS Web (Version:
+                            <a href="~/WebForms/Public/ReleaseNotes.aspx" id="versionRef" runat="server">
+                                <asp:Literal ID="litVersion" runat="server" Visible="true"></asp:Literal></a>)<br />
+                            Developed by the SRTS Team at:<br />
+                            Defense Health Agency - Solutions Delivery Division<br />
+                            2710 Howitzer St., Bldg. 2372  -  Ft. Sam Houston, TX  78234
+                        </p>
+                    </div>
+                    <div class="center">
+                        <div class="col">
+                            <h1>SRTSweb Information</h1>
+                            <ul>
+                                <li><a id="A1" href="~/WebForms/Public/About.aspx" runat="server">- About SRTSweb</a></li>
+                                <li><a id="A2" href="~/WebForms/Public/Abbreviations.aspx" target="_self" runat="server">- Abbreviations</a></li>
+                                <li><a id="A3" href="~/WebForms/Public/FAQ.aspx" target="_self" runat="server">- FAQs</a></li>
+                                <li><a id="A4" href="~/WebForms/Public/PrivacyAndSecurity.aspx" runat="server">- Privacy and Security Statement</a></li>
+                                <li><a id="A5" href="~/WebForms/Public/Accessability.aspx" runat="server">- Website Accessibility</a> </li>
+                            </ul>
+                        </div>
+                        <div class="col">
+                            <h1>SRTSweb Resources</h1>
+                            <ul>
+                                <li><a id="A6" href="~/WebForms/Default.aspx" runat="server">- SRTSweb Home</a></li>
+                                <li><a id="A7" href="~/WebForms/Public/Support.aspx" runat="server">- Contact Us</a></li>
+                                <%-- <li><a href="#" onclick="this.style.behavior='url(#default#homepage)';this.setHomePage('http://dev.srtsweb.com/');">Make SRTS your Default Homepage!</a></li>--%>
+                                <li><a id="A8" href="~/WebForms/Public/FacilityAccountRequest.aspx?t=site" target="_self" runat="server">- Request New Site</a></li>
+                                <li><a id="A9" href="~/WebForms/Public/FacilityAccountRequest.aspx?t=access" target="_self" runat="server">- Request System Access</a></li>
+                                <li><a href="https://www.med.navy.mil/sites/nostra/Pages/default.aspx" target="_blank">- NOSTRA Web Site</a></li>
+                                <li><a id="A11" href="~/WebForms/Public/CheckOrderStatus.aspx" runat="server">- Check Order Status</a></li>
+                            </ul>
+                        </div>
+                        <div class="col">
+                            <h1>DoD Resources</h1>
+                            <ul>
+                                <li><a href="https://phc.amedd.army.mil/Pages/default.aspx" target="_blank">- U.S. Army Public Health Command</a> </li>
+                                <li><a href="http://www.cac.mil/" target="_blank">- DoD Common Access Card</a></li>
+                                <li><a href="https://www.inscom.army.mil/isalute" target="_blank"><b>- iSalute</b> - U.S. Army Counterintelligence Reporting</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                        <p style="text-align: center; margin-top: 15px; padding-top:15px; font-size: 85%; line-height:35px;">
+                            This site is best viewed in Internet Explorer version 9 or higher with Javascript enabled.
+                        </p>
+                </div>
+            </div>
+        </div>
+        <asp:UpdateProgress ID="upEditOrder" runat="server">
+            <ProgressTemplate>
+                <div id="thecontainer" style="z-index: 9999;">
+                    <div id="overlay"></div>
+                    <div id="modalprogress">
+                        <div id="thetransparency"></div>
+                        <div id="theprogress">
+                            <span>Processing...</span>
+                        </div>
+                    </div>
+                </div>
+            </ProgressTemplate>
+        </asp:UpdateProgress>
+
+
+
+    </form>
+    <div id="dialog" class="ui-dialog"></div>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            // if the srtsMessage modal is open, click outside the message box to close it
+            window.onclick = function (event) {
+                if (event.srcElement) {
+                    if (event.srcElement.id == 'srtsMessage')
+                        document.getElementById('srtsMessage').style.display = 'none';
+                }
+            }
+        });
+    </script>
+</body>
+</html>

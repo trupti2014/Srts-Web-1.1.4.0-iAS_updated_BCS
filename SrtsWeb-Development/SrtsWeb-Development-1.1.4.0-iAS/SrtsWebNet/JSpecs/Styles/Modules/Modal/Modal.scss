@@ -1,0 +1,137 @@
+﻿@import '../../Base/Variables.scss';
+
+.modal {
+    border: 1px solid $color-gray-light;
+    padding: 10px;
+    background-color: white;
+    z-index: inherit;
+}
+
+.modal__background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,.2);
+}
+
+.modal--centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    max-width: 300px;
+    margin-left: -170px;
+    margin-top: -100px;
+    border: 1px solid $color-gray-light;
+    background: white;
+    padding: 20px;
+}
+.modal__left, .modal__right {
+    box-sizing: border-box;
+    display: inline-block;
+    height: 100%;
+    width: 50%;
+    padding: 0 10px;
+}
+
+.modal__left {
+    float: left;
+    border-right: 2px solid $color-gray-light;
+}
+
+.modal__right {
+    float: right;
+}
+
+.modal__title {
+    text-align: center;
+}
+
+.modal__split {
+    position: absolute;
+    width: 90%;
+    border-bottom: 1px solid $color-gray-light;
+    margin-top: 25px;
+}
+
+.modal__btn-container {
+    margin-top: 25px;
+    text-align: center;
+}
+/* Email modal */
+.modal__email-form {
+    max-width: 320px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+
+/* Address modal */
+.address__modal {
+    max-width: 100%;
+    background: white;
+    padding: 20px;
+}
+
+.modal__address-form {
+    text-align: center;
+}
+
+.modal__address-result {
+    margin-left: 25%;
+    text-align: left;
+
+    &:nth-child(1) {
+        padding-top: 47px;
+    }
+}
+
+/* Order details modal */
+.modal__order-details {
+
+    p {
+        color: $color-gray;
+    }
+}
+
+.modal__order {
+    margin-top: 0px;
+    text-align: center;
+
+    img {
+        width: 250px;
+    }
+
+    h3 {
+        color: $color-gray;
+        font-weight: normal;
+    }
+}
+
+/* Error Message*/
+.modal__error-message {
+    margin-top: 30px;
+}
+
+/* Close button */
+.close__button {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    border: none;
+    outline: 0;
+    background: none;
+    color: $blue;
+    cursor: pointer;
+}
+
+.close__button__circle {
+    display: inline-block;
+    border-radius: 50%;
+    border: 1px solid $color-gray;
+    padding: 8px;
+    font-size: 16px;
+    color: $blue;
+    line-height: 11px;
+}

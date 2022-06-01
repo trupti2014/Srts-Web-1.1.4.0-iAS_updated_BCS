@@ -1,0 +1,240 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="srtsMasterRptViewer.master.cs" Inherits="SrtsWeb.srtsMasterRptViewer" %>
+
+<!DOCTYPE html>
+<%@ Register Assembly="AjaxControlToolkit" Namespace="AjaxControlToolkit" TagPrefix="asp" %>
+<html lang="en">
+<head id="Head1" runat="server">
+    <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE9" />
+    <title>DoD Spectacle Request Transmission System</title>
+    <link href="Styles/jquery-ui.min.css" rel="stylesheet" />
+    <link href="~/Styles/srtsBaseStyles.css" rel="Stylesheet" />
+    <asp:ContentPlaceHolder ID="HeadContent" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server" enctype="multipart/form-data">
+        <asp:HiddenField ID="hdfMaster" runat="server" />
+        <ajaxToolkit:ToolkitScriptManager ID="ToolkitManager1" runat="server" EnableScriptLocalization="true" EnableScriptGlobalization="true" LoadScriptsBeforeUI="true" EnablePageMethods="true">
+            <Scripts>
+                <asp:ScriptReference Path="~/Scripts/jquery-1.11.1.min.js" />
+                <asp:ScriptReference Path="~/Scripts/jquery-ui.min.js" />
+                <asp:ScriptReference Path="~/Scripts/IdleTimeout.js" />
+            </Scripts>
+        </ajaxToolkit:ToolkitScriptManager>
+        <asp:SiteMapDataSource ID="SiteMapDataSource1" runat="server" ShowStartingNode="false" StartingNodeOffset="0" SiteMapProvider="XmlSiteMapProvider" />
+        <asp:SiteMapDataSource ID="SiteMapDataSourceHeader" runat="server" ShowStartingNode="false" StartingNodeOffset="1" SiteMapProvider="XmlSiteMapProvider" />
+
+        <div id="mainheader">
+            <div class="inner">
+                <div class="right">
+                    <asp:UpdatePanel ID="uplHeader" runat="server" UpdateMode="Conditional">
+                        <ContentTemplate>
+                            <asp:ContentPlaceHolder ID="contentHeaderRight" runat="server"></asp:ContentPlaceHolder>
+                            <asp:Literal ID="litTitleRight_Top" runat="server"></asp:Literal>
+                        </ContentTemplate>
+                    </asp:UpdatePanel>
+                </div>
+                <div class="left">
+                    <span class="titleleft_top">
+                        <asp:Literal ID="litTitleLeft_Top" runat="server"></asp:Literal></span>
+                    <div id="divSlideShow">
+                        <div class="Image">
+                            <asp:Image ID="img1" runat="server" Height="276px" Width="545px" ImageUrl="~/Styles/images/img_SrtsWeb_SlideShow_img3.png" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="MainPageContent">
+            <asp:Panel ID="pnlAlerts" runat="server">
+                <div id="srtsAlerts" style="position: absolute;" runat="server">
+                    <asp:Literal ID="litAlert" runat="server">No Alerts at This Time!</asp:Literal>
+                </div>
+            </asp:Panel>
+            <asp:CollapsiblePanelExtender ID="extAlerts" runat="server" TargetControlID="pnlAlerts" Collapsed="true" CollapsedSize="0">
+            </asp:CollapsiblePanelExtender>
+
+            <div id="MainPageHeader">
+                <p>
+                    Welcome to SRTSweb!&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <asp:LoginName ID="LoginName1" runat="server" FormatString="Current Username:&nbsp;&nbsp;{0}&nbsp;&nbsp;" />
+                </p>
+            </div>
+            <asp:Panel ID="pnlBreadCrumbsTop" runat="server">
+                <br />
+                <br />
+                <br />
+                <div id="divBreadCrumbsLogoutTop" runat="server" visible="false">
+                    <div class="statusItemsrptviewer">
+                        <div id="divLogoutLink" class="loginimagerptviewer">
+                            <asp:LoginStatus ID="LoginStatus1" runat="server" LogoutText="Logout" OnLoggedOut="btnLogout_Click" />
+                        </div>
+                        <div class="loginimagerptviewer">
+                            <asp:Image ImageUrl="~/Styles/images/img_UserLogout.png" Width="59px" Height="57px" AlternateText="Image - Current User Status" runat="server" ImageAlign="AbsMiddle" ID="imgLogoutTop" />
+                        </div>
+                    </div>
+                </div>
+            </asp:Panel>
+
+            <div id="MainPageContentInner">
+                <div class="center">
+                    <div style="position: relative; right: 0; text-align: right; margin-right: 30px">
+                        <asp:Literal ID="litMasterMessage" runat="server" Text=""></asp:Literal>
+                    </div>
+                    <div style="margin-top: -30px">
+                        <asp:ContentPlaceHolder ID="MainContent_Public" runat="server"></asp:ContentPlaceHolder>
+                    </div>
+                    <asp:UpdatePanel ID="uplAppType" runat="server" UpdateMode="Conditional">
+                        <ContentTemplate>
+                            <asp:Panel ID="appType" runat="server">
+                                <div style="margin-top: 20px">
+                                    <asp:Image ID="imgAppTitle" runat="server" Visible="false" />
+                                </div>
+                            </asp:Panel>
+                        </ContentTemplate>
+                    </asp:UpdatePanel>
+                    <asp:Panel ID="pnlMainMenu" runat="server">
+                        <div id="divMainMenuRptViewer" runat="server">
+                            <div class="home"></div>
+                            <asp:UpdatePanel ID="uplMainMenuRptViewer" runat="server" UpdateMode="Conditional">
+                                <ContentTemplate>
+                                    <asp:Menu ID="mainMenu"
+                                        runat="server"
+                                        DataSourceID="SiteMapDataSource1"
+                                        CssSelectorClass="MasterMenuRptViewer"
+                                        Orientation="Horizontal"
+                                        OnMenuItemDataBound="mainMenu_MenuItemDataBound"
+                                        MenuItemStyle="RptViewerMenuItem"
+                                        MaximumDynamicDisplayLevels="1">
+                                    </asp:Menu>
+                                </ContentTemplate>
+                            </asp:UpdatePanel>
+                        </div>
+                    </asp:Panel>
+                    <asp:Panel ID="pnlContentAuthenticated" runat="server">
+                        <div id="divMainContentRptViewer" runat="server" visible="false">
+                            <asp:Panel ID="pnlMainContent" runat="server" CssClass="maincontentbox" Visible="false">
+                                <div class="box_full_topRptViewer">
+                                    <div class="box_sub_menu" style="background: none;">
+                                        <asp:ContentPlaceHolder ID="contentSubMenu" runat="server"></asp:ContentPlaceHolder>
+                                        <asp:ContentPlaceHolder ID="contentSubMenuLab" runat="server"></asp:ContentPlaceHolder>
+                                    </div>
+                                </div>
+                                <div class="box_full_content">
+                                    <div class="box_module_header">
+                                        <asp:UpdatePanel ID="uplContentTitle" runat="server" UpdateMode="Conditional">
+                                            <ContentTemplate>
+                                                <div class="contentTitle">
+                                                    <div class="contentTitleright">
+                                                        <asp:ContentPlaceHolder ID="ContentTop_Title_Right" runat="server" />
+                                                    </div>
+                                                    <div class="contentTitleleft">
+                                                        <h2>
+                                                            <asp:Literal ID="litContentTop_Title" runat="server" /></h2>
+                                                    </div>
+                                                </div>
+                                            </ContentTemplate>
+                                        </asp:UpdatePanel>
+                                    </div>
+                                    <div class="pageContent">
+                                        <asp:UpdatePanel ID="uplMainContent" runat="server" ClientIDMode="Static" UpdateMode="Conditional">
+                                            <ContentTemplate>
+                                                <asp:ContentPlaceHolder ID="MainContent" runat="server"></asp:ContentPlaceHolder>
+                                            </ContentTemplate>
+                                        </asp:UpdatePanel>
+                                    </div>
+                                </div>
+                                <div class="box_full_bottom"></div>
+                            </asp:Panel>
+                        </div>
+                    </asp:Panel>
+                </div>
+            </div>
+        </div>
+        <div id="footer" runat="server">
+            <div class="lastmodified">
+                Last Updated
+                <asp:Literal ID="litlastupdated" runat="server"></asp:Literal>
+            </div>
+            <div class="right">
+            </div>
+            <div class="left">
+                <br />
+                <br />
+                <p class="copyright">
+                    Copyright &copy 2014 SRTS Web (Version:
+                    <asp:Literal ID="litVersion" runat="server"></asp:Literal>)<br />
+                    Written and Developed by the SRTS Team at:<br />
+                    Defense Health Agency - Solutions Delivery Division<br />
+                    2710 Howitzer St., Bldg. 2372  -  Ft. Sam Houston, Tx  78234
+                </p>
+            </div>
+        </div>
+        <asp:Panel ID="MainPageFooter" runat="server">
+            <asp:Panel ID="MainPageFooterCols" runat="server">
+                <div id="ftrColumns">
+                    <div class="col">
+                        <h1>SRTSweb Information</h1>
+                        <ul>
+                            <li><a id="A1" href="~/Public/About.aspx" runat="server">About SRTSweb</a></li>
+                            <li><a id="A2" href="~/Public/Abbreviations.aspx" target="_self" runat="server">Abbreviations</a></li>
+                            <li><a id="A3" href="~/Public/FAQ.aspx" target="_self" runat="server">FAQs</a></li>
+                            <li><a id="A4" href="~/Public/PrivacyAndSecurity.aspx" runat="server">Privacy and Security Statement</a></li>
+                            <li><a id="A5" href="~/Public/Sitemap.aspx" runat="server">Site Map</a></li>
+                            <li><a id="A6" href="~/Public/Accessability.aspx" runat="server">Website Accessibility</a> </li>
+                        </ul>
+                    </div>
+                    <div class="col">
+                        <h1>SRTSweb Resources</h1>
+                        <ul>
+                            <li><a id="A7" href="~/Default.aspx" runat="server">SRTSweb Home</a></li>
+                            <li><a id="A8" href="~/Public/Support.aspx" runat="server">Contact Us</a></li>
+                            <li><a id="A9" href="~/Public/FacilityAccountRequest.aspx?t=site" target="_self" runat="server">Request New Site</a></li>
+                            <li><a id="A10" href="~/Public/FacilityAccountRequest.aspx?t=access" target="_self" runat="server">Request System Access</a></li>
+                        </ul>
+                    </div>
+                    <div class="col">
+                        <h1>DoD Resources</h1>
+                        <ul>
+                            <li>
+                                <a href="https://phc.amedd.army.mil/Pages/default.aspx" target="_blank">U.S. Army Public Health Command</a> </li>
+                            <li><a href="http://www.cac.mil/" target="_blank">DoD Common Access Card</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="colright">
+                        <div style="text-align: center; margin-top: 20px">
+                            <p style="margin-left: -105px; width: 130px">
+                                <a href="https://www.inscom.army.mil/isalute" target="_blank" style="padding: 5px; margin: 0px; border: 1px solid #E7CFAD;">
+                                    <asp:Image ID="imgISalute" runat="server" ImageUrl="~/Styles/images/isalute.png"
+                                        AlternateText="iSalute Link" Width="120px" Height="140px" BorderWidth="0px" />
+                                </a>
+                            </p>
+                            <div style="font-size: 11px; color: #000000; margin: 15px 0px 0px 20px">
+                                <h2 class="colorBlue">U.S. Army Counterintelligence Reporting</h2>
+                                If you think you have information that may be of interest, click the ISALUTE image to submit an <span style="font-size: 11px" class="colorBlue"><a href="https://www.inscom.army.mil/isalute" target="_blank">iSALUTE Suspicious Activity Report</a></span> .<br />
+                                You may also report by telephone at 1-800-CALL-SPY (1-800-225-5779) [CONUS ONLY].
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </asp:Panel>
+        </asp:Panel>
+        <asp:UpdateProgress ID="upEditOrder" runat="server">
+            <ProgressTemplate>
+                <div id="thecontainer">
+                    <div id="overlay"></div>
+                    <div id="modalprogress">
+                        <div id="thetransparency"></div>
+                        <div id="theprogress">
+                            <span>Processing...</span>
+                        </div>
+                    </div>
+                </div>
+            </ProgressTemplate>
+        </asp:UpdateProgress>
+    </form>
+    <div id="dialog" class="ui-dialog">
+    </div>
+</body>
+</html>

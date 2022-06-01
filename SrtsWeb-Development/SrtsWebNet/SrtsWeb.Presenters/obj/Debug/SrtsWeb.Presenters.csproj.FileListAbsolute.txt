@@ -1,0 +1,50 @@
+C:\DEV2\SRTS\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\SrtsWeb.Presenters\bin\Debug\SrtsWeb.Presenters.dll
+C:\DEV2\SRTS\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\SrtsWeb.Presenters\bin\Debug\SrtsWeb.Presenters.pdb
+C:\DEV2\SRTS\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\SrtsWeb.Presenters\bin\Debug\BarcodeLib.dll
+C:\DEV2\SRTS\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\SrtsWeb.Presenters\bin\Debug\Elmah.dll
+C:\DEV2\SRTS\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\SrtsWeb.Presenters\bin\Debug\SrtsWeb.BusinessLayer.dll
+C:\DEV2\SRTS\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\SrtsWeb.Presenters\bin\Debug\SrtsWeb.DataLayer.dll
+C:\DEV2\SRTS\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\SrtsWeb.Presenters\bin\Debug\SrtsWeb.Entities.dll
+C:\DEV2\SRTS\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\SrtsWeb.Presenters\bin\Debug\SrtsWeb.ExtendersHelpersEnums.dll
+C:\DEV2\SRTS\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\SrtsWeb.Presenters\bin\Debug\SrtsWeb.Views.dll
+C:\DEV2\SRTS\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\SrtsWeb.Presenters\bin\Debug\SrtsDataBaseAccess.dll
+C:\DEV2\SRTS\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\SrtsWeb.Presenters\bin\Debug\DataToObjectLib.dll
+C:\DEV2\SRTS\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\SrtsWeb.Presenters\bin\Debug\SrtsWeb.ExtendersHelpersEnums.pdb
+C:\DEV2\SRTS\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\SrtsWeb.Presenters\bin\Debug\SrtsWeb.Views.pdb
+C:\DEV2\SRTS\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\SrtsWeb.Presenters\bin\Debug\SrtsWeb.BusinessLayer.pdb
+C:\DEV2\SRTS\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\SrtsWeb.Presenters\bin\Debug\SrtsWeb.BusinessLayer.dll.config
+C:\DEV2\SRTS\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\SrtsWeb.Presenters\bin\Debug\SrtsWeb.DataLayer.pdb
+C:\DEV2\SRTS\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\SrtsWeb.Presenters\bin\Debug\SrtsWeb.Entities.pdb
+C:\DEV2\SRTS\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\SrtsWeb.Presenters\bin\Debug\SrtsWeb.BusinessLayer.XmlSerializers.dll
+C:\DEV2\SRTS\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\SrtsWeb.Presenters\obj\Debug\SrtsWeb.Presenters.csprojAssemblyReference.cache
+C:\DEV2\SRTS\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\SrtsWeb.Presenters\obj\Debug\SrtsWeb.Presenters.csproj.CoreCompileInputs.cache
+C:\DEV2\SRTS\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\SrtsWeb.Presenters\obj\Debug\SrtsWeb.Presenters.csproj.CopyComplete
+C:\DEV2\SRTS\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\SrtsWeb.Presenters\obj\Debug\SrtsWeb.Presenters.dll
+C:\DEV2\SRTS\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\SrtsWeb.Presenters\obj\Debug\SrtsWeb.Presenters.pdb
+C:\SRTS_New\SrtsWeb-Development-1.1.4.0-iAS (1)\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\SrtsWeb.Presenters\bin\Debug\SrtsWeb.Presenters.dll
+C:\SRTS_New\SrtsWeb-Development-1.1.4.0-iAS (1)\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\SrtsWeb.Presenters\bin\Debug\SrtsWeb.Presenters.pdb
+C:\SRTS_New\SrtsWeb-Development-1.1.4.0-iAS (1)\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\SrtsWeb.Presenters\bin\Debug\BarcodeLib.dll
+C:\SRTS_New\SrtsWeb-Development-1.1.4.0-iAS (1)\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\SrtsWeb.Presenters\bin\Debug\Elmah.dll
+C:\SRTS_New\SrtsWeb-Development-1.1.4.0-iAS (1)\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\SrtsWeb.Presenters\bin\Debug\SrtsWeb.BusinessLayer.dll
+C:\SRTS_New\SrtsWeb-Development-1.1.4.0-iAS (1)\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\SrtsWeb.Presenters\bin\Debug\SrtsWeb.DataLayer.dll
+C:\SRTS_New\SrtsWeb-Development-1.1.4.0-iAS (1)\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\SrtsWeb.Presenters\bin\Debug\SrtsWeb.Entities.dll
+C:\SRTS_New\SrtsWeb-Development-1.1.4.0-iAS (1)\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\SrtsWeb.Presenters\bin\Debug\SrtsWeb.ExtendersHelpersEnums.dll
+C:\SRTS_New\SrtsWeb-Development-1.1.4.0-iAS (1)\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\SrtsWeb.Presenters\bin\Debug\SrtsWeb.Views.dll
+C:\SRTS_New\SrtsWeb-Development-1.1.4.0-iAS (1)\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\SrtsWeb.Presenters\bin\Debug\SrtsDataBaseAccess.dll
+C:\SRTS_New\SrtsWeb-Development-1.1.4.0-iAS (1)\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\SrtsWeb.Presenters\bin\Debug\DataToObjectLib.dll
+C:\SRTS_New\SrtsWeb-Development-1.1.4.0-iAS (1)\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\SrtsWeb.Presenters\bin\Debug\SrtsWeb.ExtendersHelpersEnums.pdb
+C:\SRTS_New\SrtsWeb-Development-1.1.4.0-iAS (1)\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\SrtsWeb.Presenters\bin\Debug\SrtsWeb.Views.pdb
+C:\SRTS_New\SrtsWeb-Development-1.1.4.0-iAS (1)\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\SrtsWeb.Presenters\bin\Debug\SrtsWeb.BusinessLayer.pdb
+C:\SRTS_New\SrtsWeb-Development-1.1.4.0-iAS (1)\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\SrtsWeb.Presenters\bin\Debug\SrtsWeb.BusinessLayer.dll.config
+C:\SRTS_New\SrtsWeb-Development-1.1.4.0-iAS (1)\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\SrtsWeb.Presenters\bin\Debug\SrtsWeb.DataLayer.pdb
+C:\SRTS_New\SrtsWeb-Development-1.1.4.0-iAS (1)\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\SrtsWeb.Presenters\bin\Debug\SrtsWeb.Entities.pdb
+C:\SRTS_New\SrtsWeb-Development-1.1.4.0-iAS (1)\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\SrtsWeb.Presenters\bin\Debug\SrtsWeb.BusinessLayer.XmlSerializers.dll
+C:\SRTS_New\SrtsWeb-Development-1.1.4.0-iAS (1)\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\SrtsWeb.Presenters\obj\Debug\SrtsWeb.Presenters.csprojAssemblyReference.cache
+C:\SRTS_New\SrtsWeb-Development-1.1.4.0-iAS (1)\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\SrtsWeb.Presenters\obj\Debug\SrtsWeb.Presenters.csproj.CoreCompileInputs.cache
+C:\SRTS_New\SrtsWeb-Development-1.1.4.0-iAS (1)\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\SrtsWeb.Presenters\obj\Debug\SrtsWeb.Presenters.csproj.CopyComplete
+C:\SRTS_New\SrtsWeb-Development-1.1.4.0-iAS (1)\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\SrtsWeb.Presenters\obj\Debug\SrtsWeb.Presenters.dll
+C:\SRTS_New\SrtsWeb-Development-1.1.4.0-iAS (1)\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\SrtsWeb.Presenters\obj\Debug\SrtsWeb.Presenters.pdb
+C:\Users\fpate\Downloads\SrtsWeb-Development-1.1.4.0-iAS\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\SrtsWeb.Presenters\obj\Debug\SrtsWeb.Presenters.csprojAssemblyReference.cache
+C:\Users\fpate\Downloads\SrtsWeb-Development-1.1.4.0-iAS\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\SrtsWeb.Presenters\obj\Debug\SrtsWeb.Presenters.csproj.CoreCompileInputs.cache
+C:\Users\fpate\Downloads\SrtsWeb-Development-1.1.4.0-iAS\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\SrtsWeb.Presenters\obj\Debug\SrtsWeb.Presenters.dll
+C:\Users\fpate\Downloads\SrtsWeb-Development-1.1.4.0-iAS\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\SrtsWeb.Presenters\obj\Debug\SrtsWeb.Presenters.pdb

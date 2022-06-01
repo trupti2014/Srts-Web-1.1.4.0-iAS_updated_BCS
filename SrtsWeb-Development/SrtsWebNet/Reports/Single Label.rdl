@@ -1,0 +1,233 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Report xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner" xmlns:cl="http://schemas.microsoft.com/sqlserver/reporting/2010/01/componentdefinition" xmlns="http://schemas.microsoft.com/sqlserver/reporting/2010/01/reportdefinition">
+  <AutoRefresh>0</AutoRefresh>
+  <DataSources>
+    <DataSource Name="SrtsDynDataSrc">
+      <ConnectionProperties>
+        <DataProvider>SQL</DataProvider>
+        <ConnectString>="Data Source="+Parameters!datasrc.Value+";Initial Catalog="+Parameters!initcat.Value</ConnectString>
+        <Prompt>Enter a user name and password to access the data source:</Prompt>
+      </ConnectionProperties>
+      <rd:SecurityType>DataBase</rd:SecurityType>
+      <rd:DataSourceID>80d74fe6-c8d6-43ea-a9bb-cc6e72d68c98</rd:DataSourceID>
+    </DataSource>
+  </DataSources>
+  <DataSets>
+    <DataSet Name="dsLabels">
+      <Query>
+        <DataSourceName>SrtsDynDataSrc</DataSourceName>
+        <QueryParameters>
+          <QueryParameter Name="@SiteCode">
+            <Value>=Parameters!SiteCode.Value</Value>
+          </QueryParameter>
+          <QueryParameter Name="@OrderSTatusTypeID">
+            <Value>=Parameters!OrderSTatusTypeID.Value</Value>
+          </QueryParameter>
+          <QueryParameter Name="@DateTime">
+            <Value>=Parameters!DateTime.Value</Value>
+          </QueryParameter>
+        </QueryParameters>
+        <CommandType>StoredProcedure</CommandType>
+        <CommandText>ReprintReturn</CommandText>
+      </Query>
+      <Fields>
+        <Field Name="Patient">
+          <DataField>Patient</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="ShipAddress1">
+          <DataField>ShipAddress1</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="ShipAddress2">
+          <DataField>ShipAddress2</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="ShipAddress3">
+          <DataField>ShipAddress3</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="ShipCity">
+          <DataField>ShipCity</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="ShipState">
+          <DataField>ShipState</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="ShipCountry">
+          <DataField>ShipCountry</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="ShipZipCode">
+          <DataField>ShipZipCode</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="CountryName">
+          <DataField>CountryName</DataField>
+          <rd:UserDefined>true</rd:UserDefined>
+        </Field>
+      </Fields>
+      <rd:DataSetInfo>
+        <rd:DataSetName>ds</rd:DataSetName>
+        <rd:SchemaPath>C:\Users\barbara.fieldhaus.sa\Documents\SRTS\SrtsWebNet\PrintForms\dsLabels.xsd</rd:SchemaPath>
+        <rd:TableName>dtLabels</rd:TableName>
+        <rd:TableAdapterFillMethod />
+        <rd:TableAdapterGetDataMethod />
+        <rd:TableAdapterName />
+      </rd:DataSetInfo>
+    </DataSet>
+  </DataSets>
+  <ReportSections>
+    <ReportSection>
+      <Body>
+        <ReportItems>
+          <Tablix Name="Tablix1">
+            <TablixBody>
+              <TablixColumns>
+                <TablixColumn>
+                  <Width>2.5in</Width>
+                </TablixColumn>
+              </TablixColumns>
+              <TablixRows>
+                <TablixRow>
+                  <Height>0.7in</Height>
+                  <TablixCells>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="Textbox3">
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>=VBCRLF + Fields!Patient.Value + VBCRLF + Fields!ShipAddress1.Value + VBCRLF + IIF(LEN(Fields!ShipAddress2.Value)&lt;2, "",Fields!ShipAddress2.Value + VBCRLF) + IIF(Fields!ShipState.Value="NA", IIF(Fields!CountryName.Value="Japan","(Japan)",IIF(Fields!CountryName.Value="South Korea","(South Korea)",IIF(Fields!CountryName.Value="Netherlands","Nederland",IIF(Fields!CountryName.Value="Saudi Arabia","Kingdom of Saudi Arabia",Fields!CountryName.Value)))), Fields!ShipCity.Value + "  " + Fields!ShipState.Value + "  " + IIF(LEN(Fields!ShipZipCode.Value)=9, Left(Fields!ShipZipCode.Value,5) + "-" + Right(Fields!ShipZipCode.Value,4), Fields!ShipZipCode.Value))</Value>
+                                  <Style>
+                                    <FontSize>9pt</FontSize>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style>
+                                <TextAlign>Left</TextAlign>
+                              </Style>
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>Textbox3</rd:DefaultName>
+                          <Style>
+                            <Border>
+                              <Color>LightGrey</Color>
+                              <Style>None</Style>
+                            </Border>
+                            <VerticalAlign>Top</VerticalAlign>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
+                  </TablixCells>
+                </TablixRow>
+              </TablixRows>
+            </TablixBody>
+            <TablixColumnHierarchy>
+              <TablixMembers>
+                <TablixMember />
+              </TablixMembers>
+            </TablixColumnHierarchy>
+            <TablixRowHierarchy>
+              <TablixMembers>
+                <TablixMember>
+                  <Group Name="Details" />
+                </TablixMember>
+              </TablixMembers>
+            </TablixRowHierarchy>
+            <DataSetName>dsLabels</DataSetName>
+            <Top>0.09in</Top>
+            <Left>0.09in</Left>
+            <Height>0.7in</Height>
+            <Width>2.5in</Width>
+            <Style>
+              <Border>
+                <Style>None</Style>
+              </Border>
+              <PaddingLeft>10pt</PaddingLeft>
+            </Style>
+          </Tablix>
+        </ReportItems>
+        <Height>0.88958in</Height>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+        </Style>
+      </Body>
+      <Width>2.69167in</Width>
+      <Page>
+        <PageHeight>1in</PageHeight>
+        <PageWidth>3in</PageWidth>
+        <InteractiveHeight>0.85in</InteractiveHeight>
+        <InteractiveWidth>3in</InteractiveWidth>
+        <Style />
+      </Page>
+    </ReportSection>
+  </ReportSections>
+  <ReportParameters>
+    <ReportParameter Name="SiteCode">
+      <DataType>String</DataType>
+      <Prompt>Site Code</Prompt>
+      <cl:ComponentMetadata>
+        <cl:ComponentId>8659bcc6-dc8c-49d2-bcf4-31a5abefa5dc</cl:ComponentId>
+        <cl:SourcePath>/Report Parts/SiteCode</cl:SourcePath>
+        <cl:SyncDate>2017-04-11T17:59:27.2339898-05:00</cl:SyncDate>
+      </cl:ComponentMetadata>
+    </ReportParameter>
+    <ReportParameter Name="OrderSTatusTypeID">
+      <DataType>String</DataType>
+      <Prompt>Order STatus Type ID</Prompt>
+      <cl:ComponentMetadata>
+        <cl:ComponentId>609dba0e-0309-4c68-8ae0-aafc248ba3d0</cl:ComponentId>
+        <cl:SourcePath>/Report Parts/OrderSTatusTypeID</cl:SourcePath>
+        <cl:SyncDate>2017-04-11T17:59:27.5884956-05:00</cl:SyncDate>
+      </cl:ComponentMetadata>
+    </ReportParameter>
+    <ReportParameter Name="DateTime">
+      <DataType>DateTime</DataType>
+      <Prompt>Date Time</Prompt>
+      <cl:ComponentMetadata>
+        <cl:ComponentId>67cddd46-f90e-4e5b-92eb-fc514ad3b3a5</cl:ComponentId>
+        <cl:SourcePath>/Report Parts/DateTime</cl:SourcePath>
+        <cl:SyncDate>2017-04-11T17:59:27.6461150-05:00</cl:SyncDate>
+      </cl:ComponentMetadata>
+    </ReportParameter>
+    <ReportParameter Name="datasrc">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>pocsatxa4014</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>datasrc</Prompt>
+      <Hidden>true</Hidden>
+    </ReportParameter>
+    <ReportParameter Name="initcat">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>srtsProdTestDB</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>initcat</Prompt>
+      <Hidden>true</Hidden>
+    </ReportParameter>
+  </ReportParameters>
+  <Variables>
+    <Variable Name="VBCRLF">
+      <Value>chr(13) + chr(10)</Value>
+    </Variable>
+  </Variables>
+  <rd:ReportUnitType>Inch</rd:ReportUnitType>
+  <rd:ReportServerUrl>https://amedsatxa4157.amed.ds.army.mil/ReportServer</rd:ReportServerUrl>
+  <rd:ReportID>c05d3584-2672-4877-9f2f-21524a253e7a</rd:ReportID>
+</Report>

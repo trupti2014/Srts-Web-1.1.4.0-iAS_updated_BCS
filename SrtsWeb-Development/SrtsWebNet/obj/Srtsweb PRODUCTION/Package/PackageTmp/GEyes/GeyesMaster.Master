@@ -1,0 +1,252 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="GeyesMaster.master.cs" Inherits="SrtsWeb.GEyes.GeyesMaster" %>
+
+<!DOCTYPE html>
+<%@ Register Assembly="AjaxControlToolkit" Namespace="AjaxControlToolkit" TagPrefix="asp" %>
+<html lang="en">
+<head id="Head1" runat="server">
+    <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE9" />
+    <title>DoD G-Eyes</title>
+    <link href="../Styles/jquery-ui.min.css" rel="stylesheet" />
+    <link href="../Styles/srtsBaseStyles.css" rel="Stylesheet" />
+    <link href="../Styles/w3.css" rel="Stylesheet" type="text/css" />
+    <asp:ContentPlaceHolder ID="HeadContent" runat="server">
+    </asp:ContentPlaceHolder>
+    <script type="text/javascript">
+                function displaySrtsMessage(title, message, type) {
+            var messageText = document.getElementById('srtsMessageText');
+            var messageTitle = document.getElementById('srtsMessageTitle');
+            var srtsMessage = document.getElementById('srtsMessage');
+            var messageType = type;
+            if (message != "") {
+                messageText.innerHTML = message;
+                messageTitle.innerHTML = title;
+                $("#srtsMessage").fadeIn(500);
+                if (messageType == "error") {
+                    messageTitle.className = "error";
+                }
+                if (messageType == "success") {
+                    messageTitle.className = "success";
+                    $("#srtsMessage").delay(3000).fadeOut(3000);
+                }
+            }
+        }
+
+        var TimeOut = 900000;
+    </script>
+        <style>
+        .srtsMessage {
+            position: absolute;
+            top: 10px;
+            left: 250px;
+            height: auto;
+            min-height: 120px;
+            min-width: 400px;
+            padding: 0px;
+            background: transparent;
+            border-radius: 4px;
+        }
+
+        .shadow {
+            -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.12);
+            -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.12);
+            box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.12);
+        }
+
+        .srtsMessage .header_info {
+            font-size: 15px;
+            color: #004994;
+            padding: 5px 10px;
+            background-color: transparent;
+        }
+
+        .srtsMessage .content {
+            background-color: #fff;
+            padding: 10px 10px;
+            text-align: left;
+        }
+
+        .srtsMessage .title {
+            width: 95%;
+            padding: 10px 10px;
+            text-align: center;
+            font-size: 17px!important;
+            color: #006600;
+        }
+
+        .srtsMessage .message {
+            margin: 5px;
+            padding: 5px 10px;
+            text-align: center;
+            font-size: 13px!important;
+            color: #000;
+        }
+
+        .srtsMessage .w3-closebtn {
+            margin-top: -3px;
+        }
+
+        .success {
+            width: 95%;
+            padding: 0px 5px;
+            margin-left: 20px;
+            text-align: left;
+            font-size: 20px!important;
+            color: #2A7713;
+        }
+
+        .error {
+            width: 95%;
+            padding: 0px 5px;
+            margin-left: 20px;
+            text-align: left;
+            font-size: 20px!important;
+            color: #cc0000;
+        }
+    </style>
+</head>
+<body>
+        <%--SRTSweb Modal Message --%>
+    <div id="srtsMessage" class="w3-modal" style="z-index: 30000">
+        <div class="w3-modal-content">
+            <div class="w3-container">
+                <div class="srtsMessage">
+                    <div class="BeigeBoxContainer shadow" style="">
+                        <div style="background-color: #fff">
+                            <div class="BeigeBoxHeader" style="padding: 12px 10px 5px 15px">
+
+                                <div id="srtsMessageheader" class="header_info">
+                                    <span onclick="document.getElementById('srtsMessage').style.display='none'"
+                                        class="w3-closebtn">&times;</span>
+                                    SRTSweb Message
+                                </div>
+
+                            </div>
+                            <div class="BeigeBoxContent" style="min-height: 120px;">
+                                <div class="content">
+                                    <div class="w3-row">
+                                        <div id="srtsMessageTitle" runat="server" class="success">Success!</div>
+                                    </div>
+                                    <div class="w3-row">
+                                        <div id="srtsMessageText" runat="server" class="message"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <form id="form1" runat="server" enctype="multipart/form-data">
+        <asp:HiddenField ID="hdfMaster" runat="server" />
+        <ajaxToolkit:ToolkitScriptManager ID="ToolkitManager1" runat="server" EnableScriptLocalization="true" EnableScriptGlobalization="true" LoadScriptsBeforeUI="true" EnablePageMethods="true">
+            <Scripts>
+                <asp:ScriptReference Path="~/Scripts/Global/jquery-1.11.1.min.js" />
+                <asp:ScriptReference Path="~/Scripts/Global/jquery-ui.min.js" />
+                <asp:ScriptReference Path="~/Scripts/Global/IdleTimeout.js" />
+            </Scripts>
+        </ajaxToolkit:ToolkitScriptManager>
+
+        <div style="overflow: hidden;">
+            <div id="wrapper" runat="server" style="">
+                <div style="width: 400px; max-width: 400px; float: right; margin-bottom: 5px; height: 25px;">
+                </div>
+                <div id="MainPageContent">
+                    <div id="divMasterHeader" style="">
+                        <div id="mainheader" runat="server" class="w3-row" style="padding: 0px">
+                            <div id="fouoBanner">
+                                <span>This page contains dynamic content - Highest Possible Classification is UNCLASSIFIED/FOR OFFICIAL USE ONLY</span>
+                            </div>
+                            <div class="innerheader" style="background: url('/Styles/images/img_SrtsWeb_LogoHeader_bk.png') repeat-x -20px -64px">
+                                <div class="w3-half" style="padding: 0px">
+                                    <a id="A1" href="~/WebForms/Default.aspx" runat="server" title="SRTSweb Home">
+                                        <div class="left" style="background: url('/Styles/images/img_SrtsWeb_SlideShow_img3.png') no-repeat -30px -64px"></div>
+                                    </a>
+                                </div>
+                                <div class="w3-half" style="padding: 0px">
+                                    <div class="right" style="background: url('/Styles/images/img_SrtsWeb_Logo_Contactus_DHA.png') no-repeat 35px -64px"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="MainPageContentInner">
+                        <div class="center">
+                            <div style="position: relative; right: 0; text-align: right; margin-right: 30px">
+                                <asp:Literal ID="litMasterMessage" runat="server" Text=""></asp:Literal>
+                            </div>
+                            <div style="margin-top: -30px">
+                                <asp:ContentPlaceHolder ID="MainContent_Public" runat="server"></asp:ContentPlaceHolder>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="footer" style="border-top: solid 5px #7B2C18;" runat="server">
+                    <div class="right">
+                    </div>
+                    <div class="left">
+                        <p class="copyright">
+                            Copyright &copy 2014 SRTS Web (Version:<a href="../WebForms/Public/ReleaseNotes.aspx" id="versionRef" runat="server"><asp:Literal ID="litVersion" runat="server"></asp:Literal></a>)<br />
+                            Developed by the SRTS Team at:<br />
+                            Defense Health Agency - Solutions Delivery Division<br />
+                            2710 Howitzer St., Bldg. 2372  -  Ft. Sam Houston, TX  78234
+                        </p>
+                    </div>
+                    <div class="center">
+                        <div class="col">
+                            <h1>Information</h1>
+                            <ul>
+                                <li><a id="A4" href="../WebForms/Public/PrivacyAndSecurity.aspx" runat="server">Privacy and Security Statement</a></li>
+                                <li><a id="A5" href="../WebForms/Public/Sitemap.aspx" runat="server">Site Map</a></li>
+                                <li><a id="A6" href="../WebForms/Public/Accessability.aspx" runat="server">Website Accessibility</a> </li>
+                            </ul>
+                        </div>
+                        <div class="col">
+                            <h1>Resources</h1>
+                            <ul>
+                                <li><a id="A8" href="../WebForms/Public/Support.aspx" runat="server">Contact Us</a></li>
+                            </ul>
+                        </div>
+                        <div class="col">
+                            <h1>DoD Resources</h1>
+                            <ul>
+                                <li><a href="http://phc.amedd.army.mil/Pages/default.aspx" target="_blank">U.S. Army Public Health Command</a> </li>
+                                <li><a href="http://www.cac.mil/" target="_blank">DoD Common Access Card</a></li>
+                                <li><a href="https://www.inscom.army.mil/isalute" target="_blank"><b>iSalute</b> - U.S. Army Counterintelligence Reporting</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <p style="text-align: center; margin-top: 15px; padding-top:15px; font-size: 85%; line-height:35px;">
+                            This site is best viewed in Internet Explorer version 9 or higher with Javascript enabled.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <asp:UpdateProgress ID="upEditOrder" runat="server">
+            <ProgressTemplate>
+                <div id="thecontainer">
+                    <div id="overlay"></div>
+                    <div id="modalprogress">
+                        <div id="thetransparency"></div>
+                        <div id="theprogress">
+                            <span>Processing...</span>
+                        </div>
+                    </div>
+                </div>
+            </ProgressTemplate>
+        </asp:UpdateProgress>
+    </form>
+        <script type="text/javascript">
+        $(document).ready(function () {
+            // if the srtsMessage modal is open, click outside the message box to close it
+            window.onclick = function (event) {
+                if (event.srcElement) {
+                    if (event.srcElement.id == 'srtsMessage')
+                        document.getElementById('srtsMessage').style.display = 'none';
+                }
+            }
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,190 @@
+﻿/*
+ * This style sheet is focused on styling custom elements.
+ * It contains the custom elements for input, select, and buttons.
+*/
+@import '../../Base/Variables.scss';
+@import '../../Base/Mixins.scss';
+
+$horizontal-margin: 10px;
+
+/* Custom input semantics
+ * Note: RequiredFieldValidator displays a span element when error is thrown.
+ *
+ *   <div class="input">
+ *      <label>Some label</label> // Has required attribute
+ *      <input runat="server" id="someInput" placeholder="someInput" />
+ *      <asp:RequiredFieldValidator ID="someRFV" runat="server" ErrorMessage="someErrorMessage" CssClass="error-message" Display="Dynamic" ControlToValidate="inputCity" ValidationGroup="someValidationGroup"></asp:RequiredFieldValidator>
+ *  </div>
+*/
+
+/* Custom select semantics
+ * Note: RequiredFieldValidator displays a span element when error is thrown.
+ *
+ *  <div class="select">
+ *      <label>Some label</label> // Has required attribute
+ *      <asp:DropDownList runat="server" ID="someID">
+ *         <asp:ListItem>Option 1</asp:ListItem>
+ *      </asp:DropDownList>
+ *      <asp:RequiredFieldValidator ID="someRFV" runat="server" ErrorMessage="someErrorMessage" CssClass="error-message" Display="Dynamic" ControlToValidate="inputCity" ValidationGroup="someValidationGroup"></asp:RequiredFieldValidator>
+ *  </div>
+*/
+// input and selects
+.input, .select {
+    position: relative;
+    display: block;
+    margin-bottom: $horizontal-margin;
+    text-align: left;
+
+    input, select {
+        box-sizing: border-box;
+        display: block;
+        width: 100%;
+        height: 35px;
+        max-width: none;
+        margin-bottom: $horizontal-margin;
+    }
+
+    &::placeholder {
+        font-size: .7rem;
+    }
+
+    label {
+        display: block;
+        margin-bottom: $horizontal-margin;
+        color: $color-primary-alt-darkest;
+
+        &[required]:before {
+            color: $color-secondary-dark-red;
+            content: '*';
+        }
+    }
+
+    span {
+        display: block;
+        font-size: .8rem;
+    }
+
+    .error-message {
+        margin-bottom: 5px;
+        color: $color-secondary-dark-red;
+    }
+}
+
+//input and select states
+input, select {
+    background-repeat: no-repeat;
+    background-position: right 1rem center;
+    background-size: 0.75rem;
+
+    &[valid] {
+        border-color: $color-green;
+        background-image: url("data:image/svg+xml,%3Csvg width='45px' height='34px' viewBox='0 0 45 34' version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'%3E%3Cg stroke='none' stroke-width='1' fill='none' fill-rule='evenodd'%3E%3Cg transform='translate%28-56.000000, -59.000000%29' fill='%232EEC96'%3E%3Cpolygon points='70.1468531 85.8671329 97.013986 59 100.58042 62.5664336 70.1468531 93 56 78.8531469 59.5664336 75.2867133'%3E%3C/polygon%3E%3C/g%3E%3C/g%3E%3C/svg%3E%0A");
+    }
+
+    &[invalid] {
+        border-color: $color-secondary-dark-red;
+        background-image: url("data:image/svg+xml,%3Csvg width='30px' height='30px' viewBox='0 0 30 30' version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'%3E%3Cg stroke='none' stroke-width='1' fill='none' fill-rule='evenodd'%3E%3Cg transform='translate%28-128.000000, -59.000000%29' fill='%23F44336'%3E%3Cpolygon points='157.848404 61.9920213 145.980053 73.8603723 157.848404 85.7287234 154.856383 88.7207447 142.988032 76.8523936 131.119681 88.7207447 128.12766 85.7287234 139.996011 73.8603723 128.12766 61.9920213 131.119681 59 142.988032 70.8683511 154.856383 59'%3E%3C/polygon%3E%3C/g%3E%3C/g%3E%3C/svg%3E%0A");
+    }
+
+    &[read-only] {
+        border-color: $color-gray-lighter !important;
+        color: $color-gray;
+        cursor: not-allowed;
+    }
+}
+
+// select
+.select {
+    &:after {
+        content: '>';
+        position: absolute;
+        top: 27px;
+        right: 10px;
+        padding: 8px;
+        border: 1px solid $color-gray-light;
+        border-radius: 3px;
+        color: $color-gray-dark;
+        font: 17px "Consolas", monospace;
+        -webkit-transform: rotate(90deg);
+        -moz-transform: rotate(90deg);
+        -ms-transform: rotate(90deg);
+        transform: rotate(90deg);
+        pointer-events: none;
+    }
+
+    select {
+        // Hide arrow
+        @include appearance(none);
+
+        &:active, &:focus {
+            outline: none;
+        }
+
+        &::-ms-expand {
+            display: none;
+        }
+
+        &[disabled] {
+            background: $color-gray-light;
+        }
+    }
+}
+
+
+// Buttons
+.btn {
+    display: block;
+    min-width: 180px;
+    padding: 10px 10px;
+    border-radius: 16px;
+    border: 1px solid $color-white;
+    line-height: 10px;
+    color: $color-white;
+    background: $color-primary-darker;
+    text-align: center;
+    cursor: pointer;
+
+    &[disabled="true"], &[disabled="disabled"] {
+        color: $color-gray;
+        background-color: $color-gray-light;
+        cursor: default;
+    }
+}
+
+.btn--small {
+    min-width: 50px;
+}
+
+.btn--medium {
+    width: 200px;
+}
+
+.btn--heavy {
+    border-radius: 18px !important;
+    height: 18px;
+    line-height: 18px !important;
+}
+
+.btn--full-width {
+    width: 100%;
+}
+
+.btn--margin-center {
+    margin: 0 auto;
+}
+
+// Grouping
+.group {
+    display: inline-block;
+    width: 100%;
+}
+
+.group-2 {
+    vertical-align: top;
+    width: calc(50% - 3px);
+    padding: 0 !important;
+}
+
+.inline {
+    display: inline-block;
+}

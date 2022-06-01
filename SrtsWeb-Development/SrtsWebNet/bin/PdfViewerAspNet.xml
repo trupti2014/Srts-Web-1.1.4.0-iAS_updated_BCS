@@ -1,0 +1,450 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>ExpertPdf.PdfViewer4AspNet.NetCore</name>
+    </assembly>
+    <members>
+        <member name="T:PdfViewer4AspNet.DocumentDisplayMode">
+            <summary>
+            The display mode of the PDF document in the viewer.
+            </summary>
+        </member>
+        <member name="F:PdfViewer4AspNet.DocumentDisplayMode.NotSet">
+            <summary>
+            Use default document display mode.
+            </summary>
+        </member>
+        <member name="F:PdfViewer4AspNet.DocumentDisplayMode.None">
+            <summary>
+            Displays the document, but does not display bookmarks or thumbnails (default)
+            </summary>
+        </member>
+        <member name="F:PdfViewer4AspNet.DocumentDisplayMode.Bookmarks">
+            <summary>
+            Displays the document and bookmarks.
+            </summary>
+        </member>
+        <member name="F:PdfViewer4AspNet.DocumentDisplayMode.Thumbs">
+            <summary>
+            Displays the document and thumbnails.
+            </summary>
+        </member>
+        <member name="T:PdfViewer4AspNet.EncryptionKeySize">
+            <summary>
+            The length of the encryption key
+            </summary>
+        </member>
+        <member name="F:PdfViewer4AspNet.EncryptionKeySize.EncryptKey128Bit">
+            <summary>
+            A 128 bit length.
+            </summary>
+        </member>
+        <member name="F:PdfViewer4AspNet.EncryptionKeySize.EncryptKey40Bit">
+            <summary>
+            A 40 bit length.
+            </summary>
+        </member>
+        <member name="T:PdfViewer4AspNet.PageFitMode">
+            <summary>
+            The fit mode of the PDF page in the viewer.
+            </summary>
+        </member>
+        <member name="F:PdfViewer4AspNet.PageFitMode.NotSet">
+            <summary>
+            Use the default fit mode
+            </summary>
+        </member>
+        <member name="F:PdfViewer4AspNet.PageFitMode.Fit">
+            <summary>
+            Fits the entire page within the window both vertically and horizontally.
+            </summary>
+        </member>
+        <member name="F:PdfViewer4AspNet.PageFitMode.FitH">
+            <summary>
+            Fits the entire width of the page within the window
+            </summary>
+        </member>
+        <member name="F:PdfViewer4AspNet.PageFitMode.FitV">
+            <summary>
+            Fits the entire height of the page within the window.
+            </summary>
+        </member>
+        <member name="F:PdfViewer4AspNet.PageFitMode.FitB">
+            <summary>
+            Fits the bounding box within the window both vertically and horizontally.
+            </summary>
+        </member>
+        <member name="F:PdfViewer4AspNet.PageFitMode.FitBH">
+            <summary>
+            Fits the entire width of the bounding box within the window.
+            </summary>
+        </member>
+        <member name="F:PdfViewer4AspNet.PageFitMode.FitBV">
+            <summary>
+            Fits the entire height of the bounding box within the window.
+            </summary>
+        </member>
+        <member name="T:PdfViewer4AspNet.PdfSecurityOptions">
+            <summary>
+            This class encapsulates the options to control the PDF document
+            security options. The PDF document is modified
+            to apply the properties from the PdfSecurityOptions before being displayed in the viewer control
+            and this might introduce an additional delay before the document is displayed.
+            </summary>
+        </member>
+        <member name="P:PdfViewer4AspNet.PdfSecurityOptions.CanAssembleDocument">
+            <summary>
+            Can assemble the document (create bookmarks, thumbnail images or insert, rotate, delete
+            pages). This property has effect when a 128 bit key is used.
+            </summary>
+        </member>
+        <member name="P:PdfViewer4AspNet.PdfSecurityOptions.CanCopyContent">
+            <summary>
+            Can copy the document content. 
+            </summary>
+        </member>
+        <member name="P:PdfViewer4AspNet.PdfSecurityOptions.CanEditAnnotations">
+            <summary>
+            Can edit PDF document annotations. 
+            </summary>
+        </member>
+        <member name="P:PdfViewer4AspNet.PdfSecurityOptions.CanEditContent">
+            <summary>
+            Can edit PDF document content. 
+            </summary>
+        </member>
+        <member name="P:PdfViewer4AspNet.PdfSecurityOptions.CanFillFormFields">
+            <summary>
+            Can fill the form fields. This property has effect when a 128 bit key is used.
+            </summary>
+        </member>
+        <member name="P:PdfViewer4AspNet.PdfSecurityOptions.CanPrint">
+            <summary>
+            Can print the document. 
+            </summary>
+        </member>
+        <member name="P:PdfViewer4AspNet.PdfSecurityOptions.KeySize">
+            <summary>
+            The dimension of the encryption key. By default a 128 bit key is used.
+            </summary>
+        </member>
+        <member name="P:PdfViewer4AspNet.PdfSecurityOptions.OwnerPassword">
+            <summary>
+            The password required to change permissions of the PDF document like printing or editing. If the OwnerPassword property is an empty string and the UserPassword is not empty,
+            the OwnerPassword will be automatically assigned with the value from UserPassword and when the PDF document is opened in the viewer using the user password (which is also the owner password) 
+            all the operations like printing, copying, etc will be allowed.
+            </summary>
+        </member>
+        <member name="P:PdfViewer4AspNet.PdfSecurityOptions.UserPassword">
+            <summary>
+            The password required to open the PDF document. If the OwnerPassword property is an empty string and the UserPassword is not empty,
+            the OwnerPassword will be automatically assigned with the value from UserPassword and when the PDF document is opened in the viewer using the user password (which is also the owner password) 
+            all the operations like printing, copying, etc will be allowed.
+            </summary>
+        </member>
+        <member name="T:PdfViewer4AspNet.PdfViewer">
+            <summary>
+            The PDF Viewer control for ASP.NET
+            </summary>
+        </member>
+        <member name="P:PdfViewer4AspNet.PdfViewer.PdfSourceURL">
+            <summary>
+            The URL of the PDF document to be displayed in the viewer. If the PdfSourceBytes is set, this 
+            property will be ignored
+            </summary>
+        </member>
+        <member name="P:PdfViewer4AspNet.PdfViewer.LicenseKey">
+            <summary>
+            Gets or sets the license key
+            </summary>
+        </member>
+        <member name="P:PdfViewer4AspNet.PdfViewer.CurrentPage">
+            <summary>
+            Goes to the specified page in the document. Maintains the current location within the page and zoom level.
+            The first page in a document is page 1. A negative value means that the viewer will go to a default page.
+            The default value is -1.
+            </summary>
+        </member>
+        <member name="P:PdfViewer4AspNet.PdfViewer.PageLayoutMode">
+            <summary>
+            Gets or sets the layout mode for a page view. The default value is OneColumn.
+            This property modifies the PDF document viewer preferences.
+            </summary>
+        </member>
+        <member name="P:PdfViewer4AspNet.PdfViewer.ShowNavigationPanel">
+            <summary>
+            Show or hide the navigation panel from the left side of the viewer containing buttons 
+            to view the bookmarks, thumbnails, file attachments and comments of the document.
+            The default value of this property is true. 
+            </summary>
+        </member>
+        <member name="P:PdfViewer4AspNet.PdfViewer.DocumentDisplayMode">
+            <summary>
+            Gets or sets the display mode of the document to show thumbnails or bookmarks. The default value is NotSet.
+            </summary>
+        </member>
+        <member name="P:PdfViewer4AspNet.PdfViewer.ShowScrollbars">
+            <summary>
+            Show or hide the viewer scrollbars. The default value is true.
+            </summary>
+        </member>
+        <member name="P:PdfViewer4AspNet.PdfViewer.ShowToolbarMode">
+            <summary>
+            Show or hide the viewer toolbar. The default value is NotSet.
+            </summary>
+        </member>
+        <member name="P:PdfViewer4AspNet.PdfViewer.PageFitMode">
+            <summary>
+            Gets or sets the fit mode of the PDF page in the viewer. The default value is NotSet.
+            </summary>
+        </member>
+        <member name="P:PdfViewer4AspNet.PdfViewer.ZoomPercentage">
+            <summary>
+            Gets or sets the zoom percentage of the viewer as a float number. For example, 100 represents a magnification of 100%. 
+            A negative value means the default zoom percentage is used. The default value is -1.
+            </summary>
+        </member>
+        <member name="P:PdfViewer4AspNet.PdfViewer.PdfViewerPreferences">
+            <summary>
+            Gets a reference to the object controlling the PDF document viewer preferences. The properties of this
+            object allows you hide toolbars and menus, hide all navigation panels, change the page mode and the page layout.
+            The PDF document viewer preferences are modified before the document is displayed by the viewer. The modified
+            viewer preferences are taking effect after the document is reloaded in the viewer control.
+            </summary>
+        </member>
+        <member name="P:PdfViewer4AspNet.PdfViewer.PdfSecurityOptions">
+            <summary>
+            Gets a reference to the object to controlling the PDF document security settings like user and owner password, 
+            restrict printing or editing of the generated PDF document.
+            The PDF document security settings are modified before the document is displayed by the viewer. The modified
+            security settings are taking effect after the document is reloaded in the viewer control.
+            </summary>
+        </member>
+        <member name="P:PdfViewer4AspNet.PdfViewer.PdfSourceBytes">
+            <summary>
+            The PDF bytes array to be rendered by the control
+            </summary>
+        </member>
+        <member name="M:PdfViewer4AspNet.PdfViewer.GetPageCount(System.IO.Stream)">
+            <summary>
+            A fast method to obtain the page count of a specified PDF document.
+            </summary>
+            <param name="pdfStream">The stream containing the PDF document for which to get the page count.</param>
+            <returns>The number of pages in the specified PDF document.</returns>
+        </member>
+        <member name="P:PdfViewer4AspNet.PdfViewer.OpenPassword">
+            <summary>
+            A password used to open a password protected PDF document in order to change its 
+            viewer preferences and security options.
+            </summary>
+        </member>
+        <member name="M:PdfViewer4AspNet.PdfViewer.RenderContents(System.Web.UI.HtmlTextWriter)">
+            <summary>
+            Render HTML code for this control
+            </summary>
+            <param name="output">The output writer</param>
+        </member>
+        <member name="T:PdfViewer4AspNet.PdfViewerException">
+            <summary>
+            The PDF Viewer Exception
+            </summary>
+        </member>
+        <member name="M:PdfViewer4AspNet.PdfViewerException.#ctor(System.String)">
+            <summary>
+            Constructor
+            </summary>
+            <param name="message">The error message</param>
+        </member>
+        <member name="M:PdfViewer4AspNet.PdfViewerException.#ctor(System.String,System.Exception)">
+            <summary>
+            Constructor
+            </summary>
+            <param name="message">The error message</param>
+            <param name="innerException">The inner exception</param>
+        </member>
+        <member name="T:PdfViewer4AspNet.PdfViewerFullScreenExitMode">
+            <summary>
+            Used in PdfViewerPreferences to specify how to display the document on exiting full-screen mode
+            </summary>
+        </member>
+        <member name="F:PdfViewer4AspNet.PdfViewerFullScreenExitMode.UseNone">
+            <summary>
+            Neither document outline nor thumbnail images visible.
+            </summary>
+        </member>
+        <member name="F:PdfViewer4AspNet.PdfViewerFullScreenExitMode.UseOutlines">
+            <summary>
+            Document outline visible.
+            </summary>
+        </member>
+        <member name="F:PdfViewer4AspNet.PdfViewerFullScreenExitMode.UseThumbs">
+            <summary>
+            Thumbnail images visible.
+            </summary>
+        </member>
+        <member name="F:PdfViewer4AspNet.PdfViewerFullScreenExitMode.UseOC">
+            <summary>
+            Optional content group panel visible.
+            </summary>
+        </member>
+        <member name="T:PdfViewer4AspNet.PdfViewerPageLayout">
+            <summary>
+            The page layout in PdfViewerPreferences to be used when the document is opened.
+            </summary>
+        </member>
+        <member name="F:PdfViewer4AspNet.PdfViewerPageLayout.SinglePage">
+            <summary>
+            Display one page at a time.
+            </summary>
+        </member>
+        <member name="F:PdfViewer4AspNet.PdfViewerPageLayout.OneColumn">
+            <summary>
+            Display the pages in one column.
+            </summary>
+        </member>
+        <member name="F:PdfViewer4AspNet.PdfViewerPageLayout.TwoColumnLeft">
+            <summary>
+            Display the pages in two columns, with odd numbered
+            pages on the left.
+            </summary>
+        </member>
+        <member name="F:PdfViewer4AspNet.PdfViewerPageLayout.TwoColumnRight">
+            <summary>
+            Display the pages in two columns, with odd numbered
+            pages on the right.
+            </summary>
+        </member>
+        <member name="T:PdfViewer4AspNet.PdfViewerPageMode">
+            <summary>
+            Options in PdfViewerPreferences for how the document should be displayed when opened.
+            </summary>
+        </member>
+        <member name="F:PdfViewer4AspNet.PdfViewerPageMode.UseNone">
+            <summary>
+            Neither document outline nor thumbnail images visible.
+            </summary>
+        </member>
+        <member name="F:PdfViewer4AspNet.PdfViewerPageMode.UseOutlines">
+            <summary>
+            Document outline (bookmarks) visible.
+            </summary>
+        </member>
+        <member name="F:PdfViewer4AspNet.PdfViewerPageMode.UseThumbs">
+            <summary>
+            Thumbnail images visible.
+            </summary>
+        </member>
+        <member name="F:PdfViewer4AspNet.PdfViewerPageMode.FullScreen">
+            <summary>
+            Full-screen mode, with no menu bar, window
+            controls, or any other window visible.
+            </summary>
+        </member>
+        <member name="F:PdfViewer4AspNet.PdfViewerPageMode.UseOC">
+            <summary>
+            Optional content group panel visible.
+            </summary>
+        </member>
+        <member name="F:PdfViewer4AspNet.PdfViewerPageMode.UseAttachments">
+            <summary>
+            Document attachments visible.
+            </summary>
+        </member>
+        <member name="T:PdfViewer4AspNet.PdfViewerPreferences">
+            <summary>
+            Represents the viewer preferences of the PDF document. The PDF document is modified
+            to apply the properties from the PdfViewerPreferences before being displayed in the viewer control
+            and this might introduce an additional delay before the document is displayed.
+            </summary>
+        </member>
+        <member name="P:PdfViewer4AspNet.PdfViewerPreferences.HideMainToolbar">
+            <summary>
+            A flag specifying whether to hide the viewer application’s tool
+            bars when the document is active. Default value: False.
+            </summary>
+        </member>
+        <member name="P:PdfViewer4AspNet.PdfViewerPreferences.HideMenuBar">
+            <summary>
+            A flag specifying whether to hide the viewer application’s
+            menu bar when the document is active. Default value: False.
+            </summary>
+        </member>
+        <member name="P:PdfViewer4AspNet.PdfViewerPreferences.HideWindowUI">
+            <summary>
+            A flag specifying whether to hide user interface elements in
+            the document’s window (such as scroll bars and navigation controls),
+            leaving only the document’s contents displayed. Default value: False.
+            </summary>
+        </member>
+        <member name="P:PdfViewer4AspNet.PdfViewerPreferences.FitWindow">
+            <summary>
+            A flag specifying whether to resize the document’s window to
+            fit the size of the first displayed page. Default value: False.
+            </summary>
+        </member>
+        <member name="P:PdfViewer4AspNet.PdfViewerPreferences.DisplayDocTitle">
+            <summary>
+            A flag specifying whether the window’s title bar should display the document title
+            taken from the title entry of the document information dictionary. Default value: False.
+            </summary>
+        </member>
+        <member name="P:PdfViewer4AspNet.PdfViewerPreferences.NonFullScreenPageMode">
+            <summary>
+            The document’s page mode, specifying how to display the
+            document on exiting full-screen mode. This entry is meaningful only if the value of the PageMode entry in the catalog dictionary 
+            is FullScreen; it is ignored otherwise. Default value: UseNone.
+            </summary>
+        </member>
+        <member name="P:PdfViewer4AspNet.PdfViewerPreferences.Direction">
+            <summary>
+            The predominant reading order for text. Default value: L2R.
+            </summary>
+        </member>
+        <member name="P:PdfViewer4AspNet.PdfViewerPreferences.PageMode">
+            <summary>
+            Specifies how the document should be displayed when opened. Default value: UseNone.
+            </summary>
+        </member>
+        <member name="P:PdfViewer4AspNet.PdfViewerPreferences.PageLayout">
+            <summary>
+            The page layout to be used when the document is opened. Default value: OneColumn.
+            </summary>
+        </member>
+        <member name="T:PdfViewer4AspNet.ViewerTextOrder">
+            <summary>
+            Used in PdfViewerPreferences to specify the predominant reading order for text.
+            </summary>
+        </member>
+        <member name="F:PdfViewer4AspNet.ViewerTextOrder.L2R">
+            <summary>
+            Left to right.
+            </summary>
+        </member>
+        <member name="F:PdfViewer4AspNet.ViewerTextOrder.R2L">
+            <summary>
+            Right to left ( including vertical writing systems such as
+            Chinese, Japanese, and Korean ).
+            </summary>
+        </member>
+        <member name="T:PdfViewer4AspNet.ShowToolbarMode">
+            <summary>
+            The viewer toolbar display mode.
+            </summary>
+        </member>
+        <member name="F:PdfViewer4AspNet.ShowToolbarMode.NotSet">
+            <summary>
+            The default display mode.
+            </summary>
+        </member>
+        <member name="F:PdfViewer4AspNet.ShowToolbarMode.Show">
+            <summary>
+            Show the toolbar.
+            </summary>
+        </member>
+        <member name="F:PdfViewer4AspNet.ShowToolbarMode.Hide">
+            <summary>
+            Hide the toolbar.
+            </summary>
+        </member>
+    </members>
+</doc>

@@ -1,0 +1,50 @@
+C:\DEV2\SRTS\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\BusinessLayer\bin\Srtstraining Debug\SrtsWeb.BusinessLayer.dll.config
+C:\DEV2\SRTS\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\BusinessLayer\bin\Srtstraining Debug\SrtsWeb.BusinessLayer.dll
+C:\DEV2\SRTS\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\BusinessLayer\bin\Srtstraining Debug\SrtsWeb.BusinessLayer.XmlSerializers.dll
+C:\DEV2\SRTS\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\BusinessLayer\bin\Srtstraining Debug\SrtsWeb.BusinessLayer.pdb
+C:\DEV2\SRTS\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\BusinessLayer\bin\Srtstraining Debug\AjaxControlToolkit.dll
+C:\DEV2\SRTS\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\BusinessLayer\bin\Srtstraining Debug\BarcodeLib.dll
+C:\DEV2\SRTS\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\BusinessLayer\bin\Srtstraining Debug\CSSFriendly.dll
+C:\DEV2\SRTS\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\BusinessLayer\bin\Srtstraining Debug\Elmah.dll
+C:\DEV2\SRTS\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\BusinessLayer\bin\Srtstraining Debug\SrtsWeb.DataLayer.dll
+C:\DEV2\SRTS\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\BusinessLayer\bin\Srtstraining Debug\SrtsWeb.Entities.dll
+C:\DEV2\SRTS\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\BusinessLayer\bin\Srtstraining Debug\SrtsWeb.ExtendersHelpersEnums.dll
+C:\DEV2\SRTS\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\BusinessLayer\bin\Srtstraining Debug\SrtsDataBaseAccess.dll
+C:\DEV2\SRTS\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\BusinessLayer\bin\Srtstraining Debug\DataToObjectLib.dll
+C:\DEV2\SRTS\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\BusinessLayer\bin\Srtstraining Debug\SrtsWeb.ExtendersHelpersEnums.pdb
+C:\DEV2\SRTS\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\BusinessLayer\bin\Srtstraining Debug\SrtsWeb.DataLayer.pdb
+C:\DEV2\SRTS\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\BusinessLayer\bin\Srtstraining Debug\SrtsWeb.Entities.pdb
+C:\DEV2\SRTS\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\BusinessLayer\obj\Srtstraining DEV\SrtsWeb.BusinessLayer.csprojAssemblyReference.cache
+C:\DEV2\SRTS\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\BusinessLayer\obj\Srtstraining DEV\SrtsWeb.BusinessLayer.csproj.ResolveComReference.cache
+C:\DEV2\SRTS\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\BusinessLayer\obj\Srtstraining DEV\SrtsWeb.BusinessLayer.Properties.Resources.resources
+C:\DEV2\SRTS\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\BusinessLayer\obj\Srtstraining DEV\SrtsWeb.BusinessLayer.csproj.GenerateResource.cache
+C:\DEV2\SRTS\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\BusinessLayer\obj\Srtstraining DEV\SrtsWeb.BusinessLayer.csproj.CoreCompileInputs.cache
+C:\DEV2\SRTS\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\BusinessLayer\obj\Srtstraining DEV\SrtsWeb.BusinessLayer.csproj.CopyComplete
+C:\DEV2\SRTS\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\BusinessLayer\obj\Srtstraining DEV\SrtsWeb.BusinessLayer.dll
+C:\DEV2\SRTS\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\BusinessLayer\obj\Srtstraining DEV\SrtsWeb.BusinessLayer.pdb
+C:\DEV2\SRTS\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\BusinessLayer\obj\Srtstraining DEV\SrtsWeb.BusinessLayer.XmlSerializers.dll
+C:\SRTS_New\SrtsWeb-Development-1.1.4.0-iAS (1)\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\BusinessLayer\obj\Srtstraining DEV\SrtsWeb.BusinessLayer.csprojAssemblyReference.cache
+C:\SRTS_New\SrtsWeb-Development-1.1.4.0-iAS (1)\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\BusinessLayer\obj\Srtstraining DEV\SrtsWeb.BusinessLayer.csproj.ResolveComReference.cache
+C:\SRTS_New\SrtsWeb-Development-1.1.4.0-iAS (1)\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\BusinessLayer\obj\Srtstraining DEV\SrtsWeb.BusinessLayer.Properties.Resources.resources
+C:\SRTS_New\SrtsWeb-Development-1.1.4.0-iAS (1)\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\BusinessLayer\obj\Srtstraining DEV\SrtsWeb.BusinessLayer.csproj.GenerateResource.cache
+C:\SRTS_New\SrtsWeb-Development-1.1.4.0-iAS (1)\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\BusinessLayer\obj\Srtstraining DEV\SrtsWeb.BusinessLayer.csproj.CoreCompileInputs.cache
+C:\SRTS_New\SrtsWeb-Development-1.1.4.0-iAS (1)\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\BusinessLayer\obj\Srtstraining DEV\SrtsWeb.BusinessLayer.dll
+C:\SRTS_New\SrtsWeb-Development-1.1.4.0-iAS (1)\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\BusinessLayer\obj\Srtstraining DEV\SrtsWeb.BusinessLayer.pdb
+C:\SRTS_New\SrtsWeb-Development-1.1.4.0-iAS (1)\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\BusinessLayer\bin\Srtstraining Debug\SrtsWeb.BusinessLayer.dll.config
+C:\SRTS_New\SrtsWeb-Development-1.1.4.0-iAS (1)\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\BusinessLayer\bin\Srtstraining Debug\SrtsWeb.BusinessLayer.dll
+C:\SRTS_New\SrtsWeb-Development-1.1.4.0-iAS (1)\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\BusinessLayer\bin\Srtstraining Debug\SrtsWeb.BusinessLayer.XmlSerializers.dll
+C:\SRTS_New\SrtsWeb-Development-1.1.4.0-iAS (1)\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\BusinessLayer\bin\Srtstraining Debug\SrtsWeb.BusinessLayer.pdb
+C:\SRTS_New\SrtsWeb-Development-1.1.4.0-iAS (1)\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\BusinessLayer\bin\Srtstraining Debug\AjaxControlToolkit.dll
+C:\SRTS_New\SrtsWeb-Development-1.1.4.0-iAS (1)\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\BusinessLayer\bin\Srtstraining Debug\BarcodeLib.dll
+C:\SRTS_New\SrtsWeb-Development-1.1.4.0-iAS (1)\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\BusinessLayer\bin\Srtstraining Debug\CSSFriendly.dll
+C:\SRTS_New\SrtsWeb-Development-1.1.4.0-iAS (1)\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\BusinessLayer\bin\Srtstraining Debug\Elmah.dll
+C:\SRTS_New\SrtsWeb-Development-1.1.4.0-iAS (1)\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\BusinessLayer\bin\Srtstraining Debug\SrtsWeb.DataLayer.dll
+C:\SRTS_New\SrtsWeb-Development-1.1.4.0-iAS (1)\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\BusinessLayer\bin\Srtstraining Debug\SrtsWeb.Entities.dll
+C:\SRTS_New\SrtsWeb-Development-1.1.4.0-iAS (1)\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\BusinessLayer\bin\Srtstraining Debug\SrtsWeb.ExtendersHelpersEnums.dll
+C:\SRTS_New\SrtsWeb-Development-1.1.4.0-iAS (1)\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\BusinessLayer\bin\Srtstraining Debug\SrtsDataBaseAccess.dll
+C:\SRTS_New\SrtsWeb-Development-1.1.4.0-iAS (1)\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\BusinessLayer\bin\Srtstraining Debug\DataToObjectLib.dll
+C:\SRTS_New\SrtsWeb-Development-1.1.4.0-iAS (1)\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\BusinessLayer\bin\Srtstraining Debug\SrtsWeb.ExtendersHelpersEnums.pdb
+C:\SRTS_New\SrtsWeb-Development-1.1.4.0-iAS (1)\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\BusinessLayer\bin\Srtstraining Debug\SrtsWeb.DataLayer.pdb
+C:\SRTS_New\SrtsWeb-Development-1.1.4.0-iAS (1)\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\BusinessLayer\bin\Srtstraining Debug\SrtsWeb.Entities.pdb
+C:\SRTS_New\SrtsWeb-Development-1.1.4.0-iAS (1)\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\BusinessLayer\obj\Srtstraining DEV\SrtsWeb.BusinessLayer.csproj.CopyComplete
+C:\SRTS_New\SrtsWeb-Development-1.1.4.0-iAS (1)\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\BusinessLayer\obj\Srtstraining DEV\SrtsWeb.BusinessLayer.XmlSerializers.dll

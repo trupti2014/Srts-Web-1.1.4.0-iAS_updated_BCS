@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<!-- Note:  If node titles change, please edit ShowMenuTab() method in the srtsMaster.Master.cs file to reflect the change.-->
+
+<siteMap xmlns="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0">
+
+  <siteMapNode title="Home" description="SRTS Home Page" roles="SRTSAdmin, SRTSTech, SRTSUser" url="WebForms/Default.aspx">
+
+    <siteMapNode title="Find Patient"  description="Search for Patient" roles="SRTSAdmin, SRTSTech, SRTSUser" url="~/WebForms/SrtsWebClinic/Patients/ManagePatients.aspx/search" />
+    <siteMapNode title="Add a New Patient" description="Add New Patient" url="~/WebForms/SrtsPerson/AddPerson.aspx"  roles="SRTSAdmin, SRTSTech" />
+
+    <siteMapNode title="My SRTS" description="Manage Orders" resourceKey="3" roles="SRTSAdmin, SRTSTech"  url="WebForms/SrtsWebClinic/Orders/ManageOrders.aspx">
+      <siteMapNode title="Order Check-In" description="Order Check-In" roles="SRTSAdmin, SRTSTech" url="WebForms/SrtsWebClinic/CheckInAndDispense/CheckIn.aspx?Key=1" />
+      <siteMapNode title="Dispense Orders" description="Dispense Orders" roles="SRTSAdmin, SRTSTech" url="WebForms/SrtsWebClinic/CheckInAndDispense/CheckIn.aspx?Key=2" />
+      <siteMapNode title="Manage Overdue Orders" description="Manage Overdue Orders" roles="SRTSAdmin, SRTSTech" url="WebForms/SrtsWebClinic/CheckInAndDispense/CheckIn.aspx?Key=3" />
+    </siteMapNode>
+
+    <siteMapNode title="Administration" description="Administrative Actions" resourceKey="4" roles="SRTSAdmin" url="~/WebForms/Admin/ManageSrts.aspx">
+      <!--<siteMapNode title="Manage Frames" url="~/Admin/FrameManagementAdd.aspx" roles="SRTSAdmin" description="Manage/Add Frames" />-->
+      <siteMapNode title="Manage Lookup Types" url="~/WebForms/Admin/ManageLookUpTypes.aspx" roles="SRTSAdmin" description="Manage Lookup Types" />
+      <siteMapNode title="Manage Users" description="Administrative Actions - Manage Users" roles="SRTSAdmin" url="~/WebForms/Account/UserManagement.aspx" />
+      <siteMapNode title="Manage User Roles" description="Administrative Actions - Manage Roles" roles="SRTSAdmin" url="~/WebForms/Account/RoleManagement.aspx" />
+      <siteMapNode title="Manage User Profiles" description="Administrative Actions - Add Profile for User" roles="SRTSAdmin" url="~/WebForms/Account/ProfileManagement.aspx" />
+    </siteMapNode>
+  </siteMapNode>
+</siteMap>

@@ -1,0 +1,480 @@
+C:\DEV2\SRTS\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\bin\Styles\images\CollapseOrderNotifications.gif
+C:\DEV2\SRTS\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\bin\Styles\images\ExpandOrderNotifications.gif
+C:\DEV2\SRTS\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\bin\PrintForms\Avery5160_5260.rdlc
+C:\DEV2\SRTS\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\bin\PrintForms\Avery5161_5261.rdlc
+C:\DEV2\SRTS\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\bin\PrintForms\Avery5162.rdlc
+C:\DEV2\SRTS\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\bin\PrintForms\Avery5163.rdlc
+C:\DEV2\SRTS\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\bin\PrintForms\SingleLabel.rdlc
+C:\DEV2\SRTS\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\bin\ThirdPartyDLL\AjaxControlToolkit.dll
+C:\DEV2\SRTS\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\bin\ThirdPartyDLL\BarcodeLib.dll
+C:\DEV2\SRTS\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\bin\ThirdPartyDLL\CSSFriendly.dll
+C:\DEV2\SRTS\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\bin\ThirdPartyDLL\DataToObjectLib.dll
+C:\DEV2\SRTS\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\bin\ThirdPartyDLL\Elmah.dll
+C:\DEV2\SRTS\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\bin\ThirdPartyDLL\Microsoft.ReportViewer.Common.dll
+C:\DEV2\SRTS\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\bin\ThirdPartyDLL\Microsoft.ReportViewer.ProcessingObjectModel.DLL
+C:\DEV2\SRTS\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\bin\ThirdPartyDLL\Microsoft.ReportViewer.WebForms.dll
+C:\DEV2\SRTS\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\bin\ThirdPartyDLL\Microsoft.ReportViewer.WebForms.xml
+C:\DEV2\SRTS\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\bin\ThirdPartyDLL\Microsoft.SqlServer.Types.dll
+C:\DEV2\SRTS\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\bin\Web.config
+C:\DEV2\SRTS\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\bin\Web.Srtstraining PRODTEST.config
+C:\DEV2\SRTS\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\bin\Web.Srtstraining PRODUCTION.config
+C:\DEV2\SRTS\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\bin\Web.Srtsweb PRODTEST.config
+C:\DEV2\SRTS\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\bin\Web.Srtsweb PRODUCTION.config
+C:\DEV2\SRTS\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\bin\SrtsWeb.dll.config
+C:\DEV2\SRTS\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\bin\SrtsWeb.dll
+C:\DEV2\SRTS\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\bin\roslyn\csc.exe
+C:\DEV2\SRTS\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\bin\roslyn\csc.exe.config
+C:\DEV2\SRTS\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\bin\roslyn\csc.rsp
+C:\DEV2\SRTS\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\bin\roslyn\csi.exe
+C:\DEV2\SRTS\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\bin\roslyn\csi.rsp
+C:\DEV2\SRTS\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\DEV2\SRTS\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\DEV2\SRTS\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\DEV2\SRTS\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\DEV2\SRTS\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\DEV2\SRTS\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\DEV2\SRTS\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\DEV2\SRTS\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\DEV2\SRTS\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\DEV2\SRTS\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\DEV2\SRTS\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\bin\roslyn\System.AppContext.dll
+C:\DEV2\SRTS\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\bin\roslyn\System.Collections.Immutable.dll
+C:\DEV2\SRTS\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\DEV2\SRTS\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\bin\roslyn\System.IO.FileSystem.dll
+C:\DEV2\SRTS\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\DEV2\SRTS\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\bin\roslyn\System.Reflection.Metadata.dll
+C:\DEV2\SRTS\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\bin\roslyn\vbc.exe
+C:\DEV2\SRTS\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\bin\roslyn\vbc.exe.config
+C:\DEV2\SRTS\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\bin\roslyn\vbc.rsp
+C:\DEV2\SRTS\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\bin\roslyn\VBCSCompiler.exe
+C:\DEV2\SRTS\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\bin\roslyn\VBCSCompiler.exe.config
+C:\DEV2\SRTS\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\bin\AjaxControlToolkit.dll
+C:\DEV2\SRTS\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\bin\BarcodeLib.dll
+C:\DEV2\SRTS\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\bin\BotDetect.dll
+C:\DEV2\SRTS\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\bin\CSSFriendly.dll
+C:\DEV2\SRTS\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\bin\Elmah.dll
+C:\DEV2\SRTS\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\DEV2\SRTS\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\bin\Microsoft.ReportViewer.Common.dll
+C:\DEV2\SRTS\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\bin\Microsoft.ReportViewer.ProcessingObjectModel.DLL
+C:\DEV2\SRTS\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\bin\Microsoft.ReportViewer.WebForms.dll
+C:\DEV2\SRTS\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\bin\Microsoft.SqlServer.Types.dll
+C:\DEV2\SRTS\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\bin\Microsoft.Web.Administration.dll
+C:\DEV2\SRTS\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\bin\Microsoft.Web.Infrastructure.dll
+C:\DEV2\SRTS\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\bin\SrtsWeb.BusinessLayer.dll
+C:\DEV2\SRTS\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\bin\SrtsWeb.DataLayer.dll
+C:\DEV2\SRTS\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\bin\SrtsWeb.Entities.dll
+C:\DEV2\SRTS\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\bin\SrtsWeb.ExtendersHelpersEnums.dll
+C:\DEV2\SRTS\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\bin\SrtsWeb.Presenters.dll
+C:\DEV2\SRTS\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\bin\SrtsWeb.Views.dll
+C:\DEV2\SRTS\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\bin\System.Data.Entity.dll
+C:\DEV2\SRTS\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\bin\System.Data.SQLite.dll
+C:\DEV2\SRTS\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\bin\System.Web.Helpers.dll
+C:\DEV2\SRTS\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\bin\System.Web.Razor.dll
+C:\DEV2\SRTS\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\bin\System.Web.WebPages.Deployment.dll
+C:\DEV2\SRTS\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\bin\System.Web.WebPages.dll
+C:\DEV2\SRTS\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\bin\System.Web.WebPages.Razor.dll
+C:\DEV2\SRTS\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\bin\SrtsDataBaseAccess.dll
+C:\DEV2\SRTS\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\bin\DataToObjectLib.dll
+C:\DEV2\SRTS\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\bin\SrtsWeb.ExtendersHelpersEnums.pdb
+C:\DEV2\SRTS\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\bin\SrtsWeb.Presenters.pdb
+C:\DEV2\SRTS\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\bin\SrtsWeb.Views.pdb
+C:\DEV2\SRTS\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\bin\SrtsWeb.BusinessLayer.dll.config
+C:\DEV2\SRTS\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\DEV2\SRTS\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\bin\Microsoft.ReportViewer.WebForms.xml
+C:\DEV2\SRTS\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\bin\System.Data.SQLite.xml
+C:\DEV2\SRTS\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\bin\System.Web.Helpers.xml
+C:\DEV2\SRTS\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\bin\System.Web.Razor.xml
+C:\DEV2\SRTS\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\bin\System.Web.WebPages.xml
+C:\DEV2\SRTS\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\bin\System.Web.WebPages.Deployment.xml
+C:\DEV2\SRTS\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\bin\System.Web.WebPages.Razor.xml
+C:\DEV2\SRTS\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\bin\SrtsWeb.BusinessLayer.XmlSerializers.dll
+C:\DEV2\SRTS\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\obj\Srtsweb PRODUCTION\SrtsWeb.csprojAssemblyReference.cache
+C:\DEV2\SRTS\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\obj\Srtsweb PRODUCTION\SrtsWeb.csproj.CoreCompileInputs.cache
+C:\DEV2\SRTS\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\obj\Srtsweb PRODUCTION\SrtsWeb.csproj.CopyComplete
+C:\DEV2\SRTS\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\obj\Srtsweb PRODUCTION\SrtsWeb.dll
+C:\SRTS_New\SrtsWeb-Development-1.1.4.0-iAS (1)\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\bin\Styles\images\CollapseOrderNotifications.gif
+C:\SRTS_New\SrtsWeb-Development-1.1.4.0-iAS (1)\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\bin\Styles\images\ExpandOrderNotifications.gif
+C:\SRTS_New\SrtsWeb-Development-1.1.4.0-iAS (1)\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\bin\PrintForms\Avery5160_5260.rdlc
+C:\SRTS_New\SrtsWeb-Development-1.1.4.0-iAS (1)\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\bin\PrintForms\Avery5161_5261.rdlc
+C:\SRTS_New\SrtsWeb-Development-1.1.4.0-iAS (1)\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\bin\PrintForms\Avery5162.rdlc
+C:\SRTS_New\SrtsWeb-Development-1.1.4.0-iAS (1)\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\bin\PrintForms\Avery5163.rdlc
+C:\SRTS_New\SrtsWeb-Development-1.1.4.0-iAS (1)\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\bin\PrintForms\SingleLabel.rdlc
+C:\SRTS_New\SrtsWeb-Development-1.1.4.0-iAS (1)\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\bin\ThirdPartyDLL\AjaxControlToolkit.dll
+C:\SRTS_New\SrtsWeb-Development-1.1.4.0-iAS (1)\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\bin\ThirdPartyDLL\BarcodeLib.dll
+C:\SRTS_New\SrtsWeb-Development-1.1.4.0-iAS (1)\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\bin\ThirdPartyDLL\CSSFriendly.dll
+C:\SRTS_New\SrtsWeb-Development-1.1.4.0-iAS (1)\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\bin\ThirdPartyDLL\DataToObjectLib.dll
+C:\SRTS_New\SrtsWeb-Development-1.1.4.0-iAS (1)\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\bin\ThirdPartyDLL\Elmah.dll
+C:\SRTS_New\SrtsWeb-Development-1.1.4.0-iAS (1)\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\bin\ThirdPartyDLL\Microsoft.ReportViewer.Common.dll
+C:\SRTS_New\SrtsWeb-Development-1.1.4.0-iAS (1)\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\bin\ThirdPartyDLL\Microsoft.ReportViewer.ProcessingObjectModel.DLL
+C:\SRTS_New\SrtsWeb-Development-1.1.4.0-iAS (1)\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\bin\ThirdPartyDLL\Microsoft.ReportViewer.WebForms.dll
+C:\SRTS_New\SrtsWeb-Development-1.1.4.0-iAS (1)\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\bin\ThirdPartyDLL\Microsoft.ReportViewer.WebForms.xml
+C:\SRTS_New\SrtsWeb-Development-1.1.4.0-iAS (1)\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\bin\ThirdPartyDLL\Microsoft.SqlServer.Types.dll
+C:\SRTS_New\SrtsWeb-Development-1.1.4.0-iAS (1)\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\bin\Web.config
+C:\SRTS_New\SrtsWeb-Development-1.1.4.0-iAS (1)\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\bin\Web.Srtstraining PRODTEST.config
+C:\SRTS_New\SrtsWeb-Development-1.1.4.0-iAS (1)\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\bin\Web.Srtstraining PRODUCTION.config
+C:\SRTS_New\SrtsWeb-Development-1.1.4.0-iAS (1)\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\bin\Web.Srtsweb PRODTEST.config
+C:\SRTS_New\SrtsWeb-Development-1.1.4.0-iAS (1)\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\bin\Web.Srtsweb PRODUCTION.config
+C:\SRTS_New\SrtsWeb-Development-1.1.4.0-iAS (1)\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\bin\SrtsWeb.dll.config
+C:\SRTS_New\SrtsWeb-Development-1.1.4.0-iAS (1)\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\bin\SrtsWeb.dll
+C:\SRTS_New\SrtsWeb-Development-1.1.4.0-iAS (1)\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\bin\roslyn\csc.exe
+C:\SRTS_New\SrtsWeb-Development-1.1.4.0-iAS (1)\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\bin\roslyn\csc.exe.config
+C:\SRTS_New\SrtsWeb-Development-1.1.4.0-iAS (1)\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\bin\roslyn\csc.rsp
+C:\SRTS_New\SrtsWeb-Development-1.1.4.0-iAS (1)\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\bin\roslyn\csi.exe
+C:\SRTS_New\SrtsWeb-Development-1.1.4.0-iAS (1)\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\bin\roslyn\csi.rsp
+C:\SRTS_New\SrtsWeb-Development-1.1.4.0-iAS (1)\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\SRTS_New\SrtsWeb-Development-1.1.4.0-iAS (1)\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\SRTS_New\SrtsWeb-Development-1.1.4.0-iAS (1)\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\SRTS_New\SrtsWeb-Development-1.1.4.0-iAS (1)\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\SRTS_New\SrtsWeb-Development-1.1.4.0-iAS (1)\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\SRTS_New\SrtsWeb-Development-1.1.4.0-iAS (1)\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\SRTS_New\SrtsWeb-Development-1.1.4.0-iAS (1)\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\SRTS_New\SrtsWeb-Development-1.1.4.0-iAS (1)\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\SRTS_New\SrtsWeb-Development-1.1.4.0-iAS (1)\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\SRTS_New\SrtsWeb-Development-1.1.4.0-iAS (1)\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\SRTS_New\SrtsWeb-Development-1.1.4.0-iAS (1)\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\bin\roslyn\System.AppContext.dll
+C:\SRTS_New\SrtsWeb-Development-1.1.4.0-iAS (1)\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\bin\roslyn\System.Collections.Immutable.dll
+C:\SRTS_New\SrtsWeb-Development-1.1.4.0-iAS (1)\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\SRTS_New\SrtsWeb-Development-1.1.4.0-iAS (1)\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\bin\roslyn\System.IO.FileSystem.dll
+C:\SRTS_New\SrtsWeb-Development-1.1.4.0-iAS (1)\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\SRTS_New\SrtsWeb-Development-1.1.4.0-iAS (1)\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\bin\roslyn\System.Reflection.Metadata.dll
+C:\SRTS_New\SrtsWeb-Development-1.1.4.0-iAS (1)\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\bin\roslyn\vbc.exe
+C:\SRTS_New\SrtsWeb-Development-1.1.4.0-iAS (1)\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\bin\roslyn\vbc.exe.config
+C:\SRTS_New\SrtsWeb-Development-1.1.4.0-iAS (1)\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\bin\roslyn\vbc.rsp
+C:\SRTS_New\SrtsWeb-Development-1.1.4.0-iAS (1)\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\bin\roslyn\VBCSCompiler.exe
+C:\SRTS_New\SrtsWeb-Development-1.1.4.0-iAS (1)\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\bin\roslyn\VBCSCompiler.exe.config
+C:\SRTS_New\SrtsWeb-Development-1.1.4.0-iAS (1)\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\bin\AjaxControlToolkit.dll
+C:\SRTS_New\SrtsWeb-Development-1.1.4.0-iAS (1)\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\bin\BarcodeLib.dll
+C:\SRTS_New\SrtsWeb-Development-1.1.4.0-iAS (1)\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\bin\BotDetect.dll
+C:\SRTS_New\SrtsWeb-Development-1.1.4.0-iAS (1)\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\bin\CSSFriendly.dll
+C:\SRTS_New\SrtsWeb-Development-1.1.4.0-iAS (1)\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\bin\Elmah.dll
+C:\SRTS_New\SrtsWeb-Development-1.1.4.0-iAS (1)\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\SRTS_New\SrtsWeb-Development-1.1.4.0-iAS (1)\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\bin\Microsoft.ReportViewer.Common.dll
+C:\SRTS_New\SrtsWeb-Development-1.1.4.0-iAS (1)\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\bin\Microsoft.ReportViewer.ProcessingObjectModel.DLL
+C:\SRTS_New\SrtsWeb-Development-1.1.4.0-iAS (1)\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\bin\Microsoft.ReportViewer.WebForms.dll
+C:\SRTS_New\SrtsWeb-Development-1.1.4.0-iAS (1)\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\bin\Microsoft.SqlServer.Types.dll
+C:\SRTS_New\SrtsWeb-Development-1.1.4.0-iAS (1)\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\bin\Microsoft.Web.Administration.dll
+C:\SRTS_New\SrtsWeb-Development-1.1.4.0-iAS (1)\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\bin\Microsoft.Web.Infrastructure.dll
+C:\SRTS_New\SrtsWeb-Development-1.1.4.0-iAS (1)\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\bin\SrtsWeb.BusinessLayer.dll
+C:\SRTS_New\SrtsWeb-Development-1.1.4.0-iAS (1)\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\bin\SrtsWeb.DataLayer.dll
+C:\SRTS_New\SrtsWeb-Development-1.1.4.0-iAS (1)\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\bin\SrtsWeb.Entities.dll
+C:\SRTS_New\SrtsWeb-Development-1.1.4.0-iAS (1)\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\bin\SrtsWeb.ExtendersHelpersEnums.dll
+C:\SRTS_New\SrtsWeb-Development-1.1.4.0-iAS (1)\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\bin\SrtsWeb.Presenters.dll
+C:\SRTS_New\SrtsWeb-Development-1.1.4.0-iAS (1)\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\bin\SrtsWeb.Views.dll
+C:\SRTS_New\SrtsWeb-Development-1.1.4.0-iAS (1)\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\bin\System.Data.Entity.dll
+C:\SRTS_New\SrtsWeb-Development-1.1.4.0-iAS (1)\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\bin\System.Data.SQLite.dll
+C:\SRTS_New\SrtsWeb-Development-1.1.4.0-iAS (1)\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\bin\System.Web.Helpers.dll
+C:\SRTS_New\SrtsWeb-Development-1.1.4.0-iAS (1)\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\bin\System.Web.Razor.dll
+C:\SRTS_New\SrtsWeb-Development-1.1.4.0-iAS (1)\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\bin\System.Web.WebPages.Deployment.dll
+C:\SRTS_New\SrtsWeb-Development-1.1.4.0-iAS (1)\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\bin\System.Web.WebPages.dll
+C:\SRTS_New\SrtsWeb-Development-1.1.4.0-iAS (1)\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\bin\System.Web.WebPages.Razor.dll
+C:\SRTS_New\SrtsWeb-Development-1.1.4.0-iAS (1)\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\bin\SrtsDataBaseAccess.dll
+C:\SRTS_New\SrtsWeb-Development-1.1.4.0-iAS (1)\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\bin\DataToObjectLib.dll
+C:\SRTS_New\SrtsWeb-Development-1.1.4.0-iAS (1)\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\bin\SrtsWeb.ExtendersHelpersEnums.pdb
+C:\SRTS_New\SrtsWeb-Development-1.1.4.0-iAS (1)\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\bin\SrtsWeb.Presenters.pdb
+C:\SRTS_New\SrtsWeb-Development-1.1.4.0-iAS (1)\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\bin\SrtsWeb.Views.pdb
+C:\SRTS_New\SrtsWeb-Development-1.1.4.0-iAS (1)\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\bin\SrtsWeb.BusinessLayer.dll.config
+C:\SRTS_New\SrtsWeb-Development-1.1.4.0-iAS (1)\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\SRTS_New\SrtsWeb-Development-1.1.4.0-iAS (1)\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\bin\Microsoft.ReportViewer.WebForms.xml
+C:\SRTS_New\SrtsWeb-Development-1.1.4.0-iAS (1)\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\bin\System.Data.SQLite.xml
+C:\SRTS_New\SrtsWeb-Development-1.1.4.0-iAS (1)\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\bin\System.Web.Helpers.xml
+C:\SRTS_New\SrtsWeb-Development-1.1.4.0-iAS (1)\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\bin\System.Web.Razor.xml
+C:\SRTS_New\SrtsWeb-Development-1.1.4.0-iAS (1)\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\bin\System.Web.WebPages.xml
+C:\SRTS_New\SrtsWeb-Development-1.1.4.0-iAS (1)\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\bin\System.Web.WebPages.Deployment.xml
+C:\SRTS_New\SrtsWeb-Development-1.1.4.0-iAS (1)\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\bin\System.Web.WebPages.Razor.xml
+C:\SRTS_New\SrtsWeb-Development-1.1.4.0-iAS (1)\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\bin\SrtsWeb.BusinessLayer.XmlSerializers.dll
+C:\SRTS_New\SrtsWeb-Development-1.1.4.0-iAS (1)\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\obj\Srtsweb PRODUCTION\SrtsWeb.csprojAssemblyReference.cache
+C:\SRTS_New\SrtsWeb-Development-1.1.4.0-iAS (1)\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\obj\Srtsweb PRODUCTION\SrtsWeb.csproj.CoreCompileInputs.cache
+C:\SRTS_New\SrtsWeb-Development-1.1.4.0-iAS (1)\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\obj\Srtsweb PRODUCTION\SrtsWeb.csproj.CopyComplete
+C:\SRTS_New\SrtsWeb-Development-1.1.4.0-iAS (1)\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\obj\Srtsweb PRODUCTION\SrtsWeb.dll
+C:\SRTS_Nov_onwordscode\Working Code without BCS\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\obj\Srtsweb PRODUCTION\SrtsWeb.csprojAssemblyReference.cache
+C:\SRTS_Nov_onwordscode\Working Code without BCS\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\obj\Srtsweb PRODUCTION\SrtsWeb.csproj.CoreCompileInputs.cache
+C:\SRTS_Nov_onwordscode\Working Code without BCS\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\bin\Styles\images\CollapseOrderNotifications.gif
+C:\SRTS_Nov_onwordscode\Working Code without BCS\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\bin\Styles\images\ExpandOrderNotifications.gif
+C:\SRTS_Nov_onwordscode\Working Code without BCS\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\bin\PrintForms\Avery5160_5260.rdlc
+C:\SRTS_Nov_onwordscode\Working Code without BCS\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\bin\PrintForms\Avery5161_5261.rdlc
+C:\SRTS_Nov_onwordscode\Working Code without BCS\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\bin\PrintForms\Avery5162.rdlc
+C:\SRTS_Nov_onwordscode\Working Code without BCS\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\bin\PrintForms\Avery5163.rdlc
+C:\SRTS_Nov_onwordscode\Working Code without BCS\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\bin\PrintForms\SingleLabel.rdlc
+C:\SRTS_Nov_onwordscode\Working Code without BCS\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\bin\ThirdPartyDLL\AjaxControlToolkit.dll
+C:\SRTS_Nov_onwordscode\Working Code without BCS\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\bin\ThirdPartyDLL\BarcodeLib.dll
+C:\SRTS_Nov_onwordscode\Working Code without BCS\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\bin\ThirdPartyDLL\CSSFriendly.dll
+C:\SRTS_Nov_onwordscode\Working Code without BCS\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\bin\ThirdPartyDLL\DataToObjectLib.dll
+C:\SRTS_Nov_onwordscode\Working Code without BCS\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\bin\ThirdPartyDLL\Elmah.dll
+C:\SRTS_Nov_onwordscode\Working Code without BCS\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\bin\ThirdPartyDLL\Microsoft.ReportViewer.Common.dll
+C:\SRTS_Nov_onwordscode\Working Code without BCS\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\bin\ThirdPartyDLL\Microsoft.ReportViewer.ProcessingObjectModel.DLL
+C:\SRTS_Nov_onwordscode\Working Code without BCS\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\bin\ThirdPartyDLL\Microsoft.ReportViewer.WebForms.dll
+C:\SRTS_Nov_onwordscode\Working Code without BCS\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\bin\ThirdPartyDLL\Microsoft.ReportViewer.WebForms.xml
+C:\SRTS_Nov_onwordscode\Working Code without BCS\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\bin\ThirdPartyDLL\Microsoft.SqlServer.Types.dll
+C:\SRTS_Nov_onwordscode\Working Code without BCS\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\bin\Web.config
+C:\SRTS_Nov_onwordscode\Working Code without BCS\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\bin\Web.Srtstraining PRODTEST.config
+C:\SRTS_Nov_onwordscode\Working Code without BCS\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\bin\Web.Srtstraining PRODUCTION.config
+C:\SRTS_Nov_onwordscode\Working Code without BCS\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\bin\Web.Srtsweb PRODTEST.config
+C:\SRTS_Nov_onwordscode\Working Code without BCS\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\bin\Web.Srtsweb PRODUCTION.config
+C:\SRTS_Nov_onwordscode\Working Code without BCS\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\bin\SrtsWeb.dll.config
+C:\SRTS_Nov_onwordscode\Working Code without BCS\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\bin\SrtsWeb.dll
+C:\SRTS_Nov_onwordscode\Working Code without BCS\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\bin\roslyn\csc.exe
+C:\SRTS_Nov_onwordscode\Working Code without BCS\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\bin\roslyn\csc.exe.config
+C:\SRTS_Nov_onwordscode\Working Code without BCS\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\bin\roslyn\csc.rsp
+C:\SRTS_Nov_onwordscode\Working Code without BCS\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\bin\roslyn\csi.exe
+C:\SRTS_Nov_onwordscode\Working Code without BCS\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\bin\roslyn\csi.rsp
+C:\SRTS_Nov_onwordscode\Working Code without BCS\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\SRTS_Nov_onwordscode\Working Code without BCS\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\SRTS_Nov_onwordscode\Working Code without BCS\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\SRTS_Nov_onwordscode\Working Code without BCS\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\SRTS_Nov_onwordscode\Working Code without BCS\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\SRTS_Nov_onwordscode\Working Code without BCS\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\SRTS_Nov_onwordscode\Working Code without BCS\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\SRTS_Nov_onwordscode\Working Code without BCS\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\SRTS_Nov_onwordscode\Working Code without BCS\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\SRTS_Nov_onwordscode\Working Code without BCS\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\SRTS_Nov_onwordscode\Working Code without BCS\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\bin\roslyn\System.AppContext.dll
+C:\SRTS_Nov_onwordscode\Working Code without BCS\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\bin\roslyn\System.Collections.Immutable.dll
+C:\SRTS_Nov_onwordscode\Working Code without BCS\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\SRTS_Nov_onwordscode\Working Code without BCS\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\bin\roslyn\System.IO.FileSystem.dll
+C:\SRTS_Nov_onwordscode\Working Code without BCS\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\SRTS_Nov_onwordscode\Working Code without BCS\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\bin\roslyn\System.Reflection.Metadata.dll
+C:\SRTS_Nov_onwordscode\Working Code without BCS\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\bin\roslyn\vbc.exe
+C:\SRTS_Nov_onwordscode\Working Code without BCS\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\bin\roslyn\vbc.exe.config
+C:\SRTS_Nov_onwordscode\Working Code without BCS\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\bin\roslyn\vbc.rsp
+C:\SRTS_Nov_onwordscode\Working Code without BCS\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\bin\roslyn\VBCSCompiler.exe
+C:\SRTS_Nov_onwordscode\Working Code without BCS\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\bin\roslyn\VBCSCompiler.exe.config
+C:\SRTS_Nov_onwordscode\Working Code without BCS\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\bin\AjaxControlToolkit.dll
+C:\SRTS_Nov_onwordscode\Working Code without BCS\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\bin\BarcodeLib.dll
+C:\SRTS_Nov_onwordscode\Working Code without BCS\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\bin\BotDetect.dll
+C:\SRTS_Nov_onwordscode\Working Code without BCS\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\bin\CSSFriendly.dll
+C:\SRTS_Nov_onwordscode\Working Code without BCS\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\bin\Elmah.dll
+C:\SRTS_Nov_onwordscode\Working Code without BCS\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\SRTS_Nov_onwordscode\Working Code without BCS\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\bin\Microsoft.ReportViewer.Common.dll
+C:\SRTS_Nov_onwordscode\Working Code without BCS\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\bin\Microsoft.ReportViewer.ProcessingObjectModel.DLL
+C:\SRTS_Nov_onwordscode\Working Code without BCS\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\bin\Microsoft.ReportViewer.WebForms.dll
+C:\SRTS_Nov_onwordscode\Working Code without BCS\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\bin\Microsoft.SqlServer.Types.dll
+C:\SRTS_Nov_onwordscode\Working Code without BCS\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\bin\Microsoft.Web.Administration.dll
+C:\SRTS_Nov_onwordscode\Working Code without BCS\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\bin\Microsoft.Web.Infrastructure.dll
+C:\SRTS_Nov_onwordscode\Working Code without BCS\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\bin\Newtonsoft.Json.dll
+C:\SRTS_Nov_onwordscode\Working Code without BCS\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\bin\SrtsWeb.BusinessLayer.dll
+C:\SRTS_Nov_onwordscode\Working Code without BCS\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\bin\SrtsWeb.DataLayer.dll
+C:\SRTS_Nov_onwordscode\Working Code without BCS\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\bin\SrtsWeb.Entities.dll
+C:\SRTS_Nov_onwordscode\Working Code without BCS\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\bin\SrtsWeb.ExtendersHelpersEnums.dll
+C:\SRTS_Nov_onwordscode\Working Code without BCS\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\bin\SrtsWeb.Presenters.dll
+C:\SRTS_Nov_onwordscode\Working Code without BCS\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\bin\SrtsWeb.Views.dll
+C:\SRTS_Nov_onwordscode\Working Code without BCS\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\bin\System.Data.Entity.dll
+C:\SRTS_Nov_onwordscode\Working Code without BCS\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\bin\System.Data.SQLite.dll
+C:\SRTS_Nov_onwordscode\Working Code without BCS\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\bin\System.Web.Helpers.dll
+C:\SRTS_Nov_onwordscode\Working Code without BCS\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\bin\System.Web.Razor.dll
+C:\SRTS_Nov_onwordscode\Working Code without BCS\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\bin\System.Web.WebPages.Deployment.dll
+C:\SRTS_Nov_onwordscode\Working Code without BCS\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\bin\System.Web.WebPages.dll
+C:\SRTS_Nov_onwordscode\Working Code without BCS\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\bin\System.Web.WebPages.Razor.dll
+C:\SRTS_Nov_onwordscode\Working Code without BCS\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\bin\SrtsDataBaseAccess.dll
+C:\SRTS_Nov_onwordscode\Working Code without BCS\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\bin\DataToObjectLib.dll
+C:\SRTS_Nov_onwordscode\Working Code without BCS\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\bin\SrtsWeb.ExtendersHelpersEnums.pdb
+C:\SRTS_Nov_onwordscode\Working Code without BCS\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\bin\SrtsWeb.Presenters.pdb
+C:\SRTS_Nov_onwordscode\Working Code without BCS\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\bin\SrtsWeb.Views.pdb
+C:\SRTS_Nov_onwordscode\Working Code without BCS\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\bin\SrtsWeb.BusinessLayer.dll.config
+C:\SRTS_Nov_onwordscode\Working Code without BCS\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\SRTS_Nov_onwordscode\Working Code without BCS\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\bin\Microsoft.ReportViewer.WebForms.xml
+C:\SRTS_Nov_onwordscode\Working Code without BCS\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\bin\Newtonsoft.Json.xml
+C:\SRTS_Nov_onwordscode\Working Code without BCS\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\bin\System.Data.SQLite.xml
+C:\SRTS_Nov_onwordscode\Working Code without BCS\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\bin\System.Web.Helpers.xml
+C:\SRTS_Nov_onwordscode\Working Code without BCS\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\bin\System.Web.Razor.xml
+C:\SRTS_Nov_onwordscode\Working Code without BCS\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\bin\System.Web.WebPages.xml
+C:\SRTS_Nov_onwordscode\Working Code without BCS\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\bin\System.Web.WebPages.Deployment.xml
+C:\SRTS_Nov_onwordscode\Working Code without BCS\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\bin\System.Web.WebPages.Razor.xml
+C:\SRTS_Nov_onwordscode\Working Code without BCS\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\bin\SrtsWeb.BusinessLayer.XmlSerializers.dll
+C:\SRTS_Nov_onwordscode\Working Code without BCS\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\obj\Srtsweb PRODUCTION\SrtsWeb.csproj.CopyComplete
+C:\SRTS_Nov_onwordscode\Working Code without BCS\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\obj\Srtsweb PRODUCTION\SrtsWeb.dll
+C:\Users\fpate\Downloads\SrtsWeb-Development-1.1.4.0-iAS\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\bin\Styles\images\CollapseOrderNotifications.gif
+C:\Users\fpate\Downloads\SrtsWeb-Development-1.1.4.0-iAS\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\bin\Styles\images\ExpandOrderNotifications.gif
+C:\Users\fpate\Downloads\SrtsWeb-Development-1.1.4.0-iAS\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\bin\PrintForms\Avery5160_5260.rdlc
+C:\Users\fpate\Downloads\SrtsWeb-Development-1.1.4.0-iAS\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\bin\PrintForms\Avery5161_5261.rdlc
+C:\Users\fpate\Downloads\SrtsWeb-Development-1.1.4.0-iAS\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\bin\PrintForms\Avery5162.rdlc
+C:\Users\fpate\Downloads\SrtsWeb-Development-1.1.4.0-iAS\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\bin\PrintForms\Avery5163.rdlc
+C:\Users\fpate\Downloads\SrtsWeb-Development-1.1.4.0-iAS\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\bin\PrintForms\SingleLabel.rdlc
+C:\Users\fpate\Downloads\SrtsWeb-Development-1.1.4.0-iAS\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\bin\ThirdPartyDLL\AjaxControlToolkit.dll
+C:\Users\fpate\Downloads\SrtsWeb-Development-1.1.4.0-iAS\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\bin\ThirdPartyDLL\BarcodeLib.dll
+C:\Users\fpate\Downloads\SrtsWeb-Development-1.1.4.0-iAS\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\bin\ThirdPartyDLL\CSSFriendly.dll
+C:\Users\fpate\Downloads\SrtsWeb-Development-1.1.4.0-iAS\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\bin\ThirdPartyDLL\DataToObjectLib.dll
+C:\Users\fpate\Downloads\SrtsWeb-Development-1.1.4.0-iAS\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\bin\ThirdPartyDLL\Elmah.dll
+C:\Users\fpate\Downloads\SrtsWeb-Development-1.1.4.0-iAS\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\bin\ThirdPartyDLL\Microsoft.ReportViewer.Common.dll
+C:\Users\fpate\Downloads\SrtsWeb-Development-1.1.4.0-iAS\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\bin\ThirdPartyDLL\Microsoft.ReportViewer.ProcessingObjectModel.DLL
+C:\Users\fpate\Downloads\SrtsWeb-Development-1.1.4.0-iAS\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\bin\ThirdPartyDLL\Microsoft.ReportViewer.WebForms.dll
+C:\Users\fpate\Downloads\SrtsWeb-Development-1.1.4.0-iAS\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\bin\ThirdPartyDLL\Microsoft.ReportViewer.WebForms.xml
+C:\Users\fpate\Downloads\SrtsWeb-Development-1.1.4.0-iAS\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\bin\ThirdPartyDLL\Microsoft.SqlServer.Types.dll
+C:\Users\fpate\Downloads\SrtsWeb-Development-1.1.4.0-iAS\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\bin\Web.config
+C:\Users\fpate\Downloads\SrtsWeb-Development-1.1.4.0-iAS\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\bin\Web.Srtstraining PRODTEST.config
+C:\Users\fpate\Downloads\SrtsWeb-Development-1.1.4.0-iAS\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\bin\Web.Srtstraining PRODUCTION.config
+C:\Users\fpate\Downloads\SrtsWeb-Development-1.1.4.0-iAS\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\bin\Web.Srtsweb PRODTEST.config
+C:\Users\fpate\Downloads\SrtsWeb-Development-1.1.4.0-iAS\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\bin\Web.Srtsweb PRODUCTION.config
+C:\Users\fpate\Downloads\SrtsWeb-Development-1.1.4.0-iAS\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\bin\SrtsWeb.dll.config
+C:\Users\fpate\Downloads\SrtsWeb-Development-1.1.4.0-iAS\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\bin\SrtsWeb.dll
+C:\Users\fpate\Downloads\SrtsWeb-Development-1.1.4.0-iAS\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\bin\roslyn\csc.exe
+C:\Users\fpate\Downloads\SrtsWeb-Development-1.1.4.0-iAS\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\bin\roslyn\csc.exe.config
+C:\Users\fpate\Downloads\SrtsWeb-Development-1.1.4.0-iAS\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\bin\roslyn\csc.rsp
+C:\Users\fpate\Downloads\SrtsWeb-Development-1.1.4.0-iAS\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\bin\roslyn\csi.exe
+C:\Users\fpate\Downloads\SrtsWeb-Development-1.1.4.0-iAS\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\bin\roslyn\csi.rsp
+C:\Users\fpate\Downloads\SrtsWeb-Development-1.1.4.0-iAS\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\fpate\Downloads\SrtsWeb-Development-1.1.4.0-iAS\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\fpate\Downloads\SrtsWeb-Development-1.1.4.0-iAS\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\fpate\Downloads\SrtsWeb-Development-1.1.4.0-iAS\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\fpate\Downloads\SrtsWeb-Development-1.1.4.0-iAS\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\fpate\Downloads\SrtsWeb-Development-1.1.4.0-iAS\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\fpate\Downloads\SrtsWeb-Development-1.1.4.0-iAS\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\fpate\Downloads\SrtsWeb-Development-1.1.4.0-iAS\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\fpate\Downloads\SrtsWeb-Development-1.1.4.0-iAS\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\fpate\Downloads\SrtsWeb-Development-1.1.4.0-iAS\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\fpate\Downloads\SrtsWeb-Development-1.1.4.0-iAS\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\bin\roslyn\System.AppContext.dll
+C:\Users\fpate\Downloads\SrtsWeb-Development-1.1.4.0-iAS\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\fpate\Downloads\SrtsWeb-Development-1.1.4.0-iAS\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\fpate\Downloads\SrtsWeb-Development-1.1.4.0-iAS\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\fpate\Downloads\SrtsWeb-Development-1.1.4.0-iAS\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\fpate\Downloads\SrtsWeb-Development-1.1.4.0-iAS\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\fpate\Downloads\SrtsWeb-Development-1.1.4.0-iAS\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\bin\roslyn\vbc.exe
+C:\Users\fpate\Downloads\SrtsWeb-Development-1.1.4.0-iAS\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\bin\roslyn\vbc.exe.config
+C:\Users\fpate\Downloads\SrtsWeb-Development-1.1.4.0-iAS\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\bin\roslyn\vbc.rsp
+C:\Users\fpate\Downloads\SrtsWeb-Development-1.1.4.0-iAS\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\bin\roslyn\VBCSCompiler.exe
+C:\Users\fpate\Downloads\SrtsWeb-Development-1.1.4.0-iAS\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\fpate\Downloads\SrtsWeb-Development-1.1.4.0-iAS\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\bin\AjaxControlToolkit.dll
+C:\Users\fpate\Downloads\SrtsWeb-Development-1.1.4.0-iAS\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\bin\BarcodeLib.dll
+C:\Users\fpate\Downloads\SrtsWeb-Development-1.1.4.0-iAS\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\bin\BotDetect.dll
+C:\Users\fpate\Downloads\SrtsWeb-Development-1.1.4.0-iAS\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\bin\CSSFriendly.dll
+C:\Users\fpate\Downloads\SrtsWeb-Development-1.1.4.0-iAS\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\bin\Elmah.dll
+C:\Users\fpate\Downloads\SrtsWeb-Development-1.1.4.0-iAS\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\fpate\Downloads\SrtsWeb-Development-1.1.4.0-iAS\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\bin\Microsoft.ReportViewer.Common.dll
+C:\Users\fpate\Downloads\SrtsWeb-Development-1.1.4.0-iAS\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\bin\Microsoft.ReportViewer.ProcessingObjectModel.DLL
+C:\Users\fpate\Downloads\SrtsWeb-Development-1.1.4.0-iAS\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\bin\Microsoft.ReportViewer.WebForms.dll
+C:\Users\fpate\Downloads\SrtsWeb-Development-1.1.4.0-iAS\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\bin\Microsoft.SqlServer.Types.dll
+C:\Users\fpate\Downloads\SrtsWeb-Development-1.1.4.0-iAS\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\bin\Microsoft.Web.Administration.dll
+C:\Users\fpate\Downloads\SrtsWeb-Development-1.1.4.0-iAS\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\fpate\Downloads\SrtsWeb-Development-1.1.4.0-iAS\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\bin\Newtonsoft.Json.dll
+C:\Users\fpate\Downloads\SrtsWeb-Development-1.1.4.0-iAS\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\bin\SrtsWeb.BusinessLayer.dll
+C:\Users\fpate\Downloads\SrtsWeb-Development-1.1.4.0-iAS\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\bin\SrtsWeb.DataLayer.dll
+C:\Users\fpate\Downloads\SrtsWeb-Development-1.1.4.0-iAS\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\bin\SrtsWeb.Entities.dll
+C:\Users\fpate\Downloads\SrtsWeb-Development-1.1.4.0-iAS\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\bin\SrtsWeb.ExtendersHelpersEnums.dll
+C:\Users\fpate\Downloads\SrtsWeb-Development-1.1.4.0-iAS\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\bin\SrtsWeb.Presenters.dll
+C:\Users\fpate\Downloads\SrtsWeb-Development-1.1.4.0-iAS\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\bin\SrtsWeb.Views.dll
+C:\Users\fpate\Downloads\SrtsWeb-Development-1.1.4.0-iAS\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\bin\System.Data.Entity.dll
+C:\Users\fpate\Downloads\SrtsWeb-Development-1.1.4.0-iAS\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\bin\System.Data.SQLite.dll
+C:\Users\fpate\Downloads\SrtsWeb-Development-1.1.4.0-iAS\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\bin\System.Web.Helpers.dll
+C:\Users\fpate\Downloads\SrtsWeb-Development-1.1.4.0-iAS\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\bin\System.Web.Razor.dll
+C:\Users\fpate\Downloads\SrtsWeb-Development-1.1.4.0-iAS\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\bin\System.Web.WebPages.Deployment.dll
+C:\Users\fpate\Downloads\SrtsWeb-Development-1.1.4.0-iAS\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\bin\System.Web.WebPages.dll
+C:\Users\fpate\Downloads\SrtsWeb-Development-1.1.4.0-iAS\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\bin\System.Web.WebPages.Razor.dll
+C:\Users\fpate\Downloads\SrtsWeb-Development-1.1.4.0-iAS\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\bin\SrtsDataBaseAccess.dll
+C:\Users\fpate\Downloads\SrtsWeb-Development-1.1.4.0-iAS\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\bin\DataToObjectLib.dll
+C:\Users\fpate\Downloads\SrtsWeb-Development-1.1.4.0-iAS\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\bin\SrtsWeb.ExtendersHelpersEnums.pdb
+C:\Users\fpate\Downloads\SrtsWeb-Development-1.1.4.0-iAS\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\bin\SrtsWeb.Presenters.pdb
+C:\Users\fpate\Downloads\SrtsWeb-Development-1.1.4.0-iAS\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\bin\SrtsWeb.Views.pdb
+C:\Users\fpate\Downloads\SrtsWeb-Development-1.1.4.0-iAS\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\bin\SrtsWeb.BusinessLayer.dll.config
+C:\Users\fpate\Downloads\SrtsWeb-Development-1.1.4.0-iAS\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\fpate\Downloads\SrtsWeb-Development-1.1.4.0-iAS\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\bin\Microsoft.ReportViewer.WebForms.xml
+C:\Users\fpate\Downloads\SrtsWeb-Development-1.1.4.0-iAS\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\bin\Newtonsoft.Json.xml
+C:\Users\fpate\Downloads\SrtsWeb-Development-1.1.4.0-iAS\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\bin\System.Data.SQLite.xml
+C:\Users\fpate\Downloads\SrtsWeb-Development-1.1.4.0-iAS\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\bin\System.Web.Helpers.xml
+C:\Users\fpate\Downloads\SrtsWeb-Development-1.1.4.0-iAS\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\bin\System.Web.Razor.xml
+C:\Users\fpate\Downloads\SrtsWeb-Development-1.1.4.0-iAS\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\bin\System.Web.WebPages.xml
+C:\Users\fpate\Downloads\SrtsWeb-Development-1.1.4.0-iAS\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\bin\System.Web.WebPages.Deployment.xml
+C:\Users\fpate\Downloads\SrtsWeb-Development-1.1.4.0-iAS\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\bin\System.Web.WebPages.Razor.xml
+C:\Users\fpate\Downloads\SrtsWeb-Development-1.1.4.0-iAS\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\bin\SrtsWeb.BusinessLayer.XmlSerializers.dll
+C:\Users\fpate\Downloads\SrtsWeb-Development-1.1.4.0-iAS\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\obj\Srtsweb PRODUCTION\SrtsWeb.csprojAssemblyReference.cache
+C:\Users\fpate\Downloads\SrtsWeb-Development-1.1.4.0-iAS\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\obj\Srtsweb PRODUCTION\SrtsWeb.csproj.CoreCompileInputs.cache
+C:\Users\fpate\Downloads\SrtsWeb-Development-1.1.4.0-iAS\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\obj\Srtsweb PRODUCTION\SrtsWeb.csproj.CopyComplete
+C:\Users\fpate\Downloads\SrtsWeb-Development-1.1.4.0-iAS\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\obj\Srtsweb PRODUCTION\SrtsWeb.dll
+C:\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\obj\Srtsweb PRODUCTION\SrtsWeb.csprojAssemblyReference.cache
+C:\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\obj\Srtsweb PRODUCTION\SrtsWeb.csproj.CoreCompileInputs.cache
+C:\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\bin\Styles\images\CollapseOrderNotifications.gif
+C:\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\bin\Styles\images\ExpandOrderNotifications.gif
+C:\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\bin\PrintForms\Avery5160_5260.rdlc
+C:\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\bin\PrintForms\Avery5161_5261.rdlc
+C:\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\bin\PrintForms\Avery5162.rdlc
+C:\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\bin\PrintForms\Avery5163.rdlc
+C:\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\bin\PrintForms\SingleLabel.rdlc
+C:\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\bin\ThirdPartyDLL\AjaxControlToolkit.dll
+C:\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\bin\ThirdPartyDLL\BarcodeLib.dll
+C:\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\bin\ThirdPartyDLL\CSSFriendly.dll
+C:\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\bin\ThirdPartyDLL\DataToObjectLib.dll
+C:\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\bin\ThirdPartyDLL\Elmah.dll
+C:\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\bin\ThirdPartyDLL\Microsoft.ReportViewer.Common.dll
+C:\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\bin\ThirdPartyDLL\Microsoft.ReportViewer.ProcessingObjectModel.DLL
+C:\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\bin\ThirdPartyDLL\Microsoft.ReportViewer.WebForms.dll
+C:\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\bin\ThirdPartyDLL\Microsoft.ReportViewer.WebForms.xml
+C:\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\bin\ThirdPartyDLL\Microsoft.SqlServer.Types.dll
+C:\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\bin\Web.config
+C:\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\bin\Web.Srtstraining PRODTEST.config
+C:\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\bin\Web.Srtstraining PRODUCTION.config
+C:\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\bin\Web.Srtsweb PRODTEST.config
+C:\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\bin\Web.Srtsweb PRODUCTION.config
+C:\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\bin\SrtsWeb.dll.config
+C:\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\bin\SrtsWeb.dll
+C:\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\bin\roslyn\csc.exe
+C:\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\bin\roslyn\csc.exe.config
+C:\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\bin\roslyn\csc.rsp
+C:\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\bin\roslyn\csi.exe
+C:\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\bin\roslyn\csi.rsp
+C:\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\bin\roslyn\System.AppContext.dll
+C:\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\bin\roslyn\System.Collections.Immutable.dll
+C:\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\bin\roslyn\System.IO.FileSystem.dll
+C:\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\bin\roslyn\System.Reflection.Metadata.dll
+C:\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\bin\roslyn\vbc.exe
+C:\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\bin\roslyn\vbc.exe.config
+C:\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\bin\roslyn\vbc.rsp
+C:\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\bin\roslyn\VBCSCompiler.exe
+C:\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\bin\roslyn\VBCSCompiler.exe.config
+C:\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\bin\AjaxControlToolkit.dll
+C:\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\bin\Aspose.Cells.dll
+C:\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\bin\BarcodeLib.dll
+C:\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\bin\BotDetect.dll
+C:\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\bin\CSSFriendly.dll
+C:\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\bin\Elmah.dll
+C:\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\bin\Microsoft.ReportViewer.Common.dll
+C:\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\bin\Microsoft.ReportViewer.ProcessingObjectModel.DLL
+C:\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\bin\Microsoft.ReportViewer.WebForms.dll
+C:\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\bin\Microsoft.SqlServer.Types.dll
+C:\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\bin\Microsoft.Web.Administration.dll
+C:\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\bin\Microsoft.Web.Infrastructure.dll
+C:\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\bin\Newtonsoft.Json.dll
+C:\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\bin\PdfViewerAspNet.dll
+C:\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\bin\SrtsWeb.BusinessLayer.dll
+C:\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\bin\SrtsWeb.DataLayer.dll
+C:\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\bin\SrtsWeb.Entities.dll
+C:\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\bin\SrtsWeb.ExtendersHelpersEnums.dll
+C:\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\bin\SrtsWeb.Presenters.dll
+C:\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\bin\SrtsWeb.Views.dll
+C:\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\bin\System.Data.Entity.dll
+C:\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\bin\System.Data.SQLite.dll
+C:\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\bin\System.Web.Helpers.dll
+C:\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\bin\System.Web.Razor.dll
+C:\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\bin\System.Web.WebPages.Deployment.dll
+C:\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\bin\System.Web.WebPages.dll
+C:\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\bin\System.Web.WebPages.Razor.dll
+C:\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\bin\SrtsDataBaseAccess.dll
+C:\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\bin\DataToObjectLib.dll
+C:\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\bin\SrtsWeb.ExtendersHelpersEnums.pdb
+C:\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\bin\SrtsWeb.Presenters.pdb
+C:\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\bin\SrtsWeb.Views.pdb
+C:\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\bin\SrtsWeb.BusinessLayer.dll.config
+C:\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\bin\Aspose.Cells.xml
+C:\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\bin\Microsoft.ReportViewer.WebForms.xml
+C:\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\bin\Newtonsoft.Json.xml
+C:\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\bin\PdfViewerAspNet.xml
+C:\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\bin\System.Data.SQLite.xml
+C:\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\bin\System.Web.Helpers.xml
+C:\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\bin\System.Web.Razor.xml
+C:\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\bin\System.Web.WebPages.xml
+C:\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\bin\System.Web.WebPages.Deployment.xml
+C:\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\bin\System.Web.WebPages.Razor.xml
+C:\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\bin\SrtsWeb.BusinessLayer.XmlSerializers.dll
+C:\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\obj\Srtsweb PRODUCTION\SrtsWeb.csproj.CopyComplete
+C:\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\obj\Srtsweb PRODUCTION\SrtsWeb.dll

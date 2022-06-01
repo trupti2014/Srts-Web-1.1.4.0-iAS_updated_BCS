@@ -1,0 +1,116 @@
+﻿@import '../../Base/Variables.scss';
+@import '../../Base/Mixins.scss';
+
+$cardWidth: 280px;
+$cardHeight: 320px;
+$cardMarginVertical: 20px;
+$cardMarginHorizontal: 20px;
+$cardPaddingVertical: 30px;
+$cardPaddingHorizontal: 20px;
+$minCols: 1;
+$maxCols: 5;
+
+$success-green: #00FF00;
+
+.btn--disabled {
+    display: block;
+    min-width: 200px;
+    padding: 10px 10px;
+    border-radius: 16px;
+    border: 1px solid #fff;
+    line-height: 10px;
+    color: #fff;
+    background: grey;
+    text-align: center;
+    cursor: pointer;
+}
+
+.orders {
+    display: block;
+    width: $cardWidth;
+    min-width: $minCols * $cardWidth;
+    max-width: $maxCols * $cardWidth;
+    margin: 0 auto;
+
+    text-align: center;
+}
+
+.order {
+    display: inline-block;
+    box-sizing: border-box;
+    vertical-align: top;
+    float: left;
+    width: $cardWidth;
+    /*height: $cardHeight; Not technically needed*/
+    margin: $cardMarginVertical $cardMarginHorizontal;
+    padding: $cardPaddingVertical $cardPaddingHorizontal ($cardPaddingVertical / 2) $cardMarginHorizontal;
+    border: 1px solid $color-gray-light;
+    text-align: center;
+    list-style: none;
+}
+
+.order__date {
+    margin: 0;
+    color: $color-gray;
+    font-weight: lighter;
+}
+
+.order__frame-img {
+    width: 238px;
+    height: 70px;
+    border: none;
+    padding-top: 20px;
+    padding-bottom:20px;
+}
+
+.order__status {
+    margin-top: 0;
+
+    &:before {
+        content: 'STATUS: ';
+    }
+
+    &[data-status="received"] {
+        color: $color-green;
+    }
+}
+
+.order__frame-info {
+    margin: 0;
+    height: 35px;
+    color: $color-gray-dark;
+    font-size: .9rem;
+}
+
+.order__button {
+    margin: $cardMarginVertical auto;
+    border-radius: 18px !important;
+    height: 18px;
+    line-height: 18px !important;
+}
+
+@media (max-width: 380px) {
+    .order {
+        margin: 10px auto;
+        float: unset;
+    }
+}
+// Module mixins
+// @media min-width needs to include margin from content div it is contained in when applying the media query. i.e. ($contentMarginHorizontal * 2)
+@mixin orderWidthMediaQueries($cardWidth, $cardMarginVertical, $cardMarginHorizontal, $minCols, $maxCols) {
+    $ordersWidth: ($cardWidth * $minCols + $minCols * $cardMarginHorizontal * 2);
+
+    @while $ordersWidth <= ( ($cardWidth + $cardPaddingHorizontal) * $maxCols) {
+        @media ( min-width: $ordersWidth + ($contentMarginHorizontal * 2) ) {
+            .orders {
+                width: ( $ordersWidth );
+            }
+        }
+
+        $ordersWidth: ($ordersWidth + $cardWidth + $cardMarginHorizontal * 2);
+    }
+}
+
+
+// Media Queries
+@include orderWidthMediaQueries($cardWidth, $cardMarginVertical, $cardMarginHorizontal, $minCols, $maxCols);

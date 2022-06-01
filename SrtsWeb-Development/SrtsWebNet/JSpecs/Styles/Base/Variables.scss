@@ -1,0 +1,81 @@
+﻿// Margins
+$contentMarginHorizontal: 45px;
+$contentMarginHeader: 62px;
+$mobileMarginHorizontal: 20px;
+
+// Padding
+
+// Colors
+
+//white
+$color-white: #ffffff;
+
+// gray
+$color-gray: #5b616b;
+$color-gray-dark: #323a45;
+$color-gray-light: #aeb0b5;
+$color-gray-lighter: #d6d7d9;
+$color-gray-lightest: #f1f1f1;
+
+// blue
+$color-primary-darker: #205493;
+$color-primary-alt-darkest: #046b99;
+$color-primary-alt-dark: #00a6d2;
+$color-primary-alt-light: #9bdaf1;
+$color-primary-alt-lightest: #e1f3f8;
+
+// red 
+$color-secondary-darkest-red: #981b1e;
+$color-secondary-dark-red: #cd2026;
+$color-secondary-light-red: #e59393;
+$color-secondary-lightest-red: #f9dede;
+
+// green
+$color-green: #2e8540;
+$color-green-light: #4aa564;
+$color-green-lighter: #94bfa2;
+$color-green-lightest: #e7f4e4;
+
+// Yellow
+$color-gold: #fdb81e;
+$color-gold-light: #f9c642;
+$color-gold-lighter: #fad980;
+$color-gold-lightest: #fff1d2;
+
+$blue: #205493;
+$borderGray: #aaaaaa;
+
+//buttons
+$disabled-text-color: #808080;
+$disabled-background-color: #aaaaaa;
+
+
+
+// CSS property format
+// https://github.com/necolas/idiomatic-css
+//.selector {
+    /* Positioning */
+//    position: absolute;
+//    z-index: 10;
+//    top: 0;
+//    right: 0;
+    /* Display & Box Model */
+//    display: inline-block;
+//   overflow: hidden;
+//    box-sizing: border-box;
+//    width: 100px;
+//    height: 100px;
+//    padding: 10px;
+//    border: 10px solid #333;
+//    margin: 10px;
+    /* Color */
+//    background: #000;
+//    color: #fff
+    /* Text */
+//    font-family: sans-serif;
+//    font-size: 16px;
+//    line-height: 1.4;
+//    text-align: right;
+//    /* Other */
+//    cursor: pointer;
+//}

@@ -1,0 +1,148 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{8EB54AD0-91A3-4D37-A668-1ADEC9B96ECF}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SrtsWeb.Presenters</RootNamespace>
+    <AssemblyName>SrtsWeb.Presenters</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="BarcodeLib, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\ThirdPartyDLL\BarcodeLib.dll</HintPath>
+    </Reference>
+    <Reference Include="Elmah">
+      <HintPath>..\ThirdPartyDLL\Elmah.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Account\AuthorizationPresenter.cs" />
+    <Compile Include="Account\CertificateInfoPresenter.cs" />
+    <Compile Include="Account\RulesOfBehaviorPresenter.cs" />
+    <Compile Include="Admin\CmsManagerPresenter.cs" />
+    <Compile Include="Admin\CMSPresenter.cs" />
+    <Compile Include="Admin\FrameManagementPresenter.cs" />
+    <Compile Include="Admin\LmsFileGeneratorPresenter.cs" />
+    <Compile Include="Admin\ManageFramePresenter.cs" />
+    <Compile Include="Admin\ManageFramesEditPresenter.cs" />
+    <Compile Include="Admin\ManageLookUpTypesPresenter.cs" />
+    <Compile Include="Admin\ManageSrtsPresenter.cs" />
+    <Compile Include="Admin\EmailMessagePresenter.cs" />
+    <Compile Include="Admin\NewUserPresenter.cs" />
+    <Compile Include="Admin\ReportsManagerPresenter.cs" />
+    <Compile Include="Admin\SiteCodeAddPresenter.cs" />
+    <Compile Include="Admin\SiteCodeEditPresenter.cs" />
+    <Compile Include="Admin\SiteCodeManagementPresenter.cs" />
+    <Compile Include="Admin\SiteAdministratorsPresenter.cs" />
+    <Compile Include="Admin\ReleaseManagementPresenter.cs" />
+    <Compile Include="Admin\SitePreferencesPresenter.cs" />
+    <Compile Include="Admin\SrtsToolsPresenter.cs" />
+    <Compile Include="Admin\UserManagementPresenter.cs" />
+    <Compile Include="DefaultPresenter.cs" />
+    <Compile Include="Dmdc\DmdcPresenter.cs" />
+    <Compile Include="FacilityAccountRequestPresenter.cs" />
+    <Compile Include="GEyes\AddressUpdatePresenter.cs" />
+    <Compile Include="GEyes\IndividualInfoPresenter.cs" />
+    <Compile Include="GEyes\OrderConfirmationPresenter.cs" />
+    <Compile Include="GEyes\SelectOrderPresenter.cs" />
+    <Compile Include="Individuals\IndividualSearchPresenter.cs" />
+    <Compile Include="JSpecs\JSpecsConfirmOrderPresenter.cs" />
+    <Compile Include="JSpecs\JSpecsDetailsPresenter.cs" />
+    <Compile Include="JSpecs\JSpecsFAQPresenter.cs" />
+    <Compile Include="JSpecs\JSpecsLoginPresenter.cs" />
+    <Compile Include="JSpecs\JSpecsNewOrderPresenter.cs" />
+    <Compile Include="JSpecs\JSpecsOrdersPresenter.cs" />
+    <Compile Include="Lab\ManageOrdersLabPresenter.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="MessageCenter\MessageCenterPresenter.cs" />
+    <Compile Include="Orders\CheckInDispensePresenter.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Orders\OrderManagementPresenter.cs" />
+    <Compile Include="Orders\ManagerOrdersGridsPresenter.cs" />
+    <Compile Include="Orders\OrderTrackingPresenter.cs" />
+    <Compile Include="Patients\BmtPresenter.cs" />
+    <Compile Include="Patients\ManagePatientsPresenter.cs" />
+    <Compile Include="Person\PersonAddPresenter.cs" />
+    <Compile Include="Person\PersonDetailsPresenter.cs" />
+    <Compile Include="PresenterBase.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Public\CheckOrderStatusPresenter.cs" />
+    <Compile Include="Public\ReleaseNotesPresenter.cs" />
+    <Compile Include="Public\SystemAccessRequestPresenter.cs" />
+    <Compile Include="Reporting\RptDDForm771Presenter.cs" />
+    <Compile Include="Reporting\RptWWFrameDetailPresenter.cs" />
+    <Compile Include="Reporting\SiteCodeInfoPresenter.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\ExtendersHelpers\SrtsWeb.ExtendersHelpersEnums.csproj">
+      <Project>{a7bd6a82-456a-4844-bc89-54b3aca02eaa}</Project>
+      <Name>SrtsWeb.ExtendersHelpersEnums</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\BusinessLayer\SrtsWeb.BusinessLayer.csproj">
+      <Project>{bb494908-6afd-4e53-8c26-5a96f16a86f1}</Project>
+      <Name>SrtsWeb.BusinessLayer</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DataLayer\SrtsWeb.DataLayer.csproj">
+      <Project>{7a783edf-1894-4d39-9895-ad647b1f2e9c}</Project>
+      <Name>SrtsWeb.DataLayer</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Entities\SrtsWeb.Entities.csproj">
+      <Project>{3869c230-7a89-4a14-9298-769767554752}</Project>
+      <Name>SrtsWeb.Entities</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SrtsWeb.Views\SrtsWeb.Views.csproj">
+      <Project>{4f2292d7-1e0a-4b76-a3c2-7b270bba0d44}</Project>
+      <Name>SrtsWeb.Views</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

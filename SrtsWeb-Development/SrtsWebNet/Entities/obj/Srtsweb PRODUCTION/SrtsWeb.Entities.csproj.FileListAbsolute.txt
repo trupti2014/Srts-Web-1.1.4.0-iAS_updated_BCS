@@ -1,0 +1,29 @@
+C:\DEV2\SRTS\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\Entities\bin\Srtsweb PRODUCTION\SrtsWeb.Entities.dll
+C:\DEV2\SRTS\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\Entities\bin\Srtsweb PRODUCTION\DataToObjectLib.dll
+C:\DEV2\SRTS\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\Entities\obj\Srtsweb PRODUCTION\SrtsWeb.Entities.csprojAssemblyReference.cache
+C:\DEV2\SRTS\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\Entities\obj\Srtsweb PRODUCTION\SrtsWeb.Entities.csproj.CoreCompileInputs.cache
+C:\DEV2\SRTS\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\Entities\obj\Srtsweb PRODUCTION\SrtsWeb.Entities.csproj.CopyComplete
+C:\DEV2\SRTS\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\Entities\obj\Srtsweb PRODUCTION\SrtsWeb.Entities.dll
+C:\SRTS_New\SrtsWeb-Development-1.1.4.0-iAS (1)\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\Entities\bin\Srtsweb PRODUCTION\SrtsWeb.Entities.dll
+C:\SRTS_New\SrtsWeb-Development-1.1.4.0-iAS (1)\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\Entities\bin\Srtsweb PRODUCTION\DataToObjectLib.dll
+C:\SRTS_New\SrtsWeb-Development-1.1.4.0-iAS (1)\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\Entities\obj\Srtsweb PRODUCTION\SrtsWeb.Entities.csprojAssemblyReference.cache
+C:\SRTS_New\SrtsWeb-Development-1.1.4.0-iAS (1)\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\Entities\obj\Srtsweb PRODUCTION\SrtsWeb.Entities.csproj.CoreCompileInputs.cache
+C:\SRTS_New\SrtsWeb-Development-1.1.4.0-iAS (1)\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\Entities\obj\Srtsweb PRODUCTION\SrtsWeb.Entities.csproj.CopyComplete
+C:\SRTS_New\SrtsWeb-Development-1.1.4.0-iAS (1)\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\Entities\obj\Srtsweb PRODUCTION\SrtsWeb.Entities.dll
+C:\SRTS_Nov_onwordscode\Working Code without BCS\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\Entities\bin\Srtsweb PRODUCTION\SrtsWeb.Entities.dll
+C:\SRTS_Nov_onwordscode\Working Code without BCS\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\Entities\bin\Srtsweb PRODUCTION\DataToObjectLib.dll
+C:\SRTS_Nov_onwordscode\Working Code without BCS\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\Entities\obj\Srtsweb PRODUCTION\SrtsWeb.Entities.csprojAssemblyReference.cache
+C:\SRTS_Nov_onwordscode\Working Code without BCS\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\Entities\obj\Srtsweb PRODUCTION\SrtsWeb.Entities.csproj.CoreCompileInputs.cache
+C:\SRTS_Nov_onwordscode\Working Code without BCS\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\Entities\obj\Srtsweb PRODUCTION\SrtsWeb.Entities.csproj.CopyComplete
+C:\SRTS_Nov_onwordscode\Working Code without BCS\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\Entities\obj\Srtsweb PRODUCTION\SrtsWeb.Entities.dll
+C:\Users\fpate\Downloads\SrtsWeb-Development-1.1.4.0-iAS\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\Entities\bin\Srtsweb PRODUCTION\SrtsWeb.Entities.dll
+C:\Users\fpate\Downloads\SrtsWeb-Development-1.1.4.0-iAS\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\Entities\bin\Srtsweb PRODUCTION\DataToObjectLib.dll
+C:\Users\fpate\Downloads\SrtsWeb-Development-1.1.4.0-iAS\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\Entities\obj\Srtsweb PRODUCTION\SrtsWeb.Entities.csprojAssemblyReference.cache
+C:\Users\fpate\Downloads\SrtsWeb-Development-1.1.4.0-iAS\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\Entities\obj\Srtsweb PRODUCTION\SrtsWeb.Entities.csproj.CoreCompileInputs.cache
+C:\Users\fpate\Downloads\SrtsWeb-Development-1.1.4.0-iAS\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\Entities\obj\Srtsweb PRODUCTION\SrtsWeb.Entities.csproj.CopyComplete
+C:\Users\fpate\Downloads\SrtsWeb-Development-1.1.4.0-iAS\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\Entities\obj\Srtsweb PRODUCTION\SrtsWeb.Entities.dll
+C:\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\Entities\bin\Srtsweb PRODUCTION\SrtsWeb.Entities.dll
+C:\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\Entities\bin\Srtsweb PRODUCTION\DataToObjectLib.dll
+C:\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\Entities\obj\Srtsweb PRODUCTION\SrtsWeb.Entities.csproj.CoreCompileInputs.cache
+C:\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\Entities\obj\Srtsweb PRODUCTION\SrtsWeb.Entities.csproj.CopyComplete
+C:\SrtsWeb-Development-1.1.4.0-iAS\SrtsWebNet\Entities\obj\Srtsweb PRODUCTION\SrtsWeb.Entities.dll

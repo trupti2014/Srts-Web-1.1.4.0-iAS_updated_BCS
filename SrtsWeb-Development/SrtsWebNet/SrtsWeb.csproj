@@ -1,0 +1,2168 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\build\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\build\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{8C86BB47-4699-4430-A1F2-DA017FAC1B2B}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SrtsWeb</RootNamespace>
+    <AssemblyName>SrtsWeb</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>4.0</OldToolsVersion>
+    <!--
+    <IISExpressSSLPort>44300</IISExpressSSLPort>
+    <IISExpressAnonymousAuthentication>enabled</IISExpressAnonymousAuthentication>
+    <IISExpressWindowsAuthentication>disabled</IISExpressWindowsAuthentication>
+    <IISExpressUseClassicPipelineMode>false</IISExpressUseClassicPipelineMode>
+    -->
+    <IISExpressSSLPort>
+    </IISExpressSSLPort>
+    <IISExpressAnonymousAuthentication>
+    </IISExpressAnonymousAuthentication>
+    <IISExpressWindowsAuthentication>
+    </IISExpressWindowsAuthentication>
+    <IISExpressUseClassicPipelineMode>
+    </IISExpressUseClassicPipelineMode>
+    <TargetFrameworkProfile />
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <UseIISExpress>false</UseIISExpress>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Srtsweb DEV|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>
+    </DocumentationFile>
+    <FilesToIncludeForPublish>OnlyFilesToRunTheApp</FilesToIncludeForPublish>
+    <IncludeIisSettings>true</IncludeIisSettings>
+    <DeployIisAppPhysicalPath>C:\inetpub\wwwroot\SrtsWebNet</DeployIisAppPhysicalPath>
+    <PublishDatabases>false</PublishDatabases>
+    <PackageAsSingleFile>false</PackageAsSingleFile>
+    <Prefer32Bit>false</Prefer32Bit>
+    <RunCodeAnalysis>false</RunCodeAnalysis>
+    <CodeAnalysisRuleSet>rsDeadCodeFinder.ruleset</CodeAnalysisRuleSet>
+    <PrecompileBeforePublish>true</PrecompileBeforePublish>
+    <EnableUpdateable>true</EnableUpdateable>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Srtsweb PRODTEST|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AjaxControlToolkit, Version=4.1.7.607, Culture=neutral, PublicKeyToken=28f01b0e84b6d53e, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>ThirdPartyDLL\AjaxControlToolkit.dll</HintPath>
+    </Reference>
+    <Reference Include="Aspose.Cells, Version=22.2.0.0, Culture=neutral, PublicKeyToken=716fcc553a201e56, processorArchitecture=MSIL">
+      <HintPath>packages\Aspose.Cells.22.2.0\lib\net40\Aspose.Cells.dll</HintPath>
+    </Reference>
+    <Reference Include="BarcodeLib, Version=1.0.0.1, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>ThirdPartyDLL\BarcodeLib.dll</HintPath>
+    </Reference>
+    <Reference Include="BotDetect, Version=4.4.2.0, Culture=neutral, PublicKeyToken=74616036388b765f, processorArchitecture=MSIL">
+      <HintPath>packages\Captcha.4.4.2\lib\net35\BotDetect.dll</HintPath>
+    </Reference>
+    <Reference Include="CSSFriendly, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>ThirdPartyDLL\CSSFriendly.dll</HintPath>
+    </Reference>
+    <Reference Include="Elmah, Version=1.2.14706.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>ThirdPartyDLL\Elmah.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.ReportViewer.Common, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>ThirdPartyDLL\Microsoft.ReportViewer.Common.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.ProcessingObjectModel, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\ThirdPartyDLL\Microsoft.ReportViewer.ProcessingObjectModel.DLL</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.WebForms, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>ThirdPartyDLL\Microsoft.ReportViewer.WebForms.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.SqlServer.Types, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\ThirdPartyDLL\Microsoft.SqlServer.Types.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.Web.Administration, Version=7.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Windows\System32\inetsrv\Microsoft.Web.Administration.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>packages\Newtonsoft.Json.13.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="PdfViewerAspNet, Version=6.0.0.0, Culture=neutral, PublicKeyToken=e0ae9f6e27a97018, processorArchitecture=MSIL">
+      <HintPath>packages\ExpertPdf.PdfViewer.AspNet.6.0.0\lib\net40\PdfViewerAspNet.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data.Entity">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Data.SQLite, Version=1.0.113.0, Culture=neutral, PublicKeyToken=db937bc2d44ff139, processorArchitecture=MSIL">
+      <HintPath>packages\Stub.System.Data.SQLite.Core.NetFramework.1.0.113.3\lib\net45\System.Data.SQLite.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Net.Http.WebRequest" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Helpers, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.AspNet.WebPages.3.2.4\lib\net45\System.Web.Helpers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.AspNet.Razor.3.2.4\lib\net45\System.Web.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.AspNet.WebPages.3.2.4\lib\net45\System.Web.WebPages.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Deployment, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.AspNet.WebPages.3.2.4\lib\net45\System.Web.WebPages.Deployment.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.AspNet.WebPages.3.2.4\lib\net45\System.Web.WebPages.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="GEyes\Content\js\popper.min.js" />
+    <Content Include="JSpecs\imgs\CAC\cac-img.png" />
+    <Content Include="JSpecs\imgs\Elite\RE02B99-G.png" />
+    <Content Include="JSpecs\imgs\Elite\RE06W99-G.png" />
+    <Content Include="JSpecs\imgs\Elite\RE07W99-G.png" />
+    <Content Include="JSpecs\imgs\Elite\RE22W99-G.png" />
+    <Content Include="JSpecs\imgs\Elite\RE26Y99-G.png" />
+    <Content Include="JSpecs\imgs\Elite\RE27Y99-G.png" />
+    <Content Include="JSpecs\imgs\Ellsworth\EL17W99-G.png" />
+    <Content Include="JSpecs\imgs\Ellsworth\EL37Y99-G.png" />
+    <Content Include="JSpecs\imgs\Fallback\Frame_Not_Available.png" />
+    <Content Include="JSpecs\imgs\Fallback\glasses.svg" />
+    <Content Include="JSpecs\imgs\Keesler\KE22W99-G.png" />
+    <Content Include="JSpecs\imgs\Keesler\KE52W99-G.png" />
+    <Content Include="JSpecs\imgs\Keesler\KE82Y99-G.png" />
+    <Content Include="JSpecs\imgs\Kingsville\KI12B99-G.png" />
+    <Content Include="JSpecs\imgs\Kingsville\KI32W99-G.png" />
+    <Content Include="JSpecs\imgs\Kingsville\KI52Y99-G.png" />
+    <Content Include="JSpecs\imgs\Liberty\LI01W99-G.png" />
+    <Content Include="JSpecs\imgs\Liberty\LI03W99-G.png" />
+    <Content Include="JSpecs\imgs\Liberty\LI21W99-G.png" />
+    <Content Include="JSpecs\imgs\Liberty\LI23W99-G.png" />
+    <Content Include="JSpecs\imgs\Liberty\LI41Y99-G.png" />
+    <Content Include="JSpecs\imgs\Liberty\LI43Y99-G.png" />
+    <Content Include="JSpecs\imgs\M50\M50.png" />
+    <Content Include="JSpecs\imgs\Muga\MU01B99-G.png" />
+    <Content Include="JSpecs\imgs\Muga\MU02B99-G.png" />
+    <Content Include="JSpecs\imgs\Muga\MU21W99-G.png" />
+    <Content Include="JSpecs\imgs\Muga\MU22W99-G.png" />
+    <Content Include="JSpecs\imgs\Muga\MU41Y99-G.png" />
+    <Content Include="JSpecs\imgs\Muga\MU42Y99-G.png" />
+    <Content Include="JSpecs\imgs\Osan\OS32W99-G.png" />
+    <Content Include="JSpecs\imgs\Osan\OS52Y99-G.png" />
+    <Content Include="JSpecs\imgs\Willow\WI07W99-G.png" />
+    <Content Include="JSpecs\imgs\Willow\WI27W99-G.png" />
+    <Content Include="JSpecs\imgs\Willow\WI47Y99-G.png" />
+    <Content Include="JSpecs\Styles\Base\Base.min.css" />
+    <Content Include="JSpecs\Styles\Base\Mixins.min.css" />
+    <Content Include="JSpecs\Styles\Base\Normalize.css" />
+    <Content Include="JSpecs\Styles\Base\Variables.min.css" />
+    <Content Include="JSpecs\Styles\Layouts\Layouts.min.css" />
+    <Content Include="JSpecs\Styles\Main.min.css" />
+    <Content Include="JSpecs\Styles\Modules\ConfirmOrder\ConfirmOrder.min.css" />
+    <Content Include="JSpecs\Styles\Modules\Elements\Elements.min.css" />
+    <Content Include="JSpecs\Styles\Modules\FAQ\FAQ.min.css" />
+    <Content Include="JSpecs\Styles\Modules\Loader\Loader.min.css" />
+    <Content Include="JSpecs\Styles\Modules\Login\Login.min.css" />
+    <Content Include="JSpecs\Styles\Modules\Modal\Modal.min.css" />
+    <Content Include="JSpecs\Styles\Modules\Navigation\Navigation.min.css" />
+    <Content Include="JSpecs\Styles\Modules\Orders\Orders.min.css" />
+    <Content Include="JSpecs\Styles\Modules\Profile\Profile.min.css" />
+    <Content Include="JSpecs\Styles\Modules\Title\Title.min.css" />
+    <Content Include="JSpecs\Styles\README.txt" />
+    <Content Include="JSpecs\Styles\State\State.min.css" />
+    <Content Include="JSpecs\Styles\Theme\Shame.min.css" />
+    <Content Include="JSpecs\svg\glasses.svg" />
+    <Content Include="JSpecs\svg\keyboard_down_arrow.svg" />
+    <Content Include="log.txt" />
+    <Content Include="Logging.config" />
+    <Content Include="Reports\ClinicDispense.aspx" />
+    <Content Include="Reports\ClinicOrders.aspx" />
+    <Content Include="Reports\ReportPageTemplate.aspx" />
+    <Content Include="Reports\RptViewer.aspx" />
+    <Content Include="Scripts\Admin\SiteAdministrators.js" />
+    <Content Include="Scripts\JSpecs\JSpecsNewOrderValidation.js" />
+    <Content Include="Scripts\JSpecs\JSpecsNewPrescription.js" />
+    <Content Include="Scripts\JSpecs\pickaday.js" />
+    <Content Include="Scripts\ManagementEnterprise\FrameImages.js" />
+    <Content Include="Scripts\EventLogs\ManageEventLogTracing.js" />
+    <Content Include="Scripts\Frames\FrameManagement.js" />
+    <Content Include="Scripts\GEyes\Geyes.js" />
+    <Content Include="Scripts\Global\Ascii.js" />
+    <Content Include="Scripts\Global\GlobalShared.js" />
+    <Content Include="Scripts\Global\SharedAddress.js" />
+    <Content Include="Scripts\JSpecs\JSpecsDetailsValidation.js" />
+    <Content Include="Scripts\JSpecs\JSpecsLoaderHandler.js" />
+    <Content Include="Scripts\JSpecs\JSpecsValidateOrder.js" />
+    <Content Include="Scripts\LabManagement\LabOrderLookup.js" />
+    <Content Include="Scripts\Login\LoginVal.js" />
+    <Content Include="Scripts\Logout\Logout.js" />
+    <Content Include="Scripts\ManagementEnterprise\FrameImagesEdit.js" />
+    <Content Include="Scripts\ManageReports\PrintShippingLabels.js" />
+    <Content Include="Scripts\Orders\OrderTracking.js" />
+    <Content Include="Scripts\Password\ChangePasswordVal.js" />
+    <Content Include="Scripts\Person\AddPerson.js" />
+    <Content Include="Scripts\Person\AddPersonVal.js" />
+    <Content Include="Scripts\Preferences\ShippingSitePreferences.js" />
+    <Content Include="Scripts\Preferences\GeneralSitePreferences.js" />
+    <Content Include="Scripts\Preferences\FrameItemPreferences.js" />
+    <Content Include="Scripts\Preferences\JustificationPreferences.js" />
+    <Content Include="Scripts\Preferences\LabMailToPatient.js" />
+    <Content Include="Scripts\Preferences\LabParameters.js" />
+    <Content Include="Scripts\Preferences\OrderSitePreferences.js" />
+    <Content Include="Scripts\Preferences\PrescriptionPreferences.js" />
+    <Content Include="Scripts\Preferences\RoutingOrdersPreferences.js" />
+    <Content Include="Scripts\Preferences\SitePreferences.js" />
+    <Content Include="Scripts\Public\CheckOrderStatus.js" />
+    <Content Include="Scripts\Public\FacilityAccountRequest.js" />
+    <Content Include="Scripts\ReleaseManagement\UserGuidesManagement.js" />
+    <Content Include="Scripts\Sites\SiteCodeEdit.js" />
+    <Content Include="Scripts\Sites\SiteShared.js" />
+    <Content Include="GEyes\Content\js\bootstrap.bundle.js" />
+    <Content Include="GEyes\Content\js\bootstrap.bundle.min.js" />
+    <Content Include="GEyes\Content\js\bootstrap.js" />
+    <Content Include="GEyes\Content\js\bootstrap.min.js" />
+    <Content Include="GEyes\Content\css\bootstrap-grid.css" />
+    <Content Include="GEyes\Content\css\bootstrap-grid.min.css" />
+    <Content Include="GEyes\Content\css\bootstrap-reboot.css" />
+    <Content Include="GEyes\Content\css\bootstrap-reboot.min.css" />
+    <Content Include="GEyes\Content\css\bootstrap.css" />
+    <Content Include="GEyes\Content\css\bootstrap.min.css" />
+    <Content Include="Styles\images\CollapseOrderNotifications.gif">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Styles\images\DefaultGlasses.png" />
+    <Content Include="Styles\images\ExpandOrderNotifications.gif">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Styles\images\GlassesIcon.png" />
+    <Content Include="Styles\images\img_delete_x.png" />
+    <Content Include="Styles\images\img_edit_pencil.png" />
+    <Content Include="Styles\images\img_loading_line.gif" />
+    <Content Include="Styles\pickaday.css" />
+    <Content Include="Styles\images\img_srts_contactphone.png" />
+    <Content Include="Styles\ui.jqgrid.css" />
+    <Content Include="Styles\jquery-ui.css" />
+    <Content Include="Styles\images\Arrow_blue_left.gif" />
+    <Content Include="Styles\images\Arrow_blue_right.gif" />
+    <Content Include="Styles\images\geyes6.png" />
+    <Content Include="Styles\images\geyes7.png" />
+    <Content Include="Styles\images\img_hint_white.png" />
+    <Content Include="Styles\images\img_loading.gif" />
+    <Content Include="Styles\images\img_mnu_btn.png" />
+    <Content Include="Styles\images\img_SRTSweb_Banner.gif" />
+    <Content Include="Styles\images\img_SrtsWeb_LogoHeader_bk.png" />
+    <Content Include="Styles\images\img_SrtsWeb_Logo_Contactus_DHA.png" />
+    <Content Include="Styles\images\img_SrtsWeb_SlideShow_img3.png" />
+    <Content Include="Styles\images\ui-bg_flat_0_aaaaaa_40x100.png" />
+    <Content Include="Styles\images\ui-bg_flat_55_fbec88_40x100.png" />
+    <Content Include="Styles\images\ui-bg_glass_75_d0e5f5_1x400.png" />
+    <Content Include="Styles\images\ui-bg_glass_85_dfeffc_1x400.png" />
+    <Content Include="Styles\images\ui-bg_glass_95_fef1ec_1x400.png" />
+    <Content Include="Styles\images\ui-bg_gloss-wave_55_5c9ccc_500x100.png" />
+    <Content Include="Styles\images\ui-bg_inset-hard_100_f5f8f9_1x100.png" />
+    <Content Include="Styles\images\ui-bg_inset-hard_100_fcfdfd_1x100.png" />
+    <Content Include="Styles\images\ui-icons_217bc0_256x240.png" />
+    <Content Include="Styles\images\ui-icons_2e83ff_256x240.png" />
+    <Content Include="Styles\images\ui-icons_444444_256x240.png" />
+    <Content Include="Styles\images\ui-icons_469bdd_256x240.png" />
+    <Content Include="Styles\images\ui-icons_555555_256x240.png" />
+    <Content Include="Styles\images\ui-icons_6da8d5_256x240.png" />
+    <Content Include="Styles\images\ui-icons_777620_256x240.png" />
+    <Content Include="Styles\images\ui-icons_777777_256x240.png" />
+    <Content Include="Styles\images\ui-icons_cc0000_256x240.png" />
+    <Content Include="Styles\images\ui-icons_cd0a0a_256x240.png" />
+    <Content Include="Styles\images\ui-icons_d8e7f3_256x240.png" />
+    <Content Include="Styles\images\ui-icons_f9bd01_256x240.png" />
+    <Content Include="Styles\images\ui-icons_ffffff_256x240.png" />
+    <Content Include="Styles\w3.css" />
+    <Content Include="UserControls\ucManageFrames.ascx" />
+    <Content Include="UserControls\ucAddressVerification.ascx" />
+    <Content Include="UserControls\ucManageFramesEdit.ascx" />
+    <Content Include="UserControls\ucSitePreferencesShipping.ascx" />
+    <Content Include="UserControls\ucSitePreferencesLabJustifications.ascx" />
+    <Content Include="UserControls\ucSitePreferencesLabMailToPatient.ascx" />
+    <Content Include="UserControls\ucSitePreferencesLabParameters.ascx" />
+    <Content Include="UserControls\ucSitePreferencesGeneral.ascx" />
+    <Content Include="UserControls\ucSitePreferencesFrames.ascx" />
+    <Content Include="UserControls\ucSiteAdministratorsLookup.ascx" />
+    <Content Include="UserControls\ucSitePreferencesOrders.ascx" />
+    <Content Include="UserControls\ucSitePreferencesPrescriptions.ascx" />
+    <Content Include="UserControls\ucReleaseManagementUserGuides.ascx" />
+    <Content Include="UserControls\ucSitePreferencesRoutingOrders.ascx" />
+    <Content Include="UserControls\ucSpecialCharacters.ascx" />
+    <Content Include="WebForms\Account\CACcert\getCertificateInfo.aspx" />
+    <Content Include="WebForms\Account\iASLogin.aspx" />
+    <Content Include="WebForms\Account\Logout.aspx" />
+    <Content Include="WebForms\Account\RecoverPassword.aspx" />
+    <Content Include="Account\RecoveryText.txt" />
+    <Content Include="WebForms\Account\RulesOfBehavior.aspx" />
+    <Content Include="WebForms\Admin\DmdcGetter.aspx" />
+    <Content Include="WebForms\Admin\FrameManagementAdd.aspx" />
+    <Content Include="WebForms\Admin\LmsFileGenerator.aspx" />
+    <Content Include="WebForms\Admin\ManageEventLogTracing.aspx" />
+    <Content Include="WebForms\Admin\ManageFrames.aspx" />
+    <Content Include="WebForms\Admin\SiteCodeAdd.aspx" />
+    <Content Include="WebForms\Admin\SiteCodeEdit.aspx" />
+    <Content Include="WebForms\Admin\SiteAdministrators.aspx" />
+    <Content Include="WebForms\Admin\ReleaseManagement.aspx" />
+    <Content Include="WebForms\Admin\SitePreferences.aspx" />
+    <Content Include="WebForms\Admin\SrtsAccountManager.aspx" />
+    <Content Include="WebForms\Admin\SrtsAdminTools.aspx" />
+    <Content Include="WebForms\Admin\SrtsCMSManager.aspx" />
+    <Content Include="WebForms\Admin\UserManagement.aspx" />
+    <Content Include="App_Data\FileUploads\dummy.xml" />
+    <Content Include="Content\bootstrap-theme.css" />
+    <Content Include="Content\bootstrap-theme.min.css" />
+    <Content Include="Content\bootstrap.css" />
+    <Content Include="Content\bootstrap.min.css" />
+    <Content Include="WebForms\Admin\LabelReport.aspx" />
+    <Content Include="WebForms\CustomErrors\GeneralError.aspx" />
+    <Content Include="WebForms\CustomErrors\NoAccessError401.aspx" />
+    <Content Include="WebForms\CustomErrors\PageNotFound404.aspx" />
+    <Content Include="DemographicXML.xml" />
+    <Content Include="fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="WebForms\GEyes\Forms\AddressUpdate.aspx" />
+    <Content Include="WebForms\GEyes\Forms\IndividualInfo.aspx" />
+    <Content Include="WebForms\GEyes\Forms\GEyesHomePage.aspx" />
+    <Content Include="WebForms\GEyes\Forms\OrderConfirmation.aspx" />
+    <Content Include="WebForms\GEyes\Forms\SelectOrder.aspx" />
+    <Content Include="GEyes\images\FrameImages\F205TOR.jpg" />
+    <Content Include="GEyes\images\FrameImages\F251BLK.jpg" />
+    <Content Include="GEyes\images\FrameImages\F251GLD.jpg" />
+    <Content Include="GEyes\images\FrameImages\F251NSBLK.jpg" />
+    <Content Include="GEyes\images\FrameImages\F251NSGLD.jpg" />
+    <Content Include="GEyes\images\FrameImages\F251NSPWT.jpg" />
+    <Content Include="GEyes\images\FrameImages\F251PWT.jpg" />
+    <Content Include="GEyes\images\FrameImages\F251ROS.jpg" />
+    <Content Include="GEyes\images\FrameImages\F350BLK.jpg" />
+    <Content Include="GEyes\images\FrameImages\F350GLD.jpg" />
+    <Content Include="GEyes\images\FrameImages\F350LOBLK.jpg" />
+    <Content Include="GEyes\images\FrameImages\F350LOGLD.jpg" />
+    <Content Include="GEyes\images\FrameImages\F350LOPWT.jpg" />
+    <Content Include="GEyes\images\FrameImages\F350NSBLK.jpg" />
+    <Content Include="GEyes\images\FrameImages\F350NSGLD.jpg" />
+    <Content Include="GEyes\images\FrameImages\F350NSPWT.jpg" />
+    <Content Include="GEyes\images\FrameImages\F350PWT.jpg" />
+    <Content Include="GEyes\images\FrameImages\F7011MBR.jpg" />
+    <Content Include="GEyes\images\FrameImages\F7012MGU.jpg" />
+    <Content Include="GEyes\images\FrameImages\F7019MGL.jpg" />
+    <Content Include="GEyes\images\FrameImages\F801CPR.jpg" />
+    <Content Include="GEyes\images\FrameImages\F801GLD.jpg" />
+    <Content Include="GEyes\images\FrameImages\F801LOCPR.jpg" />
+    <Content Include="GEyes\images\FrameImages\F801LOGLD.jpg" />
+    <Content Include="GEyes\images\FrameImages\F801LOPWT.jpg" />
+    <Content Include="GEyes\images\FrameImages\F801NSCPR.jpg" />
+    <Content Include="GEyes\images\FrameImages\F801NSGLD.jpg" />
+    <Content Include="GEyes\images\FrameImages\F801NSPWT.jpg" />
+    <Content Include="GEyes\images\FrameImages\F801PWT.jpg" />
+    <Content Include="GEyes\images\FrameImages\FA1000SLV.jpg" />
+    <Content Include="GEyes\images\FrameImages\FAFDBLK.JPG" />
+    <Content Include="GEyes\images\FrameImages\FAFDGLD.JPG" />
+    <Content Include="GEyes\images\FrameImages\FAFFBLK.jpg" />
+    <Content Include="GEyes\images\FrameImages\FAFFGLD.jpg" />
+    <Content Include="GEyes\images\FrameImages\FAH64SLV.jpg" />
+    <Content Include="GEyes\images\FrameImages\FALEPBLK.jpg" />
+    <Content Include="GEyes\images\FrameImages\FARSBLK.jpg" />
+    <Content Include="GEyes\images\FrameImages\FAVBLK.jpg" />
+    <Content Include="GEyes\images\FrameImages\FAVGLD.jpg" />
+    <Content Include="GEyes\images\FrameImages\FAVLOBLK.jpg" />
+    <Content Include="GEyes\images\FrameImages\FAVLOGLD.jpg" />
+    <Content Include="GEyes\images\FrameImages\FAVLOSLV.jpg" />
+    <Content Include="GEyes\images\FrameImages\FAVSLOSLV.jpg" />
+    <Content Include="GEyes\images\FrameImages\FAVSSLV.jpg" />
+    <Content Include="GEyes\images\FrameImages\FBLPSCRS.jpg" />
+    <Content Include="GEyes\images\FrameImages\FDELTABLK.jpg" />
+    <Content Include="GEyes\images\FrameImages\FDELTABRN.jpg" />
+    <Content Include="GEyes\images\FrameImages\FDELTAPWT.jpg" />
+    <Content Include="GEyes\images\FrameImages\FELI52BLK.jpg" />
+    <Content Include="GEyes\images\FrameImages\FELI52BRN.jpg" />
+    <Content Include="GEyes\images\FrameImages\FELI52PWT.jpg" />
+    <Content Include="GEyes\images\FrameImages\FELITEBLK.jpg" />
+    <Content Include="GEyes\images\FrameImages\FELITEBRN.jpg" />
+    <Content Include="GEyes\images\FrameImages\FELITEPWT.jpg" />
+    <Content Include="GEyes\images\FrameImages\FENCORBLK.jpg" />
+    <Content Include="GEyes\images\FrameImages\FENCORBRN.jpg" />
+    <Content Include="GEyes\images\FrameImages\FENCORPWT.jpg" />
+    <Content Include="GEyes\images\FrameImages\FEXC51BLK.jpg" />
+    <Content Include="GEyes\images\FrameImages\FEXC51BRN.jpg" />
+    <Content Include="GEyes\images\FrameImages\FEXCELBLK.jpg" />
+    <Content Include="GEyes\images\FrameImages\FEXCELBRN.jpg" />
+    <Content Include="GEyes\images\FrameImages\FFFISLV.jpg" />
+    <Content Include="GEyes\images\FrameImages\FFGGGLD.jpg" />
+    <Content Include="GEyes\images\FrameImages\FFGSSLV.jpg" />
+    <Content Include="GEyes\images\FrameImages\FFS9AMB.jpg" />
+    <Content Include="GEyes\images\FrameImages\FFS9PAMB.jpg" />
+    <Content Include="GEyes\images\FrameImages\FHLF50BRN.jpg" />
+    <Content Include="GEyes\images\FrameImages\FHLF50GRY.jpg" />
+    <Content Include="GEyes\images\FrameImages\FHLFBRN.jpg" />
+    <Content Include="GEyes\images\FrameImages\FHLFGRY.jpg" />
+    <Content Include="GEyes\images\FrameImages\FICEBLK.jpg" />
+    <Content Include="GEyes\images\FrameImages\FIMAGDBL.jpg" />
+    <Content Include="GEyes\images\FrameImages\FKENDYSSI.jpg" />
+    <Content Include="GEyes\images\FrameImages\Flag1.jpg" />
+    <Content Include="GEyes\images\FrameImages\FLOBA.jpg" />
+    <Content Include="GEyes\images\FrameImages\FLOBASLV.jpg" />
+    <Content Include="GEyes\images\FrameImages\FM17A1WTE.jpg" />
+    <Content Include="GEyes\images\FrameImages\FM40CRS.jpg" />
+    <Content Include="GEyes\images\FrameImages\FM45CRS.jpg" />
+    <Content Include="GEyes\images\FrameImages\FMATH1BRZ.jpg" />
+    <Content Include="GEyes\images\FrameImages\FMATH2BNZ.jpg" />
+    <Content Include="GEyes\images\FrameImages\FMATH2BRZ.jpg" />
+    <Content Include="GEyes\images\FrameImages\FMATHBNZ.jpg" />
+    <Content Include="GEyes\images\FrameImages\FMCBLK.jpg" />
+    <Content Include="GEyes\images\FrameImages\FMCU2P.jpg" />
+    <Content Include="GEyes\images\FrameImages\FMCU2PBLK.jpg" />
+    <Content Include="GEyes\images\FrameImages\FMS9AMB.jpg" />
+    <Content Include="GEyes\images\FrameImages\FOVTOR.jpg" />
+    <Content Include="GEyes\images\FrameImages\FP2BBLK.jpg" />
+    <Content Include="GEyes\images\FrameImages\FP3FBLK.jpg" />
+    <Content Include="GEyes\images\FrameImages\FP3FGLD.jpg" />
+    <Content Include="GEyes\images\FrameImages\FP3FNSBLK.jpg" />
+    <Content Include="GEyes\images\FrameImages\FP3FNSGLD.jpg" />
+    <Content Include="GEyes\images\FrameImages\FP3FNSPWT.jpg" />
+    <Content Include="GEyes\images\FrameImages\FP3FPLM.jpg" />
+    <Content Include="GEyes\images\FrameImages\FP3FPWT.jpg" />
+    <Content Include="GEyes\images\FrameImages\FP3GLD.jpg" />
+    <Content Include="GEyes\images\FrameImages\FPNVGBLK.jpg" />
+    <Content Include="GEyes\images\FrameImages\FS91ABRN.jpg" />
+    <Content Include="GEyes\images\FrameImages\FS91BBRN.jpg" />
+    <Content Include="GEyes\images\FrameImages\FSAWFLCRS.jpg" />
+    <Content Include="GEyes\images\FrameImages\FSID54BLK.jpg" />
+    <Content Include="GEyes\images\FrameImages\FSID54BRN.jpg" />
+    <Content Include="GEyes\images\FrameImages\FSID54PWT.jpg" />
+    <Content Include="GEyes\images\FrameImages\FSIDESBLK.jpg" />
+    <Content Include="GEyes\images\FrameImages\FSIDESBRN.jpg" />
+    <Content Include="GEyes\images\FrameImages\FSIDESPWT.jpg" />
+    <Content Include="GEyes\images\FrameImages\FUVEXSLV.jpg" />
+    <Content Include="GEyes\images\FrameImages\FVIS51BLK.jpg" />
+    <Content Include="GEyes\images\FrameImages\FVIS51BRN.jpg" />
+    <Content Include="GEyes\images\FrameImages\FVIS51PWT.jpg" />
+    <Content Include="GEyes\images\FrameImages\FVISTABLK.jpg" />
+    <Content Include="GEyes\images\FrameImages\FVISTABRN.jpg" />
+    <Content Include="GEyes\images\FrameImages\FVISTAPWT.jpg" />
+    <Content Include="GEyes\images\FrameImages\FXM50CRS.jpg" />
+    <Content Include="GEyes\images\FrameImages\G-EyesBanner.gif" />
+    <Content Include="GEyes\images\FrameImages\glasses3.jpg" />
+    <Content Include="GEyes\images\FrameImages\ImageNotAvailable.jpg" />
+    <Content Include="GEyes\images\FrameImages\M205TOR.jpg" />
+    <Content Include="GEyes\images\FrameImages\M251BLK.jpg" />
+    <Content Include="GEyes\images\FrameImages\M251GLD.jpg" />
+    <Content Include="GEyes\images\FrameImages\M251NSBLK.jpg" />
+    <Content Include="GEyes\images\FrameImages\M251NSGLD.jpg" />
+    <Content Include="GEyes\images\FrameImages\M251NSPWT.jpg" />
+    <Content Include="GEyes\images\FrameImages\M251PWT.jpg" />
+    <Content Include="GEyes\images\FrameImages\M350BLK.jpg" />
+    <Content Include="GEyes\images\FrameImages\M350GLD.jpg" />
+    <Content Include="GEyes\images\FrameImages\M350LOBLK.jpg" />
+    <Content Include="GEyes\images\FrameImages\M350LOGLD.jpg" />
+    <Content Include="GEyes\images\FrameImages\M350LOPWT.jpg" />
+    <Content Include="GEyes\images\FrameImages\M350NSBLK.jpg" />
+    <Content Include="GEyes\images\FrameImages\M350NSGLD.jpg" />
+    <Content Include="GEyes\images\FrameImages\M350NSPWT.jpg" />
+    <Content Include="GEyes\images\FrameImages\M350PWT.jpg" />
+    <Content Include="GEyes\images\FrameImages\M7011MBR.jpg" />
+    <Content Include="GEyes\images\FrameImages\M7012MGU.jpg" />
+    <Content Include="GEyes\images\FrameImages\M7019MGL.jpg" />
+    <Content Include="GEyes\images\FrameImages\M801CPR.jpg" />
+    <Content Include="GEyes\images\FrameImages\M801GLD.jpg" />
+    <Content Include="GEyes\images\FrameImages\M801LOCPR.jpg" />
+    <Content Include="GEyes\images\FrameImages\M801LOGLD.jpg" />
+    <Content Include="GEyes\images\FrameImages\M801LOPWT.jpg" />
+    <Content Include="GEyes\images\FrameImages\M801NSCPR.jpg" />
+    <Content Include="GEyes\images\FrameImages\M801NSGLD.jpg" />
+    <Content Include="GEyes\images\FrameImages\M801NSPWT.jpg" />
+    <Content Include="GEyes\images\FrameImages\M801PWT.jpg" />
+    <Content Include="GEyes\images\FrameImages\MA1000SLV.jpg" />
+    <Content Include="GEyes\images\FrameImages\MAFDBLK.JPG" />
+    <Content Include="GEyes\images\FrameImages\MAFDGLD.JPG" />
+    <Content Include="GEyes\images\FrameImages\MAFFBLK.jpg" />
+    <Content Include="GEyes\images\FrameImages\MAFFGLD.jpg" />
+    <Content Include="GEyes\images\FrameImages\MAH64SLV.jpg" />
+    <Content Include="GEyes\images\FrameImages\MALEPBLK.jpg" />
+    <Content Include="GEyes\images\FrameImages\MARSBLK.jpg" />
+    <Content Include="GEyes\images\FrameImages\MAVBLK.jpg" />
+    <Content Include="GEyes\images\FrameImages\MAVGLD.jpg" />
+    <Content Include="GEyes\images\FrameImages\MAVLOBLK.jpg" />
+    <Content Include="GEyes\images\FrameImages\MAVLOGLD.jpg" />
+    <Content Include="GEyes\images\FrameImages\MAVLOSLV.jpg" />
+    <Content Include="GEyes\images\FrameImages\MAVSLOSLV.jpg" />
+    <Content Include="GEyes\images\FrameImages\MAVSSLV.jpg" />
+    <Content Include="GEyes\images\FrameImages\MBLPSCRS.jpg" />
+    <Content Include="GEyes\images\FrameImages\MDELTABLK.jpg" />
+    <Content Include="GEyes\images\FrameImages\MDELTABRN.jpg" />
+    <Content Include="GEyes\images\FrameImages\MDELTAPWT.jpg" />
+    <Content Include="GEyes\images\FrameImages\MELI52BLK.jpg" />
+    <Content Include="GEyes\images\FrameImages\MELI52BRN.jpg" />
+    <Content Include="GEyes\images\FrameImages\MELI52PWT.jpg" />
+    <Content Include="GEyes\images\FrameImages\MELITEBLK.jpg" />
+    <Content Include="GEyes\images\FrameImages\MELITEBRN.jpg" />
+    <Content Include="GEyes\images\FrameImages\MELITEPWT.jpg" />
+    <Content Include="GEyes\images\FrameImages\MENCORBLK.jpg" />
+    <Content Include="GEyes\images\FrameImages\MENCORBRN.jpg" />
+    <Content Include="GEyes\images\FrameImages\MENCORPWT.jpg" />
+    <Content Include="GEyes\images\FrameImages\MEXC51BLK.jpg" />
+    <Content Include="GEyes\images\FrameImages\MEXC51BRN.jpg" />
+    <Content Include="GEyes\images\FrameImages\MEXCELBLK.jpg" />
+    <Content Include="GEyes\images\FrameImages\MEXCELBRN.jpg" />
+    <Content Include="GEyes\images\FrameImages\MFFISLV.jpg" />
+    <Content Include="GEyes\images\FrameImages\MFGGBLK.jpg" />
+    <Content Include="GEyes\images\FrameImages\MFGGGLD.jpg" />
+    <Content Include="GEyes\images\FrameImages\MFGSSLV.jpg" />
+    <Content Include="GEyes\images\FrameImages\MFS9AMB.jpg" />
+    <Content Include="GEyes\images\FrameImages\MHLF50BRN.jpg" />
+    <Content Include="GEyes\images\FrameImages\MHLF50GRY.jpg" />
+    <Content Include="GEyes\images\FrameImages\MHLFBRN.jpg" />
+    <Content Include="GEyes\images\FrameImages\MHLFGRY.jpg" />
+    <Content Include="GEyes\images\FrameImages\MICEBLK.jpg" />
+    <Content Include="GEyes\images\FrameImages\MIMAGDBL.JPG" />
+    <Content Include="GEyes\images\FrameImages\MKENDYSSI.JPG" />
+    <Content Include="GEyes\images\FrameImages\MLOBASLV.jpg" />
+    <Content Include="GEyes\images\FrameImages\MM17A1WTE.jpg" />
+    <Content Include="GEyes\images\FrameImages\MM40CRS.jpg" />
+    <Content Include="GEyes\images\FrameImages\MM45CRS.jpg" />
+    <Content Include="GEyes\images\FrameImages\MMATH1BNZ.JPG" />
+    <Content Include="GEyes\images\FrameImages\MMATH1BRZ.JPG" />
+    <Content Include="GEyes\images\FrameImages\MMATH2BNZ.JPG" />
+    <Content Include="GEyes\images\FrameImages\MMATH2BRZ.JPG" />
+    <Content Include="GEyes\images\FrameImages\MMCBLK.jpg" />
+    <Content Include="GEyes\images\FrameImages\MMCU2PBLK.jpg" />
+    <Content Include="GEyes\images\FrameImages\MMS9AMB.jpg" />
+    <Content Include="GEyes\images\FrameImages\MMS9PAMB.jpg" />
+    <Content Include="GEyes\images\FrameImages\MOVTOR.jpg" />
+    <Content Include="GEyes\images\FrameImages\MOVTOR2.jpg" />
+    <Content Include="GEyes\images\FrameImages\MP2BBLK.jpg" />
+    <Content Include="GEyes\images\FrameImages\MP3FBLK.jpg" />
+    <Content Include="GEyes\images\FrameImages\MP3FGLD.jpg" />
+    <Content Include="GEyes\images\FrameImages\MP3FNSBLK.jpg" />
+    <Content Include="GEyes\images\FrameImages\MP3FNSGLD.jpg" />
+    <Content Include="GEyes\images\FrameImages\MP3FNSPWT.jpg" />
+    <Content Include="GEyes\images\FrameImages\MP3FPLM.jpg" />
+    <Content Include="GEyes\images\FrameImages\MP3FPWT.jpg" />
+    <Content Include="GEyes\images\FrameImages\MP3GLD.jpg" />
+    <Content Include="GEyes\images\FrameImages\MPNVGBLK.jpg" />
+    <Content Include="GEyes\images\FrameImages\MS91ABRN.JPG" />
+    <Content Include="GEyes\images\FrameImages\MS91BBRN.JPG" />
+    <Content Include="GEyes\images\FrameImages\MSAWFLCRS.jpg" />
+    <Content Include="GEyes\images\FrameImages\MSID54BLK.JPG" />
+    <Content Include="GEyes\images\FrameImages\MSID54BRN.jpg" />
+    <Content Include="GEyes\images\FrameImages\MSID54PWT.jpg" />
+    <Content Include="GEyes\images\FrameImages\MSIDESBLK.JPG" />
+    <Content Include="GEyes\images\FrameImages\MSIDESBRN.jpg" />
+    <Content Include="GEyes\images\FrameImages\MSIDESPWT.jpg" />
+    <Content Include="GEyes\images\FrameImages\MUVEXSLV.jpg" />
+    <Content Include="GEyes\images\FrameImages\MVIS51BLK.JPG" />
+    <Content Include="GEyes\images\FrameImages\MVIS51BRN.jpg" />
+    <Content Include="GEyes\images\FrameImages\MVIS51PWT.jpg" />
+    <Content Include="GEyes\images\FrameImages\MVISTABLK.JPG" />
+    <Content Include="GEyes\images\FrameImages\MVISTABRN.jpg" />
+    <Content Include="GEyes\images\FrameImages\MVISTAPWT.jpg" />
+    <Content Include="GEyes\images\FrameImages\MXM50CRS.jpg" />
+    <Content Include="GEyes\images\FrameImages\thumbnails\M251BLKThumbnail.gif" />
+    <Content Include="GEyes\images\FrameImages\thumbnails\M7011MBRThumbnail.gif" />
+    <Content Include="GEyes\images\FrameImages\thumbnails\M801CPRThumbnail.gif" />
+    <Content Include="GEyes\images\FrameImages\thumbnails\M801GLDThumbnail.gif" />
+    <Content Include="GEyes\images\FrameImages\thumbnails\MA1000SLVThumbnail.gif" />
+    <Content Include="GEyes\images\FrameImages\thumbnails\MAFFBLKThumbnail.gif" />
+    <Content Include="GEyes\images\FrameImages\thumbnails\MAFFGLDThumbnail.gif" />
+    <Content Include="GEyes\images\FrameImages\thumbnails\MAH64SLVThumbnail.gif" />
+    <Content Include="GEyes\images\FrameImages\thumbnails\MBLPSCRSThumbnail.gif" />
+    <Content Include="GEyes\images\FrameImages\thumbnails\MDELTABLKThumbnail.gif" />
+    <Content Include="GEyes\images\FrameImages\thumbnails\MDELTABRNThumbnail.gif" />
+    <Content Include="GEyes\images\FrameImages\thumbnails\MDELTAPWTThumbnail.gif" />
+    <Content Include="GEyes\images\FrameImages\thumbnails\MELITEBLKThumbnail.gif" />
+    <Content Include="GEyes\images\FrameImages\thumbnails\MELITEBRNThumbnail.gif" />
+    <Content Include="GEyes\images\FrameImages\thumbnails\MELITEPWTThumbnail.gif" />
+    <Content Include="GEyes\images\FrameImages\thumbnails\MENCOREBLKThumbnail.gif" />
+    <Content Include="GEyes\images\FrameImages\thumbnails\MENCOREBRNThumbnail.gif" />
+    <Content Include="GEyes\images\FrameImages\thumbnails\MENCOREPWTThumbnail.gif" />
+    <Content Include="GEyes\images\FrameImages\thumbnails\MHLFBRNThumbnail.gif" />
+    <Content Include="GEyes\images\FrameImages\thumbnails\MHLFGRYThumbnail.gif" />
+    <Content Include="GEyes\images\FrameImages\thumbnails\MICEBLKThumbnail.gif" />
+    <Content Include="GEyes\images\FrameImages\thumbnails\MMS9AMBThumbnail.gif" />
+    <Content Include="GEyes\images\FrameImages\thumbnails\MSIDESBLKThumbnail.gif" />
+    <Content Include="GEyes\images\FrameImages\thumbnails\MSIDESBRNThumbnail.gif" />
+    <Content Include="GEyes\images\FrameImages\thumbnails\MSIDESPWTThumbnail.gif" />
+    <Content Include="GEyes\images\FrameImages\thumbnails\MUVEXSLVThumbnail.gif" />
+    <Content Include="GEyes\images\FrameImages\thumbnails\MVISTABLKThumbnail.gif" />
+    <Content Include="GEyes\images\FrameImages\thumbnails\MVISTABRNThumbnail.gif" />
+    <Content Include="GEyes\images\FrameImages\thumbnails\MVISTAPWTThumbnail.gif" />
+    <Content Include="GEyes\images\FrameImages\thumbnails\ThumbnailImageNotAvailable.gif" />
+    <Content Include="GEyes\images\FrameImages\TNF205TOR.jpg" />
+    <Content Include="GEyes\images\FrameImages\TNF251BLK.jpg" />
+    <Content Include="GEyes\images\FrameImages\TNF251GLD.jpg" />
+    <Content Include="GEyes\images\FrameImages\TNF251NSBLK.jpg" />
+    <Content Include="GEyes\images\FrameImages\TNF251NSGLD.jpg" />
+    <Content Include="GEyes\images\FrameImages\TNF251NSPWT.jpg" />
+    <Content Include="GEyes\images\FrameImages\TNF251PWT.jpg" />
+    <Content Include="GEyes\images\FrameImages\TNF251ROS.jpg" />
+    <Content Include="GEyes\images\FrameImages\TNF350BLK.jpg" />
+    <Content Include="GEyes\images\FrameImages\TNF350GLD.jpg" />
+    <Content Include="GEyes\images\FrameImages\TNF350LOBLK.jpg" />
+    <Content Include="GEyes\images\FrameImages\TNF350LOGLD.jpg" />
+    <Content Include="GEyes\images\FrameImages\TNF350LOPWT.jpg" />
+    <Content Include="GEyes\images\FrameImages\TNF350NSBLK.jpg" />
+    <Content Include="GEyes\images\FrameImages\TNF350NSGLD.jpg" />
+    <Content Include="GEyes\images\FrameImages\TNF350NSPWT.jpg" />
+    <Content Include="GEyes\images\FrameImages\TNF350PWT.jpg" />
+    <Content Include="GEyes\images\FrameImages\TNF7011MBR.jpg" />
+    <Content Include="GEyes\images\FrameImages\TNF7012MGU.jpg" />
+    <Content Include="GEyes\images\FrameImages\TNF7019MGL.jpg" />
+    <Content Include="GEyes\images\FrameImages\TNF801CPR.jpg" />
+    <Content Include="GEyes\images\FrameImages\TNF801GLD.jpg" />
+    <Content Include="GEyes\images\FrameImages\TNF801LOCPR.jpg" />
+    <Content Include="GEyes\images\FrameImages\TNF801LOGLD.jpg" />
+    <Content Include="GEyes\images\FrameImages\TNF801LOPWT.jpg" />
+    <Content Include="GEyes\images\FrameImages\TNF801NSCPR.jpg" />
+    <Content Include="GEyes\images\FrameImages\TNF801NSGLD.jpg" />
+    <Content Include="GEyes\images\FrameImages\TNF801NSPWT.jpg" />
+    <Content Include="GEyes\images\FrameImages\TNF801PWT.jpg" />
+    <Content Include="GEyes\images\FrameImages\TNFA1000SLV.jpg" />
+    <Content Include="GEyes\images\FrameImages\TNFAFDBLK.JPG" />
+    <Content Include="GEyes\images\FrameImages\TNFAFDGLD.JPG" />
+    <Content Include="GEyes\images\FrameImages\TNFAFFBLK.jpg" />
+    <Content Include="GEyes\images\FrameImages\TNFAFFGLD.jpg" />
+    <Content Include="GEyes\images\FrameImages\TNFAH64SLV.jpg" />
+    <Content Include="GEyes\images\FrameImages\TNFALEPBLK.jpg" />
+    <Content Include="GEyes\images\FrameImages\TNFARSBLK.jpg" />
+    <Content Include="GEyes\images\FrameImages\TNFAVBLK.jpg" />
+    <Content Include="GEyes\images\FrameImages\TNFAVGLD.jpg" />
+    <Content Include="GEyes\images\FrameImages\TNFAVLOBLK.jpg" />
+    <Content Include="GEyes\images\FrameImages\TNFAVLOGLD.jpg" />
+    <Content Include="GEyes\images\FrameImages\TNFAVLOSLV.jpg" />
+    <Content Include="GEyes\images\FrameImages\TNFAVSLOSLV.jpg" />
+    <Content Include="GEyes\images\FrameImages\TNFAVSSLV.jpg" />
+    <Content Include="GEyes\images\FrameImages\TNFBLPSCRS.jpg" />
+    <Content Include="GEyes\images\FrameImages\TNFDELTABLK.jpg" />
+    <Content Include="GEyes\images\FrameImages\TNFDELTABRN.jpg" />
+    <Content Include="GEyes\images\FrameImages\TNFDELTAPWT.jpg" />
+    <Content Include="GEyes\images\FrameImages\TNFELI52BLK.jpg" />
+    <Content Include="GEyes\images\FrameImages\TNFELI52BRN.jpg" />
+    <Content Include="GEyes\images\FrameImages\TNFELI52PWT.jpg" />
+    <Content Include="GEyes\images\FrameImages\TNFELITEBLK.jpg" />
+    <Content Include="GEyes\images\FrameImages\TNFELITEBRN.jpg" />
+    <Content Include="GEyes\images\FrameImages\TNFELITEPWT.jpg" />
+    <Content Include="GEyes\images\FrameImages\TNFENCORBLK.jpg" />
+    <Content Include="GEyes\images\FrameImages\TNFENCORBRN.jpg" />
+    <Content Include="GEyes\images\FrameImages\TNFENCORPWT.jpg" />
+    <Content Include="GEyes\images\FrameImages\TNFEXC51BLK.jpg" />
+    <Content Include="GEyes\images\FrameImages\TNFEXC51BRN.jpg" />
+    <Content Include="GEyes\images\FrameImages\TNFEXCELBLK.JPG" />
+    <Content Include="GEyes\images\FrameImages\TNFEXCELBRN.JPG" />
+    <Content Include="GEyes\images\FrameImages\TNFFFISLV.jpg" />
+    <Content Include="GEyes\images\FrameImages\TNFFGGGLD.jpg" />
+    <Content Include="GEyes\images\FrameImages\TNFFGSSLV.jpg" />
+    <Content Include="GEyes\images\FrameImages\TNFFS9AMB.jpg" />
+    <Content Include="GEyes\images\FrameImages\TNFFS9PAMB.jpg" />
+    <Content Include="GEyes\images\FrameImages\TNFHLF50BRN.jpg" />
+    <Content Include="GEyes\images\FrameImages\TNFHLF50GRY.jpg" />
+    <Content Include="GEyes\images\FrameImages\TNFHLFBRN.jpg" />
+    <Content Include="GEyes\images\FrameImages\TNFHLFGRY.jpg" />
+    <Content Include="GEyes\images\FrameImages\TNFICEBLK.jpg" />
+    <Content Include="GEyes\images\FrameImages\TNFIMAGDBL.jpg" />
+    <Content Include="GEyes\images\FrameImages\TNFKENDYSSI.jpg" />
+    <Content Include="GEyes\images\FrameImages\TNFLOBASLV.jpg" />
+    <Content Include="GEyes\images\FrameImages\TNFM17A1WTE.jpg" />
+    <Content Include="GEyes\images\FrameImages\TNFM40CRS.jpg" />
+    <Content Include="GEyes\images\FrameImages\TNFM45CRS.jpg" />
+    <Content Include="GEyes\images\FrameImages\TNFMATH1BRZ.jpg" />
+    <Content Include="GEyes\images\FrameImages\TNFMATH2BRZ.jpg" />
+    <Content Include="GEyes\images\FrameImages\TNFMCBLK.jpg" />
+    <Content Include="GEyes\images\FrameImages\TNFMCU2PBLK.jpg" />
+    <Content Include="GEyes\images\FrameImages\TNFMS9AMB.jpg" />
+    <Content Include="GEyes\images\FrameImages\TNFOVTOR.jpg" />
+    <Content Include="GEyes\images\FrameImages\TNFP2BBLK.jpg" />
+    <Content Include="GEyes\images\FrameImages\TNFP3FBLK.jpg" />
+    <Content Include="GEyes\images\FrameImages\TNFP3FGLD.jpg" />
+    <Content Include="GEyes\images\FrameImages\TNFP3FNSBLK.jpg" />
+    <Content Include="GEyes\images\FrameImages\TNFP3FNSGLD.jpg" />
+    <Content Include="GEyes\images\FrameImages\TNFP3FNSPWT.jpg" />
+    <Content Include="GEyes\images\FrameImages\TNFP3FPLM.jpg" />
+    <Content Include="GEyes\images\FrameImages\TNFP3FPWT.jpg" />
+    <Content Include="GEyes\images\FrameImages\TNFP3GLD.jpg" />
+    <Content Include="GEyes\images\FrameImages\TNFPNVGBLK.jpg" />
+    <Content Include="GEyes\images\FrameImages\TNFS91ABRN.jpg" />
+    <Content Include="GEyes\images\FrameImages\TNFS91BBRN.jpg" />
+    <Content Include="GEyes\images\FrameImages\TNFSAWFLCRS.jpg" />
+    <Content Include="GEyes\images\FrameImages\TNFSID54BLK.jpg" />
+    <Content Include="GEyes\images\FrameImages\TNFSID54BRN.jpg" />
+    <Content Include="GEyes\images\FrameImages\TNFSID54PWT.jpg" />
+    <Content Include="GEyes\images\FrameImages\TNFSIDESBLK.jpg" />
+    <Content Include="GEyes\images\FrameImages\TNFSIDESBRN.jpg" />
+    <Content Include="GEyes\images\FrameImages\TNFSIDESPWT.jpg" />
+    <Content Include="GEyes\images\FrameImages\TNFUVEXSLV.jpg" />
+    <Content Include="GEyes\images\FrameImages\TNFVIS51BLK.jpg" />
+    <Content Include="GEyes\images\FrameImages\TNFVIS51BRN.jpg" />
+    <Content Include="GEyes\images\FrameImages\TNFVIS51PWT.jpg" />
+    <Content Include="GEyes\images\FrameImages\TNFVISTABLK.jpg" />
+    <Content Include="GEyes\images\FrameImages\TNFVISTABRN.jpg" />
+    <Content Include="GEyes\images\FrameImages\TNFVISTAPWT.jpg" />
+    <Content Include="GEyes\images\FrameImages\TNFXM50CRS.jpg" />
+    <Content Include="GEyes\images\FrameImages\TNM205TOR.jpg" />
+    <Content Include="GEyes\images\FrameImages\TNM251BLK.jpg" />
+    <Content Include="GEyes\images\FrameImages\TNM251GLD.jpg" />
+    <Content Include="GEyes\images\FrameImages\TNM251NSBLK.jpg" />
+    <Content Include="GEyes\images\FrameImages\TNM251NSGLD.jpg" />
+    <Content Include="GEyes\images\FrameImages\TNM251NSPWT.jpg" />
+    <Content Include="GEyes\images\FrameImages\TNM251PWT.jpg" />
+    <Content Include="GEyes\images\FrameImages\TNM350BLK.jpg" />
+    <Content Include="GEyes\images\FrameImages\TNM350GLD.jpg" />
+    <Content Include="GEyes\images\FrameImages\TNM350LOBLK.jpg" />
+    <Content Include="GEyes\images\FrameImages\TNM350LOGLD.jpg" />
+    <Content Include="GEyes\images\FrameImages\TNM350LOPWT.jpg" />
+    <Content Include="GEyes\images\FrameImages\TNM350NSBLK.jpg" />
+    <Content Include="GEyes\images\FrameImages\TNM350NSGLD.jpg" />
+    <Content Include="GEyes\images\FrameImages\TNM350NSPWT.jpg" />
+    <Content Include="GEyes\images\FrameImages\TNM350PWT.jpg" />
+    <Content Include="GEyes\images\FrameImages\TNM7011MBR.jpg" />
+    <Content Include="GEyes\images\FrameImages\TNM7012MGU.jpg" />
+    <Content Include="GEyes\images\FrameImages\TNM7019MGL.jpg" />
+    <Content Include="GEyes\images\FrameImages\TNM801CPR.jpg" />
+    <Content Include="GEyes\images\FrameImages\TNM801GLD.jpg" />
+    <Content Include="GEyes\images\FrameImages\TNM801LOCPR.jpg" />
+    <Content Include="GEyes\images\FrameImages\TNM801LOGLD.jpg" />
+    <Content Include="GEyes\images\FrameImages\TNM801LOPWT.jpg" />
+    <Content Include="GEyes\images\FrameImages\TNM801NSCPR.jpg" />
+    <Content Include="GEyes\images\FrameImages\TNM801NSGLD.jpg" />
+    <Content Include="GEyes\images\FrameImages\TNM801NSPWT.jpg" />
+    <Content Include="GEyes\images\FrameImages\TNM801PWT.jpg" />
+    <Content Include="GEyes\images\FrameImages\TNMA1000SLV.jpg" />
+    <Content Include="GEyes\images\FrameImages\TNMAFDBLK.JPG" />
+    <Content Include="GEyes\images\FrameImages\TNMAFDGLD.JPG" />
+    <Content Include="GEyes\images\FrameImages\TNMAFFBLK.jpg" />
+    <Content Include="GEyes\images\FrameImages\TNMAFFGLD.jpg" />
+    <Content Include="GEyes\images\FrameImages\TNMAH64SLV.jpg" />
+    <Content Include="GEyes\images\FrameImages\TNMALEPBLK.jpg" />
+    <Content Include="GEyes\images\FrameImages\TNMARSBLK.jpg" />
+    <Content Include="GEyes\images\FrameImages\TNMAVBLK.jpg" />
+    <Content Include="GEyes\images\FrameImages\TNMAVGLD.jpg" />
+    <Content Include="GEyes\images\FrameImages\TNMAVLOBLK.jpg" />
+    <Content Include="GEyes\images\FrameImages\TNMAVLOGLD.jpg" />
+    <Content Include="GEyes\images\FrameImages\TNMAVLOSLV.jpg" />
+    <Content Include="GEyes\images\FrameImages\TNMAVSLOSLV.jpg" />
+    <Content Include="GEyes\images\FrameImages\TNMAVSSLV.jpg" />
+    <Content Include="GEyes\images\FrameImages\TNMBLPSCRS.jpg" />
+    <Content Include="GEyes\images\FrameImages\TNMDELTABLK.jpg" />
+    <Content Include="GEyes\images\FrameImages\TNMDELTABRN.jpg" />
+    <Content Include="GEyes\images\FrameImages\TNMDELTAPWT.jpg" />
+    <Content Include="GEyes\images\FrameImages\TNMELI52BLK.jpg" />
+    <Content Include="GEyes\images\FrameImages\TNMELI52BRN.jpg" />
+    <Content Include="GEyes\images\FrameImages\TNMELI52PWT.jpg" />
+    <Content Include="GEyes\images\FrameImages\TNMELITEBLK.jpg" />
+    <Content Include="GEyes\images\FrameImages\TNMELITEBRN.jpg" />
+    <Content Include="GEyes\images\FrameImages\TNMELITEPWT.jpg" />
+    <Content Include="GEyes\images\FrameImages\TNMENCORBLK.jpg" />
+    <Content Include="GEyes\images\FrameImages\TNMENCORBRN.jpg" />
+    <Content Include="GEyes\images\FrameImages\TNMENCORPWT.jpg" />
+    <Content Include="GEyes\images\FrameImages\TNMEXC51BLK.jpg" />
+    <Content Include="GEyes\images\FrameImages\TNMEXC51BRN.jpg" />
+    <Content Include="GEyes\images\FrameImages\TNMEXCELBLK.jpg" />
+    <Content Include="GEyes\images\FrameImages\TNMEXCELBRN.jpg" />
+    <Content Include="GEyes\images\FrameImages\TNMFFISLV.jpg" />
+    <Content Include="GEyes\images\FrameImages\TNMFGGBLK.jpg" />
+    <Content Include="GEyes\images\FrameImages\TNMFGGGLD.jpg" />
+    <Content Include="GEyes\images\FrameImages\TNMFGSSLV.jpg" />
+    <Content Include="GEyes\images\FrameImages\TNMFS9AMB.jpg" />
+    <Content Include="GEyes\images\FrameImages\TNMHLF50BRN.jpg" />
+    <Content Include="GEyes\images\FrameImages\TNMHLF50GRY.jpg" />
+    <Content Include="GEyes\images\FrameImages\TNMHLFBRN.jpg" />
+    <Content Include="GEyes\images\FrameImages\TNMHLFGRY.jpg" />
+    <Content Include="GEyes\images\FrameImages\TNMICEBLK.jpg" />
+    <Content Include="GEyes\images\FrameImages\TNMIMAGDBL.JPG" />
+    <Content Include="GEyes\images\FrameImages\TNMKENDYSSI.JPG" />
+    <Content Include="GEyes\images\FrameImages\TNMLOBASLV.jpg" />
+    <Content Include="GEyes\images\FrameImages\TNMM17A1WTE.jpg" />
+    <Content Include="GEyes\images\FrameImages\TNMM40CRS.jpg" />
+    <Content Include="GEyes\images\FrameImages\TNMM45CRS.jpg" />
+    <Content Include="GEyes\images\FrameImages\TNMMATH1BRZ.JPG" />
+    <Content Include="GEyes\images\FrameImages\TNMMATH2BRZ.JPG" />
+    <Content Include="GEyes\images\FrameImages\TNMMCBLK.jpg" />
+    <Content Include="GEyes\images\FrameImages\TNMMCU2PBLK.jpg" />
+    <Content Include="GEyes\images\FrameImages\TNMMS9AMB.jpg" />
+    <Content Include="GEyes\images\FrameImages\TNMMS9PAMB.jpg" />
+    <Content Include="GEyes\images\FrameImages\TNMOVTOR.jpg" />
+    <Content Include="GEyes\images\FrameImages\TNMOVTOR2.jpg" />
+    <Content Include="GEyes\images\FrameImages\TNMP2BBLK.jpg" />
+    <Content Include="GEyes\images\FrameImages\TNMP3FBLK.jpg" />
+    <Content Include="GEyes\images\FrameImages\TNMP3FGLD.jpg" />
+    <Content Include="GEyes\images\FrameImages\TNMP3FNSBLK.jpg" />
+    <Content Include="GEyes\images\FrameImages\TNMP3FNSGLD.jpg" />
+    <Content Include="GEyes\images\FrameImages\TNMP3FNSPWT.jpg" />
+    <Content Include="GEyes\images\FrameImages\TNMP3FPLM.jpg" />
+    <Content Include="GEyes\images\FrameImages\TNMP3FPWT.jpg" />
+    <Content Include="GEyes\images\FrameImages\TNMP3GLD.jpg" />
+    <Content Include="GEyes\images\FrameImages\TNMPNVGBLK.jpg" />
+    <Content Include="GEyes\images\FrameImages\TNMS91ABRN.JPG" />
+    <Content Include="GEyes\images\FrameImages\TNMS91BBRN.JPG" />
+    <Content Include="GEyes\images\FrameImages\TNMSAWFLCRS.jpg" />
+    <Content Include="GEyes\images\FrameImages\TNMSID54BLK.JPG" />
+    <Content Include="GEyes\images\FrameImages\TNMSID54BRN.jpg" />
+    <Content Include="GEyes\images\FrameImages\TNMSID54PWT.jpg" />
+    <Content Include="GEyes\images\FrameImages\TNMSIDESBLK.JPG" />
+    <Content Include="GEyes\images\FrameImages\TNMSIDESBRN.jpg" />
+    <Content Include="GEyes\images\FrameImages\TNMSIDESPWT.jpg" />
+    <Content Include="GEyes\images\FrameImages\TNMUVEXSLV.jpg" />
+    <Content Include="GEyes\images\FrameImages\TNMVIS51BLK.JPG" />
+    <Content Include="GEyes\images\FrameImages\TNMVIS51BRN.JPG" />
+    <Content Include="GEyes\images\FrameImages\TNMVIS51PWT.JPG" />
+    <Content Include="GEyes\images\FrameImages\TNMVISTABLK.JPG" />
+    <Content Include="GEyes\images\FrameImages\TNMVISTABRN.JPG" />
+    <Content Include="GEyes\images\FrameImages\TNMVISTAPWT.JPG" />
+    <Content Include="GEyes\images\FrameImages\TNMXM50CRS.JPG" />
+    <Content Include="GEyes\images\misc\AddIcon.jpg" />
+    <Content Include="GEyes\images\misc\AddIcon2.jpg" />
+    <Content Include="GEyes\images\misc\AddIcon3.gif" />
+    <Content Include="GEyes\images\misc\AddIcon3.jpg" />
+    <Content Include="GEyes\images\misc\AddIcon4.jpg" />
+    <Content Include="GEyes\images\misc\AddIcon5.gif" />
+    <Content Include="GEyes\images\misc\AddIcon5.jpg" />
+    <Content Include="GEyes\images\misc\AddIconMedium.gif" />
+    <Content Include="GEyes\images\misc\AddIconMedium.jpg" />
+    <Content Include="GEyes\images\misc\Back.jpg" />
+    <Content Include="GEyes\images\misc\BackArrow.gif" />
+    <Content Include="GEyes\images\misc\BackArrowBlue.gif" />
+    <Content Include="GEyes\images\misc\BackArrowComposite.jpg" />
+    <Content Include="GEyes\images\misc\BackArrowPng.png" />
+    <Content Include="GEyes\images\misc\BackArrowSmall.jpg" />
+    <Content Include="GEyes\images\misc\BackArrow_WhiteBackground.jpg" />
+    <Content Include="GEyes\images\misc\BackForward.jpg" />
+    <Content Include="GEyes\images\misc\bgBlueLines.gif" />
+    <Content Include="GEyes\images\misc\bgOliveLines.jpg" />
+    <Content Include="GEyes\images\misc\bgTanLines.gif" />
+    <Content Include="GEyes\images\misc\BlackNodeArrow.gif" />
+    <Content Include="GEyes\images\misc\BlackNodeArrow.png" />
+    <Content Include="GEyes\images\misc\BlackNodeArrowSmall.gif" />
+    <Content Include="GEyes\images\misc\BlackNodeArrowSmallAqua.gif" />
+    <Content Include="GEyes\images\misc\BlackNodeArrowSmallSilver.gif" />
+    <Content Include="GEyes\images\misc\earth-sml.gif" />
+    <Content Include="GEyes\images\misc\earth.gif" />
+    <Content Include="GEyes\images\misc\Forward.jpg" />
+    <Content Include="GEyes\images\misc\ForwardArrow.gif" />
+    <Content Include="GEyes\images\misc\ForwardArrowBlue.gif" />
+    <Content Include="GEyes\images\misc\GEyesWelcome.gif" />
+    <Content Include="GEyes\images\misc\HomeButtonIcon1.gif" />
+    <Content Include="GEyes\images\misc\HomeButtonIcon2.gif" />
+    <Content Include="GEyes\images\misc\HomeButtonIcon3.gif" />
+    <Content Include="GEyes\images\misc\isalute.gif" />
+    <Content Include="GEyes\images\misc\isalute.png" />
+    <Content Include="GEyes\images\misc\NewGEyesHeader.gif" />
+    <Content Include="GEyes\images\misc\question-mark.jpg" />
+    <Content Include="GEyes\images\misc\QuestionMarkAqua.gif" />
+    <Content Include="GEyes\images\misc\QuestionMarkBlue.gif" />
+    <Content Include="GEyes\images\misc\QuestionMarkSilver.gif" />
+    <Content Include="GEyes\Styles\Site.css" />
+    <Content Include="WebForms\JSpecs\Forms\Account\JSpecsGetCacCert.aspx" />
+    <Content Include="WebForms\JSpecs\Forms\JSpecsConfirmOrder.aspx" />
+    <Content Include="WebForms\JSpecs\Forms\JSpecsDetails.aspx" />
+    <Content Include="WebForms\JSpecs\Forms\JSpecsFAQ.aspx" />
+    <Content Include="WebForms\JSpecs\Forms\JSpecsHomePage.aspx" />
+    <Content Include="WebForms\JSpecs\Forms\JSpecsLogin.aspx" />
+    <Content Include="WebForms\JSpecs\Forms\JSpecsNewOrder.aspx" />
+    <Content Include="WebForms\JSpecs\Forms\JSpecsOrders.aspx" />
+    <Content Include="WebForms\PrintForms\LabelRptViewer.aspx" />
+    <Content Include="WebForms\Public\CheckOrderStatus.aspx" />
+    <Content Include="WebForms\Public\FAQ.aspx" />
+    <Content Include="WebForms\Public\ReleaseNotes.aspx" />
+    <Content Include="WebForms\Public\Sitemap.aspx" />
+    <Content Include="WebForms\Public\FacilityAccountRequest.aspx" />
+    <Content Include="WebForms\Admin\SrtsUserManager.aspx" />
+    <Content Include="WebForms\Admin\FrameManagement.aspx" />
+    <Content Include="WebForms\Admin\ManageLookUpTypes.aspx" />
+    <Content Include="WebForms\Admin\SrtsReportsManager.aspx" />
+    <Content Include="WebForms\Admin\SiteCodeManagement.aspx" />
+    <Content Include="favicon.ico" />
+    <Content Include="WebForms\Public\Abbreviations.aspx" />
+    <Content Include="WebForms\Public\Accessability.aspx" />
+    <Content Include="WebForms\Public\InformationCollected.aspx" />
+    <Content Include="WebForms\Public\PrivacyAndSecurity.aspx" />
+    <Content Include="WebForms\Public\SrtsAdministrator.aspx" />
+    <Content Include="WebForms\Public\Support.aspx" />
+    <Content Include="WebForms\Reports\rptViewerTemplate.aspx" />
+    <Content Include="Reports\DDForm771.PNG" />
+    <Content Include="WebForms\Reports\rptViewDD771.aspx" />
+    <Content Include="Scripts\AdminTools\admintools.js" />
+    <Content Include="Scripts\BMT\BMT.js" />
+    <Content Include="Scripts\Global\ButtonOps.js" />
+    <Content Include="Scripts\Default\Default.js" />
+    <Content Include="Scripts\Global\Combobox.js" />
+    <Content Include="Scripts\Global\GlobalVal.js" />
+    <Content Include="Scripts\Global\PassFailConfirm.js" />
+    <Content Include="Scripts\Global\SrtsCustomValidators.js" />
+    <Content Include="Scripts\Global\IdleTimeout.js" />
+    <Content Include="Scripts\jqGrid\grid.locale-en.min.js" />
+    <Content Include="Scripts\jqGrid\jquery.jqgrid.min.js" />
+    <Content Include="Scripts\Global\jquery-1.11.1.min.js" />
+    <Content Include="packages.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="Scripts\Global\jquery-ui.min.js" />
+    <Content Include="Scripts\Global\JSON2.min.js" />
+    <Content Include="Scripts\Login\Login.js" />
+    <Content Include="Scripts\Patient\ManagePatients.js" />
+    <Content Include="Scripts\NewUser\NewUser.js" />
+    <Content Include="Scripts\Orders\ManageOrders.js" />
+    <Content Include="Scripts\Orders\ManageOrdersLab.js" />
+    <Content Include="Scripts\OrderManagement\OrderManagement.js" />
+    <Content Include="Scripts\OrderManagement\OrderManagementVal.js" />
+    <Content Include="App_Data\FileUploads\BMT\bmt_file.xlsx" />
+    <Content Include="App_Data\UserManuals\ClinicAdminGuide.docx" />
+    <Content Include="App_Data\UserManuals\ClinicTechGuide.docx" />
+    <Content Include="App_Data\UserManuals\LabAdminGuide.docx" />
+    <Content Include="App_Data\UserManuals\LabTechGuide.docx" />
+    <Content Include="CustomLog.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <None Include="Elmah.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <Content Include="GEyes\GeyesMaster.Master" />
+    <Content Include="rsDeadCodeFinder.ruleset" />
+    <Content Include="PrintForms\Avery5160_5260.rdlc">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="PrintForms\Avery5161_5261.rdlc">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="PrintForms\Avery5162.rdlc">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="PrintForms\Avery5163.rdlc">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="PrintForms\SingleLabel.rdlc">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <EmbeddedResource Include="Reports\Avery2160.rdlc" />
+    <Content Include="Scripts\Person\PersonDetails.js" />
+    <Content Include="Scripts\Person\PersonDetailVal.js" />
+    <Content Include="Scripts\UserManagement\UserManagement.js" />
+    <Content Include="WebForms\SrtsOrderManagement\OrderManagement.aspx" />
+    <Content Include="WebForms\sessionTimedOut.aspx" />
+    <Content Include="WebForms\SrtsMessageCenter\MessageCenter.aspx" />
+    <Content Include="WebForms\Public\About.aspx" />
+    <Content Include="WebForms\Account\ChangePassword.aspx" />
+    <Content Include="WebForms\Account\ChangePasswordSuccess.aspx" />
+    <Content Include="WebForms\Account\Login.aspx" />
+    <Content Include="WebForms\SrtsOrderManagement\OrderTracking.aspx" />
+    <Content Include="WebForms\SrtsOrderManagement\PrescriptionDelete.aspx" />
+    <Content Include="WebForms\SrtsOrderManagement\PrescriptionDocumentView.aspx" />
+    <Content Include="WebForms\SrtsOrderManagement\PrescriptionUpload.aspx" />
+    <Content Include="WebForms\SrtsPerson\AddPerson.aspx" />
+    <Content Include="WebForms\SrtsPerson\PersonDetails.aspx" />
+    <Content Include="WebForms\SrtsWebClinic\Individuals\IndividualSearch.aspx" />
+    <Content Include="WebForms\SrtsWebClinic\Orders\ManageOrders.aspx" />
+    <Content Include="WebForms\SrtsWebClinic\Patients\BMTUpload.aspx" />
+    <Content Include="WebForms\SrtsWebClinic\Patients\ManagePatients.aspx" />
+    <Content Include="WebForms\SrtsWebLab\LabOrderLookup.aspx" />
+    <Content Include="WebForms\SrtsWebLab\ManageOrdersLab.aspx" />
+    <Content Include="Styles\images\ArrowDown.gif" />
+    <Content Include="Styles\images\ArrowUp.gif" />
+    <Content Include="Styles\images\CollapseCalculate.gif" />
+    <Content Include="Styles\images\CollapseExams.gif" />
+    <Content Include="Styles\images\CollapsePrescriptions.gif" />
+    <Content Include="Styles\images\CollapsePrism.gif" />
+    <Content Include="Styles\images\DHA_transparent.gif" />
+    <Content Include="Styles\images\ExpandCalculated.gif" />
+    <Content Include="Styles\images\ExpandExams.gif" />
+    <Content Include="Styles\images\ExpandPrescriptions.gif" />
+    <Content Include="Styles\images\ExpandPrism.gif" />
+    <Content Include="Styles\images\img_bubble_blue.png" />
+    <Content Include="Styles\images\img_GEyes.png" />
+    <Content Include="Styles\images\img_Login.png" />
+    <Content Include="Styles\images\img_newsandannouncements.png" />
+    <Content Include="Styles\images\img_Questions.png" />
+    <Content Include="Styles\images\img_box_fullinner_back.png" />
+    <Content Include="Styles\images\img_box_fullinner_bottom.png" />
+    <Content Include="Styles\images\img_box_fullinner_top.png" />
+    <Content Include="Styles\images\img_soldierGEyes.png" />
+    <Content Include="Styles\images\img_soldierGEyesSmall.png" />
+    <Content Include="Styles\images\img_SRTSwebInformation.png" />
+    <Content Include="Styles\images\img_srtswelcome.png" />
+    <Content Include="Styles\images\img_tab_notSelectedmini.png" />
+    <Content Include="Styles\images\img_woman_bk.png" />
+    <Content Include="Styles\images\img_Xround.png" />
+    <Content Include="Styles\images\isalute.png" />
+    <Content Include="Styles\images\mgrid_hder_bk.png" />
+    <Content Include="Styles\images\ui-bg_diagonals-thick_18_b81900_40x40.png" />
+    <Content Include="Styles\images\ui-bg_glass_100_f6f6f6_1x400.png" />
+    <Content Include="Styles\images\ui-bg_highlight-soft_100_eeeeee_1x100.png" />
+    <Content Include="Styles\jqGrid\ui.jqgrid-bootstrap-ui.css" />
+    <Content Include="Styles\jqGrid\ui.jqgrid-bootstrap.css" />
+    <Content Include="Styles\jqGrid\ui.jqgrid.css" />
+    <Content Include="Styles\jquery-ui.min.css" />
+    <Content Include="Styles\PassFailConfirm.css" />
+    <Content Include="Styles\srtsControlStyles.css" />
+    <Content Include="Styles\srtsLayoutStyles.css" />
+    <Content Include="Styles\images\img_box_right_top.png" />
+    <Content Include="Styles\images\img_box_center_back.png" />
+    <Content Include="Styles\images\img_box_center_bottom.png" />
+    <Content Include="Styles\images\img_box_center_top.png" />
+    <Content Include="Styles\images\img_box_full_back.png" />
+    <Content Include="Styles\images\img_box_full_bottom.png" />
+    <Content Include="Styles\images\img_box_full_top.png" />
+    <Content Include="Styles\images\img_box_right_back.png" />
+    <Content Include="Styles\images\img_box_right_bottom.png" />
+    <Content Include="Styles\srtsBaseStyles.css" />
+    <Content Include="Styles\BrowserSpecific\IEMenu6.css" />
+    <Content Include="Styles\images\img_commonMenu_blue_left.png" />
+    <Content Include="Styles\images\img_commonMenu_blue_right.png" />
+    <Content Include="Styles\images\img_clock.png" />
+    <Content Include="Styles\images\img_CheckRound.png" />
+    <Content Include="Styles\images\img_headline.png" />
+    <Content Include="Styles\images\Calendar_scheduleHS.png" />
+    <Content Include="Styles\images\img_arrow_left.png" />
+    <Content Include="Styles\images\img_arrow_right.png" />
+    <Content Include="Styles\images\img_arrow_totheleft.png" />
+    <Content Include="Styles\images\img_box_tcenter.png" />
+    <Content Include="Styles\images\img_box_tleft.png" />
+    <Content Include="Styles\images\img_box_tright.png" />
+    <Content Include="Styles\images\img_Breadcrumbs_bk.png" />
+    <Content Include="Styles\images\img_Breadcrumbs_left.png" />
+    <Content Include="Styles\images\img_Breadcrumbs_right.png" />
+    <Content Include="Styles\images\img_Breadcrumbs_separator.png" />
+    <Content Include="Styles\images\img_footertop_bk.png" />
+    <Content Include="Styles\images\img_footertop_left.png" />
+    <Content Include="Styles\images\img_mnu_btn_selected.png" />
+    <Content Include="Styles\images\img_mouse.png" />
+    <Content Include="Styles\images\img_note22.png" />
+    <Content Include="Styles\images\img_sort_down_green.png" />
+    <Content Include="Styles\images\img_sort_up_green.png" />
+    <Content Include="Styles\images\img_tabback_beige_btm.png" />
+    <Content Include="Styles\images\img_tab_MySrtsWeb.png" />
+    <Content Include="Styles\images\img_tab_notSelected.png" />
+    <Content Include="Styles\images\img_tab_Selected.png" />
+    <Content Include="Styles\images\img_user_cac.png" />
+    <Content Include="Styles\images\img_user_keyboard.png" />
+    <Content Include="Styles\Menu.css" />
+    <Content Include="Styles\srtsPageStyles.css" />
+    <Content Include="Styles\ui.jqgrid.min.css" />
+    <Content Include="ThirdPartyDLL\AjaxControlToolkit.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ThirdPartyDLL\BarcodeLib.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ThirdPartyDLL\CSSFriendly.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ThirdPartyDLL\DataToObjectLib.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ThirdPartyDLL\Elmah.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ThirdPartyDLL\Microsoft.ReportViewer.Common.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ThirdPartyDLL\Microsoft.ReportViewer.ProcessingObjectModel.DLL">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ThirdPartyDLL\Microsoft.ReportViewer.WebForms.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ThirdPartyDLL\Microsoft.ReportViewer.WebForms.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ThirdPartyDLL\Microsoft.SqlServer.Types.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ThirdPartyDLL\SrtsDataBaseAccess.dll" />
+    <Content Include="UserControls\ucAdminDisableUser.ascx" />
+    <Content Include="UserControls\ucAdminEnableUser.ascx" />
+    <Content Include="UserControls\ucCms.ascx" />
+    <Content Include="UserControls\ucAdminUnlockUser.ascx" />
+    <Content Include="UserControls\ucQuickSearch.ascx" />
+    <Content Include="UserControls\ucUserProfile.ascx" />
+    <Content Include="WebForms\Default.aspx" />
+    <Content Include="Global.asax" />
+    <Content Include="JSpecs\JSpecsMaster.Master" />
+    <Content Include="JSpecs\Styles\Base\Base.css.map" />
+    <Content Include="JSpecs\Styles\Base\Base.scss" />
+    <Content Include="JSpecs\Styles\Base\Mixins.css.map" />
+    <Content Include="JSpecs\Styles\Base\Mixins.scss" />
+    <Content Include="JSpecs\Styles\Base\Variables.css.map" />
+    <Content Include="JSpecs\Styles\Base\Variables.scss" />
+    <Content Include="JSpecs\Styles\Layouts\Layouts.css.map" />
+    <Content Include="JSpecs\Styles\Layouts\Layouts.scss" />
+    <Content Include="JSpecs\Styles\Main.css.map" />
+    <Content Include="JSpecs\Styles\Main.scss" />
+    <Content Include="JSpecs\Styles\State\State.css.map" />
+    <Content Include="JSpecs\Styles\State\State.scss" />
+    <Content Include="JSpecs\Styles\Theme\Shame.css.map" />
+    <Content Include="JSpecs\Styles\Theme\Shame.scss" />
+    <Content Include="JSpecs\Styles\Modules\Title\Title.css.map" />
+    <Content Include="JSpecs\Styles\Modules\Title\Title.scss" />
+    <Content Include="JSpecs\Styles\Modules\Modal\Modal.css.map" />
+    <Content Include="JSpecs\Styles\Modules\Modal\Modal.scss" />
+    <Content Include="JSpecs\Styles\Modules\Login\Login.css.map" />
+    <Content Include="JSpecs\Styles\Modules\Login\Login.scss" />
+    <Content Include="JSpecs\Styles\Modules\FAQ\FAQ.css.map" />
+    <Content Include="JSpecs\Styles\Modules\FAQ\FAQ.scss" />
+    <Content Include="JSpecs\Styles\Modules\ConfirmOrder\ConfirmOrder.css.map" />
+    <Content Include="JSpecs\Styles\Modules\ConfirmOrder\ConfirmOrder.scss" />
+    <Content Include="JSpecs\Styles\Modules\Loader\Loader.css.map" />
+    <Content Include="JSpecs\Styles\Modules\Loader\Loader.scss" />
+    <Content Include="JSpecs\Styles\Modules\Navigation\Navigation.css.map" />
+    <Content Include="JSpecs\Styles\Modules\Navigation\Navigation.scss" />
+    <Content Include="JSpecs\Styles\Modules\Orders\Orders.css.map" />
+    <Content Include="JSpecs\Styles\Modules\Orders\Orders.scss" />
+    <Content Include="JSpecs\Styles\Modules\Profile\Profile.css.map" />
+    <Content Include="JSpecs\Styles\Modules\Profile\Profile.scss" />
+    <Content Include="JSpecs\Styles\Modules\Elements\Elements.scss" />
+    <Content Include="JSpecs\Styles\Modules\Elements\Elements.css.map" />
+    <Content Include="GEyes\GEyesMasterResponsive.Master" />
+    <Content Include="GEyes\Content\js\jquery-3.3.1.min" />
+    <None Include="Properties\PublishProfiles\FolderProfile.pubxml" />
+    <None Include="Properties\PublishProfiles\PRODUCITON Srtsweb.pubxml">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Properties\PublishProfiles\PRODUCTION SrtsWebTraining.pubxml" />
+    <Content Include="Styles\images\img_SrtsWeb_Logo_Contactus_DHA.psd" />
+    <Content Include="GEyes\Content\css\bootstrap-grid.css.map" />
+    <Content Include="GEyes\Content\css\bootstrap-grid.min.css.map" />
+    <Content Include="GEyes\Content\css\bootstrap-reboot.css.map" />
+    <Content Include="GEyes\Content\css\bootstrap-reboot.min.css.map" />
+    <Content Include="GEyes\Content\css\bootstrap.css.map" />
+    <Content Include="GEyes\Content\css\bootstrap.min.css.map" />
+    <Content Include="GEyes\Content\js\bootstrap.bundle.js.map" />
+    <Content Include="GEyes\Content\js\bootstrap.bundle.min.js.map" />
+    <Content Include="GEyes\Content\js\bootstrap.js.map" />
+    <Content Include="GEyes\Content\js\bootstrap.min.js.map" />
+    <Content Include="Reports\Avery 5160.rdl" />
+    <Content Include="Reports\Blank_DD771.rdlc" />
+    <Content Include="Reports\ClinicDispense.rdlc" />
+    <Content Include="Reports\ClinicOrders.rdlc" />
+    <Content Include="Reports\ClinicOverdueOrders.rdl" />
+    <Content Include="Reports\DDForm771.rdlc" />
+    <Content Include="Reports\LabOrdersProcessed.rdlc" />
+    <Content Include="Reports\LabRoutingForm.rdl" />
+    <Content Include="Reports\Single Label.rdl" />
+    <Content Include="Reports\SingleLabel.rdlc" />
+    <None Include="Web.Srtstraining DEV.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Srtstraining PRODTEST.config">
+      <DependentUpon>Web.config</DependentUpon>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web.Srtstraining PRODUCTION.config">
+      <DependentUpon>Web.config</DependentUpon>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Web.Srtsweb DEV.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Srtsweb PRODTEST.config">
+      <DependentUpon>Web.config</DependentUpon>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Web.Srtsweb PRODUCTION.config">
+      <DependentUpon>Web.config</DependentUpon>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
+    </None>
+    <Content Include="WebForms\Reports\Handler1.ashx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Account\AdminUsers.cs" />
+    <Compile Include="Base\MasterBase.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Base\PageBaseJSpecs.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CustomProviders\SrtsMembership.cs" />
+    <Compile Include="GEyes\GEyesMasterResponsive.Master.cs">
+      <DependentUpon>GEyesMasterResponsive.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GEyes\GEyesMasterResponsive.Master.designer.cs">
+      <DependentUpon>GEyesMasterResponsive.Master</DependentUpon>
+    </Compile>
+    <Compile Include="JSpecs\JSpecsMaster.Master.cs">
+      <DependentUpon>JSpecsMaster.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reports\ClinicDispense.aspx.cs">
+      <DependentUpon>ClinicDispense.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reports\ClinicDispense.aspx.designer.cs">
+      <DependentUpon>ClinicDispense.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\ClinicOrders.aspx.cs">
+      <DependentUpon>ClinicOrders.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reports\ClinicOrders.aspx.designer.cs">
+      <DependentUpon>ClinicOrders.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\IPrintClinicDispenseRpt.cs" />
+    <Compile Include="Reports\IPrintClinicOrders.cs" />
+    <Compile Include="Reports\IPrintDDForm771.cs" />
+    <Compile Include="Reports\IPrintTurnAroundTimeRpt.cs" />
+    <Compile Include="Reports\IPrintUnitOrderCnt.cs" />
+    <Compile Include="Reports\IPrintWWFrameDetail.cs" />
+    <Compile Include="Reports\IRptViewerTemplate.cs" />
+    <Compile Include="Reports\LogonToken.cs" />
+    <Compile Include="Reports\ReportPageTemplate.aspx.cs">
+      <DependentUpon>ReportPageTemplate.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reports\ReportPageTemplate.aspx.designer.cs">
+      <DependentUpon>ReportPageTemplate.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\RptViewer.aspx.cs">
+      <DependentUpon>RptViewer.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reports\RptViewer.aspx.designer.cs">
+      <DependentUpon>RptViewer.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\ucManageFrames.ascx.cs">
+      <DependentUpon>ucManageFrames.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="JSpecs\JSpecsMaster.Master.designer.cs">
+      <DependentUpon>JSpecsMaster.Master</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\ucManageFrames.ascx.designer.cs">
+      <DependentUpon>ucManageFrames.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\ucAddressVerification.ascx.cs">
+      <DependentUpon>ucAddressVerification.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\ucAddressVerification.ascx.designer.cs">
+      <DependentUpon>ucAddressVerification.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\ucManageFramesEdit.ascx.cs">
+      <DependentUpon>ucManageFramesEdit.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\ucManageFramesEdit.ascx.designer.cs">
+      <DependentUpon>ucManageFramesEdit.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\ucSitePreferencesShipping.ascx.cs">
+      <DependentUpon>ucSitePreferencesShipping.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\ucSitePreferencesShipping.ascx.designer.cs">
+      <DependentUpon>ucSitePreferencesShipping.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\ucSitePreferencesLabJustifications.ascx.cs">
+      <DependentUpon>ucSitePreferencesLabJustifications.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\ucSitePreferencesLabJustifications.ascx.designer.cs">
+      <DependentUpon>ucSitePreferencesLabJustifications.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\ucSitePreferencesLabMailToPatient.ascx.cs">
+      <DependentUpon>ucSitePreferencesLabMailToPatient.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\ucSitePreferencesLabMailToPatient.ascx.designer.cs">
+      <DependentUpon>ucSitePreferencesLabMailToPatient.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\ucSitePreferencesLabParameters.ascx.cs">
+      <DependentUpon>ucSitePreferencesLabParameters.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\ucSitePreferencesLabParameters.ascx.designer.cs">
+      <DependentUpon>ucSitePreferencesLabParameters.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\ucSitePreferencesGeneral.ascx.cs">
+      <DependentUpon>ucSitePreferencesGeneral.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\ucSitePreferencesGeneral.ascx.designer.cs">
+      <DependentUpon>ucSitePreferencesGeneral.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\ucSitePreferencesFrames.ascx.cs">
+      <DependentUpon>ucSitePreferencesFrames.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\ucSitePreferencesFrames.ascx.designer.cs">
+      <DependentUpon>ucSitePreferencesFrames.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\ucSiteAdministratorsLookup.ascx.cs">
+      <DependentUpon>ucSiteAdministratorsLookup.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\ucSiteAdministratorsLookup.ascx.designer.cs">
+      <DependentUpon>ucSiteAdministratorsLookup.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\ucSitePreferencesOrders.ascx.cs">
+      <DependentUpon>ucSitePreferencesOrders.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\ucSitePreferencesOrders.ascx.designer.cs">
+      <DependentUpon>ucSitePreferencesOrders.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\ucSitePreferencesPrescriptions.ascx.cs">
+      <DependentUpon>ucSitePreferencesPrescriptions.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\ucSitePreferencesPrescriptions.ascx.designer.cs">
+      <DependentUpon>ucSitePreferencesPrescriptions.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\ucReleaseManagementUserGuides.ascx.cs">
+      <DependentUpon>ucReleaseManagementUserGuides.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\ucReleaseManagementUserGuides.ascx.designer.cs">
+      <DependentUpon>ucReleaseManagementUserGuides.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\ucSitePreferencesRoutingOrders.ascx.cs">
+      <DependentUpon>ucSitePreferencesRoutingOrders.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\ucSitePreferencesRoutingOrders.ascx.designer.cs">
+      <DependentUpon>ucSitePreferencesRoutingOrders.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\ucSpecialCharacters.ascx.cs">
+      <DependentUpon>ucSpecialCharacters.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\ucSpecialCharacters.ascx.designer.cs">
+      <DependentUpon>ucSpecialCharacters.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="WebForms\Account\CACcert\getCertificateInfo.aspx.cs">
+      <DependentUpon>getCertificateInfo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebForms\Account\CACcert\getCertificateInfo.aspx.designer.cs">
+      <DependentUpon>getCertificateInfo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\CurrentUser.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="WebForms\Account\iASLogin.aspx.cs">
+      <DependentUpon>iASLogin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebForms\Account\iASLogin.aspx.designer.cs">
+      <DependentUpon>iASLogin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebForms\Account\Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebForms\Account\Logout.aspx.cs">
+      <DependentUpon>Logout.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebForms\Account\Logout.aspx.designer.cs">
+      <DependentUpon>Logout.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebForms\Account\RecoverPassword.aspx.cs">
+      <DependentUpon>RecoverPassword.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebForms\Account\RecoverPassword.aspx.designer.cs">
+      <DependentUpon>RecoverPassword.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebForms\Account\RulesOfBehavior.aspx.cs">
+      <DependentUpon>RulesOfBehavior.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebForms\Account\RulesOfBehavior.aspx.designer.cs">
+      <DependentUpon>RulesOfBehavior.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebForms\Admin\DmdcGetter.aspx.cs">
+      <DependentUpon>DmdcGetter.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebForms\Admin\DmdcGetter.aspx.designer.cs">
+      <DependentUpon>DmdcGetter.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebForms\Admin\FrameManagementAdd.aspx.cs">
+      <DependentUpon>FrameManagementAdd.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebForms\Admin\FrameManagementAdd.aspx.designer.cs">
+      <DependentUpon>FrameManagementAdd.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebForms\Admin\LmsFileGenerator.aspx.cs">
+      <DependentUpon>LmsFileGenerator.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebForms\Admin\LmsFileGenerator.aspx.designer.cs">
+      <DependentUpon>LmsFileGenerator.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebForms\Admin\ManageEventLogTracing.aspx.cs">
+      <DependentUpon>ManageEventLogTracing.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebForms\Admin\ManageEventLogTracing.aspx.designer.cs">
+      <DependentUpon>ManageEventLogTracing.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebForms\Admin\ManageFrames.aspx.cs">
+      <DependentUpon>ManageFrames.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebForms\Admin\ManageFrames.aspx.designer.cs">
+      <DependentUpon>ManageFrames.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebForms\Admin\ManageLookUpTypes.aspx.designer.cs">
+      <DependentUpon>ManageLookUpTypes.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebForms\Admin\SiteCodeAdd.aspx.cs">
+      <DependentUpon>SiteCodeAdd.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebForms\Admin\SiteCodeAdd.aspx.designer.cs">
+      <DependentUpon>SiteCodeAdd.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebForms\Admin\SiteCodeEdit.aspx.cs">
+      <DependentUpon>SiteCodeEdit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebForms\Admin\SiteCodeEdit.aspx.designer.cs">
+      <DependentUpon>SiteCodeEdit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebForms\Admin\SiteCodeManagement.aspx.designer.cs">
+      <DependentUpon>SiteCodeManagement.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebForms\Admin\SiteAdministrators.aspx.cs">
+      <DependentUpon>SiteAdministrators.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebForms\Admin\SiteAdministrators.aspx.designer.cs">
+      <DependentUpon>SiteAdministrators.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebForms\Admin\ReleaseManagement.aspx.cs">
+      <DependentUpon>ReleaseManagement.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebForms\Admin\ReleaseManagement.aspx.designer.cs">
+      <DependentUpon>ReleaseManagement.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebForms\Admin\SitePreferences.aspx.cs">
+      <DependentUpon>SitePreferences.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebForms\Admin\SitePreferences.aspx.designer.cs">
+      <DependentUpon>SitePreferences.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebForms\Admin\SrtsAccountManager.aspx.cs">
+      <DependentUpon>SrtsAccountManager.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebForms\Admin\SrtsAccountManager.aspx.designer.cs">
+      <DependentUpon>SrtsAccountManager.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebForms\Admin\SrtsAdminTools.aspx.cs">
+      <DependentUpon>SrtsAdminTools.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebForms\Admin\SrtsAdminTools.aspx.designer.cs">
+      <DependentUpon>SrtsAdminTools.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebForms\Admin\SrtsCMSManager.aspx.cs">
+      <DependentUpon>SrtsCMSManager.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebForms\Admin\SrtsCMSManager.aspx.designer.cs">
+      <DependentUpon>SrtsCMSManager.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebForms\Admin\UserManagement.aspx.cs">
+      <DependentUpon>UserManagement.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebForms\Admin\UserManagement.aspx.designer.cs">
+      <DependentUpon>UserManagement.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebForms\Admin\LabelReport.aspx.cs">
+      <DependentUpon>LabelReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebForms\Admin\LabelReport.aspx.designer.cs">
+      <DependentUpon>LabelReport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebForms\CustomErrors\GeneralError.aspx.cs">
+      <DependentUpon>GeneralError.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebForms\CustomErrors\GeneralError.aspx.designer.cs">
+      <DependentUpon>GeneralError.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebForms\CustomErrors\NoAccessError401.aspx.cs">
+      <DependentUpon>NoAccessError401.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebForms\CustomErrors\NoAccessError401.aspx.designer.cs">
+      <DependentUpon>NoAccessError401.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Base\PageBase.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebForms\CustomErrors\PageNotFound404.aspx.cs">
+      <DependentUpon>PageNotFound404.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebForms\CustomErrors\PageNotFound404.aspx.designer.cs">
+      <DependentUpon>PageNotFound404.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Base\UserControlBase.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CustomElmah\SrtsElmah.cs" />
+    <Compile Include="WebForms\Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebForms\GEyes\Forms\AddressUpdate.aspx.cs">
+      <DependentUpon>AddressUpdate.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebForms\GEyes\Forms\AddressUpdate.aspx.designer.cs">
+      <DependentUpon>AddressUpdate.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebForms\GEyes\Forms\IndividualInfo.aspx.cs">
+      <DependentUpon>IndividualInfo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebForms\GEyes\Forms\IndividualInfo.aspx.designer.cs">
+      <DependentUpon>IndividualInfo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebForms\GEyes\Forms\GEyesHomePage.aspx.cs">
+      <DependentUpon>GEyesHomePage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebForms\GEyes\Forms\GEyesHomePage.aspx.designer.cs">
+      <DependentUpon>GEyesHomePage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebForms\GEyes\Forms\OrderConfirmation.aspx.cs">
+      <DependentUpon>OrderConfirmation.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebForms\GEyes\Forms\OrderConfirmation.aspx.designer.cs">
+      <DependentUpon>OrderConfirmation.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebForms\GEyes\Forms\SelectOrder.aspx.cs">
+      <DependentUpon>SelectOrder.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebForms\GEyes\Forms\SelectOrder.aspx.designer.cs">
+      <DependentUpon>SelectOrder.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GEyes\GeyesMaster.Master.cs">
+      <DependentUpon>GeyesMaster.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GEyes\GeyesMaster.Master.designer.cs">
+      <DependentUpon>GeyesMaster.Master</DependentUpon>
+    </Compile>
+    <Compile Include="ISiteMapResolver.cs" />
+    <Compile Include="PrintForms\dsLabels.cs" />
+    <Compile Include="PrintForms\dsLabels.designer.cs">
+      <DependentUpon>dsLabels.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WebForms\JSpecs\Forms\Account\JSpecsGetCacCert.aspx.cs">
+      <DependentUpon>JSpecsGetCacCert.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebForms\JSpecs\Forms\Account\JSpecsGetCacCert.aspx.designer.cs">
+      <DependentUpon>JSpecsGetCacCert.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebForms\JSpecs\Forms\JSpecsConfirmOrder.aspx.cs">
+      <DependentUpon>JSpecsConfirmOrder.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebForms\JSpecs\Forms\JSpecsConfirmOrder.aspx.designer.cs">
+      <DependentUpon>JSpecsConfirmOrder.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebForms\JSpecs\Forms\JSpecsDetails.aspx.cs">
+      <DependentUpon>JSpecsDetails.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebForms\JSpecs\Forms\JSpecsDetails.aspx.designer.cs">
+      <DependentUpon>JSpecsDetails.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebForms\JSpecs\Forms\JSpecsFAQ.aspx.cs">
+      <DependentUpon>JSpecsFAQ.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebForms\JSpecs\Forms\JSpecsFAQ.aspx.designer.cs">
+      <DependentUpon>JSpecsFAQ.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebForms\JSpecs\Forms\JSpecsHomePage.aspx.cs">
+      <DependentUpon>JSpecsHomePage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebForms\JSpecs\Forms\JSpecsHomePage.aspx.designer.cs">
+      <DependentUpon>JSpecsHomePage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebForms\JSpecs\Forms\JSpecsLogin.aspx.cs">
+      <DependentUpon>JSpecsLogin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebForms\JSpecs\Forms\JSpecsLogin.aspx.designer.cs">
+      <DependentUpon>JSpecsLogin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebForms\JSpecs\Forms\JSpecsNewOrder.aspx.cs">
+      <DependentUpon>JSpecsNewOrder.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebForms\JSpecs\Forms\JSpecsNewOrder.aspx.designer.cs">
+      <DependentUpon>JSpecsNewOrder.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebForms\JSpecs\Forms\JSpecsOrders.aspx.cs">
+      <DependentUpon>JSpecsOrders.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebForms\JSpecs\Forms\JSpecsOrders.aspx.designer.cs">
+      <DependentUpon>JSpecsOrders.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebForms\PrintForms\LabelRptViewer.aspx.cs">
+      <DependentUpon>LabelRptViewer.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebForms\PrintForms\LabelRptViewer.aspx.designer.cs">
+      <DependentUpon>LabelRptViewer.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="WebForms\Public\CheckOrderStatus.aspx.cs">
+      <DependentUpon>CheckOrderStatus.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebForms\Public\CheckOrderStatus.aspx.designer.cs">
+      <DependentUpon>CheckOrderStatus.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebForms\Public\FAQ.aspx.cs">
+      <DependentUpon>FAQ.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebForms\Public\FAQ.aspx.designer.cs">
+      <DependentUpon>FAQ.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebForms\Public\ReleaseNotes.aspx.cs">
+      <DependentUpon>ReleaseNotes.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebForms\Public\ReleaseNotes.aspx.designer.cs">
+      <DependentUpon>ReleaseNotes.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebForms\Public\Sitemap.aspx.cs">
+      <DependentUpon>Sitemap.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebForms\Public\FacilityAccountRequest.aspx.cs">
+      <DependentUpon>FacilityAccountRequest.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebForms\Public\FacilityAccountRequest.aspx.designer.cs">
+      <DependentUpon>FacilityAccountRequest.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebForms\Admin\SrtsUserManager.aspx.cs">
+      <DependentUpon>SrtsUserManager.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebForms\Admin\SrtsUserManager.aspx.designer.cs">
+      <DependentUpon>SrtsUserManager.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebForms\Admin\FrameManagement.aspx.cs">
+      <DependentUpon>FrameManagement.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebForms\Admin\FrameManagement.aspx.designer.cs">
+      <DependentUpon>FrameManagement.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebForms\Admin\ManageLookUpTypes.aspx.cs">
+      <DependentUpon>ManageLookUpTypes.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebForms\Admin\SrtsReportsManager.aspx.cs">
+      <DependentUpon>SrtsReportsManager.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebForms\Admin\SrtsReportsManager.aspx.designer.cs">
+      <DependentUpon>SrtsReportsManager.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebForms\Admin\SiteCodeManagement.aspx.cs">
+      <DependentUpon>SiteCodeManagement.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebForms\Public\Abbreviations.aspx.cs">
+      <DependentUpon>Abbreviations.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebForms\Public\Abbreviations.aspx.designer.cs">
+      <DependentUpon>Abbreviations.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebForms\Public\Accessability.aspx.cs">
+      <DependentUpon>Accessability.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebForms\Public\Accessability.aspx.designer.cs">
+      <DependentUpon>Accessability.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebForms\Public\InformationCollected.aspx.cs">
+      <DependentUpon>InformationCollected.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebForms\Public\InformationCollected.aspx.designer.cs">
+      <DependentUpon>InformationCollected.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebForms\Public\PrivacyAndSecurity.aspx.cs">
+      <DependentUpon>PrivacyAndSecurity.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebForms\Public\PrivacyAndSecurity.aspx.designer.cs">
+      <DependentUpon>PrivacyAndSecurity.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebForms\Public\Sitemap.aspx.designer.cs">
+      <DependentUpon>Sitemap.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebForms\Public\SrtsAdministrator.aspx.cs">
+      <DependentUpon>SrtsAdministrator.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebForms\Public\SrtsAdministrator.aspx.designer.cs">
+      <DependentUpon>SrtsAdministrator.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebForms\Public\Support.aspx.cs">
+      <DependentUpon>Support.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebForms\Public\Support.aspx.designer.cs">
+      <DependentUpon>Support.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\dsOrders.cs">
+      <DependentUpon>dsOrders.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\dsOrders.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsOrders.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\CustomReportCredentials.cs" />
+    <Compile Include="Reports\ReportCommon.cs" />
+    <Compile Include="WebForms\Reports\Handler1.ashx.cs">
+      <DependentUpon>Handler1.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="WebForms\Reports\rptViewerTemplate.aspx.cs">
+      <DependentUpon>rptViewerTemplate.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebForms\Reports\rptViewerTemplate.aspx.designer.cs">
+      <DependentUpon>rptViewerTemplate.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebForms\Reports\rptViewDD771.aspx.cs">
+      <DependentUpon>rptViewDD771.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebForms\Reports\rptViewDD771.aspx.designer.cs">
+      <DependentUpon>rptViewDD771.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="srtsMaster.Master.designer.cs">
+      <DependentUpon>srtsMaster.Master</DependentUpon>
+    </Compile>
+    <Compile Include="srtsMessageBox.cs" />
+    <Compile Include="WebForms\SrtsOrderManagement\OrderManagement.aspx.cs">
+      <DependentUpon>OrderManagement.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebForms\SrtsOrderManagement\OrderManagement.aspx.designer.cs">
+      <DependentUpon>OrderManagement.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebForms\SrtsOrderManagement\OrderTracking.aspx.cs">
+      <DependentUpon>OrderTracking.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebForms\SrtsOrderManagement\OrderTracking.aspx.designer.cs">
+      <DependentUpon>OrderTracking.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebForms\SrtsOrderManagement\PrescriptionDelete.aspx.cs">
+      <DependentUpon>PrescriptionDelete.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebForms\SrtsOrderManagement\PrescriptionDelete.aspx.designer.cs">
+      <DependentUpon>PrescriptionDelete.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebForms\SrtsOrderManagement\PrescriptionDocumentView.aspx.cs">
+      <DependentUpon>PrescriptionDocumentView.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebForms\SrtsOrderManagement\PrescriptionDocumentView.aspx.designer.cs">
+      <DependentUpon>PrescriptionDocumentView.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebForms\SrtsOrderManagement\PrescriptionUpload.aspx.cs">
+      <DependentUpon>PrescriptionUpload.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebForms\SrtsOrderManagement\PrescriptionUpload.aspx.designer.cs">
+      <DependentUpon>PrescriptionUpload.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebForms\SrtsPerson\AddPerson.aspx.cs">
+      <DependentUpon>AddPerson.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebForms\SrtsPerson\AddPerson.aspx.designer.cs">
+      <DependentUpon>AddPerson.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebForms\SrtsPerson\PersonDetails.aspx.cs">
+      <DependentUpon>PersonDetails.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebForms\SrtsPerson\PersonDetails.aspx.designer.cs">
+      <DependentUpon>PersonDetails.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="srtsProdTestDBDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>srtsProdTestDBDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="WebForms\sessionTimedOut.aspx.cs">
+      <DependentUpon>sessionTimedOut.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebForms\sessionTimedOut.aspx.designer.cs">
+      <DependentUpon>sessionTimedOut.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebForms\SrtsMessageCenter\MessageCenter.aspx.cs">
+      <DependentUpon>MessageCenter.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebForms\SrtsMessageCenter\MessageCenter.aspx.designer.cs">
+      <DependentUpon>MessageCenter.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebForms\Public\About.aspx.cs">
+      <DependentUpon>About.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebForms\Public\About.aspx.designer.cs">
+      <DependentUpon>About.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebForms\Account\ChangePassword.aspx.cs">
+      <DependentUpon>ChangePassword.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebForms\Account\ChangePassword.aspx.designer.cs">
+      <DependentUpon>ChangePassword.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebForms\Account\ChangePasswordSuccess.aspx.cs">
+      <DependentUpon>ChangePasswordSuccess.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebForms\Account\ChangePasswordSuccess.aspx.designer.cs">
+      <DependentUpon>ChangePasswordSuccess.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\CustomProfile.cs" />
+    <Compile Include="WebForms\Account\Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebForms\SrtsWebClinic\Individuals\IndividualSearch.aspx.cs">
+      <DependentUpon>IndividualSearch.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebForms\SrtsWebClinic\Individuals\IndividualSearch.aspx.designer.cs">
+      <DependentUpon>IndividualSearch.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebForms\SrtsWebClinic\Orders\ManageOrders.aspx.cs">
+      <DependentUpon>ManageOrders.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebForms\SrtsWebClinic\Orders\ManageOrders.aspx.designer.cs">
+      <DependentUpon>ManageOrders.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebForms\SrtsWebClinic\Patients\BMTUpload.aspx.cs">
+      <DependentUpon>BMTUpload.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebForms\SrtsWebClinic\Patients\BMTUpload.aspx.designer.cs">
+      <DependentUpon>BMTUpload.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebForms\SrtsWebClinic\Patients\ManagePatients.aspx.cs">
+      <DependentUpon>ManagePatients.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebForms\SrtsWebClinic\Patients\ManagePatients.aspx.designer.cs">
+      <DependentUpon>ManagePatients.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebForms\SrtsWebLab\LabOrderLookup.aspx.cs">
+      <DependentUpon>LabOrderLookup.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebForms\SrtsWebLab\LabOrderLookup.aspx.designer.cs">
+      <DependentUpon>LabOrderLookup.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebForms\SrtsWebLab\ManageOrdersLab.aspx.cs">
+      <DependentUpon>ManageOrdersLab.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebForms\SrtsWebLab\ManageOrdersLab.aspx.designer.cs">
+      <DependentUpon>ManageOrdersLab.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\ucAdminDisableUser.ascx.cs">
+      <DependentUpon>ucAdminDisableUser.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\ucAdminDisableUser.ascx.designer.cs">
+      <DependentUpon>ucAdminDisableUser.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\ucAdminEnableUser.ascx.cs">
+      <DependentUpon>ucAdminEnableUser.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\ucAdminEnableUser.ascx.designer.cs">
+      <DependentUpon>ucAdminEnableUser.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\ucCms.ascx.cs">
+      <DependentUpon>ucCms.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\ucCms.ascx.designer.cs">
+      <DependentUpon>ucCms.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\ucAdminUnlockUser.ascx.cs">
+      <DependentUpon>ucAdminUnlockUser.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\ucAdminUnlockUser.ascx.designer.cs">
+      <DependentUpon>ucAdminUnlockUser.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\ucQuickSearch.ascx.cs">
+      <DependentUpon>ucQuickSearch.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\ucQuickSearch.ascx.designer.cs">
+      <DependentUpon>ucQuickSearch.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\ucUserProfile.ascx.cs">
+      <DependentUpon>ucUserProfile.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\ucUserProfile.ascx.designer.cs">
+      <DependentUpon>ucUserProfile.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="WebForms\Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="srtsMaster.Master.cs">
+      <DependentUpon>srtsMaster.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_Browsers\CSSFriendlyAdapters.browser" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="srtsMaster.Master" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Web.sitemap">
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="WebHeader.sitemap">
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="srtsProdTestDBDataSet.xsc">
+      <DependentUpon>srtsProdTestDBDataSet.xsd</DependentUpon>
+    </Content>
+    <Content Include="Reports\DDForm771a.rdlc" />
+    <Content Include="Reports\LabRoutingForm.rdlc" />
+    <EmbeddedResource Include="Reports\Report1.rdlc" />
+    <Content Include="GEyes\images\misc\BackArrow.psd" />
+    <Content Include="GEyes\images\misc\ForwardArrow.psd" />
+    <Content Include="GEyes\images\misc\GEyesWelcome.psd" />
+    <Content Include="GEyes\images\misc\isalute.psd" />
+    <Content Include="Reports\dsOrders.xsc">
+      <DependentUpon>dsOrders.xsd</DependentUpon>
+    </Content>
+    <None Include="Properties\PublishProfiles\Dev SrtsWeb.pubxml">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Properties\PublishProfiles\Dev SrtsWebTraining.pubxml">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Properties\PublishProfiles\ProdTest Srtstraining.pubxml">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Properties\PublishProfiles\ProdTest Srtsweb.pubxml" />
+    <None Include="Reports\dsOrders.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsOrders.Designer.cs</LastGenOutput>
+    </None>
+    <Content Include="Reports\dsOrders.xss">
+      <DependentUpon>dsOrders.xsd</DependentUpon>
+    </Content>
+    <None Include="srtsProdTestDBDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>srtsProdTestDBDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <Content Include="srtsProdTestDBDataSet.xss">
+      <DependentUpon>srtsProdTestDBDataSet.xsd</DependentUpon>
+    </Content>
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reports\Fonts\w39h.ttf" />
+    <None Include="Reports\Fonts\w39m.ttf" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\XML\" />
+    <Folder Include="Properties\DataSources\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ExtendersHelpers\SrtsWeb.ExtendersHelpersEnums.csproj">
+      <Project>{a7bd6a82-456a-4844-bc89-54b3aca02eaa}</Project>
+      <Name>SrtsWeb.ExtendersHelpersEnums</Name>
+    </ProjectReference>
+    <ProjectReference Include="BusinessLayer\SrtsWeb.BusinessLayer.csproj">
+      <Project>{bb494908-6afd-4e53-8c26-5a96f16a86f1}</Project>
+      <Name>SrtsWeb.BusinessLayer</Name>
+    </ProjectReference>
+    <ProjectReference Include="DataLayer\SrtsWeb.DataLayer.csproj">
+      <Project>{7a783edf-1894-4d39-9895-ad647b1f2e9c}</Project>
+      <Name>SrtsWeb.DataLayer</Name>
+    </ProjectReference>
+    <ProjectReference Include="Entities\SrtsWeb.Entities.csproj">
+      <Project>{3869c230-7a89-4a14-9298-769767554752}</Project>
+      <Name>SrtsWeb.Entities</Name>
+    </ProjectReference>
+    <ProjectReference Include="SrtsWeb.Presenters\SrtsWeb.Presenters.csproj">
+      <Project>{8eb54ad0-91a3-4d37-a668-1adec9b96ecf}</Project>
+      <Name>SrtsWeb.Presenters</Name>
+    </ProjectReference>
+    <ProjectReference Include="SrtsWeb.Views\SrtsWeb.Views.csproj">
+      <Project>{4f2292d7-1e0a-4b76-a3c2-7b270bba0d44}</Project>
+      <Name>SrtsWeb.Views</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Srtstraining DEV|AnyCPU' ">
+    <OutputPath>bin\</OutputPath>
+    <DebugType>full</DebugType>
+    <DebugSymbols>true</DebugSymbols>
+    <DefineConstants>TRACE;DEBUG</DefineConstants>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Srtstraining PRODTEST|AnyCPU' ">
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>
+    </DefineConstants>
+    <DebugType>full</DebugType>
+    <DebugSymbols>true</DebugSymbols>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Srtsweb PRODUCTION|AnyCPU'">
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE;DEBUG</DefineConstants>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Srtstraining PRODUCTION|AnyCPU'">
+    <OutputPath>bin\</OutputPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <SaveServerSettingsInUserFile>True</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\build\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', 'packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\build\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+    <Error Condition="!Exists('packages\Stub.System.Data.SQLite.Core.NetFramework.1.0.113.3\build\net45\Stub.System.Data.SQLite.Core.NetFramework.targets')" Text="$([System.String]::Format('$(ErrorText)', 'packages\Stub.System.Data.SQLite.Core.NetFramework.1.0.113.3\build\net45\Stub.System.Data.SQLite.Core.NetFramework.targets'))" />
+  </Target>
+  <Import Project="packages\Stub.System.Data.SQLite.Core.NetFramework.1.0.113.3\build\net45\Stub.System.Data.SQLite.Core.NetFramework.targets" Condition="Exists('packages\Stub.System.Data.SQLite.Core.NetFramework.1.0.113.3\build\net45\Stub.System.Data.SQLite.Core.NetFramework.targets')" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

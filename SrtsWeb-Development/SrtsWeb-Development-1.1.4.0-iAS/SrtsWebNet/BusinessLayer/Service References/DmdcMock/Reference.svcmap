@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="98dd1a2f-9170-4100-866e-344de05d123a" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:22889/DmdcMockWs.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="DmdcMockWs.wsdl" MetadataType="Wsdl" ID="1cc75071-9fcf-48a5-837f-1b6f132d1135" SourceId="1" SourceUrl="http://localhost:22889/DmdcMockWs.svc?wsdl" />
+    <MetadataFile FileName="DmdcMockWs.disco" MetadataType="Disco" ID="24f43e72-9365-4307-a23b-802c33a164e0" SourceId="1" SourceUrl="http://localhost:22889/DmdcMockWs.svc?disco" />
+    <MetadataFile FileName="DmdcMockWs.xsd" MetadataType="Schema" ID="e5a6eed9-d308-4987-a18d-4f83efac4a61" SourceId="1" SourceUrl="http://localhost:22889/DmdcMockWs.svc?xsd=xsd0" />
+    <MetadataFile FileName="DmdcMockWs1.xsd" MetadataType="Schema" ID="a0a8c15a-ec38-4c4c-ab68-e9dd9ec58a08" SourceId="1" SourceUrl="http://localhost:22889/DmdcMockWs.svc?xsd=xsd2" />
+    <MetadataFile FileName="DmdcMockWs2.xsd" MetadataType="Schema" ID="3dcb859a-762c-45bd-b038-6778a4027500" SourceId="1" SourceUrl="http://localhost:22889/DmdcMockWs.svc?xsd=xsd1" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

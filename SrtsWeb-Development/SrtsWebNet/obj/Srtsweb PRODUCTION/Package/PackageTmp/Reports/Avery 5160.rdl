@@ -1,0 +1,205 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Report xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner" xmlns:cl="http://schemas.microsoft.com/sqlserver/reporting/2010/01/componentdefinition" xmlns="http://schemas.microsoft.com/sqlserver/reporting/2010/01/reportdefinition">
+  <AutoRefresh>0</AutoRefresh>
+  <DataSources>
+    <DataSource Name="DataSource1">
+      <ConnectionProperties>
+        <DataProvider>SQL</DataProvider>
+        <ConnectString>="Data Source="+Parameters!datasrc.Value+";Initial Catalog="+Parameters!initcat.Value</ConnectString>
+        <Prompt>Enter a user name and password to access the data source:</Prompt>
+      </ConnectionProperties>
+      <rd:SecurityType>DataBase</rd:SecurityType>
+      <rd:DataSourceID>5953a448-0ff2-4c5c-8c2a-1aa273ee864c</rd:DataSourceID>
+    </DataSource>
+  </DataSources>
+  <DataSets>
+    <DataSet Name="DataSet1">
+      <Query>
+        <DataSourceName>DataSource1</DataSourceName>
+        <QueryParameters>
+          <QueryParameter Name="@SiteCode">
+            <Value>=Parameters!SiteCode.Value</Value>
+          </QueryParameter>
+          <QueryParameter Name="@OrderSTatusTypeID">
+            <Value>=Parameters!OrderSTatusTypeID.Value</Value>
+          </QueryParameter>
+          <QueryParameter Name="@DateTime">
+            <Value>=Parameters!DateTime.Value</Value>
+          </QueryParameter>
+        </QueryParameters>
+        <CommandType>StoredProcedure</CommandType>
+        <CommandText>ReprintReturn</CommandText>
+      </Query>
+      <Fields>
+        <Field Name="Patient">
+          <DataField>Patient</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="ShipAddress1">
+          <DataField>ShipAddress1</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="ShipAddress2">
+          <DataField>ShipAddress2</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="ShipAddress3">
+          <DataField>ShipAddress3</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="ShipCity">
+          <DataField>ShipCity</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="ShipState">
+          <DataField>ShipState</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="ShipCountry">
+          <DataField>ShipCountry</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="CountryName">
+          <DataField>CountryName</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="ShipZipCode">
+          <DataField>ShipZipCode</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+      </Fields>
+    </DataSet>
+  </DataSets>
+  <ReportSections>
+    <ReportSection>
+      <Body>
+        <ReportItems>
+          <Tablix Name="Tablix1">
+            <TablixBody>
+              <TablixColumns>
+                <TablixColumn>
+                  <Width>2.5in</Width>
+                </TablixColumn>
+              </TablixColumns>
+              <TablixRows>
+                <TablixRow>
+                  <Height>1in</Height>
+                  <TablixCells>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="Name1">
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>=VBCRLF + Fields!Patient.Value + VBCRLF + Fields!ShipAddress1.Value 
++ VBCRLF + IIF(LEN(Fields!ShipAddress2.Value)&lt;2, "",Fields!ShipAddress2.Value + VBCRLF) + IIF(Fields!ShipState.Value="NA", IIF(Fields!CountryName.Value="Japan","(Japan)",IIF(Fields!CountryName.Value="South Korea","(South Korea)",IIF(Fields!CountryName.Value="Netherlands","Nederland",IIF(Fields!CountryName.Value="Saudi Arabia","Kingdom of Saudi Arabia",Fields!CountryName.Value)))), Fields!ShipCity.Value + "  " + Fields!ShipState.Value + "  " +
+                                    IIF(LEN(Fields!ShipZipCode.Value)=9,
+                                    Left(Fields!ShipZipCode.Value,5) + "-" + Right(Fields!ShipZipCode.Value,4),
+                                    Fields!ShipZipCode.Value))</Value>
+                                  <Style />
+                                </TextRun>
+                              </TextRuns>
+                              <Style />
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>Name1</rd:DefaultName>
+                          <Style>
+                            <Border>
+                              <Style>None</Style>
+                            </Border>
+                            <PaddingLeft>5pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                          </Style>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
+                  </TablixCells>
+                </TablixRow>
+              </TablixRows>
+            </TablixBody>
+            <TablixColumnHierarchy>
+              <TablixMembers>
+                <TablixMember>
+                  <Group Name="ColNbr">
+                    <GroupExpressions>
+                      <GroupExpression>=RowNumber(Nothing)-3*(Ceiling(RowNumber(Nothing)/3)-1)</GroupExpression>
+                    </GroupExpressions>
+                  </Group>
+                </TablixMember>
+              </TablixMembers>
+            </TablixColumnHierarchy>
+            <TablixRowHierarchy>
+              <TablixMembers>
+                <TablixMember>
+                  <Group Name="RowNbr">
+                    <GroupExpressions>
+                      <GroupExpression>=Ceiling(RowNumber(Nothing)/3)</GroupExpression>
+                    </GroupExpressions>
+                  </Group>
+                </TablixMember>
+              </TablixMembers>
+            </TablixRowHierarchy>
+            <DataSetName>DataSet1</DataSetName>
+            <Height>1in</Height>
+            <Width>2.5in</Width>
+            <Style>
+              <Border>
+                <Style>None</Style>
+              </Border>
+            </Style>
+          </Tablix>
+        </ReportItems>
+        <Height>1in</Height>
+        <Style />
+      </Body>
+      <Width>2.5in</Width>
+      <Page>
+        <LeftMargin>0.125in</LeftMargin>
+        <TopMargin>0.5in</TopMargin>
+        <Columns>3</Columns>
+        <ColumnSpacing>0.125in</ColumnSpacing>
+        <Style />
+      </Page>
+    </ReportSection>
+  </ReportSections>
+  <ReportParameters>
+    <ReportParameter Name="SiteCode">
+      <DataType>String</DataType>
+      <Prompt>SiteCode</Prompt>
+      <Hidden>true</Hidden>
+    </ReportParameter>
+    <ReportParameter Name="OrderSTatusTypeID">
+      <DataType>String</DataType>
+      <Prompt>OrderSTatusTypeID</Prompt>
+      <Hidden>true</Hidden>
+    </ReportParameter>
+    <ReportParameter Name="DateTime">
+      <DataType>DateTime</DataType>
+      <Prompt>Date Time</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="datasrc">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>amedsatxa4157</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>datasrc</Prompt>
+      <Hidden>true</Hidden>
+    </ReportParameter>
+    <ReportParameter Name="initcat">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>SrtsWebTrainingDB</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>initcat</Prompt>
+      <Hidden>true</Hidden>
+    </ReportParameter>
+  </ReportParameters>
+  <rd:ReportUnitType>Inch</rd:ReportUnitType>
+  <rd:ReportID>eb70abbc-c5e7-411a-9e1f-79dde3837d81</rd:ReportID>
+</Report>

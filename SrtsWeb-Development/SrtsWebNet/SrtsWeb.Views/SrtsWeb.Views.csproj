@@ -1,0 +1,148 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{4F2292D7-1E0A-4B76-A3C2-7B270BBA0D44}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SrtsWeb.Views</RootNamespace>
+    <AssemblyName>SrtsWeb.Views</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Newtonsoft.Json, Version=6.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Account\IAuthorizationView.cs" />
+    <Compile Include="Account\ICertificateInfoView.cs" />
+    <Compile Include="Account\IRulesOfBehaviorView.cs" />
+    <Compile Include="Admin\IFrameItemsPreferencesView.cs" />
+    <Compile Include="Admin\IClinicGroupsView.cs" />
+    <Compile Include="Admin\IEmailMessageView.cs" />
+    <Compile Include="Admin\IManageFramesEditView.cs" />
+    <Compile Include="Admin\IManageFramesView.cs" />
+    <Compile Include="Admin\IPrescriptionPreferencesView.cs" />
+    <Compile Include="Admin\IOrderPreferencesView.cs" />
+    <Compile Include="Admin\IReportsManagerView.cs" />
+    <Compile Include="Admin\ICMSContentMessageView.cs" />
+    <Compile Include="Admin\ICmsManagerView.cs" />
+    <Compile Include="Admin\IFrameManagement.cs" />
+    <Compile Include="Admin\ILmsFileGeneratorView.cs" />
+    <Compile Include="Admin\IManageLookUpTypesView.cs" />
+    <Compile Include="Admin\IManageSrtsView.cs" />
+    <Compile Include="Admin\INewUser.cs" />
+    <Compile Include="Admin\ISiteCodeAddView.cs" />
+    <Compile Include="Admin\ISiteCodeEditView.cs" />
+    <Compile Include="Admin\ISiteCodeManagementView.cs" />
+    <Compile Include="Admin\ISitePreferencesShipping.cs" />
+    <Compile Include="Admin\ISitePreferencesGeneral.cs" />
+    <Compile Include="Admin\ISitePreferencesLabJustification.cs" />
+    <Compile Include="Admin\ISitePreferencesLabMailToPatient.cs" />
+    <Compile Include="Admin\ISitePreferencesLabMailToPatientView.cs" />
+    <Compile Include="Admin\IReleaseManagementUserGuidesView.cs" />
+    <Compile Include="Admin\ISitePreferencesLabParametersView.cs" />
+    <Compile Include="Admin\ISitePreferencesRoutingOrdersView.cs" />
+    <Compile Include="Admin\ISiteAdministratorsView.cs" />
+    <Compile Include="Admin\IReleaseManagementView.cs" />
+    <Compile Include="Admin\ISitePreferencesView.cs" />
+    <Compile Include="Admin\IUserManagement.cs" />
+    <Compile Include="Admin\SrtsToolsView.cs" />
+    <Compile Include="Exams\IExamManagementAddView.cs" />
+    <Compile Include="Exams\IExamManagementEditView.cs" />
+    <Compile Include="GEyes\IAddressUpdateView.cs" />
+    <Compile Include="GEyes\ICreateOrderView.cs" />
+    <Compile Include="GEyes\IGEyesHomePageView.cs" />
+    <Compile Include="GEyes\IIndividualInfoView.cs" />
+    <Compile Include="GEyes\IOrderConfirmationView.cs" />
+    <Compile Include="GEyes\ISelectOrderView.cs" />
+    <Compile Include="IDefaultView.cs" />
+    <Compile Include="Individuals\IIndividualSearchView.cs" />
+    <Compile Include="JSpecs\IJSpecsConfirmOrderView.cs" />
+    <Compile Include="JSpecs\IJSpecsDetailsView.cs" />
+    <Compile Include="JSpecs\IJSpecsFAQView.cs" />
+    <Compile Include="JSpecs\IJSpecsLoginView.cs" />
+    <Compile Include="JSpecs\IJSpecsOrdersView.cs" />
+    <Compile Include="JSpecs\IJSpecsNewOrderView.cs" />
+    <Compile Include="Lab\IManageOrdersLabView.cs" />
+    <Compile Include="MessageCenter\IMEssageCenterView.cs" />
+    <Compile Include="Orders\ICheckInDispenseView.cs" />
+    <Compile Include="Orders\IOrderEditStatusClinicView.cs" />
+    <Compile Include="Orders\IOrderManagementAddView.cs" />
+    <Compile Include="Orders\IOrderManagementEditView.cs" />
+    <Compile Include="Orders\IOrderManagementView.cs" />
+    <Compile Include="Orders\IOrderProblemView.cs" />
+    <Compile Include="Orders\IOrderTrackingView.cs" />
+    <Compile Include="Patients\IBmtView.cs" />
+    <Compile Include="Patients\IManagePatientsView.cs" />
+    <Compile Include="Person\IPersonAddView.cs" />
+    <Compile Include="Person\IPersonDetailsView.cs" />
+    <Compile Include="Prescriptions\IPrescriptionAddView.cs" />
+    <Compile Include="Prescriptions\IPrescriptionEditView.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Public\ICheckOrderStatusView.cs" />
+    <Compile Include="Public\IFacilityAccountRequestView.cs" />
+    <Compile Include="Public\IReleaseNotesView.cs" />
+    <Compile Include="Public\ISystemAccessRequest.cs" />
+    <Compile Include="Reporting\IClinicDispenseView.cs" />
+    <Compile Include="Reporting\IClinicOrdersView.cs" />
+    <Compile Include="Reporting\IOrder771view.cs" />
+    <Compile Include="Reporting\ISiteCodeView.cs" />
+    <Compile Include="Reporting\ITurnAroundTimeView.cs" />
+    <Compile Include="Reporting\IUnitOrderCntView.cs" />
+    <Compile Include="Reporting\IWWFrameDetailView.cs" />
+    <Compile Include="Shared\IAddress.cs" />
+    <Compile Include="Shared\IEmailAddress.cs" />
+    <Compile Include="Shared\IIdNumber.cs" />
+    <Compile Include="Shared\IIndividualType.cs" />
+    <Compile Include="Shared\IPersonnel.cs" />
+    <Compile Include="Shared\IPersonnelMilitaryData.cs" />
+    <Compile Include="Shared\IPhoneNumber.cs" />
+    <Compile Include="Shared\Person\IComboAddView.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Entities\SrtsWeb.Entities.csproj">
+      <Project>{3869c230-7a89-4a14-9298-769767554752}</Project>
+      <Name>SrtsWeb.Entities</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,606 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="GEyesMasterResponsive.Master.cs" Inherits="SrtsWeb.GEyes.GeyesMasterResponsive" %>
+
+<!DOCTYPE html>
+<%@ Register Assembly="AjaxControlToolkit" Namespace="AjaxControlToolkit" TagPrefix="asp" %>
+<html lang="en">
+<head id="Head1" runat="server">
+<meta charset=”utf-8″>
+<meta http-equiv=”X-UA-Compatible” content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>DoD G-Eyes</title>
+<%--<link href="../Styles/jquery-ui.min.css" rel="stylesheet" />
+    <link href="../Styles/srtsBaseStyles.css" rel="Stylesheet" />--%>
+
+    <link href="Content/css/bootstrap.min.css" rel="stylesheet">
+        <link href="../Styles/w3.css" rel="Stylesheet" type="text/css" />
+
+
+    <asp:ContentPlaceHolder ID="HeadContent" runat="server">
+    </asp:ContentPlaceHolder>
+    <script type="text/javascript">
+        function displaySrtsMessage(title, message, type) {
+            var messageText = document.getElementById('srtsMessageText');
+            var messageTitle = document.getElementById('srtsMessageTitle');
+            var srtsMessage = document.getElementById('srtsMessage');
+            var messageType = type;
+            if (message != "") {
+                messageText.innerHTML = message;
+                messageTitle.innerHTML = title;
+                $("#srtsMessage").fadeIn(500);
+                if (messageType == "error") {
+                    messageTitle.className = "error";
+                }
+                if (messageType == "success") {
+                    messageTitle.className = "success";
+                    $("#srtsMessage").delay(3000).fadeOut(3000);
+                }
+            }
+        }
+
+        function setAlert() {
+            var div = document.getElementById('srtsAlerts');
+            div.style.backgroundColor = '#E4F000';
+            div.style.color = '#000000';
+            div.style.fontWeight = "bold";
+        }
+        function setNoAlert() {
+            var div = document.getElementById('srtsAlerts');
+            div.style.backgroundColor = '#E2F2FE';
+            div.style.color = '#004994';
+            div.style.fontWeight = "normal";
+        }
+    
+
+
+
+
+
+        var TimeOut = 900000;
+    </script>
+<style>
+* {
+  box-sizing: border-box;
+}
+
+html {
+    height:100%;
+    min-width:600px;
+}
+
+
+html body {
+  margin: 0;
+  height: 100%;
+  overflow:hidden;
+  min-width:600px;
+}
+
+
+html body .container-fluid.body-content {
+    position: absolute;
+    top:150px;
+    bottom:0px;
+    right:0;
+    left:0;
+    padding:0px;
+    overflow-y: auto;
+    overflow-x:hidden;
+    min-width:400px;
+
+}
+header {
+    position: absolute;
+    left:0;
+    right:0;
+    top:0;
+    background-color:#fff;
+    height: 200px;
+}
+
+
+    .container {
+        min-height:320px;
+    }
+footer {
+    position:relative;
+    bottom:-30px;
+    background-color:#E2F2FE;
+    height:150px;
+    width:100%;
+}
+
+/*#footer {
+    float:left;
+    clear:both;
+    position:absolute;
+    bottom:0;
+    width:100%;
+    background-color:#E2F2FE;
+    color:#004994!important;
+    /*margin-top:10px;
+    background-color:#E6F3FA;
+    padding-top:20px;
+
+}*/
+#footer h1
+{
+    font-weight: bold;
+    color: #004994;  
+    font-size: 1.2em;
+    margin-top: 0px;
+}
+
+.footerlogo
+    {
+        height: 120px;
+        min-width: 250px;
+        max-width: 250px;
+        background-image: url('/../Styles/images/DHA_transparent.gif');
+        background-repeat: no-repeat;
+    }
+
+#footer .right p
+{
+    padding-right: 130px;
+}
+
+#footer p
+{
+padding: 0px;
+margin: 0px;
+text-indent: 0px;
+color:#004994!important;
+}
+
+h1 {
+    color:#258309;
+}
+/* Style the header */
+/*.header {
+  background-color: #f1f1f1;
+  padding: 5px;
+  text-align: center;
+}*/
+
+
+
+.cardHeader {
+ background-color:#E2F2FE;
+ color:#004994;
+}
+
+.gEyesTitle {
+   color:#258309;
+   font-size:3.5em;
+   font-family:Palatino;
+}
+
+    p {
+        color:#004994;
+        line-height:1.5;
+        font-size:15px;
+    }
+
+    ul {
+          color:#004994;
+          line-height:2.0;
+          font-size:15px;
+    }
+.paneleHeader {
+    font-weight: normal!important; 
+    font-size: 16px; 
+    font-style: normal;
+    text-align:center
+}
+
+/* Style the top navigation bar */
+.topnav {
+  overflow: hidden;
+  background-color: #15152e!important;
+}
+
+/* Style the topnav links */
+.topnav a {
+  float: left;
+  display: block;
+  color: #fff;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Create three unequal columns that floats next to each other */
+.column {
+  float: left;
+  padding: 10px;
+  
+}
+
+/* Left and right column */
+.column.side {
+  width: 20%;
+}
+
+/* Middle column */
+.column.middle {
+  width: 60%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+#fouoBanner {
+position:relative;
+z-index:2000;
+left:0px;
+top:0px;
+width:100%;
+height:20px;
+background-color:#258309;  
+border-bottom:1px solid #fff;
+text-align:center;
+color:#fff;
+font-size:11px;
+}
+.innerheader {
+        position:relative;
+        padding: 0px;
+        margin: 0px 0px 0px 0px;
+        height: 130px;
+    background: url('/../Styles/images/img_SrtsWeb_LogoHeader_bk.png') repeat-x -20px -64px;
+}
+#logoheader {
+    
+    
+}
+#logoheader .logoheader {
+    height:130px;
+    background: url('/../Styles/images/img_SrtsWeb_SlideShow_img3.png') no-repeat -40px -64px;
+}
+.contactus {
+    margin:20px 0px 0px 20px;
+    height:80px;
+    background: url('/../Styles/images/img_srts_contactphone.png') no-repeat 50% 50%;
+    
+}
+
+
+.copyright
+    {
+        margin-left:0px;
+        font-size:.8em;
+        color: #782E1E;
+    }
+.information{
+    font-size:.8em;
+    color: #782E1E;
+
+}
+.center {
+  margin: auto;
+  width: 50%;
+  padding:0px;
+}
+
+.responsive {
+  max-width: 100%;
+  height: auto;
+}
+
+.mGrid
+{
+    width: 100%;
+    background-color: transparent;
+    margin: 0px 0px 5px 0px;
+    border-collapse: collapse;
+    /*border-top: 1px solid #EFD3A5;*/
+    border-right: 1px solid #C6E7FF;
+    border-bottom: none;
+    border-left: 1px solid #C6E7FF;
+}
+
+    .mGrid td
+    {
+        padding: 5px 0px 5px 10px !important;
+        border: solid 1px #C6E7FF;
+        border-top: none;
+        border-right: none;
+        color: #000000;
+        font-size: .9em;
+        vertical-align: middle;
+    }
+
+    .mGrid th
+    {
+        background-image: url('/../Styles/images/mgrid_hder_bk.png');
+        background-repeat: repeat-x;
+        background-position: 0px 0px;
+        /*display: inline-block;*/
+        /*height: 29px;
+        padding: 2px 0px 0px 0px;*/
+        color: #004994;
+        border: none;
+        border-top: solid 1px #C6E7FF;
+        font-size: .9em !important;
+        font-weight: normal;
+        /*text-align: center;
+        line-height: 25px;*/
+        background-color: #ffffff;
+    }
+
+        .mGrid th a
+        {
+            display: inline-block;
+        }
+
+    .mGrid .table
+    {
+        border-top: solid 1px #C6E7FF;
+        background: none;
+        height: 12px;
+        text-align: left;
+        font-weight: bold;
+    }
+
+    /*.mGrid th a {color:#782E1E !important}*/
+    /*.mGrid th a:hover {color:#004994 !important}*/
+    .mGrid th a
+    {
+        color: #004994 !important;
+    }
+
+        .mGrid th a:hover
+        {
+            color: #782E1E !important;
+        }
+
+    .mGrid .alt
+    {
+        /*background-color: #F2F8FD;*/
+        background-color: #F7F3E7;
+    }
+
+    .mGrid .pgr
+    {
+        text-align: right;
+    }
+
+        .mGrid .pgr table
+        {
+            margin: 5px 0px 5px 0px;
+        }
+
+        .mGrid .pgr td
+        {
+            border-width: 0;
+            padding: 0px 0px 0px 5px;
+            line-height: 15px;
+        }
+
+        .mGrid .pgr a
+        {
+            color: #782E1E;
+            text-decoration: underline;
+        }
+
+            .mGrid .pgr a:hover
+            {
+                color: #004994;
+                text-decoration: none;
+            }
+
+    .mGrid th .sortAsc
+    {
+        background-image: url('../Styles/images/img_sort_up_green.png');
+        background-repeat: no-repeat;
+        background-position: 0px 0px;
+        width: 22px;
+        height: 22px;
+        padding-left: 23px;
+    }
+
+    .mGrid th .sortDesc
+    {
+        background-image: url('../Styles/images/img_sort_down_green.png');
+        background-repeat: no-repeat;
+        background-position: 0px 0px;
+        width: 22px;
+        height: 22px;
+        padding-left: 23px;
+    }
+
+    .mGrid .editImage
+    {
+        width: 25px;
+        text-align: center;
+    }
+
+    .mGrid .emptyrow
+    {
+        text-align: center;
+        font-size: 1.2em;
+    }
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column.side, .column.middle {
+    width: 100%;
+  }
+}
+#container {
+    min-width:600px;
+    width: auto !important;
+    width:00px;
+}
+</style>
+</head>
+<body id="container" style="background-color:#E2F2FE">
+
+        <%--SRTSweb Modal Message --%>
+<div id="srtsMessage" class="w3-modal" style="z-index: 30000">
+        <div class="w3-modal-content">
+            <div class="w3-container">
+                <div class="srtsMessage">
+                    <div class="BeigeBoxContainer shadow" style="">
+                        <div style="background-color: #fff">
+                            <div class="BeigeBoxHeader" style="padding: 12px 10px 5px 15px">
+
+                                <div id="srtsMessageheader" class="header_info">
+                                    <span onclick="document.getElementById('srtsMessage').style.display='none'"
+                                        class="w3-closebtn">&times;</span>
+                                    SRTSweb Message
+                                </div>
+
+                            </div>
+                            <div class="BeigeBoxContent" style="min-height: 120px;">
+                                <div class="content">
+                                    <div class="w3-row">
+                                        <div id="srtsMessageTitle" runat="server" class="success">Success!</div>
+                                    </div>
+                                    <div class="w3-row">
+                                        <div id="srtsMessageText" runat="server" class="message"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<header>
+<div id="fouoBanner">
+    <span>This page contains dynamic content - Highest Possible Classification is UNCLASSIFIED/FOR OFFICIAL USE ONLY</span>
+</div>
+<div class="header innerheader">
+
+<div id="logoheader">
+<div class="logoheader">
+
+<h1>&nbsp;</h1>
+<p>&nbsp;</p>
+</div>
+</div>
+
+</div>
+</header>
+<div class="container-fluid body-content bg-white">
+<%-- U.S. Department.... /  G-Eyes -  Header...--%>
+<div class="row">
+    <div class="col-sm-3"></div>
+    <div class="col-sm-6" style="text-align:center;height:150px">
+                <div style="margin: 5px auto;color:#004994;font-weight:normal!important">
+                    <div style="text-align: center;font-size:16px!important">
+                        <span style="font-size: smaller">U.S. Department of Defense / Defense Health Agency</span><br />
+                        Spectacle Request Transmission System (SRTSweb)
+                    </div>
+                </div>
+                 <div class="gEyesTitle">G-Eyes</div>
+                <p style="position:relative;left:112px;top:-25px;font:Palatino;font-style:italic;font-size:smaller">eyewear re-ordering</p>
+    </div>
+    <div class="col-sm-3"></div>
+</div>
+
+<div style="position:relative;top:40px">
+<form id="form1" runat="server" enctype="multipart/form-data">
+
+<asp:HiddenField ID="hdfMaster" runat="server" />
+<ajaxToolkit:ToolkitScriptManager ID="ToolkitManager1" runat="server" EnableScriptLocalization="true" EnableScriptGlobalization="true" LoadScriptsBeforeUI="true" EnablePageMethods="true">
+    <Scripts>
+        <asp:ScriptReference Path="~/Scripts/Global/jquery-1.11.1.min.js" />
+        <asp:ScriptReference Path="~/Scripts/Global/jquery-ui.min.js" />
+        <asp:ScriptReference Path="~/Scripts/Global/IdleTimeout.js" />
+    </Scripts>
+</ajaxToolkit:ToolkitScriptManager>
+
+<div class="row">
+    <div class="col-sm-2" style="text-align:center"></div>
+    <div class="col-sm-8" style="text-align:center">
+         <%-- Main Content panel......--%>
+            <div style="margin-top:0px">
+                <asp:ContentPlaceHolder ID="MainContent_Public" runat="server">
+                </asp:ContentPlaceHolder>
+              <div class="contactus"> </div>
+            </div>
+    </div>
+    <div class="col-sm-2" style="text-align:center"></div>
+
+     <asp:UpdateProgress ID="upEditOrder" runat="server">
+            <ProgressTemplate>
+                <div id="thecontainer">
+                    <div id="overlay"></div>
+                    <div id="modalprogress">
+                        <div id="thetransparency"></div>
+                        <div id="theprogress">
+                            <span>Processing...</span>
+                        </div>
+                    </div>
+                </div>
+            </ProgressTemplate>
+        </asp:UpdateProgress>
+<footer>
+        <div class="row" style="background-color:#E2F2FE;padding-top:25px">
+            <div class="col-sm-3 information" style="margin-top:30px">
+                <div style="width:100%;margin:0% 20%">
+                <ul>
+                    <li><a id="A4" href="../WebForms/Public/PrivacyAndSecurity.aspx" runat="server">Privacy and Security Statement</a></li>
+                    <li><a id="A6" href="../WebForms/Public/Accessability.aspx" runat="server">Website Accessibility</a> </li>
+                </ul>
+                </div>
+            </div>
+            <div class="col-sm-6 middle">
+                <div class="center">
+                <p>
+                Copyright &copy 2014 SRTS Web (Version:<a href="../WebForms/Public/ReleaseNotes.aspx" id="versionRef" runat="server"><asp:Literal ID="litVersion" runat="server"></asp:Literal></a>)<br />
+                Developed by the SRTS Team at:<br />
+                Defense Health Agency - Solutions Delivery Division<br />
+                2710 Howitzer St., Bldg. 2372  -  Ft. Sam Houston, TX  78234
+                </p>
+               </div>
+            </div>
+            <div class="col-sm-3 side">
+            <div class="footerlogo center">
+      
+            </div>
+            </div>
+        </div>
+
+</footer>
+</div>
+
+
+
+
+
+</form>
+</div>
+</div>
+
+
+
+<script type="text/javascript">
+        $(document).ready(function () {
+            // if the srtsMessage modal is open, click outside the message box to close it
+            window.onclick = function (event) {
+                if (event.srcElement) {
+                    if (event.srcElement.id == 'srtsMessage')
+                        document.getElementById('srtsMessage').style.display = 'none';
+                }
+            }
+        });
+    </script>
+<script src="Content/js/jquery-3.3.1.min.js"></script>
+<script src="Content/js/popper.min.js"></script>
+<script src="Content/js/bootstrap.js"></script>
+</body>
+</html>

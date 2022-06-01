@@ -1,0 +1,21 @@
+﻿@import '../Base/Variables.scss';
+@import '../Base/Mixins.scss';
+
+.l-header {
+    position: fixed;
+    z-index: 100;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: $blue;
+}
+
+.l-content {
+    margin: $contentMarginHeader $contentMarginHorizontal 0 $contentMarginHorizontal;
+}
+
+@media (max-width: 500px) {
+    .l-content {
+        margin: 62px $mobileMarginHorizontal 0 $mobileMarginHorizontal;
+    }
+}
